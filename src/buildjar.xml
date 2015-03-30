@@ -1,0 +1,5 @@
+<project name="JMumbotLib" default="CreateJar">
+	<target name="CreateJar" description="Create Jar">
+		<jar jarfile="../lib/JMumbotLib.jar" basedir="../bin/" includes="*/*.class" />
+	</target>
+</project>
