@@ -8,60 +8,101 @@ public final class Mumble {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface VersionOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VersionOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.Version)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional uint32 version = 1;
     /**
      * <code>optional uint32 version = 1;</code>
+     *
+     * <pre>
+     * 2-byte Major, 1-byte Minor and 1-byte Patch version number.
+     * </pre>
      */
     boolean hasVersion();
     /**
      * <code>optional uint32 version = 1;</code>
+     *
+     * <pre>
+     * 2-byte Major, 1-byte Minor and 1-byte Patch version number.
+     * </pre>
      */
     int getVersion();
 
-    // optional string release = 2;
     /**
      * <code>optional string release = 2;</code>
+     *
+     * <pre>
+     * Client release name.
+     * </pre>
      */
     boolean hasRelease();
     /**
      * <code>optional string release = 2;</code>
+     *
+     * <pre>
+     * Client release name.
+     * </pre>
      */
     java.lang.String getRelease();
     /**
      * <code>optional string release = 2;</code>
+     *
+     * <pre>
+     * Client release name.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getReleaseBytes();
 
-    // optional string os = 3;
     /**
      * <code>optional string os = 3;</code>
+     *
+     * <pre>
+     * Client OS name.
+     * </pre>
      */
     boolean hasOs();
     /**
      * <code>optional string os = 3;</code>
+     *
+     * <pre>
+     * Client OS name.
+     * </pre>
      */
     java.lang.String getOs();
     /**
      * <code>optional string os = 3;</code>
+     *
+     * <pre>
+     * Client OS name.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getOsBytes();
 
-    // optional string os_version = 4;
     /**
      * <code>optional string os_version = 4;</code>
+     *
+     * <pre>
+     * Client OS version.
+     * </pre>
      */
     boolean hasOsVersion();
     /**
      * <code>optional string os_version = 4;</code>
+     *
+     * <pre>
+     * Client OS version.
+     * </pre>
      */
     java.lang.String getOsVersion();
     /**
      * <code>optional string os_version = 4;</code>
+     *
+     * <pre>
+     * Client OS version.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getOsVersionBytes();
@@ -70,8 +111,9 @@ public final class Mumble {
    * Protobuf type {@code MumbleProto.Version}
    */
   public static final class Version extends
-      com.google.protobuf.GeneratedMessage
-      implements VersionOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.Version)
+      VersionOrBuilder {
     // Use Version.newBuilder() to construct.
     private Version(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -123,18 +165,21 @@ public final class Mumble {
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              release_ = input.readBytes();
+              release_ = bs;
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              os_ = input.readBytes();
+              os_ = bs;
               break;
             }
             case 34: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000008;
-              osVersion_ = input.readBytes();
+              osVersion_ = bs;
               break;
             }
           }
@@ -177,33 +222,47 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional uint32 version = 1;
     public static final int VERSION_FIELD_NUMBER = 1;
     private int version_;
     /**
      * <code>optional uint32 version = 1;</code>
+     *
+     * <pre>
+     * 2-byte Major, 1-byte Minor and 1-byte Patch version number.
+     * </pre>
      */
     public boolean hasVersion() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional uint32 version = 1;</code>
+     *
+     * <pre>
+     * 2-byte Major, 1-byte Minor and 1-byte Patch version number.
+     * </pre>
      */
     public int getVersion() {
       return version_;
     }
 
-    // optional string release = 2;
     public static final int RELEASE_FIELD_NUMBER = 2;
     private java.lang.Object release_;
     /**
      * <code>optional string release = 2;</code>
+     *
+     * <pre>
+     * Client release name.
+     * </pre>
      */
     public boolean hasRelease() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional string release = 2;</code>
+     *
+     * <pre>
+     * Client release name.
+     * </pre>
      */
     public java.lang.String getRelease() {
       java.lang.Object ref = release_;
@@ -221,6 +280,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string release = 2;</code>
+     *
+     * <pre>
+     * Client release name.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getReleaseBytes() {
@@ -236,17 +299,24 @@ public final class Mumble {
       }
     }
 
-    // optional string os = 3;
     public static final int OS_FIELD_NUMBER = 3;
     private java.lang.Object os_;
     /**
      * <code>optional string os = 3;</code>
+     *
+     * <pre>
+     * Client OS name.
+     * </pre>
      */
     public boolean hasOs() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>optional string os = 3;</code>
+     *
+     * <pre>
+     * Client OS name.
+     * </pre>
      */
     public java.lang.String getOs() {
       java.lang.Object ref = os_;
@@ -264,6 +334,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string os = 3;</code>
+     *
+     * <pre>
+     * Client OS name.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getOsBytes() {
@@ -279,17 +353,24 @@ public final class Mumble {
       }
     }
 
-    // optional string os_version = 4;
     public static final int OS_VERSION_FIELD_NUMBER = 4;
     private java.lang.Object osVersion_;
     /**
      * <code>optional string os_version = 4;</code>
+     *
+     * <pre>
+     * Client OS version.
+     * </pre>
      */
     public boolean hasOsVersion() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
      * <code>optional string os_version = 4;</code>
+     *
+     * <pre>
+     * Client OS version.
+     * </pre>
      */
     public java.lang.String getOsVersion() {
       java.lang.Object ref = osVersion_;
@@ -307,6 +388,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string os_version = 4;</code>
+     *
+     * <pre>
+     * Client OS version.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getOsVersionBytes() {
@@ -331,7 +416,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -459,8 +545,9 @@ public final class Mumble {
      * Protobuf type {@code MumbleProto.Version}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.VersionOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.Version)
+        MumbleProto.Mumble.VersionOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_Version_descriptor;
@@ -606,22 +693,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional uint32 version = 1;
       private int version_ ;
       /**
        * <code>optional uint32 version = 1;</code>
+       *
+       * <pre>
+       * 2-byte Major, 1-byte Minor and 1-byte Patch version number.
+       * </pre>
        */
       public boolean hasVersion() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional uint32 version = 1;</code>
+       *
+       * <pre>
+       * 2-byte Major, 1-byte Minor and 1-byte Patch version number.
+       * </pre>
        */
       public int getVersion() {
         return version_;
       }
       /**
        * <code>optional uint32 version = 1;</code>
+       *
+       * <pre>
+       * 2-byte Major, 1-byte Minor and 1-byte Patch version number.
+       * </pre>
        */
       public Builder setVersion(int value) {
         bitField0_ |= 0x00000001;
@@ -631,6 +729,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 version = 1;</code>
+       *
+       * <pre>
+       * 2-byte Major, 1-byte Minor and 1-byte Patch version number.
+       * </pre>
        */
       public Builder clearVersion() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -639,23 +741,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string release = 2;
       private java.lang.Object release_ = "";
       /**
        * <code>optional string release = 2;</code>
+       *
+       * <pre>
+       * Client release name.
+       * </pre>
        */
       public boolean hasRelease() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional string release = 2;</code>
+       *
+       * <pre>
+       * Client release name.
+       * </pre>
        */
       public java.lang.String getRelease() {
         java.lang.Object ref = release_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          release_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            release_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -663,6 +775,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string release = 2;</code>
+       *
+       * <pre>
+       * Client release name.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getReleaseBytes() {
@@ -679,6 +795,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string release = 2;</code>
+       *
+       * <pre>
+       * Client release name.
+       * </pre>
        */
       public Builder setRelease(
           java.lang.String value) {
@@ -692,6 +812,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string release = 2;</code>
+       *
+       * <pre>
+       * Client release name.
+       * </pre>
        */
       public Builder clearRelease() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -701,6 +825,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string release = 2;</code>
+       *
+       * <pre>
+       * Client release name.
+       * </pre>
        */
       public Builder setReleaseBytes(
           com.google.protobuf.ByteString value) {
@@ -713,23 +841,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string os = 3;
       private java.lang.Object os_ = "";
       /**
        * <code>optional string os = 3;</code>
+       *
+       * <pre>
+       * Client OS name.
+       * </pre>
        */
       public boolean hasOs() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional string os = 3;</code>
+       *
+       * <pre>
+       * Client OS name.
+       * </pre>
        */
       public java.lang.String getOs() {
         java.lang.Object ref = os_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          os_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            os_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -737,6 +875,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string os = 3;</code>
+       *
+       * <pre>
+       * Client OS name.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getOsBytes() {
@@ -753,6 +895,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string os = 3;</code>
+       *
+       * <pre>
+       * Client OS name.
+       * </pre>
        */
       public Builder setOs(
           java.lang.String value) {
@@ -766,6 +912,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string os = 3;</code>
+       *
+       * <pre>
+       * Client OS name.
+       * </pre>
        */
       public Builder clearOs() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -775,6 +925,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string os = 3;</code>
+       *
+       * <pre>
+       * Client OS name.
+       * </pre>
        */
       public Builder setOsBytes(
           com.google.protobuf.ByteString value) {
@@ -787,23 +941,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string os_version = 4;
       private java.lang.Object osVersion_ = "";
       /**
        * <code>optional string os_version = 4;</code>
+       *
+       * <pre>
+       * Client OS version.
+       * </pre>
        */
       public boolean hasOsVersion() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <code>optional string os_version = 4;</code>
+       *
+       * <pre>
+       * Client OS version.
+       * </pre>
        */
       public java.lang.String getOsVersion() {
         java.lang.Object ref = osVersion_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          osVersion_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            osVersion_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -811,6 +975,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string os_version = 4;</code>
+       *
+       * <pre>
+       * Client OS version.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getOsVersionBytes() {
@@ -827,6 +995,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string os_version = 4;</code>
+       *
+       * <pre>
+       * Client OS version.
+       * </pre>
        */
       public Builder setOsVersion(
           java.lang.String value) {
@@ -840,6 +1012,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string os_version = 4;</code>
+       *
+       * <pre>
+       * Client OS version.
+       * </pre>
        */
       public Builder clearOsVersion() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -849,6 +1025,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string os_version = 4;</code>
+       *
+       * <pre>
+       * Client OS version.
+       * </pre>
        */
       public Builder setOsVersionBytes(
           com.google.protobuf.ByteString value) {
@@ -872,25 +1052,38 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.Version)
   }
 
-  public interface UDPTunnelOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface UDPTunnelOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.UDPTunnel)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required bytes packet = 1;
     /**
      * <code>required bytes packet = 1;</code>
+     *
+     * <pre>
+     * Not used.
+     * </pre>
      */
     boolean hasPacket();
     /**
      * <code>required bytes packet = 1;</code>
+     *
+     * <pre>
+     * Not used.
+     * </pre>
      */
     com.google.protobuf.ByteString getPacket();
   }
   /**
    * Protobuf type {@code MumbleProto.UDPTunnel}
+   *
+   * <pre>
+   * Not used. Not even for tunneling UDP through TCP.
+   * </pre>
    */
   public static final class UDPTunnel extends
-      com.google.protobuf.GeneratedMessage
-      implements UDPTunnelOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.UDPTunnel)
+      UDPTunnelOrBuilder {
     // Use UDPTunnel.newBuilder() to construct.
     private UDPTunnel(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -981,17 +1174,24 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // required bytes packet = 1;
     public static final int PACKET_FIELD_NUMBER = 1;
     private com.google.protobuf.ByteString packet_;
     /**
      * <code>required bytes packet = 1;</code>
+     *
+     * <pre>
+     * Not used.
+     * </pre>
      */
     public boolean hasPacket() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>required bytes packet = 1;</code>
+     *
+     * <pre>
+     * Not used.
+     * </pre>
      */
     public com.google.protobuf.ByteString getPacket() {
       return packet_;
@@ -1003,7 +1203,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasPacket()) {
         memoizedIsInitialized = 0;
@@ -1112,10 +1313,15 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.UDPTunnel}
+     *
+     * <pre>
+     * Not used. Not even for tunneling UDP through TCP.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.UDPTunnelOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.UDPTunnel)
+        MumbleProto.Mumble.UDPTunnelOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_UDPTunnel_descriptor;
@@ -1232,22 +1438,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // required bytes packet = 1;
       private com.google.protobuf.ByteString packet_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>required bytes packet = 1;</code>
+       *
+       * <pre>
+       * Not used.
+       * </pre>
        */
       public boolean hasPacket() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>required bytes packet = 1;</code>
+       *
+       * <pre>
+       * Not used.
+       * </pre>
        */
       public com.google.protobuf.ByteString getPacket() {
         return packet_;
       }
       /**
        * <code>required bytes packet = 1;</code>
+       *
+       * <pre>
+       * Not used.
+       * </pre>
        */
       public Builder setPacket(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -1260,6 +1477,10 @@ public final class Mumble {
       }
       /**
        * <code>required bytes packet = 1;</code>
+       *
+       * <pre>
+       * Not used.
+       * </pre>
        */
       public Builder clearPacket() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -1279,74 +1500,122 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.UDPTunnel)
   }
 
-  public interface AuthenticateOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface AuthenticateOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.Authenticate)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional string username = 1;
     /**
      * <code>optional string username = 1;</code>
+     *
+     * <pre>
+     * UTF-8 encoded username.
+     * </pre>
      */
     boolean hasUsername();
     /**
      * <code>optional string username = 1;</code>
+     *
+     * <pre>
+     * UTF-8 encoded username.
+     * </pre>
      */
     java.lang.String getUsername();
     /**
      * <code>optional string username = 1;</code>
+     *
+     * <pre>
+     * UTF-8 encoded username.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getUsernameBytes();
 
-    // optional string password = 2;
     /**
      * <code>optional string password = 2;</code>
+     *
+     * <pre>
+     * Server or user password.
+     * </pre>
      */
     boolean hasPassword();
     /**
      * <code>optional string password = 2;</code>
+     *
+     * <pre>
+     * Server or user password.
+     * </pre>
      */
     java.lang.String getPassword();
     /**
      * <code>optional string password = 2;</code>
+     *
+     * <pre>
+     * Server or user password.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getPasswordBytes();
 
-    // repeated string tokens = 3;
     /**
      * <code>repeated string tokens = 3;</code>
+     *
+     * <pre>
+     * Additional access tokens for server ACL groups.
+     * </pre>
      */
-    java.util.List<java.lang.String>
-    getTokensList();
+    com.google.protobuf.ProtocolStringList
+        getTokensList();
     /**
      * <code>repeated string tokens = 3;</code>
+     *
+     * <pre>
+     * Additional access tokens for server ACL groups.
+     * </pre>
      */
     int getTokensCount();
     /**
      * <code>repeated string tokens = 3;</code>
+     *
+     * <pre>
+     * Additional access tokens for server ACL groups.
+     * </pre>
      */
     java.lang.String getTokens(int index);
     /**
      * <code>repeated string tokens = 3;</code>
+     *
+     * <pre>
+     * Additional access tokens for server ACL groups.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getTokensBytes(int index);
 
-    // repeated int32 celt_versions = 4;
     /**
      * <code>repeated int32 celt_versions = 4;</code>
+     *
+     * <pre>
+     * A list of CELT bitstream version constants supported by the client.
+     * </pre>
      */
     java.util.List<java.lang.Integer> getCeltVersionsList();
     /**
      * <code>repeated int32 celt_versions = 4;</code>
+     *
+     * <pre>
+     * A list of CELT bitstream version constants supported by the client.
+     * </pre>
      */
     int getCeltVersionsCount();
     /**
      * <code>repeated int32 celt_versions = 4;</code>
+     *
+     * <pre>
+     * A list of CELT bitstream version constants supported by the client.
+     * </pre>
      */
     int getCeltVersions(int index);
 
-    // optional bool opus = 5 [default = false];
     /**
      * <code>optional bool opus = 5 [default = false];</code>
      */
@@ -1358,10 +1627,15 @@ public final class Mumble {
   }
   /**
    * Protobuf type {@code MumbleProto.Authenticate}
+   *
+   * <pre>
+   * Used by the client to send the authentication credentials to the server.
+   * </pre>
    */
   public static final class Authenticate extends
-      com.google.protobuf.GeneratedMessage
-      implements AuthenticateOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.Authenticate)
+      AuthenticateOrBuilder {
     // Use Authenticate.newBuilder() to construct.
     private Authenticate(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -1408,21 +1682,24 @@ public final class Mumble {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              username_ = input.readBytes();
+              username_ = bs;
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              password_ = input.readBytes();
+              password_ = bs;
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
                 tokens_ = new com.google.protobuf.LazyStringArrayList();
                 mutable_bitField0_ |= 0x00000004;
               }
-              tokens_.add(input.readBytes());
+              tokens_.add(bs);
               break;
             }
             case 32: {
@@ -1460,7 +1737,7 @@ public final class Mumble {
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-          tokens_ = new com.google.protobuf.UnmodifiableLazyStringList(tokens_);
+          tokens_ = tokens_.getUnmodifiableView();
         }
         if (((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
           celtVersions_ = java.util.Collections.unmodifiableList(celtVersions_);
@@ -1497,17 +1774,24 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional string username = 1;
     public static final int USERNAME_FIELD_NUMBER = 1;
     private java.lang.Object username_;
     /**
      * <code>optional string username = 1;</code>
+     *
+     * <pre>
+     * UTF-8 encoded username.
+     * </pre>
      */
     public boolean hasUsername() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional string username = 1;</code>
+     *
+     * <pre>
+     * UTF-8 encoded username.
+     * </pre>
      */
     public java.lang.String getUsername() {
       java.lang.Object ref = username_;
@@ -1525,6 +1809,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string username = 1;</code>
+     *
+     * <pre>
+     * UTF-8 encoded username.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
@@ -1540,17 +1828,24 @@ public final class Mumble {
       }
     }
 
-    // optional string password = 2;
     public static final int PASSWORD_FIELD_NUMBER = 2;
     private java.lang.Object password_;
     /**
      * <code>optional string password = 2;</code>
+     *
+     * <pre>
+     * Server or user password.
+     * </pre>
      */
     public boolean hasPassword() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional string password = 2;</code>
+     *
+     * <pre>
+     * Server or user password.
+     * </pre>
      */
     public java.lang.String getPassword() {
       java.lang.Object ref = password_;
@@ -1568,6 +1863,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string password = 2;</code>
+     *
+     * <pre>
+     * Server or user password.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getPasswordBytes() {
@@ -1583,41 +1882,59 @@ public final class Mumble {
       }
     }
 
-    // repeated string tokens = 3;
     public static final int TOKENS_FIELD_NUMBER = 3;
     private com.google.protobuf.LazyStringList tokens_;
     /**
      * <code>repeated string tokens = 3;</code>
+     *
+     * <pre>
+     * Additional access tokens for server ACL groups.
+     * </pre>
      */
-    public java.util.List<java.lang.String>
+    public com.google.protobuf.ProtocolStringList
         getTokensList() {
       return tokens_;
     }
     /**
      * <code>repeated string tokens = 3;</code>
+     *
+     * <pre>
+     * Additional access tokens for server ACL groups.
+     * </pre>
      */
     public int getTokensCount() {
       return tokens_.size();
     }
     /**
      * <code>repeated string tokens = 3;</code>
+     *
+     * <pre>
+     * Additional access tokens for server ACL groups.
+     * </pre>
      */
     public java.lang.String getTokens(int index) {
       return tokens_.get(index);
     }
     /**
      * <code>repeated string tokens = 3;</code>
+     *
+     * <pre>
+     * Additional access tokens for server ACL groups.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getTokensBytes(int index) {
       return tokens_.getByteString(index);
     }
 
-    // repeated int32 celt_versions = 4;
     public static final int CELT_VERSIONS_FIELD_NUMBER = 4;
     private java.util.List<java.lang.Integer> celtVersions_;
     /**
      * <code>repeated int32 celt_versions = 4;</code>
+     *
+     * <pre>
+     * A list of CELT bitstream version constants supported by the client.
+     * </pre>
      */
     public java.util.List<java.lang.Integer>
         getCeltVersionsList() {
@@ -1625,18 +1942,25 @@ public final class Mumble {
     }
     /**
      * <code>repeated int32 celt_versions = 4;</code>
+     *
+     * <pre>
+     * A list of CELT bitstream version constants supported by the client.
+     * </pre>
      */
     public int getCeltVersionsCount() {
       return celtVersions_.size();
     }
     /**
      * <code>repeated int32 celt_versions = 4;</code>
+     *
+     * <pre>
+     * A list of CELT bitstream version constants supported by the client.
+     * </pre>
      */
     public int getCeltVersions(int index) {
       return celtVersions_.get(index);
     }
 
-    // optional bool opus = 5 [default = false];
     public static final int OPUS_FIELD_NUMBER = 5;
     private boolean opus_;
     /**
@@ -1662,7 +1986,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -1805,10 +2130,15 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.Authenticate}
+     *
+     * <pre>
+     * Used by the client to send the authentication credentials to the server.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.AuthenticateOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.Authenticate)
+        MumbleProto.Mumble.AuthenticateOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_Authenticate_descriptor;
@@ -1888,8 +2218,7 @@ public final class Mumble {
         }
         result.password_ = password_;
         if (((bitField0_ & 0x00000004) == 0x00000004)) {
-          tokens_ = new com.google.protobuf.UnmodifiableLazyStringList(
-              tokens_);
+          tokens_ = tokens_.getUnmodifiableView();
           bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.tokens_ = tokens_;
@@ -1978,23 +2307,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional string username = 1;
       private java.lang.Object username_ = "";
       /**
        * <code>optional string username = 1;</code>
+       *
+       * <pre>
+       * UTF-8 encoded username.
+       * </pre>
        */
       public boolean hasUsername() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional string username = 1;</code>
+       *
+       * <pre>
+       * UTF-8 encoded username.
+       * </pre>
        */
       public java.lang.String getUsername() {
         java.lang.Object ref = username_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          username_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            username_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -2002,6 +2341,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string username = 1;</code>
+       *
+       * <pre>
+       * UTF-8 encoded username.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getUsernameBytes() {
@@ -2018,6 +2361,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string username = 1;</code>
+       *
+       * <pre>
+       * UTF-8 encoded username.
+       * </pre>
        */
       public Builder setUsername(
           java.lang.String value) {
@@ -2031,6 +2378,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string username = 1;</code>
+       *
+       * <pre>
+       * UTF-8 encoded username.
+       * </pre>
        */
       public Builder clearUsername() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -2040,6 +2391,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string username = 1;</code>
+       *
+       * <pre>
+       * UTF-8 encoded username.
+       * </pre>
        */
       public Builder setUsernameBytes(
           com.google.protobuf.ByteString value) {
@@ -2052,23 +2407,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string password = 2;
       private java.lang.Object password_ = "";
       /**
        * <code>optional string password = 2;</code>
+       *
+       * <pre>
+       * Server or user password.
+       * </pre>
        */
       public boolean hasPassword() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional string password = 2;</code>
+       *
+       * <pre>
+       * Server or user password.
+       * </pre>
        */
       public java.lang.String getPassword() {
         java.lang.Object ref = password_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          password_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            password_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -2076,6 +2441,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string password = 2;</code>
+       *
+       * <pre>
+       * Server or user password.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getPasswordBytes() {
@@ -2092,6 +2461,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string password = 2;</code>
+       *
+       * <pre>
+       * Server or user password.
+       * </pre>
        */
       public Builder setPassword(
           java.lang.String value) {
@@ -2105,6 +2478,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string password = 2;</code>
+       *
+       * <pre>
+       * Server or user password.
+       * </pre>
        */
       public Builder clearPassword() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -2114,6 +2491,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string password = 2;</code>
+       *
+       * <pre>
+       * Server or user password.
+       * </pre>
        */
       public Builder setPasswordBytes(
           com.google.protobuf.ByteString value) {
@@ -2126,7 +2507,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated string tokens = 3;
       private com.google.protobuf.LazyStringList tokens_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureTokensIsMutable() {
         if (!((bitField0_ & 0x00000004) == 0x00000004)) {
@@ -2136,25 +2516,41 @@ public final class Mumble {
       }
       /**
        * <code>repeated string tokens = 3;</code>
+       *
+       * <pre>
+       * Additional access tokens for server ACL groups.
+       * </pre>
        */
-      public java.util.List<java.lang.String>
+      public com.google.protobuf.ProtocolStringList
           getTokensList() {
-        return java.util.Collections.unmodifiableList(tokens_);
+        return tokens_.getUnmodifiableView();
       }
       /**
        * <code>repeated string tokens = 3;</code>
+       *
+       * <pre>
+       * Additional access tokens for server ACL groups.
+       * </pre>
        */
       public int getTokensCount() {
         return tokens_.size();
       }
       /**
        * <code>repeated string tokens = 3;</code>
+       *
+       * <pre>
+       * Additional access tokens for server ACL groups.
+       * </pre>
        */
       public java.lang.String getTokens(int index) {
         return tokens_.get(index);
       }
       /**
        * <code>repeated string tokens = 3;</code>
+       *
+       * <pre>
+       * Additional access tokens for server ACL groups.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getTokensBytes(int index) {
@@ -2162,6 +2558,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated string tokens = 3;</code>
+       *
+       * <pre>
+       * Additional access tokens for server ACL groups.
+       * </pre>
        */
       public Builder setTokens(
           int index, java.lang.String value) {
@@ -2175,6 +2575,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated string tokens = 3;</code>
+       *
+       * <pre>
+       * Additional access tokens for server ACL groups.
+       * </pre>
        */
       public Builder addTokens(
           java.lang.String value) {
@@ -2188,16 +2592,25 @@ public final class Mumble {
       }
       /**
        * <code>repeated string tokens = 3;</code>
+       *
+       * <pre>
+       * Additional access tokens for server ACL groups.
+       * </pre>
        */
       public Builder addAllTokens(
           java.lang.Iterable<java.lang.String> values) {
         ensureTokensIsMutable();
-        super.addAll(values, tokens_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, tokens_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated string tokens = 3;</code>
+       *
+       * <pre>
+       * Additional access tokens for server ACL groups.
+       * </pre>
        */
       public Builder clearTokens() {
         tokens_ = com.google.protobuf.LazyStringArrayList.EMPTY;
@@ -2207,6 +2620,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated string tokens = 3;</code>
+       *
+       * <pre>
+       * Additional access tokens for server ACL groups.
+       * </pre>
        */
       public Builder addTokensBytes(
           com.google.protobuf.ByteString value) {
@@ -2219,7 +2636,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated int32 celt_versions = 4;
       private java.util.List<java.lang.Integer> celtVersions_ = java.util.Collections.emptyList();
       private void ensureCeltVersionsIsMutable() {
         if (!((bitField0_ & 0x00000008) == 0x00000008)) {
@@ -2229,6 +2645,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated int32 celt_versions = 4;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getCeltVersionsList() {
@@ -2236,18 +2656,30 @@ public final class Mumble {
       }
       /**
        * <code>repeated int32 celt_versions = 4;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client.
+       * </pre>
        */
       public int getCeltVersionsCount() {
         return celtVersions_.size();
       }
       /**
        * <code>repeated int32 celt_versions = 4;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client.
+       * </pre>
        */
       public int getCeltVersions(int index) {
         return celtVersions_.get(index);
       }
       /**
        * <code>repeated int32 celt_versions = 4;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client.
+       * </pre>
        */
       public Builder setCeltVersions(
           int index, int value) {
@@ -2258,6 +2690,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated int32 celt_versions = 4;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client.
+       * </pre>
        */
       public Builder addCeltVersions(int value) {
         ensureCeltVersionsIsMutable();
@@ -2267,16 +2703,25 @@ public final class Mumble {
       }
       /**
        * <code>repeated int32 celt_versions = 4;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client.
+       * </pre>
        */
       public Builder addAllCeltVersions(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureCeltVersionsIsMutable();
-        super.addAll(values, celtVersions_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, celtVersions_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated int32 celt_versions = 4;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client.
+       * </pre>
        */
       public Builder clearCeltVersions() {
         celtVersions_ = java.util.Collections.emptyList();
@@ -2285,7 +2730,6 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool opus = 5 [default = false];
       private boolean opus_ ;
       /**
        * <code>optional bool opus = 5 [default = false];</code>
@@ -2329,125 +2773,210 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.Authenticate)
   }
 
-  public interface PingOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface PingOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.Ping)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional uint64 timestamp = 1;
     /**
      * <code>optional uint64 timestamp = 1;</code>
+     *
+     * <pre>
+     * Client timestamp. Server should not attempt to decode.
+     * </pre>
      */
     boolean hasTimestamp();
     /**
      * <code>optional uint64 timestamp = 1;</code>
+     *
+     * <pre>
+     * Client timestamp. Server should not attempt to decode.
+     * </pre>
      */
     long getTimestamp();
 
-    // optional uint32 good = 2;
     /**
      * <code>optional uint32 good = 2;</code>
+     *
+     * <pre>
+     * The amount of good packets received.
+     * </pre>
      */
     boolean hasGood();
     /**
      * <code>optional uint32 good = 2;</code>
+     *
+     * <pre>
+     * The amount of good packets received.
+     * </pre>
      */
     int getGood();
 
-    // optional uint32 late = 3;
     /**
      * <code>optional uint32 late = 3;</code>
+     *
+     * <pre>
+     * The amount of late packets received.
+     * </pre>
      */
     boolean hasLate();
     /**
      * <code>optional uint32 late = 3;</code>
+     *
+     * <pre>
+     * The amount of late packets received.
+     * </pre>
      */
     int getLate();
 
-    // optional uint32 lost = 4;
     /**
      * <code>optional uint32 lost = 4;</code>
+     *
+     * <pre>
+     * The amount of packets never received.
+     * </pre>
      */
     boolean hasLost();
     /**
      * <code>optional uint32 lost = 4;</code>
+     *
+     * <pre>
+     * The amount of packets never received.
+     * </pre>
      */
     int getLost();
 
-    // optional uint32 resync = 5;
     /**
      * <code>optional uint32 resync = 5;</code>
+     *
+     * <pre>
+     * The amount of nonce resyncs.
+     * </pre>
      */
     boolean hasResync();
     /**
      * <code>optional uint32 resync = 5;</code>
+     *
+     * <pre>
+     * The amount of nonce resyncs.
+     * </pre>
      */
     int getResync();
 
-    // optional uint32 udp_packets = 6;
     /**
      * <code>optional uint32 udp_packets = 6;</code>
+     *
+     * <pre>
+     * The total amount of UDP packets received.
+     * </pre>
      */
     boolean hasUdpPackets();
     /**
      * <code>optional uint32 udp_packets = 6;</code>
+     *
+     * <pre>
+     * The total amount of UDP packets received.
+     * </pre>
      */
     int getUdpPackets();
 
-    // optional uint32 tcp_packets = 7;
     /**
      * <code>optional uint32 tcp_packets = 7;</code>
+     *
+     * <pre>
+     * The total amount of TCP packets received.
+     * </pre>
      */
     boolean hasTcpPackets();
     /**
      * <code>optional uint32 tcp_packets = 7;</code>
+     *
+     * <pre>
+     * The total amount of TCP packets received.
+     * </pre>
      */
     int getTcpPackets();
 
-    // optional float udp_ping_avg = 8;
     /**
      * <code>optional float udp_ping_avg = 8;</code>
+     *
+     * <pre>
+     * UDP ping average.
+     * </pre>
      */
     boolean hasUdpPingAvg();
     /**
      * <code>optional float udp_ping_avg = 8;</code>
+     *
+     * <pre>
+     * UDP ping average.
+     * </pre>
      */
     float getUdpPingAvg();
 
-    // optional float udp_ping_var = 9;
     /**
      * <code>optional float udp_ping_var = 9;</code>
+     *
+     * <pre>
+     * UDP ping variance.
+     * </pre>
      */
     boolean hasUdpPingVar();
     /**
      * <code>optional float udp_ping_var = 9;</code>
+     *
+     * <pre>
+     * UDP ping variance.
+     * </pre>
      */
     float getUdpPingVar();
 
-    // optional float tcp_ping_avg = 10;
     /**
      * <code>optional float tcp_ping_avg = 10;</code>
+     *
+     * <pre>
+     * TCP ping average.
+     * </pre>
      */
     boolean hasTcpPingAvg();
     /**
      * <code>optional float tcp_ping_avg = 10;</code>
+     *
+     * <pre>
+     * TCP ping average.
+     * </pre>
      */
     float getTcpPingAvg();
 
-    // optional float tcp_ping_var = 11;
     /**
      * <code>optional float tcp_ping_var = 11;</code>
+     *
+     * <pre>
+     * TCP ping variance.
+     * </pre>
      */
     boolean hasTcpPingVar();
     /**
      * <code>optional float tcp_ping_var = 11;</code>
+     *
+     * <pre>
+     * TCP ping variance.
+     * </pre>
      */
     float getTcpPingVar();
   }
   /**
    * Protobuf type {@code MumbleProto.Ping}
+   *
+   * <pre>
+   * Sent by the client to notify the server that the client is still alive.
+   * Server must reply to the packet with the same timestamp and its own
+   * good/late/lost/resync numbers. None of the fields is strictly required.
+   * </pre>
    */
   public static final class Ping extends
-      com.google.protobuf.GeneratedMessage
-      implements PingOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.Ping)
+      PingOrBuilder {
     // Use Ping.newBuilder() to construct.
     private Ping(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -2588,177 +3117,254 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional uint64 timestamp = 1;
     public static final int TIMESTAMP_FIELD_NUMBER = 1;
     private long timestamp_;
     /**
      * <code>optional uint64 timestamp = 1;</code>
+     *
+     * <pre>
+     * Client timestamp. Server should not attempt to decode.
+     * </pre>
      */
     public boolean hasTimestamp() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional uint64 timestamp = 1;</code>
+     *
+     * <pre>
+     * Client timestamp. Server should not attempt to decode.
+     * </pre>
      */
     public long getTimestamp() {
       return timestamp_;
     }
 
-    // optional uint32 good = 2;
     public static final int GOOD_FIELD_NUMBER = 2;
     private int good_;
     /**
      * <code>optional uint32 good = 2;</code>
+     *
+     * <pre>
+     * The amount of good packets received.
+     * </pre>
      */
     public boolean hasGood() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional uint32 good = 2;</code>
+     *
+     * <pre>
+     * The amount of good packets received.
+     * </pre>
      */
     public int getGood() {
       return good_;
     }
 
-    // optional uint32 late = 3;
     public static final int LATE_FIELD_NUMBER = 3;
     private int late_;
     /**
      * <code>optional uint32 late = 3;</code>
+     *
+     * <pre>
+     * The amount of late packets received.
+     * </pre>
      */
     public boolean hasLate() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>optional uint32 late = 3;</code>
+     *
+     * <pre>
+     * The amount of late packets received.
+     * </pre>
      */
     public int getLate() {
       return late_;
     }
 
-    // optional uint32 lost = 4;
     public static final int LOST_FIELD_NUMBER = 4;
     private int lost_;
     /**
      * <code>optional uint32 lost = 4;</code>
+     *
+     * <pre>
+     * The amount of packets never received.
+     * </pre>
      */
     public boolean hasLost() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
      * <code>optional uint32 lost = 4;</code>
+     *
+     * <pre>
+     * The amount of packets never received.
+     * </pre>
      */
     public int getLost() {
       return lost_;
     }
 
-    // optional uint32 resync = 5;
     public static final int RESYNC_FIELD_NUMBER = 5;
     private int resync_;
     /**
      * <code>optional uint32 resync = 5;</code>
+     *
+     * <pre>
+     * The amount of nonce resyncs.
+     * </pre>
      */
     public boolean hasResync() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
      * <code>optional uint32 resync = 5;</code>
+     *
+     * <pre>
+     * The amount of nonce resyncs.
+     * </pre>
      */
     public int getResync() {
       return resync_;
     }
 
-    // optional uint32 udp_packets = 6;
     public static final int UDP_PACKETS_FIELD_NUMBER = 6;
     private int udpPackets_;
     /**
      * <code>optional uint32 udp_packets = 6;</code>
+     *
+     * <pre>
+     * The total amount of UDP packets received.
+     * </pre>
      */
     public boolean hasUdpPackets() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
      * <code>optional uint32 udp_packets = 6;</code>
+     *
+     * <pre>
+     * The total amount of UDP packets received.
+     * </pre>
      */
     public int getUdpPackets() {
       return udpPackets_;
     }
 
-    // optional uint32 tcp_packets = 7;
     public static final int TCP_PACKETS_FIELD_NUMBER = 7;
     private int tcpPackets_;
     /**
      * <code>optional uint32 tcp_packets = 7;</code>
+     *
+     * <pre>
+     * The total amount of TCP packets received.
+     * </pre>
      */
     public boolean hasTcpPackets() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     /**
      * <code>optional uint32 tcp_packets = 7;</code>
+     *
+     * <pre>
+     * The total amount of TCP packets received.
+     * </pre>
      */
     public int getTcpPackets() {
       return tcpPackets_;
     }
 
-    // optional float udp_ping_avg = 8;
     public static final int UDP_PING_AVG_FIELD_NUMBER = 8;
     private float udpPingAvg_;
     /**
      * <code>optional float udp_ping_avg = 8;</code>
+     *
+     * <pre>
+     * UDP ping average.
+     * </pre>
      */
     public boolean hasUdpPingAvg() {
       return ((bitField0_ & 0x00000080) == 0x00000080);
     }
     /**
      * <code>optional float udp_ping_avg = 8;</code>
+     *
+     * <pre>
+     * UDP ping average.
+     * </pre>
      */
     public float getUdpPingAvg() {
       return udpPingAvg_;
     }
 
-    // optional float udp_ping_var = 9;
     public static final int UDP_PING_VAR_FIELD_NUMBER = 9;
     private float udpPingVar_;
     /**
      * <code>optional float udp_ping_var = 9;</code>
+     *
+     * <pre>
+     * UDP ping variance.
+     * </pre>
      */
     public boolean hasUdpPingVar() {
       return ((bitField0_ & 0x00000100) == 0x00000100);
     }
     /**
      * <code>optional float udp_ping_var = 9;</code>
+     *
+     * <pre>
+     * UDP ping variance.
+     * </pre>
      */
     public float getUdpPingVar() {
       return udpPingVar_;
     }
 
-    // optional float tcp_ping_avg = 10;
     public static final int TCP_PING_AVG_FIELD_NUMBER = 10;
     private float tcpPingAvg_;
     /**
      * <code>optional float tcp_ping_avg = 10;</code>
+     *
+     * <pre>
+     * TCP ping average.
+     * </pre>
      */
     public boolean hasTcpPingAvg() {
       return ((bitField0_ & 0x00000200) == 0x00000200);
     }
     /**
      * <code>optional float tcp_ping_avg = 10;</code>
+     *
+     * <pre>
+     * TCP ping average.
+     * </pre>
      */
     public float getTcpPingAvg() {
       return tcpPingAvg_;
     }
 
-    // optional float tcp_ping_var = 11;
     public static final int TCP_PING_VAR_FIELD_NUMBER = 11;
     private float tcpPingVar_;
     /**
      * <code>optional float tcp_ping_var = 11;</code>
+     *
+     * <pre>
+     * TCP ping variance.
+     * </pre>
      */
     public boolean hasTcpPingVar() {
       return ((bitField0_ & 0x00000400) == 0x00000400);
     }
     /**
      * <code>optional float tcp_ping_var = 11;</code>
+     *
+     * <pre>
+     * TCP ping variance.
+     * </pre>
      */
     public float getTcpPingVar() {
       return tcpPingVar_;
@@ -2780,7 +3386,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -2955,10 +3562,17 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.Ping}
+     *
+     * <pre>
+     * Sent by the client to notify the server that the client is still alive.
+     * Server must reply to the packet with the same timestamp and its own
+     * good/late/lost/resync numbers. None of the fields is strictly required.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.PingOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.Ping)
+        MumbleProto.Mumble.PingOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_Ping_descriptor;
@@ -3161,22 +3775,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional uint64 timestamp = 1;
       private long timestamp_ ;
       /**
        * <code>optional uint64 timestamp = 1;</code>
+       *
+       * <pre>
+       * Client timestamp. Server should not attempt to decode.
+       * </pre>
        */
       public boolean hasTimestamp() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional uint64 timestamp = 1;</code>
+       *
+       * <pre>
+       * Client timestamp. Server should not attempt to decode.
+       * </pre>
        */
       public long getTimestamp() {
         return timestamp_;
       }
       /**
        * <code>optional uint64 timestamp = 1;</code>
+       *
+       * <pre>
+       * Client timestamp. Server should not attempt to decode.
+       * </pre>
        */
       public Builder setTimestamp(long value) {
         bitField0_ |= 0x00000001;
@@ -3186,6 +3811,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint64 timestamp = 1;</code>
+       *
+       * <pre>
+       * Client timestamp. Server should not attempt to decode.
+       * </pre>
        */
       public Builder clearTimestamp() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -3194,22 +3823,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 good = 2;
       private int good_ ;
       /**
        * <code>optional uint32 good = 2;</code>
+       *
+       * <pre>
+       * The amount of good packets received.
+       * </pre>
        */
       public boolean hasGood() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional uint32 good = 2;</code>
+       *
+       * <pre>
+       * The amount of good packets received.
+       * </pre>
        */
       public int getGood() {
         return good_;
       }
       /**
        * <code>optional uint32 good = 2;</code>
+       *
+       * <pre>
+       * The amount of good packets received.
+       * </pre>
        */
       public Builder setGood(int value) {
         bitField0_ |= 0x00000002;
@@ -3219,6 +3859,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 good = 2;</code>
+       *
+       * <pre>
+       * The amount of good packets received.
+       * </pre>
        */
       public Builder clearGood() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -3227,22 +3871,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 late = 3;
       private int late_ ;
       /**
        * <code>optional uint32 late = 3;</code>
+       *
+       * <pre>
+       * The amount of late packets received.
+       * </pre>
        */
       public boolean hasLate() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional uint32 late = 3;</code>
+       *
+       * <pre>
+       * The amount of late packets received.
+       * </pre>
        */
       public int getLate() {
         return late_;
       }
       /**
        * <code>optional uint32 late = 3;</code>
+       *
+       * <pre>
+       * The amount of late packets received.
+       * </pre>
        */
       public Builder setLate(int value) {
         bitField0_ |= 0x00000004;
@@ -3252,6 +3907,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 late = 3;</code>
+       *
+       * <pre>
+       * The amount of late packets received.
+       * </pre>
        */
       public Builder clearLate() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -3260,22 +3919,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 lost = 4;
       private int lost_ ;
       /**
        * <code>optional uint32 lost = 4;</code>
+       *
+       * <pre>
+       * The amount of packets never received.
+       * </pre>
        */
       public boolean hasLost() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <code>optional uint32 lost = 4;</code>
+       *
+       * <pre>
+       * The amount of packets never received.
+       * </pre>
        */
       public int getLost() {
         return lost_;
       }
       /**
        * <code>optional uint32 lost = 4;</code>
+       *
+       * <pre>
+       * The amount of packets never received.
+       * </pre>
        */
       public Builder setLost(int value) {
         bitField0_ |= 0x00000008;
@@ -3285,6 +3955,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 lost = 4;</code>
+       *
+       * <pre>
+       * The amount of packets never received.
+       * </pre>
        */
       public Builder clearLost() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -3293,22 +3967,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 resync = 5;
       private int resync_ ;
       /**
        * <code>optional uint32 resync = 5;</code>
+       *
+       * <pre>
+       * The amount of nonce resyncs.
+       * </pre>
        */
       public boolean hasResync() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
        * <code>optional uint32 resync = 5;</code>
+       *
+       * <pre>
+       * The amount of nonce resyncs.
+       * </pre>
        */
       public int getResync() {
         return resync_;
       }
       /**
        * <code>optional uint32 resync = 5;</code>
+       *
+       * <pre>
+       * The amount of nonce resyncs.
+       * </pre>
        */
       public Builder setResync(int value) {
         bitField0_ |= 0x00000010;
@@ -3318,6 +4003,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 resync = 5;</code>
+       *
+       * <pre>
+       * The amount of nonce resyncs.
+       * </pre>
        */
       public Builder clearResync() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -3326,22 +4015,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 udp_packets = 6;
       private int udpPackets_ ;
       /**
        * <code>optional uint32 udp_packets = 6;</code>
+       *
+       * <pre>
+       * The total amount of UDP packets received.
+       * </pre>
        */
       public boolean hasUdpPackets() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
        * <code>optional uint32 udp_packets = 6;</code>
+       *
+       * <pre>
+       * The total amount of UDP packets received.
+       * </pre>
        */
       public int getUdpPackets() {
         return udpPackets_;
       }
       /**
        * <code>optional uint32 udp_packets = 6;</code>
+       *
+       * <pre>
+       * The total amount of UDP packets received.
+       * </pre>
        */
       public Builder setUdpPackets(int value) {
         bitField0_ |= 0x00000020;
@@ -3351,6 +4051,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 udp_packets = 6;</code>
+       *
+       * <pre>
+       * The total amount of UDP packets received.
+       * </pre>
        */
       public Builder clearUdpPackets() {
         bitField0_ = (bitField0_ & ~0x00000020);
@@ -3359,22 +4063,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 tcp_packets = 7;
       private int tcpPackets_ ;
       /**
        * <code>optional uint32 tcp_packets = 7;</code>
+       *
+       * <pre>
+       * The total amount of TCP packets received.
+       * </pre>
        */
       public boolean hasTcpPackets() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       /**
        * <code>optional uint32 tcp_packets = 7;</code>
+       *
+       * <pre>
+       * The total amount of TCP packets received.
+       * </pre>
        */
       public int getTcpPackets() {
         return tcpPackets_;
       }
       /**
        * <code>optional uint32 tcp_packets = 7;</code>
+       *
+       * <pre>
+       * The total amount of TCP packets received.
+       * </pre>
        */
       public Builder setTcpPackets(int value) {
         bitField0_ |= 0x00000040;
@@ -3384,6 +4099,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 tcp_packets = 7;</code>
+       *
+       * <pre>
+       * The total amount of TCP packets received.
+       * </pre>
        */
       public Builder clearTcpPackets() {
         bitField0_ = (bitField0_ & ~0x00000040);
@@ -3392,22 +4111,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional float udp_ping_avg = 8;
       private float udpPingAvg_ ;
       /**
        * <code>optional float udp_ping_avg = 8;</code>
+       *
+       * <pre>
+       * UDP ping average.
+       * </pre>
        */
       public boolean hasUdpPingAvg() {
         return ((bitField0_ & 0x00000080) == 0x00000080);
       }
       /**
        * <code>optional float udp_ping_avg = 8;</code>
+       *
+       * <pre>
+       * UDP ping average.
+       * </pre>
        */
       public float getUdpPingAvg() {
         return udpPingAvg_;
       }
       /**
        * <code>optional float udp_ping_avg = 8;</code>
+       *
+       * <pre>
+       * UDP ping average.
+       * </pre>
        */
       public Builder setUdpPingAvg(float value) {
         bitField0_ |= 0x00000080;
@@ -3417,6 +4147,10 @@ public final class Mumble {
       }
       /**
        * <code>optional float udp_ping_avg = 8;</code>
+       *
+       * <pre>
+       * UDP ping average.
+       * </pre>
        */
       public Builder clearUdpPingAvg() {
         bitField0_ = (bitField0_ & ~0x00000080);
@@ -3425,22 +4159,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional float udp_ping_var = 9;
       private float udpPingVar_ ;
       /**
        * <code>optional float udp_ping_var = 9;</code>
+       *
+       * <pre>
+       * UDP ping variance.
+       * </pre>
        */
       public boolean hasUdpPingVar() {
         return ((bitField0_ & 0x00000100) == 0x00000100);
       }
       /**
        * <code>optional float udp_ping_var = 9;</code>
+       *
+       * <pre>
+       * UDP ping variance.
+       * </pre>
        */
       public float getUdpPingVar() {
         return udpPingVar_;
       }
       /**
        * <code>optional float udp_ping_var = 9;</code>
+       *
+       * <pre>
+       * UDP ping variance.
+       * </pre>
        */
       public Builder setUdpPingVar(float value) {
         bitField0_ |= 0x00000100;
@@ -3450,6 +4195,10 @@ public final class Mumble {
       }
       /**
        * <code>optional float udp_ping_var = 9;</code>
+       *
+       * <pre>
+       * UDP ping variance.
+       * </pre>
        */
       public Builder clearUdpPingVar() {
         bitField0_ = (bitField0_ & ~0x00000100);
@@ -3458,22 +4207,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional float tcp_ping_avg = 10;
       private float tcpPingAvg_ ;
       /**
        * <code>optional float tcp_ping_avg = 10;</code>
+       *
+       * <pre>
+       * TCP ping average.
+       * </pre>
        */
       public boolean hasTcpPingAvg() {
         return ((bitField0_ & 0x00000200) == 0x00000200);
       }
       /**
        * <code>optional float tcp_ping_avg = 10;</code>
+       *
+       * <pre>
+       * TCP ping average.
+       * </pre>
        */
       public float getTcpPingAvg() {
         return tcpPingAvg_;
       }
       /**
        * <code>optional float tcp_ping_avg = 10;</code>
+       *
+       * <pre>
+       * TCP ping average.
+       * </pre>
        */
       public Builder setTcpPingAvg(float value) {
         bitField0_ |= 0x00000200;
@@ -3483,6 +4243,10 @@ public final class Mumble {
       }
       /**
        * <code>optional float tcp_ping_avg = 10;</code>
+       *
+       * <pre>
+       * TCP ping average.
+       * </pre>
        */
       public Builder clearTcpPingAvg() {
         bitField0_ = (bitField0_ & ~0x00000200);
@@ -3491,22 +4255,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional float tcp_ping_var = 11;
       private float tcpPingVar_ ;
       /**
        * <code>optional float tcp_ping_var = 11;</code>
+       *
+       * <pre>
+       * TCP ping variance.
+       * </pre>
        */
       public boolean hasTcpPingVar() {
         return ((bitField0_ & 0x00000400) == 0x00000400);
       }
       /**
        * <code>optional float tcp_ping_var = 11;</code>
+       *
+       * <pre>
+       * TCP ping variance.
+       * </pre>
        */
       public float getTcpPingVar() {
         return tcpPingVar_;
       }
       /**
        * <code>optional float tcp_ping_var = 11;</code>
+       *
+       * <pre>
+       * TCP ping variance.
+       * </pre>
        */
       public Builder setTcpPingVar(float value) {
         bitField0_ |= 0x00000400;
@@ -3516,6 +4291,10 @@ public final class Mumble {
       }
       /**
        * <code>optional float tcp_ping_var = 11;</code>
+       *
+       * <pre>
+       * TCP ping variance.
+       * </pre>
        */
       public Builder clearTcpPingVar() {
         bitField0_ = (bitField0_ & ~0x00000400);
@@ -3535,40 +4314,64 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.Ping)
   }
 
-  public interface RejectOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RejectOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.Reject)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional .MumbleProto.Reject.RejectType type = 1;
     /**
      * <code>optional .MumbleProto.Reject.RejectType type = 1;</code>
+     *
+     * <pre>
+     * Rejection type.
+     * </pre>
      */
     boolean hasType();
     /**
      * <code>optional .MumbleProto.Reject.RejectType type = 1;</code>
+     *
+     * <pre>
+     * Rejection type.
+     * </pre>
      */
     MumbleProto.Mumble.Reject.RejectType getType();
 
-    // optional string reason = 2;
     /**
      * <code>optional string reason = 2;</code>
+     *
+     * <pre>
+     * Human readable rejection reason.
+     * </pre>
      */
     boolean hasReason();
     /**
      * <code>optional string reason = 2;</code>
+     *
+     * <pre>
+     * Human readable rejection reason.
+     * </pre>
      */
     java.lang.String getReason();
     /**
      * <code>optional string reason = 2;</code>
+     *
+     * <pre>
+     * Human readable rejection reason.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getReasonBytes();
   }
   /**
    * Protobuf type {@code MumbleProto.Reject}
+   *
+   * <pre>
+   * Sent by the server when it rejects the user connection.
+   * </pre>
    */
   public static final class Reject extends
-      com.google.protobuf.GeneratedMessage
-      implements RejectOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.Reject)
+      RejectOrBuilder {
     // Use Reject.newBuilder() to construct.
     private Reject(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -3626,8 +4429,9 @@ public final class Mumble {
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              reason_ = input.readBytes();
+              reason_ = bs;
               break;
             }
           }
@@ -3676,34 +4480,68 @@ public final class Mumble {
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
        * <code>None = 0;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       None(0, 0),
       /**
        * <code>WrongVersion = 1;</code>
+       *
+       * <pre>
+       * The client attempted to connect with an incompatible version.
+       * </pre>
        */
       WrongVersion(1, 1),
       /**
        * <code>InvalidUsername = 2;</code>
+       *
+       * <pre>
+       * The user name supplied by the client was invalid.
+       * </pre>
        */
       InvalidUsername(2, 2),
       /**
        * <code>WrongUserPW = 3;</code>
+       *
+       * <pre>
+       * The client attempted to authenticate as a user with a password but it
+       * was wrong.
+       * </pre>
        */
       WrongUserPW(3, 3),
       /**
        * <code>WrongServerPW = 4;</code>
+       *
+       * <pre>
+       * The client attempted to connect to a passworded server but the password
+       * was wrong.
+       * </pre>
        */
       WrongServerPW(4, 4),
       /**
        * <code>UsernameInUse = 5;</code>
+       *
+       * <pre>
+       * Supplied username is already in use.
+       * </pre>
        */
       UsernameInUse(5, 5),
       /**
        * <code>ServerFull = 6;</code>
+       *
+       * <pre>
+       * Server is currently full and cannot accept more users.
+       * </pre>
        */
       ServerFull(6, 6),
       /**
        * <code>NoCertificate = 7;</code>
+       *
+       * <pre>
+       * The user did not provide a certificate but one is required.
+       * </pre>
        */
       NoCertificate(7, 7),
       /**
@@ -3714,34 +4552,68 @@ public final class Mumble {
 
       /**
        * <code>None = 0;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public static final int None_VALUE = 0;
       /**
        * <code>WrongVersion = 1;</code>
+       *
+       * <pre>
+       * The client attempted to connect with an incompatible version.
+       * </pre>
        */
       public static final int WrongVersion_VALUE = 1;
       /**
        * <code>InvalidUsername = 2;</code>
+       *
+       * <pre>
+       * The user name supplied by the client was invalid.
+       * </pre>
        */
       public static final int InvalidUsername_VALUE = 2;
       /**
        * <code>WrongUserPW = 3;</code>
+       *
+       * <pre>
+       * The client attempted to authenticate as a user with a password but it
+       * was wrong.
+       * </pre>
        */
       public static final int WrongUserPW_VALUE = 3;
       /**
        * <code>WrongServerPW = 4;</code>
+       *
+       * <pre>
+       * The client attempted to connect to a passworded server but the password
+       * was wrong.
+       * </pre>
        */
       public static final int WrongServerPW_VALUE = 4;
       /**
        * <code>UsernameInUse = 5;</code>
+       *
+       * <pre>
+       * Supplied username is already in use.
+       * </pre>
        */
       public static final int UsernameInUse_VALUE = 5;
       /**
        * <code>ServerFull = 6;</code>
+       *
+       * <pre>
+       * Server is currently full and cannot accept more users.
+       * </pre>
        */
       public static final int ServerFull_VALUE = 6;
       /**
        * <code>NoCertificate = 7;</code>
+       *
+       * <pre>
+       * The user did not provide a certificate but one is required.
+       * </pre>
        */
       public static final int NoCertificate_VALUE = 7;
       /**
@@ -3815,33 +4687,47 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional .MumbleProto.Reject.RejectType type = 1;
     public static final int TYPE_FIELD_NUMBER = 1;
     private MumbleProto.Mumble.Reject.RejectType type_;
     /**
      * <code>optional .MumbleProto.Reject.RejectType type = 1;</code>
+     *
+     * <pre>
+     * Rejection type.
+     * </pre>
      */
     public boolean hasType() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional .MumbleProto.Reject.RejectType type = 1;</code>
+     *
+     * <pre>
+     * Rejection type.
+     * </pre>
      */
     public MumbleProto.Mumble.Reject.RejectType getType() {
       return type_;
     }
 
-    // optional string reason = 2;
     public static final int REASON_FIELD_NUMBER = 2;
     private java.lang.Object reason_;
     /**
      * <code>optional string reason = 2;</code>
+     *
+     * <pre>
+     * Human readable rejection reason.
+     * </pre>
      */
     public boolean hasReason() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional string reason = 2;</code>
+     *
+     * <pre>
+     * Human readable rejection reason.
+     * </pre>
      */
     public java.lang.String getReason() {
       java.lang.Object ref = reason_;
@@ -3859,6 +4745,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string reason = 2;</code>
+     *
+     * <pre>
+     * Human readable rejection reason.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getReasonBytes() {
@@ -3881,7 +4771,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -3993,10 +4884,15 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.Reject}
+     *
+     * <pre>
+     * Sent by the server when it rejects the user connection.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.RejectOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.Reject)
+        MumbleProto.Mumble.RejectOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_Reject_descriptor;
@@ -4120,22 +5016,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional .MumbleProto.Reject.RejectType type = 1;
       private MumbleProto.Mumble.Reject.RejectType type_ = MumbleProto.Mumble.Reject.RejectType.None;
       /**
        * <code>optional .MumbleProto.Reject.RejectType type = 1;</code>
+       *
+       * <pre>
+       * Rejection type.
+       * </pre>
        */
       public boolean hasType() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional .MumbleProto.Reject.RejectType type = 1;</code>
+       *
+       * <pre>
+       * Rejection type.
+       * </pre>
        */
       public MumbleProto.Mumble.Reject.RejectType getType() {
         return type_;
       }
       /**
        * <code>optional .MumbleProto.Reject.RejectType type = 1;</code>
+       *
+       * <pre>
+       * Rejection type.
+       * </pre>
        */
       public Builder setType(MumbleProto.Mumble.Reject.RejectType value) {
         if (value == null) {
@@ -4148,6 +5055,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.Reject.RejectType type = 1;</code>
+       *
+       * <pre>
+       * Rejection type.
+       * </pre>
        */
       public Builder clearType() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -4156,23 +5067,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string reason = 2;
       private java.lang.Object reason_ = "";
       /**
        * <code>optional string reason = 2;</code>
+       *
+       * <pre>
+       * Human readable rejection reason.
+       * </pre>
        */
       public boolean hasReason() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional string reason = 2;</code>
+       *
+       * <pre>
+       * Human readable rejection reason.
+       * </pre>
        */
       public java.lang.String getReason() {
         java.lang.Object ref = reason_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          reason_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            reason_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -4180,6 +5101,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string reason = 2;</code>
+       *
+       * <pre>
+       * Human readable rejection reason.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getReasonBytes() {
@@ -4196,6 +5121,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string reason = 2;</code>
+       *
+       * <pre>
+       * Human readable rejection reason.
+       * </pre>
        */
       public Builder setReason(
           java.lang.String value) {
@@ -4209,6 +5138,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string reason = 2;</code>
+       *
+       * <pre>
+       * Human readable rejection reason.
+       * </pre>
        */
       public Builder clearReason() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -4218,6 +5151,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string reason = 2;</code>
+       *
+       * <pre>
+       * Human readable rejection reason.
+       * </pre>
        */
       public Builder setReasonBytes(
           com.google.protobuf.ByteString value) {
@@ -4241,855 +5178,99 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.Reject)
   }
 
-  public interface ServerConfigOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface ServerSyncOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.ServerSync)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional uint32 max_bandwidth = 1;
-    /**
-     * <code>optional uint32 max_bandwidth = 1;</code>
-     */
-    boolean hasMaxBandwidth();
-    /**
-     * <code>optional uint32 max_bandwidth = 1;</code>
-     */
-    int getMaxBandwidth();
-
-    // optional string welcome_text = 2;
-    /**
-     * <code>optional string welcome_text = 2;</code>
-     */
-    boolean hasWelcomeText();
-    /**
-     * <code>optional string welcome_text = 2;</code>
-     */
-    java.lang.String getWelcomeText();
-    /**
-     * <code>optional string welcome_text = 2;</code>
-     */
-    com.google.protobuf.ByteString
-        getWelcomeTextBytes();
-
-    // optional bool allow_html = 3;
-    /**
-     * <code>optional bool allow_html = 3;</code>
-     */
-    boolean hasAllowHtml();
-    /**
-     * <code>optional bool allow_html = 3;</code>
-     */
-    boolean getAllowHtml();
-
-    // optional uint32 message_length = 4;
-    /**
-     * <code>optional uint32 message_length = 4;</code>
-     */
-    boolean hasMessageLength();
-    /**
-     * <code>optional uint32 message_length = 4;</code>
-     */
-    int getMessageLength();
-
-    // optional uint32 image_message_length = 5;
-    /**
-     * <code>optional uint32 image_message_length = 5;</code>
-     */
-    boolean hasImageMessageLength();
-    /**
-     * <code>optional uint32 image_message_length = 5;</code>
-     */
-    int getImageMessageLength();
-  }
-  /**
-   * Protobuf type {@code MumbleProto.ServerConfig}
-   */
-  public static final class ServerConfig extends
-      com.google.protobuf.GeneratedMessage
-      implements ServerConfigOrBuilder {
-    // Use ServerConfig.newBuilder() to construct.
-    private ServerConfig(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private ServerConfig(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final ServerConfig defaultInstance;
-    public static ServerConfig getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public ServerConfig getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ServerConfig(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              maxBandwidth_ = input.readUInt32();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              welcomeText_ = input.readBytes();
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              allowHtml_ = input.readBool();
-              break;
-            }
-            case 32: {
-              bitField0_ |= 0x00000008;
-              messageLength_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-              bitField0_ |= 0x00000010;
-              imageMessageLength_ = input.readUInt32();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return MumbleProto.Mumble.internal_static_MumbleProto_ServerConfig_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return MumbleProto.Mumble.internal_static_MumbleProto_ServerConfig_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              MumbleProto.Mumble.ServerConfig.class, MumbleProto.Mumble.ServerConfig.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<ServerConfig> PARSER =
-        new com.google.protobuf.AbstractParser<ServerConfig>() {
-      public ServerConfig parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ServerConfig(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ServerConfig> getParserForType() {
-      return PARSER;
-    }
-
-    private int bitField0_;
-    // optional uint32 max_bandwidth = 1;
-    public static final int MAX_BANDWIDTH_FIELD_NUMBER = 1;
-    private int maxBandwidth_;
-    /**
-     * <code>optional uint32 max_bandwidth = 1;</code>
-     */
-    public boolean hasMaxBandwidth() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>optional uint32 max_bandwidth = 1;</code>
-     */
-    public int getMaxBandwidth() {
-      return maxBandwidth_;
-    }
-
-    // optional string welcome_text = 2;
-    public static final int WELCOME_TEXT_FIELD_NUMBER = 2;
-    private java.lang.Object welcomeText_;
-    /**
-     * <code>optional string welcome_text = 2;</code>
-     */
-    public boolean hasWelcomeText() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>optional string welcome_text = 2;</code>
-     */
-    public java.lang.String getWelcomeText() {
-      java.lang.Object ref = welcomeText_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          welcomeText_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>optional string welcome_text = 2;</code>
-     */
-    public com.google.protobuf.ByteString
-        getWelcomeTextBytes() {
-      java.lang.Object ref = welcomeText_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        welcomeText_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // optional bool allow_html = 3;
-    public static final int ALLOW_HTML_FIELD_NUMBER = 3;
-    private boolean allowHtml_;
-    /**
-     * <code>optional bool allow_html = 3;</code>
-     */
-    public boolean hasAllowHtml() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>optional bool allow_html = 3;</code>
-     */
-    public boolean getAllowHtml() {
-      return allowHtml_;
-    }
-
-    // optional uint32 message_length = 4;
-    public static final int MESSAGE_LENGTH_FIELD_NUMBER = 4;
-    private int messageLength_;
-    /**
-     * <code>optional uint32 message_length = 4;</code>
-     */
-    public boolean hasMessageLength() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>optional uint32 message_length = 4;</code>
-     */
-    public int getMessageLength() {
-      return messageLength_;
-    }
-
-    // optional uint32 image_message_length = 5;
-    public static final int IMAGE_MESSAGE_LENGTH_FIELD_NUMBER = 5;
-    private int imageMessageLength_;
-    /**
-     * <code>optional uint32 image_message_length = 5;</code>
-     */
-    public boolean hasImageMessageLength() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    /**
-     * <code>optional uint32 image_message_length = 5;</code>
-     */
-    public int getImageMessageLength() {
-      return imageMessageLength_;
-    }
-
-    private void initFields() {
-      maxBandwidth_ = 0;
-      welcomeText_ = "";
-      allowHtml_ = false;
-      messageLength_ = 0;
-      imageMessageLength_ = 0;
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeUInt32(1, maxBandwidth_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getWelcomeTextBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBool(3, allowHtml_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeUInt32(4, messageLength_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeUInt32(5, imageMessageLength_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, maxBandwidth_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getWelcomeTextBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, allowHtml_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, messageLength_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, imageMessageLength_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static MumbleProto.Mumble.ServerConfig parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static MumbleProto.Mumble.ServerConfig parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static MumbleProto.Mumble.ServerConfig parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static MumbleProto.Mumble.ServerConfig parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static MumbleProto.Mumble.ServerConfig parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static MumbleProto.Mumble.ServerConfig parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static MumbleProto.Mumble.ServerConfig parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static MumbleProto.Mumble.ServerConfig parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static MumbleProto.Mumble.ServerConfig parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static MumbleProto.Mumble.ServerConfig parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(MumbleProto.Mumble.ServerConfig prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code MumbleProto.ServerConfig}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.ServerConfigOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return MumbleProto.Mumble.internal_static_MumbleProto_ServerConfig_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return MumbleProto.Mumble.internal_static_MumbleProto_ServerConfig_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                MumbleProto.Mumble.ServerConfig.class, MumbleProto.Mumble.ServerConfig.Builder.class);
-      }
-
-      // Construct using MumbleProto.Mumble.ServerConfig.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-
-      public Builder clear() {
-        super.clear();
-        maxBandwidth_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        welcomeText_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
-        allowHtml_ = false;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        messageLength_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000008);
-        imageMessageLength_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        return this;
-      }
-
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return MumbleProto.Mumble.internal_static_MumbleProto_ServerConfig_descriptor;
-      }
-
-      public MumbleProto.Mumble.ServerConfig getDefaultInstanceForType() {
-        return MumbleProto.Mumble.ServerConfig.getDefaultInstance();
-      }
-
-      public MumbleProto.Mumble.ServerConfig build() {
-        MumbleProto.Mumble.ServerConfig result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public MumbleProto.Mumble.ServerConfig buildPartial() {
-        MumbleProto.Mumble.ServerConfig result = new MumbleProto.Mumble.ServerConfig(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.maxBandwidth_ = maxBandwidth_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.welcomeText_ = welcomeText_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.allowHtml_ = allowHtml_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.messageLength_ = messageLength_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        result.imageMessageLength_ = imageMessageLength_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof MumbleProto.Mumble.ServerConfig) {
-          return mergeFrom((MumbleProto.Mumble.ServerConfig)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(MumbleProto.Mumble.ServerConfig other) {
-        if (other == MumbleProto.Mumble.ServerConfig.getDefaultInstance()) return this;
-        if (other.hasMaxBandwidth()) {
-          setMaxBandwidth(other.getMaxBandwidth());
-        }
-        if (other.hasWelcomeText()) {
-          bitField0_ |= 0x00000002;
-          welcomeText_ = other.welcomeText_;
-          onChanged();
-        }
-        if (other.hasAllowHtml()) {
-          setAllowHtml(other.getAllowHtml());
-        }
-        if (other.hasMessageLength()) {
-          setMessageLength(other.getMessageLength());
-        }
-        if (other.hasImageMessageLength()) {
-          setImageMessageLength(other.getImageMessageLength());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        MumbleProto.Mumble.ServerConfig parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (MumbleProto.Mumble.ServerConfig) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // optional uint32 max_bandwidth = 1;
-      private int maxBandwidth_ ;
-      /**
-       * <code>optional uint32 max_bandwidth = 1;</code>
-       */
-      public boolean hasMaxBandwidth() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional uint32 max_bandwidth = 1;</code>
-       */
-      public int getMaxBandwidth() {
-        return maxBandwidth_;
-      }
-      /**
-       * <code>optional uint32 max_bandwidth = 1;</code>
-       */
-      public Builder setMaxBandwidth(int value) {
-        bitField0_ |= 0x00000001;
-        maxBandwidth_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 max_bandwidth = 1;</code>
-       */
-      public Builder clearMaxBandwidth() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        maxBandwidth_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional string welcome_text = 2;
-      private java.lang.Object welcomeText_ = "";
-      /**
-       * <code>optional string welcome_text = 2;</code>
-       */
-      public boolean hasWelcomeText() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional string welcome_text = 2;</code>
-       */
-      public java.lang.String getWelcomeText() {
-        java.lang.Object ref = welcomeText_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          welcomeText_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>optional string welcome_text = 2;</code>
-       */
-      public com.google.protobuf.ByteString
-          getWelcomeTextBytes() {
-        java.lang.Object ref = welcomeText_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          welcomeText_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>optional string welcome_text = 2;</code>
-       */
-      public Builder setWelcomeText(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        welcomeText_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string welcome_text = 2;</code>
-       */
-      public Builder clearWelcomeText() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        welcomeText_ = getDefaultInstance().getWelcomeText();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string welcome_text = 2;</code>
-       */
-      public Builder setWelcomeTextBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        welcomeText_ = value;
-        onChanged();
-        return this;
-      }
-
-      // optional bool allow_html = 3;
-      private boolean allowHtml_ ;
-      /**
-       * <code>optional bool allow_html = 3;</code>
-       */
-      public boolean hasAllowHtml() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>optional bool allow_html = 3;</code>
-       */
-      public boolean getAllowHtml() {
-        return allowHtml_;
-      }
-      /**
-       * <code>optional bool allow_html = 3;</code>
-       */
-      public Builder setAllowHtml(boolean value) {
-        bitField0_ |= 0x00000004;
-        allowHtml_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional bool allow_html = 3;</code>
-       */
-      public Builder clearAllowHtml() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        allowHtml_ = false;
-        onChanged();
-        return this;
-      }
-
-      // optional uint32 message_length = 4;
-      private int messageLength_ ;
-      /**
-       * <code>optional uint32 message_length = 4;</code>
-       */
-      public boolean hasMessageLength() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>optional uint32 message_length = 4;</code>
-       */
-      public int getMessageLength() {
-        return messageLength_;
-      }
-      /**
-       * <code>optional uint32 message_length = 4;</code>
-       */
-      public Builder setMessageLength(int value) {
-        bitField0_ |= 0x00000008;
-        messageLength_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 message_length = 4;</code>
-       */
-      public Builder clearMessageLength() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        messageLength_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional uint32 image_message_length = 5;
-      private int imageMessageLength_ ;
-      /**
-       * <code>optional uint32 image_message_length = 5;</code>
-       */
-      public boolean hasImageMessageLength() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      /**
-       * <code>optional uint32 image_message_length = 5;</code>
-       */
-      public int getImageMessageLength() {
-        return imageMessageLength_;
-      }
-      /**
-       * <code>optional uint32 image_message_length = 5;</code>
-       */
-      public Builder setImageMessageLength(int value) {
-        bitField0_ |= 0x00000010;
-        imageMessageLength_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 image_message_length = 5;</code>
-       */
-      public Builder clearImageMessageLength() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        imageMessageLength_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:MumbleProto.ServerConfig)
-    }
-
-    static {
-      defaultInstance = new ServerConfig(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:MumbleProto.ServerConfig)
-  }
-
-  public interface ServerSyncOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // optional uint32 session = 1;
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * The session of the current user.
+     * </pre>
      */
     boolean hasSession();
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * The session of the current user.
+     * </pre>
      */
     int getSession();
 
-    // optional uint32 max_bandwidth = 2;
     /**
      * <code>optional uint32 max_bandwidth = 2;</code>
+     *
+     * <pre>
+     * Maximum bandwidth that the user should use.
+     * </pre>
      */
     boolean hasMaxBandwidth();
     /**
      * <code>optional uint32 max_bandwidth = 2;</code>
+     *
+     * <pre>
+     * Maximum bandwidth that the user should use.
+     * </pre>
      */
     int getMaxBandwidth();
 
-    // optional string welcome_text = 3;
     /**
      * <code>optional string welcome_text = 3;</code>
+     *
+     * <pre>
+     * Server welcome text.
+     * </pre>
      */
     boolean hasWelcomeText();
     /**
      * <code>optional string welcome_text = 3;</code>
+     *
+     * <pre>
+     * Server welcome text.
+     * </pre>
      */
     java.lang.String getWelcomeText();
     /**
      * <code>optional string welcome_text = 3;</code>
+     *
+     * <pre>
+     * Server welcome text.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getWelcomeTextBytes();
 
-    // optional uint64 permissions = 4;
     /**
      * <code>optional uint64 permissions = 4;</code>
+     *
+     * <pre>
+     * Current user permissions TODO: Confirm??
+     * </pre>
      */
     boolean hasPermissions();
     /**
      * <code>optional uint64 permissions = 4;</code>
+     *
+     * <pre>
+     * Current user permissions TODO: Confirm??
+     * </pre>
      */
     long getPermissions();
   }
   /**
    * Protobuf type {@code MumbleProto.ServerSync}
+   *
+   * <pre>
+   * ServerSync message is sent by the server when it has authenticated the user
+   * and finished synchronizing the server state.
+   * </pre>
    */
   public static final class ServerSync extends
-      com.google.protobuf.GeneratedMessage
-      implements ServerSyncOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.ServerSync)
+      ServerSyncOrBuilder {
     // Use ServerSync.newBuilder() to construct.
     private ServerSync(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -5146,8 +5327,9 @@ public final class Mumble {
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              welcomeText_ = input.readBytes();
+              welcomeText_ = bs;
               break;
             }
             case 32: {
@@ -5195,49 +5377,70 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional uint32 session = 1;
     public static final int SESSION_FIELD_NUMBER = 1;
     private int session_;
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * The session of the current user.
+     * </pre>
      */
     public boolean hasSession() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * The session of the current user.
+     * </pre>
      */
     public int getSession() {
       return session_;
     }
 
-    // optional uint32 max_bandwidth = 2;
     public static final int MAX_BANDWIDTH_FIELD_NUMBER = 2;
     private int maxBandwidth_;
     /**
      * <code>optional uint32 max_bandwidth = 2;</code>
+     *
+     * <pre>
+     * Maximum bandwidth that the user should use.
+     * </pre>
      */
     public boolean hasMaxBandwidth() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional uint32 max_bandwidth = 2;</code>
+     *
+     * <pre>
+     * Maximum bandwidth that the user should use.
+     * </pre>
      */
     public int getMaxBandwidth() {
       return maxBandwidth_;
     }
 
-    // optional string welcome_text = 3;
     public static final int WELCOME_TEXT_FIELD_NUMBER = 3;
     private java.lang.Object welcomeText_;
     /**
      * <code>optional string welcome_text = 3;</code>
+     *
+     * <pre>
+     * Server welcome text.
+     * </pre>
      */
     public boolean hasWelcomeText() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>optional string welcome_text = 3;</code>
+     *
+     * <pre>
+     * Server welcome text.
+     * </pre>
      */
     public java.lang.String getWelcomeText() {
       java.lang.Object ref = welcomeText_;
@@ -5255,6 +5458,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string welcome_text = 3;</code>
+     *
+     * <pre>
+     * Server welcome text.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getWelcomeTextBytes() {
@@ -5270,17 +5477,24 @@ public final class Mumble {
       }
     }
 
-    // optional uint64 permissions = 4;
     public static final int PERMISSIONS_FIELD_NUMBER = 4;
     private long permissions_;
     /**
      * <code>optional uint64 permissions = 4;</code>
+     *
+     * <pre>
+     * Current user permissions TODO: Confirm??
+     * </pre>
      */
     public boolean hasPermissions() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
      * <code>optional uint64 permissions = 4;</code>
+     *
+     * <pre>
+     * Current user permissions TODO: Confirm??
+     * </pre>
      */
     public long getPermissions() {
       return permissions_;
@@ -5295,7 +5509,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -5421,10 +5636,16 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.ServerSync}
+     *
+     * <pre>
+     * ServerSync message is sent by the server when it has authenticated the user
+     * and finished synchronizing the server state.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.ServerSyncOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.ServerSync)
+        MumbleProto.Mumble.ServerSyncOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_ServerSync_descriptor;
@@ -5566,22 +5787,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional uint32 session = 1;
       private int session_ ;
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * The session of the current user.
+       * </pre>
        */
       public boolean hasSession() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * The session of the current user.
+       * </pre>
        */
       public int getSession() {
         return session_;
       }
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * The session of the current user.
+       * </pre>
        */
       public Builder setSession(int value) {
         bitField0_ |= 0x00000001;
@@ -5591,6 +5823,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * The session of the current user.
+       * </pre>
        */
       public Builder clearSession() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -5599,22 +5835,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 max_bandwidth = 2;
       private int maxBandwidth_ ;
       /**
        * <code>optional uint32 max_bandwidth = 2;</code>
+       *
+       * <pre>
+       * Maximum bandwidth that the user should use.
+       * </pre>
        */
       public boolean hasMaxBandwidth() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional uint32 max_bandwidth = 2;</code>
+       *
+       * <pre>
+       * Maximum bandwidth that the user should use.
+       * </pre>
        */
       public int getMaxBandwidth() {
         return maxBandwidth_;
       }
       /**
        * <code>optional uint32 max_bandwidth = 2;</code>
+       *
+       * <pre>
+       * Maximum bandwidth that the user should use.
+       * </pre>
        */
       public Builder setMaxBandwidth(int value) {
         bitField0_ |= 0x00000002;
@@ -5624,6 +5871,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 max_bandwidth = 2;</code>
+       *
+       * <pre>
+       * Maximum bandwidth that the user should use.
+       * </pre>
        */
       public Builder clearMaxBandwidth() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -5632,23 +5883,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string welcome_text = 3;
       private java.lang.Object welcomeText_ = "";
       /**
        * <code>optional string welcome_text = 3;</code>
+       *
+       * <pre>
+       * Server welcome text.
+       * </pre>
        */
       public boolean hasWelcomeText() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional string welcome_text = 3;</code>
+       *
+       * <pre>
+       * Server welcome text.
+       * </pre>
        */
       public java.lang.String getWelcomeText() {
         java.lang.Object ref = welcomeText_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          welcomeText_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            welcomeText_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -5656,6 +5917,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string welcome_text = 3;</code>
+       *
+       * <pre>
+       * Server welcome text.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getWelcomeTextBytes() {
@@ -5672,6 +5937,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string welcome_text = 3;</code>
+       *
+       * <pre>
+       * Server welcome text.
+       * </pre>
        */
       public Builder setWelcomeText(
           java.lang.String value) {
@@ -5685,6 +5954,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string welcome_text = 3;</code>
+       *
+       * <pre>
+       * Server welcome text.
+       * </pre>
        */
       public Builder clearWelcomeText() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -5694,6 +5967,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string welcome_text = 3;</code>
+       *
+       * <pre>
+       * Server welcome text.
+       * </pre>
        */
       public Builder setWelcomeTextBytes(
           com.google.protobuf.ByteString value) {
@@ -5706,22 +5983,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint64 permissions = 4;
       private long permissions_ ;
       /**
        * <code>optional uint64 permissions = 4;</code>
+       *
+       * <pre>
+       * Current user permissions TODO: Confirm??
+       * </pre>
        */
       public boolean hasPermissions() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <code>optional uint64 permissions = 4;</code>
+       *
+       * <pre>
+       * Current user permissions TODO: Confirm??
+       * </pre>
        */
       public long getPermissions() {
         return permissions_;
       }
       /**
        * <code>optional uint64 permissions = 4;</code>
+       *
+       * <pre>
+       * Current user permissions TODO: Confirm??
+       * </pre>
        */
       public Builder setPermissions(long value) {
         bitField0_ |= 0x00000008;
@@ -5731,6 +6019,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint64 permissions = 4;</code>
+       *
+       * <pre>
+       * Current user permissions TODO: Confirm??
+       * </pre>
        */
       public Builder clearPermissions() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -5750,10 +6042,10 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.ServerSync)
   }
 
-  public interface ChannelRemoveOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface ChannelRemoveOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.ChannelRemove)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required uint32 channel_id = 1;
     /**
      * <code>required uint32 channel_id = 1;</code>
      */
@@ -5765,10 +6057,16 @@ public final class Mumble {
   }
   /**
    * Protobuf type {@code MumbleProto.ChannelRemove}
+   *
+   * <pre>
+   * Sent by the client when it wants a channel removed. Sent by the server when
+   * a channel has been removed and clients should be notified.
+   * </pre>
    */
   public static final class ChannelRemove extends
-      com.google.protobuf.GeneratedMessage
-      implements ChannelRemoveOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.ChannelRemove)
+      ChannelRemoveOrBuilder {
     // Use ChannelRemove.newBuilder() to construct.
     private ChannelRemove(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -5859,7 +6157,6 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // required uint32 channel_id = 1;
     public static final int CHANNEL_ID_FIELD_NUMBER = 1;
     private int channelId_;
     /**
@@ -5881,7 +6178,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasChannelId()) {
         memoizedIsInitialized = 0;
@@ -5990,10 +6288,16 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.ChannelRemove}
+     *
+     * <pre>
+     * Sent by the client when it wants a channel removed. Sent by the server when
+     * a channel has been removed and clients should be notified.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.ChannelRemoveOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.ChannelRemove)
+        MumbleProto.Mumble.ChannelRemoveOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_ChannelRemove_descriptor;
@@ -6110,7 +6414,6 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // required uint32 channel_id = 1;
       private int channelId_ ;
       /**
        * <code>required uint32 channel_id = 1;</code>
@@ -6154,137 +6457,241 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.ChannelRemove)
   }
 
-  public interface ChannelStateOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface ChannelStateOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.ChannelState)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional uint32 channel_id = 1;
     /**
      * <code>optional uint32 channel_id = 1;</code>
+     *
+     * <pre>
+     * Unique ID for the channel within the server.
+     * </pre>
      */
     boolean hasChannelId();
     /**
      * <code>optional uint32 channel_id = 1;</code>
+     *
+     * <pre>
+     * Unique ID for the channel within the server.
+     * </pre>
      */
     int getChannelId();
 
-    // optional uint32 parent = 2;
     /**
      * <code>optional uint32 parent = 2;</code>
+     *
+     * <pre>
+     * channel_id of the parent channel.
+     * </pre>
      */
     boolean hasParent();
     /**
      * <code>optional uint32 parent = 2;</code>
+     *
+     * <pre>
+     * channel_id of the parent channel.
+     * </pre>
      */
     int getParent();
 
-    // optional string name = 3;
     /**
      * <code>optional string name = 3;</code>
+     *
+     * <pre>
+     * UTF-8 encoded channel name.
+     * </pre>
      */
     boolean hasName();
     /**
      * <code>optional string name = 3;</code>
+     *
+     * <pre>
+     * UTF-8 encoded channel name.
+     * </pre>
      */
     java.lang.String getName();
     /**
      * <code>optional string name = 3;</code>
+     *
+     * <pre>
+     * UTF-8 encoded channel name.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
-    // repeated uint32 links = 4;
     /**
      * <code>repeated uint32 links = 4;</code>
+     *
+     * <pre>
+     * A collection of channel id values of the linked channels. Absent during
+     * the first channel listing.
+     * </pre>
      */
     java.util.List<java.lang.Integer> getLinksList();
     /**
      * <code>repeated uint32 links = 4;</code>
+     *
+     * <pre>
+     * A collection of channel id values of the linked channels. Absent during
+     * the first channel listing.
+     * </pre>
      */
     int getLinksCount();
     /**
      * <code>repeated uint32 links = 4;</code>
+     *
+     * <pre>
+     * A collection of channel id values of the linked channels. Absent during
+     * the first channel listing.
+     * </pre>
      */
     int getLinks(int index);
 
-    // optional string description = 5;
     /**
      * <code>optional string description = 5;</code>
+     *
+     * <pre>
+     * UTF-8 encoded channel description. Only if the description is less than
+     * 128 bytes
+     * </pre>
      */
     boolean hasDescription();
     /**
      * <code>optional string description = 5;</code>
+     *
+     * <pre>
+     * UTF-8 encoded channel description. Only if the description is less than
+     * 128 bytes
+     * </pre>
      */
     java.lang.String getDescription();
     /**
      * <code>optional string description = 5;</code>
+     *
+     * <pre>
+     * UTF-8 encoded channel description. Only if the description is less than
+     * 128 bytes
+     * </pre>
      */
     com.google.protobuf.ByteString
         getDescriptionBytes();
 
-    // repeated uint32 links_add = 6;
     /**
      * <code>repeated uint32 links_add = 6;</code>
+     *
+     * <pre>
+     * A collection of channel_id values that should be added to links.
+     * </pre>
      */
     java.util.List<java.lang.Integer> getLinksAddList();
     /**
      * <code>repeated uint32 links_add = 6;</code>
+     *
+     * <pre>
+     * A collection of channel_id values that should be added to links.
+     * </pre>
      */
     int getLinksAddCount();
     /**
      * <code>repeated uint32 links_add = 6;</code>
+     *
+     * <pre>
+     * A collection of channel_id values that should be added to links.
+     * </pre>
      */
     int getLinksAdd(int index);
 
-    // repeated uint32 links_remove = 7;
     /**
      * <code>repeated uint32 links_remove = 7;</code>
+     *
+     * <pre>
+     * A collection of channel_id values that should be removed from links.
+     * </pre>
      */
     java.util.List<java.lang.Integer> getLinksRemoveList();
     /**
      * <code>repeated uint32 links_remove = 7;</code>
+     *
+     * <pre>
+     * A collection of channel_id values that should be removed from links.
+     * </pre>
      */
     int getLinksRemoveCount();
     /**
      * <code>repeated uint32 links_remove = 7;</code>
+     *
+     * <pre>
+     * A collection of channel_id values that should be removed from links.
+     * </pre>
      */
     int getLinksRemove(int index);
 
-    // optional bool temporary = 8 [default = false];
     /**
      * <code>optional bool temporary = 8 [default = false];</code>
+     *
+     * <pre>
+     * True if the channel is temporary.
+     * </pre>
      */
     boolean hasTemporary();
     /**
      * <code>optional bool temporary = 8 [default = false];</code>
+     *
+     * <pre>
+     * True if the channel is temporary.
+     * </pre>
      */
     boolean getTemporary();
 
-    // optional int32 position = 9 [default = 0];
     /**
      * <code>optional int32 position = 9 [default = 0];</code>
+     *
+     * <pre>
+     * Position weight to tweak the channel position in the channel list.
+     * </pre>
      */
     boolean hasPosition();
     /**
      * <code>optional int32 position = 9 [default = 0];</code>
+     *
+     * <pre>
+     * Position weight to tweak the channel position in the channel list.
+     * </pre>
      */
     int getPosition();
 
-    // optional bytes description_hash = 10;
     /**
      * <code>optional bytes description_hash = 10;</code>
+     *
+     * <pre>
+     * SHA1 hash of the description if the description is 128 bytes or more.
+     * </pre>
      */
     boolean hasDescriptionHash();
     /**
      * <code>optional bytes description_hash = 10;</code>
+     *
+     * <pre>
+     * SHA1 hash of the description if the description is 128 bytes or more.
+     * </pre>
      */
     com.google.protobuf.ByteString getDescriptionHash();
   }
   /**
    * Protobuf type {@code MumbleProto.ChannelState}
+   *
+   * <pre>
+   * Used to communicate channel properties between the client and the server.
+   * Sent by the server during the login process or when channel properties are
+   * updated. Client may use this message to update said channel properties.
+   * </pre>
    */
   public static final class ChannelState extends
-      com.google.protobuf.GeneratedMessage
-      implements ChannelStateOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.ChannelState)
+      ChannelStateOrBuilder {
     // Use ChannelState.newBuilder() to construct.
     private ChannelState(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -6341,8 +6748,9 @@ public final class Mumble {
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
             case 32: {
@@ -6367,8 +6775,9 @@ public final class Mumble {
               break;
             }
             case 42: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000008;
-              description_ = input.readBytes();
+              description_ = bs;
               break;
             }
             case 48: {
@@ -6477,49 +6886,70 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional uint32 channel_id = 1;
     public static final int CHANNEL_ID_FIELD_NUMBER = 1;
     private int channelId_;
     /**
      * <code>optional uint32 channel_id = 1;</code>
+     *
+     * <pre>
+     * Unique ID for the channel within the server.
+     * </pre>
      */
     public boolean hasChannelId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional uint32 channel_id = 1;</code>
+     *
+     * <pre>
+     * Unique ID for the channel within the server.
+     * </pre>
      */
     public int getChannelId() {
       return channelId_;
     }
 
-    // optional uint32 parent = 2;
     public static final int PARENT_FIELD_NUMBER = 2;
     private int parent_;
     /**
      * <code>optional uint32 parent = 2;</code>
+     *
+     * <pre>
+     * channel_id of the parent channel.
+     * </pre>
      */
     public boolean hasParent() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional uint32 parent = 2;</code>
+     *
+     * <pre>
+     * channel_id of the parent channel.
+     * </pre>
      */
     public int getParent() {
       return parent_;
     }
 
-    // optional string name = 3;
     public static final int NAME_FIELD_NUMBER = 3;
     private java.lang.Object name_;
     /**
      * <code>optional string name = 3;</code>
+     *
+     * <pre>
+     * UTF-8 encoded channel name.
+     * </pre>
      */
     public boolean hasName() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>optional string name = 3;</code>
+     *
+     * <pre>
+     * UTF-8 encoded channel name.
+     * </pre>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -6537,6 +6967,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string name = 3;</code>
+     *
+     * <pre>
+     * UTF-8 encoded channel name.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -6552,11 +6986,15 @@ public final class Mumble {
       }
     }
 
-    // repeated uint32 links = 4;
     public static final int LINKS_FIELD_NUMBER = 4;
     private java.util.List<java.lang.Integer> links_;
     /**
      * <code>repeated uint32 links = 4;</code>
+     *
+     * <pre>
+     * A collection of channel id values of the linked channels. Absent during
+     * the first channel listing.
+     * </pre>
      */
     public java.util.List<java.lang.Integer>
         getLinksList() {
@@ -6564,28 +7002,47 @@ public final class Mumble {
     }
     /**
      * <code>repeated uint32 links = 4;</code>
+     *
+     * <pre>
+     * A collection of channel id values of the linked channels. Absent during
+     * the first channel listing.
+     * </pre>
      */
     public int getLinksCount() {
       return links_.size();
     }
     /**
      * <code>repeated uint32 links = 4;</code>
+     *
+     * <pre>
+     * A collection of channel id values of the linked channels. Absent during
+     * the first channel listing.
+     * </pre>
      */
     public int getLinks(int index) {
       return links_.get(index);
     }
 
-    // optional string description = 5;
     public static final int DESCRIPTION_FIELD_NUMBER = 5;
     private java.lang.Object description_;
     /**
      * <code>optional string description = 5;</code>
+     *
+     * <pre>
+     * UTF-8 encoded channel description. Only if the description is less than
+     * 128 bytes
+     * </pre>
      */
     public boolean hasDescription() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
      * <code>optional string description = 5;</code>
+     *
+     * <pre>
+     * UTF-8 encoded channel description. Only if the description is less than
+     * 128 bytes
+     * </pre>
      */
     public java.lang.String getDescription() {
       java.lang.Object ref = description_;
@@ -6603,6 +7060,11 @@ public final class Mumble {
     }
     /**
      * <code>optional string description = 5;</code>
+     *
+     * <pre>
+     * UTF-8 encoded channel description. Only if the description is less than
+     * 128 bytes
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getDescriptionBytes() {
@@ -6618,11 +7080,14 @@ public final class Mumble {
       }
     }
 
-    // repeated uint32 links_add = 6;
     public static final int LINKS_ADD_FIELD_NUMBER = 6;
     private java.util.List<java.lang.Integer> linksAdd_;
     /**
      * <code>repeated uint32 links_add = 6;</code>
+     *
+     * <pre>
+     * A collection of channel_id values that should be added to links.
+     * </pre>
      */
     public java.util.List<java.lang.Integer>
         getLinksAddList() {
@@ -6630,22 +7095,33 @@ public final class Mumble {
     }
     /**
      * <code>repeated uint32 links_add = 6;</code>
+     *
+     * <pre>
+     * A collection of channel_id values that should be added to links.
+     * </pre>
      */
     public int getLinksAddCount() {
       return linksAdd_.size();
     }
     /**
      * <code>repeated uint32 links_add = 6;</code>
+     *
+     * <pre>
+     * A collection of channel_id values that should be added to links.
+     * </pre>
      */
     public int getLinksAdd(int index) {
       return linksAdd_.get(index);
     }
 
-    // repeated uint32 links_remove = 7;
     public static final int LINKS_REMOVE_FIELD_NUMBER = 7;
     private java.util.List<java.lang.Integer> linksRemove_;
     /**
      * <code>repeated uint32 links_remove = 7;</code>
+     *
+     * <pre>
+     * A collection of channel_id values that should be removed from links.
+     * </pre>
      */
     public java.util.List<java.lang.Integer>
         getLinksRemoveList() {
@@ -6653,60 +7129,89 @@ public final class Mumble {
     }
     /**
      * <code>repeated uint32 links_remove = 7;</code>
+     *
+     * <pre>
+     * A collection of channel_id values that should be removed from links.
+     * </pre>
      */
     public int getLinksRemoveCount() {
       return linksRemove_.size();
     }
     /**
      * <code>repeated uint32 links_remove = 7;</code>
+     *
+     * <pre>
+     * A collection of channel_id values that should be removed from links.
+     * </pre>
      */
     public int getLinksRemove(int index) {
       return linksRemove_.get(index);
     }
 
-    // optional bool temporary = 8 [default = false];
     public static final int TEMPORARY_FIELD_NUMBER = 8;
     private boolean temporary_;
     /**
      * <code>optional bool temporary = 8 [default = false];</code>
+     *
+     * <pre>
+     * True if the channel is temporary.
+     * </pre>
      */
     public boolean hasTemporary() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
      * <code>optional bool temporary = 8 [default = false];</code>
+     *
+     * <pre>
+     * True if the channel is temporary.
+     * </pre>
      */
     public boolean getTemporary() {
       return temporary_;
     }
 
-    // optional int32 position = 9 [default = 0];
     public static final int POSITION_FIELD_NUMBER = 9;
     private int position_;
     /**
      * <code>optional int32 position = 9 [default = 0];</code>
+     *
+     * <pre>
+     * Position weight to tweak the channel position in the channel list.
+     * </pre>
      */
     public boolean hasPosition() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
      * <code>optional int32 position = 9 [default = 0];</code>
+     *
+     * <pre>
+     * Position weight to tweak the channel position in the channel list.
+     * </pre>
      */
     public int getPosition() {
       return position_;
     }
 
-    // optional bytes description_hash = 10;
     public static final int DESCRIPTION_HASH_FIELD_NUMBER = 10;
     private com.google.protobuf.ByteString descriptionHash_;
     /**
      * <code>optional bytes description_hash = 10;</code>
+     *
+     * <pre>
+     * SHA1 hash of the description if the description is 128 bytes or more.
+     * </pre>
      */
     public boolean hasDescriptionHash() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     /**
      * <code>optional bytes description_hash = 10;</code>
+     *
+     * <pre>
+     * SHA1 hash of the description if the description is 128 bytes or more.
+     * </pre>
      */
     public com.google.protobuf.ByteString getDescriptionHash() {
       return descriptionHash_;
@@ -6727,7 +7232,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -6910,10 +7416,17 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.ChannelState}
+     *
+     * <pre>
+     * Used to communicate channel properties between the client and the server.
+     * Sent by the server during the login process or when channel properties are
+     * updated. Client may use this message to update said channel properties.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.ChannelStateOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.ChannelState)
+        MumbleProto.Mumble.ChannelStateOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_ChannelState_descriptor;
@@ -7135,22 +7648,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional uint32 channel_id = 1;
       private int channelId_ ;
       /**
        * <code>optional uint32 channel_id = 1;</code>
+       *
+       * <pre>
+       * Unique ID for the channel within the server.
+       * </pre>
        */
       public boolean hasChannelId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional uint32 channel_id = 1;</code>
+       *
+       * <pre>
+       * Unique ID for the channel within the server.
+       * </pre>
        */
       public int getChannelId() {
         return channelId_;
       }
       /**
        * <code>optional uint32 channel_id = 1;</code>
+       *
+       * <pre>
+       * Unique ID for the channel within the server.
+       * </pre>
        */
       public Builder setChannelId(int value) {
         bitField0_ |= 0x00000001;
@@ -7160,6 +7684,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 channel_id = 1;</code>
+       *
+       * <pre>
+       * Unique ID for the channel within the server.
+       * </pre>
        */
       public Builder clearChannelId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -7168,22 +7696,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 parent = 2;
       private int parent_ ;
       /**
        * <code>optional uint32 parent = 2;</code>
+       *
+       * <pre>
+       * channel_id of the parent channel.
+       * </pre>
        */
       public boolean hasParent() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional uint32 parent = 2;</code>
+       *
+       * <pre>
+       * channel_id of the parent channel.
+       * </pre>
        */
       public int getParent() {
         return parent_;
       }
       /**
        * <code>optional uint32 parent = 2;</code>
+       *
+       * <pre>
+       * channel_id of the parent channel.
+       * </pre>
        */
       public Builder setParent(int value) {
         bitField0_ |= 0x00000002;
@@ -7193,6 +7732,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 parent = 2;</code>
+       *
+       * <pre>
+       * channel_id of the parent channel.
+       * </pre>
        */
       public Builder clearParent() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -7201,23 +7744,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string name = 3;
       private java.lang.Object name_ = "";
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * UTF-8 encoded channel name.
+       * </pre>
        */
       public boolean hasName() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * UTF-8 encoded channel name.
+       * </pre>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -7225,6 +7778,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * UTF-8 encoded channel name.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -7241,6 +7798,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * UTF-8 encoded channel name.
+       * </pre>
        */
       public Builder setName(
           java.lang.String value) {
@@ -7254,6 +7815,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * UTF-8 encoded channel name.
+       * </pre>
        */
       public Builder clearName() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -7263,6 +7828,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * UTF-8 encoded channel name.
+       * </pre>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -7275,7 +7844,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated uint32 links = 4;
       private java.util.List<java.lang.Integer> links_ = java.util.Collections.emptyList();
       private void ensureLinksIsMutable() {
         if (!((bitField0_ & 0x00000008) == 0x00000008)) {
@@ -7285,6 +7853,11 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 links = 4;</code>
+       *
+       * <pre>
+       * A collection of channel id values of the linked channels. Absent during
+       * the first channel listing.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getLinksList() {
@@ -7292,18 +7865,33 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 links = 4;</code>
+       *
+       * <pre>
+       * A collection of channel id values of the linked channels. Absent during
+       * the first channel listing.
+       * </pre>
        */
       public int getLinksCount() {
         return links_.size();
       }
       /**
        * <code>repeated uint32 links = 4;</code>
+       *
+       * <pre>
+       * A collection of channel id values of the linked channels. Absent during
+       * the first channel listing.
+       * </pre>
        */
       public int getLinks(int index) {
         return links_.get(index);
       }
       /**
        * <code>repeated uint32 links = 4;</code>
+       *
+       * <pre>
+       * A collection of channel id values of the linked channels. Absent during
+       * the first channel listing.
+       * </pre>
        */
       public Builder setLinks(
           int index, int value) {
@@ -7314,6 +7902,11 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 links = 4;</code>
+       *
+       * <pre>
+       * A collection of channel id values of the linked channels. Absent during
+       * the first channel listing.
+       * </pre>
        */
       public Builder addLinks(int value) {
         ensureLinksIsMutable();
@@ -7323,16 +7916,27 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 links = 4;</code>
+       *
+       * <pre>
+       * A collection of channel id values of the linked channels. Absent during
+       * the first channel listing.
+       * </pre>
        */
       public Builder addAllLinks(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureLinksIsMutable();
-        super.addAll(values, links_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, links_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated uint32 links = 4;</code>
+       *
+       * <pre>
+       * A collection of channel id values of the linked channels. Absent during
+       * the first channel listing.
+       * </pre>
        */
       public Builder clearLinks() {
         links_ = java.util.Collections.emptyList();
@@ -7341,23 +7945,35 @@ public final class Mumble {
         return this;
       }
 
-      // optional string description = 5;
       private java.lang.Object description_ = "";
       /**
        * <code>optional string description = 5;</code>
+       *
+       * <pre>
+       * UTF-8 encoded channel description. Only if the description is less than
+       * 128 bytes
+       * </pre>
        */
       public boolean hasDescription() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
        * <code>optional string description = 5;</code>
+       *
+       * <pre>
+       * UTF-8 encoded channel description. Only if the description is less than
+       * 128 bytes
+       * </pre>
        */
       public java.lang.String getDescription() {
         java.lang.Object ref = description_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          description_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            description_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -7365,6 +7981,11 @@ public final class Mumble {
       }
       /**
        * <code>optional string description = 5;</code>
+       *
+       * <pre>
+       * UTF-8 encoded channel description. Only if the description is less than
+       * 128 bytes
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getDescriptionBytes() {
@@ -7381,6 +8002,11 @@ public final class Mumble {
       }
       /**
        * <code>optional string description = 5;</code>
+       *
+       * <pre>
+       * UTF-8 encoded channel description. Only if the description is less than
+       * 128 bytes
+       * </pre>
        */
       public Builder setDescription(
           java.lang.String value) {
@@ -7394,6 +8020,11 @@ public final class Mumble {
       }
       /**
        * <code>optional string description = 5;</code>
+       *
+       * <pre>
+       * UTF-8 encoded channel description. Only if the description is less than
+       * 128 bytes
+       * </pre>
        */
       public Builder clearDescription() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -7403,6 +8034,11 @@ public final class Mumble {
       }
       /**
        * <code>optional string description = 5;</code>
+       *
+       * <pre>
+       * UTF-8 encoded channel description. Only if the description is less than
+       * 128 bytes
+       * </pre>
        */
       public Builder setDescriptionBytes(
           com.google.protobuf.ByteString value) {
@@ -7415,7 +8051,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated uint32 links_add = 6;
       private java.util.List<java.lang.Integer> linksAdd_ = java.util.Collections.emptyList();
       private void ensureLinksAddIsMutable() {
         if (!((bitField0_ & 0x00000020) == 0x00000020)) {
@@ -7425,6 +8060,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 links_add = 6;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be added to links.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getLinksAddList() {
@@ -7432,18 +8071,30 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 links_add = 6;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be added to links.
+       * </pre>
        */
       public int getLinksAddCount() {
         return linksAdd_.size();
       }
       /**
        * <code>repeated uint32 links_add = 6;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be added to links.
+       * </pre>
        */
       public int getLinksAdd(int index) {
         return linksAdd_.get(index);
       }
       /**
        * <code>repeated uint32 links_add = 6;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be added to links.
+       * </pre>
        */
       public Builder setLinksAdd(
           int index, int value) {
@@ -7454,6 +8105,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 links_add = 6;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be added to links.
+       * </pre>
        */
       public Builder addLinksAdd(int value) {
         ensureLinksAddIsMutable();
@@ -7463,16 +8118,25 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 links_add = 6;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be added to links.
+       * </pre>
        */
       public Builder addAllLinksAdd(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureLinksAddIsMutable();
-        super.addAll(values, linksAdd_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, linksAdd_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated uint32 links_add = 6;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be added to links.
+       * </pre>
        */
       public Builder clearLinksAdd() {
         linksAdd_ = java.util.Collections.emptyList();
@@ -7481,7 +8145,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated uint32 links_remove = 7;
       private java.util.List<java.lang.Integer> linksRemove_ = java.util.Collections.emptyList();
       private void ensureLinksRemoveIsMutable() {
         if (!((bitField0_ & 0x00000040) == 0x00000040)) {
@@ -7491,6 +8154,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 links_remove = 7;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be removed from links.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getLinksRemoveList() {
@@ -7498,18 +8165,30 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 links_remove = 7;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be removed from links.
+       * </pre>
        */
       public int getLinksRemoveCount() {
         return linksRemove_.size();
       }
       /**
        * <code>repeated uint32 links_remove = 7;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be removed from links.
+       * </pre>
        */
       public int getLinksRemove(int index) {
         return linksRemove_.get(index);
       }
       /**
        * <code>repeated uint32 links_remove = 7;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be removed from links.
+       * </pre>
        */
       public Builder setLinksRemove(
           int index, int value) {
@@ -7520,6 +8199,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 links_remove = 7;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be removed from links.
+       * </pre>
        */
       public Builder addLinksRemove(int value) {
         ensureLinksRemoveIsMutable();
@@ -7529,16 +8212,25 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 links_remove = 7;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be removed from links.
+       * </pre>
        */
       public Builder addAllLinksRemove(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureLinksRemoveIsMutable();
-        super.addAll(values, linksRemove_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, linksRemove_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated uint32 links_remove = 7;</code>
+       *
+       * <pre>
+       * A collection of channel_id values that should be removed from links.
+       * </pre>
        */
       public Builder clearLinksRemove() {
         linksRemove_ = java.util.Collections.emptyList();
@@ -7547,22 +8239,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool temporary = 8 [default = false];
       private boolean temporary_ ;
       /**
        * <code>optional bool temporary = 8 [default = false];</code>
+       *
+       * <pre>
+       * True if the channel is temporary.
+       * </pre>
        */
       public boolean hasTemporary() {
         return ((bitField0_ & 0x00000080) == 0x00000080);
       }
       /**
        * <code>optional bool temporary = 8 [default = false];</code>
+       *
+       * <pre>
+       * True if the channel is temporary.
+       * </pre>
        */
       public boolean getTemporary() {
         return temporary_;
       }
       /**
        * <code>optional bool temporary = 8 [default = false];</code>
+       *
+       * <pre>
+       * True if the channel is temporary.
+       * </pre>
        */
       public Builder setTemporary(boolean value) {
         bitField0_ |= 0x00000080;
@@ -7572,6 +8275,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bool temporary = 8 [default = false];</code>
+       *
+       * <pre>
+       * True if the channel is temporary.
+       * </pre>
        */
       public Builder clearTemporary() {
         bitField0_ = (bitField0_ & ~0x00000080);
@@ -7580,22 +8287,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional int32 position = 9 [default = 0];
       private int position_ ;
       /**
        * <code>optional int32 position = 9 [default = 0];</code>
+       *
+       * <pre>
+       * Position weight to tweak the channel position in the channel list.
+       * </pre>
        */
       public boolean hasPosition() {
         return ((bitField0_ & 0x00000100) == 0x00000100);
       }
       /**
        * <code>optional int32 position = 9 [default = 0];</code>
+       *
+       * <pre>
+       * Position weight to tweak the channel position in the channel list.
+       * </pre>
        */
       public int getPosition() {
         return position_;
       }
       /**
        * <code>optional int32 position = 9 [default = 0];</code>
+       *
+       * <pre>
+       * Position weight to tweak the channel position in the channel list.
+       * </pre>
        */
       public Builder setPosition(int value) {
         bitField0_ |= 0x00000100;
@@ -7605,6 +8323,10 @@ public final class Mumble {
       }
       /**
        * <code>optional int32 position = 9 [default = 0];</code>
+       *
+       * <pre>
+       * Position weight to tweak the channel position in the channel list.
+       * </pre>
        */
       public Builder clearPosition() {
         bitField0_ = (bitField0_ & ~0x00000100);
@@ -7613,22 +8335,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bytes description_hash = 10;
       private com.google.protobuf.ByteString descriptionHash_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>optional bytes description_hash = 10;</code>
+       *
+       * <pre>
+       * SHA1 hash of the description if the description is 128 bytes or more.
+       * </pre>
        */
       public boolean hasDescriptionHash() {
         return ((bitField0_ & 0x00000200) == 0x00000200);
       }
       /**
        * <code>optional bytes description_hash = 10;</code>
+       *
+       * <pre>
+       * SHA1 hash of the description if the description is 128 bytes or more.
+       * </pre>
        */
       public com.google.protobuf.ByteString getDescriptionHash() {
         return descriptionHash_;
       }
       /**
        * <code>optional bytes description_hash = 10;</code>
+       *
+       * <pre>
+       * SHA1 hash of the description if the description is 128 bytes or more.
+       * </pre>
        */
       public Builder setDescriptionHash(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -7641,6 +8374,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bytes description_hash = 10;</code>
+       *
+       * <pre>
+       * SHA1 hash of the description if the description is 128 bytes or more.
+       * </pre>
        */
       public Builder clearDescriptionHash() {
         bitField0_ = (bitField0_ & ~0x00000200);
@@ -7660,60 +8397,104 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.ChannelState)
   }
 
-  public interface UserRemoveOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface UserRemoveOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.UserRemove)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required uint32 session = 1;
     /**
      * <code>required uint32 session = 1;</code>
+     *
+     * <pre>
+     * The user who is being kicked, identified by their session, not present
+     * when no one is being kicked.
+     * </pre>
      */
     boolean hasSession();
     /**
      * <code>required uint32 session = 1;</code>
+     *
+     * <pre>
+     * The user who is being kicked, identified by their session, not present
+     * when no one is being kicked.
+     * </pre>
      */
     int getSession();
 
-    // optional uint32 actor = 2;
     /**
      * <code>optional uint32 actor = 2;</code>
+     *
+     * <pre>
+     * The user who initiated the removal. Either the user who performs the kick
+     * or the user who is currently leaving.
+     * </pre>
      */
     boolean hasActor();
     /**
      * <code>optional uint32 actor = 2;</code>
+     *
+     * <pre>
+     * The user who initiated the removal. Either the user who performs the kick
+     * or the user who is currently leaving.
+     * </pre>
      */
     int getActor();
 
-    // optional string reason = 3;
     /**
      * <code>optional string reason = 3;</code>
+     *
+     * <pre>
+     * Reason for the kick, stored as the ban reason if the user is banned.
+     * </pre>
      */
     boolean hasReason();
     /**
      * <code>optional string reason = 3;</code>
+     *
+     * <pre>
+     * Reason for the kick, stored as the ban reason if the user is banned.
+     * </pre>
      */
     java.lang.String getReason();
     /**
      * <code>optional string reason = 3;</code>
+     *
+     * <pre>
+     * Reason for the kick, stored as the ban reason if the user is banned.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getReasonBytes();
 
-    // optional bool ban = 4;
     /**
      * <code>optional bool ban = 4;</code>
+     *
+     * <pre>
+     * True if the kick should result in a ban.
+     * </pre>
      */
     boolean hasBan();
     /**
      * <code>optional bool ban = 4;</code>
+     *
+     * <pre>
+     * True if the kick should result in a ban.
+     * </pre>
      */
     boolean getBan();
   }
   /**
    * Protobuf type {@code MumbleProto.UserRemove}
+   *
+   * <pre>
+   * Used to communicate user leaving or being kicked. May be sent by the client
+   * when it attempts to kick a user. Sent by the server when it informs the
+   * clients that a user is not present anymore.
+   * </pre>
    */
   public static final class UserRemove extends
-      com.google.protobuf.GeneratedMessage
-      implements UserRemoveOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.UserRemove)
+      UserRemoveOrBuilder {
     // Use UserRemove.newBuilder() to construct.
     private UserRemove(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -7770,8 +8551,9 @@ public final class Mumble {
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              reason_ = input.readBytes();
+              reason_ = bs;
               break;
             }
             case 32: {
@@ -7819,49 +8601,74 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // required uint32 session = 1;
     public static final int SESSION_FIELD_NUMBER = 1;
     private int session_;
     /**
      * <code>required uint32 session = 1;</code>
+     *
+     * <pre>
+     * The user who is being kicked, identified by their session, not present
+     * when no one is being kicked.
+     * </pre>
      */
     public boolean hasSession() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>required uint32 session = 1;</code>
+     *
+     * <pre>
+     * The user who is being kicked, identified by their session, not present
+     * when no one is being kicked.
+     * </pre>
      */
     public int getSession() {
       return session_;
     }
 
-    // optional uint32 actor = 2;
     public static final int ACTOR_FIELD_NUMBER = 2;
     private int actor_;
     /**
      * <code>optional uint32 actor = 2;</code>
+     *
+     * <pre>
+     * The user who initiated the removal. Either the user who performs the kick
+     * or the user who is currently leaving.
+     * </pre>
      */
     public boolean hasActor() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional uint32 actor = 2;</code>
+     *
+     * <pre>
+     * The user who initiated the removal. Either the user who performs the kick
+     * or the user who is currently leaving.
+     * </pre>
      */
     public int getActor() {
       return actor_;
     }
 
-    // optional string reason = 3;
     public static final int REASON_FIELD_NUMBER = 3;
     private java.lang.Object reason_;
     /**
      * <code>optional string reason = 3;</code>
+     *
+     * <pre>
+     * Reason for the kick, stored as the ban reason if the user is banned.
+     * </pre>
      */
     public boolean hasReason() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>optional string reason = 3;</code>
+     *
+     * <pre>
+     * Reason for the kick, stored as the ban reason if the user is banned.
+     * </pre>
      */
     public java.lang.String getReason() {
       java.lang.Object ref = reason_;
@@ -7879,6 +8686,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string reason = 3;</code>
+     *
+     * <pre>
+     * Reason for the kick, stored as the ban reason if the user is banned.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getReasonBytes() {
@@ -7894,17 +8705,24 @@ public final class Mumble {
       }
     }
 
-    // optional bool ban = 4;
     public static final int BAN_FIELD_NUMBER = 4;
     private boolean ban_;
     /**
      * <code>optional bool ban = 4;</code>
+     *
+     * <pre>
+     * True if the kick should result in a ban.
+     * </pre>
      */
     public boolean hasBan() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
      * <code>optional bool ban = 4;</code>
+     *
+     * <pre>
+     * True if the kick should result in a ban.
+     * </pre>
      */
     public boolean getBan() {
       return ban_;
@@ -7919,7 +8737,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasSession()) {
         memoizedIsInitialized = 0;
@@ -8049,10 +8868,17 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.UserRemove}
+     *
+     * <pre>
+     * Used to communicate user leaving or being kicked. May be sent by the client
+     * when it attempts to kick a user. Sent by the server when it informs the
+     * clients that a user is not present anymore.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.UserRemoveOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.UserRemove)
+        MumbleProto.Mumble.UserRemoveOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_UserRemove_descriptor;
@@ -8198,22 +9024,36 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // required uint32 session = 1;
       private int session_ ;
       /**
        * <code>required uint32 session = 1;</code>
+       *
+       * <pre>
+       * The user who is being kicked, identified by their session, not present
+       * when no one is being kicked.
+       * </pre>
        */
       public boolean hasSession() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>required uint32 session = 1;</code>
+       *
+       * <pre>
+       * The user who is being kicked, identified by their session, not present
+       * when no one is being kicked.
+       * </pre>
        */
       public int getSession() {
         return session_;
       }
       /**
        * <code>required uint32 session = 1;</code>
+       *
+       * <pre>
+       * The user who is being kicked, identified by their session, not present
+       * when no one is being kicked.
+       * </pre>
        */
       public Builder setSession(int value) {
         bitField0_ |= 0x00000001;
@@ -8223,6 +9063,11 @@ public final class Mumble {
       }
       /**
        * <code>required uint32 session = 1;</code>
+       *
+       * <pre>
+       * The user who is being kicked, identified by their session, not present
+       * when no one is being kicked.
+       * </pre>
        */
       public Builder clearSession() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -8231,22 +9076,36 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 actor = 2;
       private int actor_ ;
       /**
        * <code>optional uint32 actor = 2;</code>
+       *
+       * <pre>
+       * The user who initiated the removal. Either the user who performs the kick
+       * or the user who is currently leaving.
+       * </pre>
        */
       public boolean hasActor() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional uint32 actor = 2;</code>
+       *
+       * <pre>
+       * The user who initiated the removal. Either the user who performs the kick
+       * or the user who is currently leaving.
+       * </pre>
        */
       public int getActor() {
         return actor_;
       }
       /**
        * <code>optional uint32 actor = 2;</code>
+       *
+       * <pre>
+       * The user who initiated the removal. Either the user who performs the kick
+       * or the user who is currently leaving.
+       * </pre>
        */
       public Builder setActor(int value) {
         bitField0_ |= 0x00000002;
@@ -8256,6 +9115,11 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 actor = 2;</code>
+       *
+       * <pre>
+       * The user who initiated the removal. Either the user who performs the kick
+       * or the user who is currently leaving.
+       * </pre>
        */
       public Builder clearActor() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -8264,23 +9128,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string reason = 3;
       private java.lang.Object reason_ = "";
       /**
        * <code>optional string reason = 3;</code>
+       *
+       * <pre>
+       * Reason for the kick, stored as the ban reason if the user is banned.
+       * </pre>
        */
       public boolean hasReason() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional string reason = 3;</code>
+       *
+       * <pre>
+       * Reason for the kick, stored as the ban reason if the user is banned.
+       * </pre>
        */
       public java.lang.String getReason() {
         java.lang.Object ref = reason_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          reason_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            reason_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -8288,6 +9162,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string reason = 3;</code>
+       *
+       * <pre>
+       * Reason for the kick, stored as the ban reason if the user is banned.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getReasonBytes() {
@@ -8304,6 +9182,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string reason = 3;</code>
+       *
+       * <pre>
+       * Reason for the kick, stored as the ban reason if the user is banned.
+       * </pre>
        */
       public Builder setReason(
           java.lang.String value) {
@@ -8317,6 +9199,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string reason = 3;</code>
+       *
+       * <pre>
+       * Reason for the kick, stored as the ban reason if the user is banned.
+       * </pre>
        */
       public Builder clearReason() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -8326,6 +9212,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string reason = 3;</code>
+       *
+       * <pre>
+       * Reason for the kick, stored as the ban reason if the user is banned.
+       * </pre>
        */
       public Builder setReasonBytes(
           com.google.protobuf.ByteString value) {
@@ -8338,22 +9228,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool ban = 4;
       private boolean ban_ ;
       /**
        * <code>optional bool ban = 4;</code>
+       *
+       * <pre>
+       * True if the kick should result in a ban.
+       * </pre>
        */
       public boolean hasBan() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <code>optional bool ban = 4;</code>
+       *
+       * <pre>
+       * True if the kick should result in a ban.
+       * </pre>
        */
       public boolean getBan() {
         return ban_;
       }
       /**
        * <code>optional bool ban = 4;</code>
+       *
+       * <pre>
+       * True if the kick should result in a ban.
+       * </pre>
        */
       public Builder setBan(boolean value) {
         bitField0_ |= 0x00000008;
@@ -8363,6 +9264,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bool ban = 4;</code>
+       *
+       * <pre>
+       * True if the kick should result in a ban.
+       * </pre>
        */
       public Builder clearBan() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -8382,225 +9287,386 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.UserRemove)
   }
 
-  public interface UserStateOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface UserStateOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.UserState)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional uint32 session = 1;
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * Unique user session ID of the user whose state this is, may change on
+     * reconnect.
+     * </pre>
      */
     boolean hasSession();
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * Unique user session ID of the user whose state this is, may change on
+     * reconnect.
+     * </pre>
      */
     int getSession();
 
-    // optional uint32 actor = 2;
     /**
      * <code>optional uint32 actor = 2;</code>
+     *
+     * <pre>
+     * The session of the user who is updating this user.
+     * </pre>
      */
     boolean hasActor();
     /**
      * <code>optional uint32 actor = 2;</code>
+     *
+     * <pre>
+     * The session of the user who is updating this user.
+     * </pre>
      */
     int getActor();
 
-    // optional string name = 3;
     /**
      * <code>optional string name = 3;</code>
+     *
+     * <pre>
+     * User name, UTF-8 encoded.
+     * </pre>
      */
     boolean hasName();
     /**
      * <code>optional string name = 3;</code>
+     *
+     * <pre>
+     * User name, UTF-8 encoded.
+     * </pre>
      */
     java.lang.String getName();
     /**
      * <code>optional string name = 3;</code>
+     *
+     * <pre>
+     * User name, UTF-8 encoded.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
-    // optional uint32 user_id = 4;
     /**
      * <code>optional uint32 user_id = 4;</code>
+     *
+     * <pre>
+     * Registered user ID if the user is registered.
+     * </pre>
      */
     boolean hasUserId();
     /**
      * <code>optional uint32 user_id = 4;</code>
+     *
+     * <pre>
+     * Registered user ID if the user is registered.
+     * </pre>
      */
     int getUserId();
 
-    // optional uint32 channel_id = 5;
     /**
      * <code>optional uint32 channel_id = 5;</code>
+     *
+     * <pre>
+     * Channel on which the user is.
+     * </pre>
      */
     boolean hasChannelId();
     /**
      * <code>optional uint32 channel_id = 5;</code>
+     *
+     * <pre>
+     * Channel on which the user is.
+     * </pre>
      */
     int getChannelId();
 
-    // optional bool mute = 6;
     /**
      * <code>optional bool mute = 6;</code>
+     *
+     * <pre>
+     * True if the user is muted by admin.
+     * </pre>
      */
     boolean hasMute();
     /**
      * <code>optional bool mute = 6;</code>
+     *
+     * <pre>
+     * True if the user is muted by admin.
+     * </pre>
      */
     boolean getMute();
 
-    // optional bool deaf = 7;
     /**
      * <code>optional bool deaf = 7;</code>
+     *
+     * <pre>
+     * True if the user is deafened by admin.
+     * </pre>
      */
     boolean hasDeaf();
     /**
      * <code>optional bool deaf = 7;</code>
+     *
+     * <pre>
+     * True if the user is deafened by admin.
+     * </pre>
      */
     boolean getDeaf();
 
-    // optional bool suppress = 8;
     /**
      * <code>optional bool suppress = 8;</code>
+     *
+     * <pre>
+     * True if the user has been suppressed from talking by a reason other than
+     * being muted.
+     * </pre>
      */
     boolean hasSuppress();
     /**
      * <code>optional bool suppress = 8;</code>
+     *
+     * <pre>
+     * True if the user has been suppressed from talking by a reason other than
+     * being muted.
+     * </pre>
      */
     boolean getSuppress();
 
-    // optional bool self_mute = 9;
     /**
      * <code>optional bool self_mute = 9;</code>
+     *
+     * <pre>
+     * True if the user has muted self.
+     * </pre>
      */
     boolean hasSelfMute();
     /**
      * <code>optional bool self_mute = 9;</code>
+     *
+     * <pre>
+     * True if the user has muted self.
+     * </pre>
      */
     boolean getSelfMute();
 
-    // optional bool self_deaf = 10;
     /**
      * <code>optional bool self_deaf = 10;</code>
+     *
+     * <pre>
+     * True if the user has deafened self.
+     * </pre>
      */
     boolean hasSelfDeaf();
     /**
      * <code>optional bool self_deaf = 10;</code>
+     *
+     * <pre>
+     * True if the user has deafened self.
+     * </pre>
      */
     boolean getSelfDeaf();
 
-    // optional bytes texture = 11;
     /**
      * <code>optional bytes texture = 11;</code>
+     *
+     * <pre>
+     * User image if it is less than 128 bytes.
+     * </pre>
      */
     boolean hasTexture();
     /**
      * <code>optional bytes texture = 11;</code>
+     *
+     * <pre>
+     * User image if it is less than 128 bytes.
+     * </pre>
      */
     com.google.protobuf.ByteString getTexture();
 
-    // optional bytes plugin_context = 12;
     /**
      * <code>optional bytes plugin_context = 12;</code>
+     *
+     * <pre>
+     * TODO ??
+     * </pre>
      */
     boolean hasPluginContext();
     /**
      * <code>optional bytes plugin_context = 12;</code>
+     *
+     * <pre>
+     * TODO ??
+     * </pre>
      */
     com.google.protobuf.ByteString getPluginContext();
 
-    // optional string plugin_identity = 13;
     /**
      * <code>optional string plugin_identity = 13;</code>
+     *
+     * <pre>
+     * TODO ??
+     * </pre>
      */
     boolean hasPluginIdentity();
     /**
      * <code>optional string plugin_identity = 13;</code>
+     *
+     * <pre>
+     * TODO ??
+     * </pre>
      */
     java.lang.String getPluginIdentity();
     /**
      * <code>optional string plugin_identity = 13;</code>
+     *
+     * <pre>
+     * TODO ??
+     * </pre>
      */
     com.google.protobuf.ByteString
         getPluginIdentityBytes();
 
-    // optional string comment = 14;
     /**
      * <code>optional string comment = 14;</code>
+     *
+     * <pre>
+     * User comment if it is less than 128 bytes.
+     * </pre>
      */
     boolean hasComment();
     /**
      * <code>optional string comment = 14;</code>
+     *
+     * <pre>
+     * User comment if it is less than 128 bytes.
+     * </pre>
      */
     java.lang.String getComment();
     /**
      * <code>optional string comment = 14;</code>
+     *
+     * <pre>
+     * User comment if it is less than 128 bytes.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getCommentBytes();
 
-    // optional string hash = 15;
     /**
      * <code>optional string hash = 15;</code>
+     *
+     * <pre>
+     * The hash of the user certificate.
+     * </pre>
      */
     boolean hasHash();
     /**
      * <code>optional string hash = 15;</code>
+     *
+     * <pre>
+     * The hash of the user certificate.
+     * </pre>
      */
     java.lang.String getHash();
     /**
      * <code>optional string hash = 15;</code>
+     *
+     * <pre>
+     * The hash of the user certificate.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getHashBytes();
 
-    // optional bytes comment_hash = 16;
     /**
      * <code>optional bytes comment_hash = 16;</code>
+     *
+     * <pre>
+     * SHA1 hash of the user comment if it 128 bytes or more.
+     * </pre>
      */
     boolean hasCommentHash();
     /**
      * <code>optional bytes comment_hash = 16;</code>
+     *
+     * <pre>
+     * SHA1 hash of the user comment if it 128 bytes or more.
+     * </pre>
      */
     com.google.protobuf.ByteString getCommentHash();
 
-    // optional bytes texture_hash = 17;
     /**
      * <code>optional bytes texture_hash = 17;</code>
+     *
+     * <pre>
+     * SHA1 hash of the user picture if it 128 bytes or more.
+     * </pre>
      */
     boolean hasTextureHash();
     /**
      * <code>optional bytes texture_hash = 17;</code>
+     *
+     * <pre>
+     * SHA1 hash of the user picture if it 128 bytes or more.
+     * </pre>
      */
     com.google.protobuf.ByteString getTextureHash();
 
-    // optional bool priority_speaker = 18;
     /**
      * <code>optional bool priority_speaker = 18;</code>
+     *
+     * <pre>
+     * True if the user is a priority speaker.
+     * </pre>
      */
     boolean hasPrioritySpeaker();
     /**
      * <code>optional bool priority_speaker = 18;</code>
+     *
+     * <pre>
+     * True if the user is a priority speaker.
+     * </pre>
      */
     boolean getPrioritySpeaker();
 
-    // optional bool recording = 19;
     /**
      * <code>optional bool recording = 19;</code>
+     *
+     * <pre>
+     * True if the user is currently recording.
+     * </pre>
      */
     boolean hasRecording();
     /**
      * <code>optional bool recording = 19;</code>
+     *
+     * <pre>
+     * True if the user is currently recording.
+     * </pre>
      */
     boolean getRecording();
   }
   /**
    * Protobuf type {@code MumbleProto.UserState}
+   *
+   * <pre>
+   * Sent by the server when it communicates new and changed users to client.
+   * First seen during login procedure. May be sent by the client when it wishes
+   * to alter its state.
+   * </pre>
    */
   public static final class UserState extends
-      com.google.protobuf.GeneratedMessage
-      implements UserStateOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.UserState)
+      UserStateOrBuilder {
     // Use UserState.newBuilder() to construct.
     private UserState(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -8657,8 +9723,9 @@ public final class Mumble {
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
             case 32: {
@@ -8707,18 +9774,21 @@ public final class Mumble {
               break;
             }
             case 106: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00001000;
-              pluginIdentity_ = input.readBytes();
+              pluginIdentity_ = bs;
               break;
             }
             case 114: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00002000;
-              comment_ = input.readBytes();
+              comment_ = bs;
               break;
             }
             case 122: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00004000;
-              hash_ = input.readBytes();
+              hash_ = bs;
               break;
             }
             case 130: {
@@ -8781,49 +9851,72 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional uint32 session = 1;
     public static final int SESSION_FIELD_NUMBER = 1;
     private int session_;
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * Unique user session ID of the user whose state this is, may change on
+     * reconnect.
+     * </pre>
      */
     public boolean hasSession() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * Unique user session ID of the user whose state this is, may change on
+     * reconnect.
+     * </pre>
      */
     public int getSession() {
       return session_;
     }
 
-    // optional uint32 actor = 2;
     public static final int ACTOR_FIELD_NUMBER = 2;
     private int actor_;
     /**
      * <code>optional uint32 actor = 2;</code>
+     *
+     * <pre>
+     * The session of the user who is updating this user.
+     * </pre>
      */
     public boolean hasActor() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional uint32 actor = 2;</code>
+     *
+     * <pre>
+     * The session of the user who is updating this user.
+     * </pre>
      */
     public int getActor() {
       return actor_;
     }
 
-    // optional string name = 3;
     public static final int NAME_FIELD_NUMBER = 3;
     private java.lang.Object name_;
     /**
      * <code>optional string name = 3;</code>
+     *
+     * <pre>
+     * User name, UTF-8 encoded.
+     * </pre>
      */
     public boolean hasName() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>optional string name = 3;</code>
+     *
+     * <pre>
+     * User name, UTF-8 encoded.
+     * </pre>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -8841,6 +9934,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string name = 3;</code>
+     *
+     * <pre>
+     * User name, UTF-8 encoded.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -8856,161 +9953,233 @@ public final class Mumble {
       }
     }
 
-    // optional uint32 user_id = 4;
     public static final int USER_ID_FIELD_NUMBER = 4;
     private int userId_;
     /**
      * <code>optional uint32 user_id = 4;</code>
+     *
+     * <pre>
+     * Registered user ID if the user is registered.
+     * </pre>
      */
     public boolean hasUserId() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
      * <code>optional uint32 user_id = 4;</code>
+     *
+     * <pre>
+     * Registered user ID if the user is registered.
+     * </pre>
      */
     public int getUserId() {
       return userId_;
     }
 
-    // optional uint32 channel_id = 5;
     public static final int CHANNEL_ID_FIELD_NUMBER = 5;
     private int channelId_;
     /**
      * <code>optional uint32 channel_id = 5;</code>
+     *
+     * <pre>
+     * Channel on which the user is.
+     * </pre>
      */
     public boolean hasChannelId() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
      * <code>optional uint32 channel_id = 5;</code>
+     *
+     * <pre>
+     * Channel on which the user is.
+     * </pre>
      */
     public int getChannelId() {
       return channelId_;
     }
 
-    // optional bool mute = 6;
     public static final int MUTE_FIELD_NUMBER = 6;
     private boolean mute_;
     /**
      * <code>optional bool mute = 6;</code>
+     *
+     * <pre>
+     * True if the user is muted by admin.
+     * </pre>
      */
     public boolean hasMute() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
      * <code>optional bool mute = 6;</code>
+     *
+     * <pre>
+     * True if the user is muted by admin.
+     * </pre>
      */
     public boolean getMute() {
       return mute_;
     }
 
-    // optional bool deaf = 7;
     public static final int DEAF_FIELD_NUMBER = 7;
     private boolean deaf_;
     /**
      * <code>optional bool deaf = 7;</code>
+     *
+     * <pre>
+     * True if the user is deafened by admin.
+     * </pre>
      */
     public boolean hasDeaf() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     /**
      * <code>optional bool deaf = 7;</code>
+     *
+     * <pre>
+     * True if the user is deafened by admin.
+     * </pre>
      */
     public boolean getDeaf() {
       return deaf_;
     }
 
-    // optional bool suppress = 8;
     public static final int SUPPRESS_FIELD_NUMBER = 8;
     private boolean suppress_;
     /**
      * <code>optional bool suppress = 8;</code>
+     *
+     * <pre>
+     * True if the user has been suppressed from talking by a reason other than
+     * being muted.
+     * </pre>
      */
     public boolean hasSuppress() {
       return ((bitField0_ & 0x00000080) == 0x00000080);
     }
     /**
      * <code>optional bool suppress = 8;</code>
+     *
+     * <pre>
+     * True if the user has been suppressed from talking by a reason other than
+     * being muted.
+     * </pre>
      */
     public boolean getSuppress() {
       return suppress_;
     }
 
-    // optional bool self_mute = 9;
     public static final int SELF_MUTE_FIELD_NUMBER = 9;
     private boolean selfMute_;
     /**
      * <code>optional bool self_mute = 9;</code>
+     *
+     * <pre>
+     * True if the user has muted self.
+     * </pre>
      */
     public boolean hasSelfMute() {
       return ((bitField0_ & 0x00000100) == 0x00000100);
     }
     /**
      * <code>optional bool self_mute = 9;</code>
+     *
+     * <pre>
+     * True if the user has muted self.
+     * </pre>
      */
     public boolean getSelfMute() {
       return selfMute_;
     }
 
-    // optional bool self_deaf = 10;
     public static final int SELF_DEAF_FIELD_NUMBER = 10;
     private boolean selfDeaf_;
     /**
      * <code>optional bool self_deaf = 10;</code>
+     *
+     * <pre>
+     * True if the user has deafened self.
+     * </pre>
      */
     public boolean hasSelfDeaf() {
       return ((bitField0_ & 0x00000200) == 0x00000200);
     }
     /**
      * <code>optional bool self_deaf = 10;</code>
+     *
+     * <pre>
+     * True if the user has deafened self.
+     * </pre>
      */
     public boolean getSelfDeaf() {
       return selfDeaf_;
     }
 
-    // optional bytes texture = 11;
     public static final int TEXTURE_FIELD_NUMBER = 11;
     private com.google.protobuf.ByteString texture_;
     /**
      * <code>optional bytes texture = 11;</code>
+     *
+     * <pre>
+     * User image if it is less than 128 bytes.
+     * </pre>
      */
     public boolean hasTexture() {
       return ((bitField0_ & 0x00000400) == 0x00000400);
     }
     /**
      * <code>optional bytes texture = 11;</code>
+     *
+     * <pre>
+     * User image if it is less than 128 bytes.
+     * </pre>
      */
     public com.google.protobuf.ByteString getTexture() {
       return texture_;
     }
 
-    // optional bytes plugin_context = 12;
     public static final int PLUGIN_CONTEXT_FIELD_NUMBER = 12;
     private com.google.protobuf.ByteString pluginContext_;
     /**
      * <code>optional bytes plugin_context = 12;</code>
+     *
+     * <pre>
+     * TODO ??
+     * </pre>
      */
     public boolean hasPluginContext() {
       return ((bitField0_ & 0x00000800) == 0x00000800);
     }
     /**
      * <code>optional bytes plugin_context = 12;</code>
+     *
+     * <pre>
+     * TODO ??
+     * </pre>
      */
     public com.google.protobuf.ByteString getPluginContext() {
       return pluginContext_;
     }
 
-    // optional string plugin_identity = 13;
     public static final int PLUGIN_IDENTITY_FIELD_NUMBER = 13;
     private java.lang.Object pluginIdentity_;
     /**
      * <code>optional string plugin_identity = 13;</code>
+     *
+     * <pre>
+     * TODO ??
+     * </pre>
      */
     public boolean hasPluginIdentity() {
       return ((bitField0_ & 0x00001000) == 0x00001000);
     }
     /**
      * <code>optional string plugin_identity = 13;</code>
+     *
+     * <pre>
+     * TODO ??
+     * </pre>
      */
     public java.lang.String getPluginIdentity() {
       java.lang.Object ref = pluginIdentity_;
@@ -9028,6 +10197,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string plugin_identity = 13;</code>
+     *
+     * <pre>
+     * TODO ??
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getPluginIdentityBytes() {
@@ -9043,17 +10216,24 @@ public final class Mumble {
       }
     }
 
-    // optional string comment = 14;
     public static final int COMMENT_FIELD_NUMBER = 14;
     private java.lang.Object comment_;
     /**
      * <code>optional string comment = 14;</code>
+     *
+     * <pre>
+     * User comment if it is less than 128 bytes.
+     * </pre>
      */
     public boolean hasComment() {
       return ((bitField0_ & 0x00002000) == 0x00002000);
     }
     /**
      * <code>optional string comment = 14;</code>
+     *
+     * <pre>
+     * User comment if it is less than 128 bytes.
+     * </pre>
      */
     public java.lang.String getComment() {
       java.lang.Object ref = comment_;
@@ -9071,6 +10251,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string comment = 14;</code>
+     *
+     * <pre>
+     * User comment if it is less than 128 bytes.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getCommentBytes() {
@@ -9086,17 +10270,24 @@ public final class Mumble {
       }
     }
 
-    // optional string hash = 15;
     public static final int HASH_FIELD_NUMBER = 15;
     private java.lang.Object hash_;
     /**
      * <code>optional string hash = 15;</code>
+     *
+     * <pre>
+     * The hash of the user certificate.
+     * </pre>
      */
     public boolean hasHash() {
       return ((bitField0_ & 0x00004000) == 0x00004000);
     }
     /**
      * <code>optional string hash = 15;</code>
+     *
+     * <pre>
+     * The hash of the user certificate.
+     * </pre>
      */
     public java.lang.String getHash() {
       java.lang.Object ref = hash_;
@@ -9114,6 +10305,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string hash = 15;</code>
+     *
+     * <pre>
+     * The hash of the user certificate.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getHashBytes() {
@@ -9129,65 +10324,93 @@ public final class Mumble {
       }
     }
 
-    // optional bytes comment_hash = 16;
     public static final int COMMENT_HASH_FIELD_NUMBER = 16;
     private com.google.protobuf.ByteString commentHash_;
     /**
      * <code>optional bytes comment_hash = 16;</code>
+     *
+     * <pre>
+     * SHA1 hash of the user comment if it 128 bytes or more.
+     * </pre>
      */
     public boolean hasCommentHash() {
       return ((bitField0_ & 0x00008000) == 0x00008000);
     }
     /**
      * <code>optional bytes comment_hash = 16;</code>
+     *
+     * <pre>
+     * SHA1 hash of the user comment if it 128 bytes or more.
+     * </pre>
      */
     public com.google.protobuf.ByteString getCommentHash() {
       return commentHash_;
     }
 
-    // optional bytes texture_hash = 17;
     public static final int TEXTURE_HASH_FIELD_NUMBER = 17;
     private com.google.protobuf.ByteString textureHash_;
     /**
      * <code>optional bytes texture_hash = 17;</code>
+     *
+     * <pre>
+     * SHA1 hash of the user picture if it 128 bytes or more.
+     * </pre>
      */
     public boolean hasTextureHash() {
       return ((bitField0_ & 0x00010000) == 0x00010000);
     }
     /**
      * <code>optional bytes texture_hash = 17;</code>
+     *
+     * <pre>
+     * SHA1 hash of the user picture if it 128 bytes or more.
+     * </pre>
      */
     public com.google.protobuf.ByteString getTextureHash() {
       return textureHash_;
     }
 
-    // optional bool priority_speaker = 18;
     public static final int PRIORITY_SPEAKER_FIELD_NUMBER = 18;
     private boolean prioritySpeaker_;
     /**
      * <code>optional bool priority_speaker = 18;</code>
+     *
+     * <pre>
+     * True if the user is a priority speaker.
+     * </pre>
      */
     public boolean hasPrioritySpeaker() {
       return ((bitField0_ & 0x00020000) == 0x00020000);
     }
     /**
      * <code>optional bool priority_speaker = 18;</code>
+     *
+     * <pre>
+     * True if the user is a priority speaker.
+     * </pre>
      */
     public boolean getPrioritySpeaker() {
       return prioritySpeaker_;
     }
 
-    // optional bool recording = 19;
     public static final int RECORDING_FIELD_NUMBER = 19;
     private boolean recording_;
     /**
      * <code>optional bool recording = 19;</code>
+     *
+     * <pre>
+     * True if the user is currently recording.
+     * </pre>
      */
     public boolean hasRecording() {
       return ((bitField0_ & 0x00040000) == 0x00040000);
     }
     /**
      * <code>optional bool recording = 19;</code>
+     *
+     * <pre>
+     * True if the user is currently recording.
+     * </pre>
      */
     public boolean getRecording() {
       return recording_;
@@ -9217,7 +10440,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -9448,10 +10672,17 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.UserState}
+     *
+     * <pre>
+     * Sent by the server when it communicates new and changed users to client.
+     * First seen during login procedure. May be sent by the client when it wishes
+     * to alter its state.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.UserStateOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.UserState)
+        MumbleProto.Mumble.UserStateOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_UserState_descriptor;
@@ -9734,22 +10965,36 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional uint32 session = 1;
       private int session_ ;
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * Unique user session ID of the user whose state this is, may change on
+       * reconnect.
+       * </pre>
        */
       public boolean hasSession() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * Unique user session ID of the user whose state this is, may change on
+       * reconnect.
+       * </pre>
        */
       public int getSession() {
         return session_;
       }
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * Unique user session ID of the user whose state this is, may change on
+       * reconnect.
+       * </pre>
        */
       public Builder setSession(int value) {
         bitField0_ |= 0x00000001;
@@ -9759,6 +11004,11 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * Unique user session ID of the user whose state this is, may change on
+       * reconnect.
+       * </pre>
        */
       public Builder clearSession() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -9767,22 +11017,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 actor = 2;
       private int actor_ ;
       /**
        * <code>optional uint32 actor = 2;</code>
+       *
+       * <pre>
+       * The session of the user who is updating this user.
+       * </pre>
        */
       public boolean hasActor() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional uint32 actor = 2;</code>
+       *
+       * <pre>
+       * The session of the user who is updating this user.
+       * </pre>
        */
       public int getActor() {
         return actor_;
       }
       /**
        * <code>optional uint32 actor = 2;</code>
+       *
+       * <pre>
+       * The session of the user who is updating this user.
+       * </pre>
        */
       public Builder setActor(int value) {
         bitField0_ |= 0x00000002;
@@ -9792,6 +11053,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 actor = 2;</code>
+       *
+       * <pre>
+       * The session of the user who is updating this user.
+       * </pre>
        */
       public Builder clearActor() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -9800,23 +11065,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string name = 3;
       private java.lang.Object name_ = "";
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * User name, UTF-8 encoded.
+       * </pre>
        */
       public boolean hasName() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * User name, UTF-8 encoded.
+       * </pre>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -9824,6 +11099,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * User name, UTF-8 encoded.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -9840,6 +11119,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * User name, UTF-8 encoded.
+       * </pre>
        */
       public Builder setName(
           java.lang.String value) {
@@ -9853,6 +11136,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * User name, UTF-8 encoded.
+       * </pre>
        */
       public Builder clearName() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -9862,6 +11149,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * User name, UTF-8 encoded.
+       * </pre>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -9874,22 +11165,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 user_id = 4;
       private int userId_ ;
       /**
        * <code>optional uint32 user_id = 4;</code>
+       *
+       * <pre>
+       * Registered user ID if the user is registered.
+       * </pre>
        */
       public boolean hasUserId() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <code>optional uint32 user_id = 4;</code>
+       *
+       * <pre>
+       * Registered user ID if the user is registered.
+       * </pre>
        */
       public int getUserId() {
         return userId_;
       }
       /**
        * <code>optional uint32 user_id = 4;</code>
+       *
+       * <pre>
+       * Registered user ID if the user is registered.
+       * </pre>
        */
       public Builder setUserId(int value) {
         bitField0_ |= 0x00000008;
@@ -9899,6 +11201,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 user_id = 4;</code>
+       *
+       * <pre>
+       * Registered user ID if the user is registered.
+       * </pre>
        */
       public Builder clearUserId() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -9907,22 +11213,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 channel_id = 5;
       private int channelId_ ;
       /**
        * <code>optional uint32 channel_id = 5;</code>
+       *
+       * <pre>
+       * Channel on which the user is.
+       * </pre>
        */
       public boolean hasChannelId() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
        * <code>optional uint32 channel_id = 5;</code>
+       *
+       * <pre>
+       * Channel on which the user is.
+       * </pre>
        */
       public int getChannelId() {
         return channelId_;
       }
       /**
        * <code>optional uint32 channel_id = 5;</code>
+       *
+       * <pre>
+       * Channel on which the user is.
+       * </pre>
        */
       public Builder setChannelId(int value) {
         bitField0_ |= 0x00000010;
@@ -9932,6 +11249,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 channel_id = 5;</code>
+       *
+       * <pre>
+       * Channel on which the user is.
+       * </pre>
        */
       public Builder clearChannelId() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -9940,22 +11261,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool mute = 6;
       private boolean mute_ ;
       /**
        * <code>optional bool mute = 6;</code>
+       *
+       * <pre>
+       * True if the user is muted by admin.
+       * </pre>
        */
       public boolean hasMute() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
        * <code>optional bool mute = 6;</code>
+       *
+       * <pre>
+       * True if the user is muted by admin.
+       * </pre>
        */
       public boolean getMute() {
         return mute_;
       }
       /**
        * <code>optional bool mute = 6;</code>
+       *
+       * <pre>
+       * True if the user is muted by admin.
+       * </pre>
        */
       public Builder setMute(boolean value) {
         bitField0_ |= 0x00000020;
@@ -9965,6 +11297,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bool mute = 6;</code>
+       *
+       * <pre>
+       * True if the user is muted by admin.
+       * </pre>
        */
       public Builder clearMute() {
         bitField0_ = (bitField0_ & ~0x00000020);
@@ -9973,22 +11309,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool deaf = 7;
       private boolean deaf_ ;
       /**
        * <code>optional bool deaf = 7;</code>
+       *
+       * <pre>
+       * True if the user is deafened by admin.
+       * </pre>
        */
       public boolean hasDeaf() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       /**
        * <code>optional bool deaf = 7;</code>
+       *
+       * <pre>
+       * True if the user is deafened by admin.
+       * </pre>
        */
       public boolean getDeaf() {
         return deaf_;
       }
       /**
        * <code>optional bool deaf = 7;</code>
+       *
+       * <pre>
+       * True if the user is deafened by admin.
+       * </pre>
        */
       public Builder setDeaf(boolean value) {
         bitField0_ |= 0x00000040;
@@ -9998,6 +11345,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bool deaf = 7;</code>
+       *
+       * <pre>
+       * True if the user is deafened by admin.
+       * </pre>
        */
       public Builder clearDeaf() {
         bitField0_ = (bitField0_ & ~0x00000040);
@@ -10006,22 +11357,36 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool suppress = 8;
       private boolean suppress_ ;
       /**
        * <code>optional bool suppress = 8;</code>
+       *
+       * <pre>
+       * True if the user has been suppressed from talking by a reason other than
+       * being muted.
+       * </pre>
        */
       public boolean hasSuppress() {
         return ((bitField0_ & 0x00000080) == 0x00000080);
       }
       /**
        * <code>optional bool suppress = 8;</code>
+       *
+       * <pre>
+       * True if the user has been suppressed from talking by a reason other than
+       * being muted.
+       * </pre>
        */
       public boolean getSuppress() {
         return suppress_;
       }
       /**
        * <code>optional bool suppress = 8;</code>
+       *
+       * <pre>
+       * True if the user has been suppressed from talking by a reason other than
+       * being muted.
+       * </pre>
        */
       public Builder setSuppress(boolean value) {
         bitField0_ |= 0x00000080;
@@ -10031,6 +11396,11 @@ public final class Mumble {
       }
       /**
        * <code>optional bool suppress = 8;</code>
+       *
+       * <pre>
+       * True if the user has been suppressed from talking by a reason other than
+       * being muted.
+       * </pre>
        */
       public Builder clearSuppress() {
         bitField0_ = (bitField0_ & ~0x00000080);
@@ -10039,22 +11409,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool self_mute = 9;
       private boolean selfMute_ ;
       /**
        * <code>optional bool self_mute = 9;</code>
+       *
+       * <pre>
+       * True if the user has muted self.
+       * </pre>
        */
       public boolean hasSelfMute() {
         return ((bitField0_ & 0x00000100) == 0x00000100);
       }
       /**
        * <code>optional bool self_mute = 9;</code>
+       *
+       * <pre>
+       * True if the user has muted self.
+       * </pre>
        */
       public boolean getSelfMute() {
         return selfMute_;
       }
       /**
        * <code>optional bool self_mute = 9;</code>
+       *
+       * <pre>
+       * True if the user has muted self.
+       * </pre>
        */
       public Builder setSelfMute(boolean value) {
         bitField0_ |= 0x00000100;
@@ -10064,6 +11445,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bool self_mute = 9;</code>
+       *
+       * <pre>
+       * True if the user has muted self.
+       * </pre>
        */
       public Builder clearSelfMute() {
         bitField0_ = (bitField0_ & ~0x00000100);
@@ -10072,22 +11457,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool self_deaf = 10;
       private boolean selfDeaf_ ;
       /**
        * <code>optional bool self_deaf = 10;</code>
+       *
+       * <pre>
+       * True if the user has deafened self.
+       * </pre>
        */
       public boolean hasSelfDeaf() {
         return ((bitField0_ & 0x00000200) == 0x00000200);
       }
       /**
        * <code>optional bool self_deaf = 10;</code>
+       *
+       * <pre>
+       * True if the user has deafened self.
+       * </pre>
        */
       public boolean getSelfDeaf() {
         return selfDeaf_;
       }
       /**
        * <code>optional bool self_deaf = 10;</code>
+       *
+       * <pre>
+       * True if the user has deafened self.
+       * </pre>
        */
       public Builder setSelfDeaf(boolean value) {
         bitField0_ |= 0x00000200;
@@ -10097,6 +11493,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bool self_deaf = 10;</code>
+       *
+       * <pre>
+       * True if the user has deafened self.
+       * </pre>
        */
       public Builder clearSelfDeaf() {
         bitField0_ = (bitField0_ & ~0x00000200);
@@ -10105,22 +11505,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bytes texture = 11;
       private com.google.protobuf.ByteString texture_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>optional bytes texture = 11;</code>
+       *
+       * <pre>
+       * User image if it is less than 128 bytes.
+       * </pre>
        */
       public boolean hasTexture() {
         return ((bitField0_ & 0x00000400) == 0x00000400);
       }
       /**
        * <code>optional bytes texture = 11;</code>
+       *
+       * <pre>
+       * User image if it is less than 128 bytes.
+       * </pre>
        */
       public com.google.protobuf.ByteString getTexture() {
         return texture_;
       }
       /**
        * <code>optional bytes texture = 11;</code>
+       *
+       * <pre>
+       * User image if it is less than 128 bytes.
+       * </pre>
        */
       public Builder setTexture(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -10133,6 +11544,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bytes texture = 11;</code>
+       *
+       * <pre>
+       * User image if it is less than 128 bytes.
+       * </pre>
        */
       public Builder clearTexture() {
         bitField0_ = (bitField0_ & ~0x00000400);
@@ -10141,22 +11556,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bytes plugin_context = 12;
       private com.google.protobuf.ByteString pluginContext_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>optional bytes plugin_context = 12;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public boolean hasPluginContext() {
         return ((bitField0_ & 0x00000800) == 0x00000800);
       }
       /**
        * <code>optional bytes plugin_context = 12;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public com.google.protobuf.ByteString getPluginContext() {
         return pluginContext_;
       }
       /**
        * <code>optional bytes plugin_context = 12;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public Builder setPluginContext(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -10169,6 +11595,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bytes plugin_context = 12;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public Builder clearPluginContext() {
         bitField0_ = (bitField0_ & ~0x00000800);
@@ -10177,23 +11607,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string plugin_identity = 13;
       private java.lang.Object pluginIdentity_ = "";
       /**
        * <code>optional string plugin_identity = 13;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public boolean hasPluginIdentity() {
         return ((bitField0_ & 0x00001000) == 0x00001000);
       }
       /**
        * <code>optional string plugin_identity = 13;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public java.lang.String getPluginIdentity() {
         java.lang.Object ref = pluginIdentity_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          pluginIdentity_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            pluginIdentity_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -10201,6 +11641,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string plugin_identity = 13;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getPluginIdentityBytes() {
@@ -10217,6 +11661,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string plugin_identity = 13;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public Builder setPluginIdentity(
           java.lang.String value) {
@@ -10230,6 +11678,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string plugin_identity = 13;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public Builder clearPluginIdentity() {
         bitField0_ = (bitField0_ & ~0x00001000);
@@ -10239,6 +11691,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string plugin_identity = 13;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public Builder setPluginIdentityBytes(
           com.google.protobuf.ByteString value) {
@@ -10251,23 +11707,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string comment = 14;
       private java.lang.Object comment_ = "";
       /**
        * <code>optional string comment = 14;</code>
+       *
+       * <pre>
+       * User comment if it is less than 128 bytes.
+       * </pre>
        */
       public boolean hasComment() {
         return ((bitField0_ & 0x00002000) == 0x00002000);
       }
       /**
        * <code>optional string comment = 14;</code>
+       *
+       * <pre>
+       * User comment if it is less than 128 bytes.
+       * </pre>
        */
       public java.lang.String getComment() {
         java.lang.Object ref = comment_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          comment_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            comment_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -10275,6 +11741,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string comment = 14;</code>
+       *
+       * <pre>
+       * User comment if it is less than 128 bytes.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getCommentBytes() {
@@ -10291,6 +11761,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string comment = 14;</code>
+       *
+       * <pre>
+       * User comment if it is less than 128 bytes.
+       * </pre>
        */
       public Builder setComment(
           java.lang.String value) {
@@ -10304,6 +11778,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string comment = 14;</code>
+       *
+       * <pre>
+       * User comment if it is less than 128 bytes.
+       * </pre>
        */
       public Builder clearComment() {
         bitField0_ = (bitField0_ & ~0x00002000);
@@ -10313,6 +11791,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string comment = 14;</code>
+       *
+       * <pre>
+       * User comment if it is less than 128 bytes.
+       * </pre>
        */
       public Builder setCommentBytes(
           com.google.protobuf.ByteString value) {
@@ -10325,23 +11807,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string hash = 15;
       private java.lang.Object hash_ = "";
       /**
        * <code>optional string hash = 15;</code>
+       *
+       * <pre>
+       * The hash of the user certificate.
+       * </pre>
        */
       public boolean hasHash() {
         return ((bitField0_ & 0x00004000) == 0x00004000);
       }
       /**
        * <code>optional string hash = 15;</code>
+       *
+       * <pre>
+       * The hash of the user certificate.
+       * </pre>
        */
       public java.lang.String getHash() {
         java.lang.Object ref = hash_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          hash_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            hash_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -10349,6 +11841,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string hash = 15;</code>
+       *
+       * <pre>
+       * The hash of the user certificate.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getHashBytes() {
@@ -10365,6 +11861,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string hash = 15;</code>
+       *
+       * <pre>
+       * The hash of the user certificate.
+       * </pre>
        */
       public Builder setHash(
           java.lang.String value) {
@@ -10378,6 +11878,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string hash = 15;</code>
+       *
+       * <pre>
+       * The hash of the user certificate.
+       * </pre>
        */
       public Builder clearHash() {
         bitField0_ = (bitField0_ & ~0x00004000);
@@ -10387,6 +11891,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string hash = 15;</code>
+       *
+       * <pre>
+       * The hash of the user certificate.
+       * </pre>
        */
       public Builder setHashBytes(
           com.google.protobuf.ByteString value) {
@@ -10399,22 +11907,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bytes comment_hash = 16;
       private com.google.protobuf.ByteString commentHash_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>optional bytes comment_hash = 16;</code>
+       *
+       * <pre>
+       * SHA1 hash of the user comment if it 128 bytes or more.
+       * </pre>
        */
       public boolean hasCommentHash() {
         return ((bitField0_ & 0x00008000) == 0x00008000);
       }
       /**
        * <code>optional bytes comment_hash = 16;</code>
+       *
+       * <pre>
+       * SHA1 hash of the user comment if it 128 bytes or more.
+       * </pre>
        */
       public com.google.protobuf.ByteString getCommentHash() {
         return commentHash_;
       }
       /**
        * <code>optional bytes comment_hash = 16;</code>
+       *
+       * <pre>
+       * SHA1 hash of the user comment if it 128 bytes or more.
+       * </pre>
        */
       public Builder setCommentHash(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -10427,6 +11946,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bytes comment_hash = 16;</code>
+       *
+       * <pre>
+       * SHA1 hash of the user comment if it 128 bytes or more.
+       * </pre>
        */
       public Builder clearCommentHash() {
         bitField0_ = (bitField0_ & ~0x00008000);
@@ -10435,22 +11958,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bytes texture_hash = 17;
       private com.google.protobuf.ByteString textureHash_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>optional bytes texture_hash = 17;</code>
+       *
+       * <pre>
+       * SHA1 hash of the user picture if it 128 bytes or more.
+       * </pre>
        */
       public boolean hasTextureHash() {
         return ((bitField0_ & 0x00010000) == 0x00010000);
       }
       /**
        * <code>optional bytes texture_hash = 17;</code>
+       *
+       * <pre>
+       * SHA1 hash of the user picture if it 128 bytes or more.
+       * </pre>
        */
       public com.google.protobuf.ByteString getTextureHash() {
         return textureHash_;
       }
       /**
        * <code>optional bytes texture_hash = 17;</code>
+       *
+       * <pre>
+       * SHA1 hash of the user picture if it 128 bytes or more.
+       * </pre>
        */
       public Builder setTextureHash(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -10463,6 +11997,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bytes texture_hash = 17;</code>
+       *
+       * <pre>
+       * SHA1 hash of the user picture if it 128 bytes or more.
+       * </pre>
        */
       public Builder clearTextureHash() {
         bitField0_ = (bitField0_ & ~0x00010000);
@@ -10471,22 +12009,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool priority_speaker = 18;
       private boolean prioritySpeaker_ ;
       /**
        * <code>optional bool priority_speaker = 18;</code>
+       *
+       * <pre>
+       * True if the user is a priority speaker.
+       * </pre>
        */
       public boolean hasPrioritySpeaker() {
         return ((bitField0_ & 0x00020000) == 0x00020000);
       }
       /**
        * <code>optional bool priority_speaker = 18;</code>
+       *
+       * <pre>
+       * True if the user is a priority speaker.
+       * </pre>
        */
       public boolean getPrioritySpeaker() {
         return prioritySpeaker_;
       }
       /**
        * <code>optional bool priority_speaker = 18;</code>
+       *
+       * <pre>
+       * True if the user is a priority speaker.
+       * </pre>
        */
       public Builder setPrioritySpeaker(boolean value) {
         bitField0_ |= 0x00020000;
@@ -10496,6 +12045,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bool priority_speaker = 18;</code>
+       *
+       * <pre>
+       * True if the user is a priority speaker.
+       * </pre>
        */
       public Builder clearPrioritySpeaker() {
         bitField0_ = (bitField0_ & ~0x00020000);
@@ -10504,22 +12057,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool recording = 19;
       private boolean recording_ ;
       /**
        * <code>optional bool recording = 19;</code>
+       *
+       * <pre>
+       * True if the user is currently recording.
+       * </pre>
        */
       public boolean hasRecording() {
         return ((bitField0_ & 0x00040000) == 0x00040000);
       }
       /**
        * <code>optional bool recording = 19;</code>
+       *
+       * <pre>
+       * True if the user is currently recording.
+       * </pre>
        */
       public boolean getRecording() {
         return recording_;
       }
       /**
        * <code>optional bool recording = 19;</code>
+       *
+       * <pre>
+       * True if the user is currently recording.
+       * </pre>
        */
       public Builder setRecording(boolean value) {
         bitField0_ |= 0x00040000;
@@ -10529,6 +12093,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bool recording = 19;</code>
+       *
+       * <pre>
+       * True if the user is currently recording.
+       * </pre>
        */
       public Builder clearRecording() {
         bitField0_ = (bitField0_ & ~0x00040000);
@@ -10548,50 +12116,86 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.UserState)
   }
 
-  public interface BanListOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface BanListOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.BanList)
+      com.google.protobuf.MessageOrBuilder {
 
-    // repeated .MumbleProto.BanList.BanEntry bans = 1;
     /**
      * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+     *
+     * <pre>
+     * List of ban entries currently in place.
+     * </pre>
      */
     java.util.List<MumbleProto.Mumble.BanList.BanEntry> 
         getBansList();
     /**
      * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+     *
+     * <pre>
+     * List of ban entries currently in place.
+     * </pre>
      */
     MumbleProto.Mumble.BanList.BanEntry getBans(int index);
     /**
      * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+     *
+     * <pre>
+     * List of ban entries currently in place.
+     * </pre>
      */
     int getBansCount();
     /**
      * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+     *
+     * <pre>
+     * List of ban entries currently in place.
+     * </pre>
      */
     java.util.List<? extends MumbleProto.Mumble.BanList.BanEntryOrBuilder> 
         getBansOrBuilderList();
     /**
      * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+     *
+     * <pre>
+     * List of ban entries currently in place.
+     * </pre>
      */
     MumbleProto.Mumble.BanList.BanEntryOrBuilder getBansOrBuilder(
         int index);
 
-    // optional bool query = 2 [default = false];
     /**
      * <code>optional bool query = 2 [default = false];</code>
+     *
+     * <pre>
+     * True if the server should return the list, false if it should replace old
+     * ban list with the one provided.
+     * </pre>
      */
     boolean hasQuery();
     /**
      * <code>optional bool query = 2 [default = false];</code>
+     *
+     * <pre>
+     * True if the server should return the list, false if it should replace old
+     * ban list with the one provided.
+     * </pre>
      */
     boolean getQuery();
   }
   /**
    * Protobuf type {@code MumbleProto.BanList}
+   *
+   * <pre>
+   * Relays information on the bans. The client may send the BanList message to
+   * either modify the list of bans or query them from the server. The server
+   * sends this list only after a client queries for it.
+   * </pre>
    */
   public static final class BanList extends
-      com.google.protobuf.GeneratedMessage
-      implements BanListOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.BanList)
+      BanListOrBuilder {
     // Use BanList.newBuilder() to construct.
     private BanList(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -10692,96 +12296,162 @@ public final class Mumble {
       return PARSER;
     }
 
-    public interface BanEntryOrBuilder
-        extends com.google.protobuf.MessageOrBuilder {
+    public interface BanEntryOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:MumbleProto.BanList.BanEntry)
+        com.google.protobuf.MessageOrBuilder {
 
-      // required bytes address = 1;
       /**
        * <code>required bytes address = 1;</code>
+       *
+       * <pre>
+       * Banned IP address.
+       * </pre>
        */
       boolean hasAddress();
       /**
        * <code>required bytes address = 1;</code>
+       *
+       * <pre>
+       * Banned IP address.
+       * </pre>
        */
       com.google.protobuf.ByteString getAddress();
 
-      // required uint32 mask = 2;
       /**
        * <code>required uint32 mask = 2;</code>
+       *
+       * <pre>
+       * The length of the subnet mask for the ban.
+       * </pre>
        */
       boolean hasMask();
       /**
        * <code>required uint32 mask = 2;</code>
+       *
+       * <pre>
+       * The length of the subnet mask for the ban.
+       * </pre>
        */
       int getMask();
 
-      // optional string name = 3;
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * User name for identification purposes (does not affect the ban).
+       * </pre>
        */
       boolean hasName();
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * User name for identification purposes (does not affect the ban).
+       * </pre>
        */
       java.lang.String getName();
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * User name for identification purposes (does not affect the ban).
+       * </pre>
        */
       com.google.protobuf.ByteString
           getNameBytes();
 
-      // optional string hash = 4;
       /**
        * <code>optional string hash = 4;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       boolean hasHash();
       /**
        * <code>optional string hash = 4;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       java.lang.String getHash();
       /**
        * <code>optional string hash = 4;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       com.google.protobuf.ByteString
           getHashBytes();
 
-      // optional string reason = 5;
       /**
        * <code>optional string reason = 5;</code>
+       *
+       * <pre>
+       * Reason for the ban (does not affect the ban).
+       * </pre>
        */
       boolean hasReason();
       /**
        * <code>optional string reason = 5;</code>
+       *
+       * <pre>
+       * Reason for the ban (does not affect the ban).
+       * </pre>
        */
       java.lang.String getReason();
       /**
        * <code>optional string reason = 5;</code>
+       *
+       * <pre>
+       * Reason for the ban (does not affect the ban).
+       * </pre>
        */
       com.google.protobuf.ByteString
           getReasonBytes();
 
-      // optional string start = 6;
       /**
        * <code>optional string start = 6;</code>
+       *
+       * <pre>
+       * Ban start time.
+       * </pre>
        */
       boolean hasStart();
       /**
        * <code>optional string start = 6;</code>
+       *
+       * <pre>
+       * Ban start time.
+       * </pre>
        */
       java.lang.String getStart();
       /**
        * <code>optional string start = 6;</code>
+       *
+       * <pre>
+       * Ban start time.
+       * </pre>
        */
       com.google.protobuf.ByteString
           getStartBytes();
 
-      // optional uint32 duration = 7;
       /**
        * <code>optional uint32 duration = 7;</code>
+       *
+       * <pre>
+       * Ban duration in seconds.
+       * </pre>
        */
       boolean hasDuration();
       /**
        * <code>optional uint32 duration = 7;</code>
+       *
+       * <pre>
+       * Ban duration in seconds.
+       * </pre>
        */
       int getDuration();
     }
@@ -10789,8 +12459,9 @@ public final class Mumble {
      * Protobuf type {@code MumbleProto.BanList.BanEntry}
      */
     public static final class BanEntry extends
-        com.google.protobuf.GeneratedMessage
-        implements BanEntryOrBuilder {
+        com.google.protobuf.GeneratedMessage implements
+        // @@protoc_insertion_point(message_implements:MumbleProto.BanList.BanEntry)
+        BanEntryOrBuilder {
       // Use BanEntry.newBuilder() to construct.
       private BanEntry(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
         super(builder);
@@ -10847,23 +12518,27 @@ public final class Mumble {
                 break;
               }
               case 26: {
+                com.google.protobuf.ByteString bs = input.readBytes();
                 bitField0_ |= 0x00000004;
-                name_ = input.readBytes();
+                name_ = bs;
                 break;
               }
               case 34: {
+                com.google.protobuf.ByteString bs = input.readBytes();
                 bitField0_ |= 0x00000008;
-                hash_ = input.readBytes();
+                hash_ = bs;
                 break;
               }
               case 42: {
+                com.google.protobuf.ByteString bs = input.readBytes();
                 bitField0_ |= 0x00000010;
-                reason_ = input.readBytes();
+                reason_ = bs;
                 break;
               }
               case 50: {
+                com.google.protobuf.ByteString bs = input.readBytes();
                 bitField0_ |= 0x00000020;
-                start_ = input.readBytes();
+                start_ = bs;
                 break;
               }
               case 56: {
@@ -10911,49 +12586,70 @@ public final class Mumble {
       }
 
       private int bitField0_;
-      // required bytes address = 1;
       public static final int ADDRESS_FIELD_NUMBER = 1;
       private com.google.protobuf.ByteString address_;
       /**
        * <code>required bytes address = 1;</code>
+       *
+       * <pre>
+       * Banned IP address.
+       * </pre>
        */
       public boolean hasAddress() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>required bytes address = 1;</code>
+       *
+       * <pre>
+       * Banned IP address.
+       * </pre>
        */
       public com.google.protobuf.ByteString getAddress() {
         return address_;
       }
 
-      // required uint32 mask = 2;
       public static final int MASK_FIELD_NUMBER = 2;
       private int mask_;
       /**
        * <code>required uint32 mask = 2;</code>
+       *
+       * <pre>
+       * The length of the subnet mask for the ban.
+       * </pre>
        */
       public boolean hasMask() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>required uint32 mask = 2;</code>
+       *
+       * <pre>
+       * The length of the subnet mask for the ban.
+       * </pre>
        */
       public int getMask() {
         return mask_;
       }
 
-      // optional string name = 3;
       public static final int NAME_FIELD_NUMBER = 3;
       private java.lang.Object name_;
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * User name for identification purposes (does not affect the ban).
+       * </pre>
        */
       public boolean hasName() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * User name for identification purposes (does not affect the ban).
+       * </pre>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -10971,6 +12667,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 3;</code>
+       *
+       * <pre>
+       * User name for identification purposes (does not affect the ban).
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -10986,17 +12686,24 @@ public final class Mumble {
         }
       }
 
-      // optional string hash = 4;
       public static final int HASH_FIELD_NUMBER = 4;
       private java.lang.Object hash_;
       /**
        * <code>optional string hash = 4;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public boolean hasHash() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <code>optional string hash = 4;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public java.lang.String getHash() {
         java.lang.Object ref = hash_;
@@ -11014,6 +12721,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string hash = 4;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getHashBytes() {
@@ -11029,17 +12740,24 @@ public final class Mumble {
         }
       }
 
-      // optional string reason = 5;
       public static final int REASON_FIELD_NUMBER = 5;
       private java.lang.Object reason_;
       /**
        * <code>optional string reason = 5;</code>
+       *
+       * <pre>
+       * Reason for the ban (does not affect the ban).
+       * </pre>
        */
       public boolean hasReason() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
        * <code>optional string reason = 5;</code>
+       *
+       * <pre>
+       * Reason for the ban (does not affect the ban).
+       * </pre>
        */
       public java.lang.String getReason() {
         java.lang.Object ref = reason_;
@@ -11057,6 +12775,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string reason = 5;</code>
+       *
+       * <pre>
+       * Reason for the ban (does not affect the ban).
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getReasonBytes() {
@@ -11072,17 +12794,24 @@ public final class Mumble {
         }
       }
 
-      // optional string start = 6;
       public static final int START_FIELD_NUMBER = 6;
       private java.lang.Object start_;
       /**
        * <code>optional string start = 6;</code>
+       *
+       * <pre>
+       * Ban start time.
+       * </pre>
        */
       public boolean hasStart() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
        * <code>optional string start = 6;</code>
+       *
+       * <pre>
+       * Ban start time.
+       * </pre>
        */
       public java.lang.String getStart() {
         java.lang.Object ref = start_;
@@ -11100,6 +12829,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string start = 6;</code>
+       *
+       * <pre>
+       * Ban start time.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getStartBytes() {
@@ -11115,17 +12848,24 @@ public final class Mumble {
         }
       }
 
-      // optional uint32 duration = 7;
       public static final int DURATION_FIELD_NUMBER = 7;
       private int duration_;
       /**
        * <code>optional uint32 duration = 7;</code>
+       *
+       * <pre>
+       * Ban duration in seconds.
+       * </pre>
        */
       public boolean hasDuration() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       /**
        * <code>optional uint32 duration = 7;</code>
+       *
+       * <pre>
+       * Ban duration in seconds.
+       * </pre>
        */
       public int getDuration() {
         return duration_;
@@ -11143,7 +12883,8 @@ public final class Mumble {
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
         byte isInitialized = memoizedIsInitialized;
-        if (isInitialized != -1) return isInitialized == 1;
+        if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
 
         if (!hasAddress()) {
           memoizedIsInitialized = 0;
@@ -11300,8 +13041,9 @@ public final class Mumble {
        * Protobuf type {@code MumbleProto.BanList.BanEntry}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessage.Builder<Builder>
-         implements MumbleProto.Mumble.BanList.BanEntryOrBuilder {
+          com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:MumbleProto.BanList.BanEntry)
+          MumbleProto.Mumble.BanList.BanEntryOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
           return MumbleProto.Mumble.internal_static_MumbleProto_BanList_BanEntry_descriptor;
@@ -11484,22 +13226,33 @@ public final class Mumble {
         }
         private int bitField0_;
 
-        // required bytes address = 1;
         private com.google.protobuf.ByteString address_ = com.google.protobuf.ByteString.EMPTY;
         /**
          * <code>required bytes address = 1;</code>
+         *
+         * <pre>
+         * Banned IP address.
+         * </pre>
          */
         public boolean hasAddress() {
           return ((bitField0_ & 0x00000001) == 0x00000001);
         }
         /**
          * <code>required bytes address = 1;</code>
+         *
+         * <pre>
+         * Banned IP address.
+         * </pre>
          */
         public com.google.protobuf.ByteString getAddress() {
           return address_;
         }
         /**
          * <code>required bytes address = 1;</code>
+         *
+         * <pre>
+         * Banned IP address.
+         * </pre>
          */
         public Builder setAddress(com.google.protobuf.ByteString value) {
           if (value == null) {
@@ -11512,6 +13265,10 @@ public final class Mumble {
         }
         /**
          * <code>required bytes address = 1;</code>
+         *
+         * <pre>
+         * Banned IP address.
+         * </pre>
          */
         public Builder clearAddress() {
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -11520,22 +13277,33 @@ public final class Mumble {
           return this;
         }
 
-        // required uint32 mask = 2;
         private int mask_ ;
         /**
          * <code>required uint32 mask = 2;</code>
+         *
+         * <pre>
+         * The length of the subnet mask for the ban.
+         * </pre>
          */
         public boolean hasMask() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
         /**
          * <code>required uint32 mask = 2;</code>
+         *
+         * <pre>
+         * The length of the subnet mask for the ban.
+         * </pre>
          */
         public int getMask() {
           return mask_;
         }
         /**
          * <code>required uint32 mask = 2;</code>
+         *
+         * <pre>
+         * The length of the subnet mask for the ban.
+         * </pre>
          */
         public Builder setMask(int value) {
           bitField0_ |= 0x00000002;
@@ -11545,6 +13313,10 @@ public final class Mumble {
         }
         /**
          * <code>required uint32 mask = 2;</code>
+         *
+         * <pre>
+         * The length of the subnet mask for the ban.
+         * </pre>
          */
         public Builder clearMask() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -11553,23 +13325,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional string name = 3;
         private java.lang.Object name_ = "";
         /**
          * <code>optional string name = 3;</code>
+         *
+         * <pre>
+         * User name for identification purposes (does not affect the ban).
+         * </pre>
          */
         public boolean hasName() {
           return ((bitField0_ & 0x00000004) == 0x00000004);
         }
         /**
          * <code>optional string name = 3;</code>
+         *
+         * <pre>
+         * User name for identification purposes (does not affect the ban).
+         * </pre>
          */
         public java.lang.String getName() {
           java.lang.Object ref = name_;
           if (!(ref instanceof java.lang.String)) {
-            java.lang.String s = ((com.google.protobuf.ByteString) ref)
-                .toStringUtf8();
-            name_ = s;
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            if (bs.isValidUtf8()) {
+              name_ = s;
+            }
             return s;
           } else {
             return (java.lang.String) ref;
@@ -11577,6 +13359,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string name = 3;</code>
+         *
+         * <pre>
+         * User name for identification purposes (does not affect the ban).
+         * </pre>
          */
         public com.google.protobuf.ByteString
             getNameBytes() {
@@ -11593,6 +13379,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string name = 3;</code>
+         *
+         * <pre>
+         * User name for identification purposes (does not affect the ban).
+         * </pre>
          */
         public Builder setName(
             java.lang.String value) {
@@ -11606,6 +13396,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string name = 3;</code>
+         *
+         * <pre>
+         * User name for identification purposes (does not affect the ban).
+         * </pre>
          */
         public Builder clearName() {
           bitField0_ = (bitField0_ & ~0x00000004);
@@ -11615,6 +13409,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string name = 3;</code>
+         *
+         * <pre>
+         * User name for identification purposes (does not affect the ban).
+         * </pre>
          */
         public Builder setNameBytes(
             com.google.protobuf.ByteString value) {
@@ -11627,23 +13425,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional string hash = 4;
         private java.lang.Object hash_ = "";
         /**
          * <code>optional string hash = 4;</code>
+         *
+         * <pre>
+         * TODO ??
+         * </pre>
          */
         public boolean hasHash() {
           return ((bitField0_ & 0x00000008) == 0x00000008);
         }
         /**
          * <code>optional string hash = 4;</code>
+         *
+         * <pre>
+         * TODO ??
+         * </pre>
          */
         public java.lang.String getHash() {
           java.lang.Object ref = hash_;
           if (!(ref instanceof java.lang.String)) {
-            java.lang.String s = ((com.google.protobuf.ByteString) ref)
-                .toStringUtf8();
-            hash_ = s;
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            if (bs.isValidUtf8()) {
+              hash_ = s;
+            }
             return s;
           } else {
             return (java.lang.String) ref;
@@ -11651,6 +13459,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string hash = 4;</code>
+         *
+         * <pre>
+         * TODO ??
+         * </pre>
          */
         public com.google.protobuf.ByteString
             getHashBytes() {
@@ -11667,6 +13479,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string hash = 4;</code>
+         *
+         * <pre>
+         * TODO ??
+         * </pre>
          */
         public Builder setHash(
             java.lang.String value) {
@@ -11680,6 +13496,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string hash = 4;</code>
+         *
+         * <pre>
+         * TODO ??
+         * </pre>
          */
         public Builder clearHash() {
           bitField0_ = (bitField0_ & ~0x00000008);
@@ -11689,6 +13509,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string hash = 4;</code>
+         *
+         * <pre>
+         * TODO ??
+         * </pre>
          */
         public Builder setHashBytes(
             com.google.protobuf.ByteString value) {
@@ -11701,23 +13525,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional string reason = 5;
         private java.lang.Object reason_ = "";
         /**
          * <code>optional string reason = 5;</code>
+         *
+         * <pre>
+         * Reason for the ban (does not affect the ban).
+         * </pre>
          */
         public boolean hasReason() {
           return ((bitField0_ & 0x00000010) == 0x00000010);
         }
         /**
          * <code>optional string reason = 5;</code>
+         *
+         * <pre>
+         * Reason for the ban (does not affect the ban).
+         * </pre>
          */
         public java.lang.String getReason() {
           java.lang.Object ref = reason_;
           if (!(ref instanceof java.lang.String)) {
-            java.lang.String s = ((com.google.protobuf.ByteString) ref)
-                .toStringUtf8();
-            reason_ = s;
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            if (bs.isValidUtf8()) {
+              reason_ = s;
+            }
             return s;
           } else {
             return (java.lang.String) ref;
@@ -11725,6 +13559,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string reason = 5;</code>
+         *
+         * <pre>
+         * Reason for the ban (does not affect the ban).
+         * </pre>
          */
         public com.google.protobuf.ByteString
             getReasonBytes() {
@@ -11741,6 +13579,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string reason = 5;</code>
+         *
+         * <pre>
+         * Reason for the ban (does not affect the ban).
+         * </pre>
          */
         public Builder setReason(
             java.lang.String value) {
@@ -11754,6 +13596,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string reason = 5;</code>
+         *
+         * <pre>
+         * Reason for the ban (does not affect the ban).
+         * </pre>
          */
         public Builder clearReason() {
           bitField0_ = (bitField0_ & ~0x00000010);
@@ -11763,6 +13609,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string reason = 5;</code>
+         *
+         * <pre>
+         * Reason for the ban (does not affect the ban).
+         * </pre>
          */
         public Builder setReasonBytes(
             com.google.protobuf.ByteString value) {
@@ -11775,23 +13625,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional string start = 6;
         private java.lang.Object start_ = "";
         /**
          * <code>optional string start = 6;</code>
+         *
+         * <pre>
+         * Ban start time.
+         * </pre>
          */
         public boolean hasStart() {
           return ((bitField0_ & 0x00000020) == 0x00000020);
         }
         /**
          * <code>optional string start = 6;</code>
+         *
+         * <pre>
+         * Ban start time.
+         * </pre>
          */
         public java.lang.String getStart() {
           java.lang.Object ref = start_;
           if (!(ref instanceof java.lang.String)) {
-            java.lang.String s = ((com.google.protobuf.ByteString) ref)
-                .toStringUtf8();
-            start_ = s;
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            if (bs.isValidUtf8()) {
+              start_ = s;
+            }
             return s;
           } else {
             return (java.lang.String) ref;
@@ -11799,6 +13659,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string start = 6;</code>
+         *
+         * <pre>
+         * Ban start time.
+         * </pre>
          */
         public com.google.protobuf.ByteString
             getStartBytes() {
@@ -11815,6 +13679,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string start = 6;</code>
+         *
+         * <pre>
+         * Ban start time.
+         * </pre>
          */
         public Builder setStart(
             java.lang.String value) {
@@ -11828,6 +13696,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string start = 6;</code>
+         *
+         * <pre>
+         * Ban start time.
+         * </pre>
          */
         public Builder clearStart() {
           bitField0_ = (bitField0_ & ~0x00000020);
@@ -11837,6 +13709,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string start = 6;</code>
+         *
+         * <pre>
+         * Ban start time.
+         * </pre>
          */
         public Builder setStartBytes(
             com.google.protobuf.ByteString value) {
@@ -11849,22 +13725,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional uint32 duration = 7;
         private int duration_ ;
         /**
          * <code>optional uint32 duration = 7;</code>
+         *
+         * <pre>
+         * Ban duration in seconds.
+         * </pre>
          */
         public boolean hasDuration() {
           return ((bitField0_ & 0x00000040) == 0x00000040);
         }
         /**
          * <code>optional uint32 duration = 7;</code>
+         *
+         * <pre>
+         * Ban duration in seconds.
+         * </pre>
          */
         public int getDuration() {
           return duration_;
         }
         /**
          * <code>optional uint32 duration = 7;</code>
+         *
+         * <pre>
+         * Ban duration in seconds.
+         * </pre>
          */
         public Builder setDuration(int value) {
           bitField0_ |= 0x00000040;
@@ -11874,6 +13761,10 @@ public final class Mumble {
         }
         /**
          * <code>optional uint32 duration = 7;</code>
+         *
+         * <pre>
+         * Ban duration in seconds.
+         * </pre>
          */
         public Builder clearDuration() {
           bitField0_ = (bitField0_ & ~0x00000040);
@@ -11894,17 +13785,24 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // repeated .MumbleProto.BanList.BanEntry bans = 1;
     public static final int BANS_FIELD_NUMBER = 1;
     private java.util.List<MumbleProto.Mumble.BanList.BanEntry> bans_;
     /**
      * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+     *
+     * <pre>
+     * List of ban entries currently in place.
+     * </pre>
      */
     public java.util.List<MumbleProto.Mumble.BanList.BanEntry> getBansList() {
       return bans_;
     }
     /**
      * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+     *
+     * <pre>
+     * List of ban entries currently in place.
+     * </pre>
      */
     public java.util.List<? extends MumbleProto.Mumble.BanList.BanEntryOrBuilder> 
         getBansOrBuilderList() {
@@ -11912,35 +13810,56 @@ public final class Mumble {
     }
     /**
      * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+     *
+     * <pre>
+     * List of ban entries currently in place.
+     * </pre>
      */
     public int getBansCount() {
       return bans_.size();
     }
     /**
      * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+     *
+     * <pre>
+     * List of ban entries currently in place.
+     * </pre>
      */
     public MumbleProto.Mumble.BanList.BanEntry getBans(int index) {
       return bans_.get(index);
     }
     /**
      * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+     *
+     * <pre>
+     * List of ban entries currently in place.
+     * </pre>
      */
     public MumbleProto.Mumble.BanList.BanEntryOrBuilder getBansOrBuilder(
         int index) {
       return bans_.get(index);
     }
 
-    // optional bool query = 2 [default = false];
     public static final int QUERY_FIELD_NUMBER = 2;
     private boolean query_;
     /**
      * <code>optional bool query = 2 [default = false];</code>
+     *
+     * <pre>
+     * True if the server should return the list, false if it should replace old
+     * ban list with the one provided.
+     * </pre>
      */
     public boolean hasQuery() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional bool query = 2 [default = false];</code>
+     *
+     * <pre>
+     * True if the server should return the list, false if it should replace old
+     * ban list with the one provided.
+     * </pre>
      */
     public boolean getQuery() {
       return query_;
@@ -11953,7 +13872,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       for (int i = 0; i < getBansCount(); i++) {
         if (!getBans(i).isInitialized()) {
@@ -12071,10 +13991,17 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.BanList}
+     *
+     * <pre>
+     * Relays information on the bans. The client may send the BanList message to
+     * either modify the list of bans or query them from the server. The server
+     * sends this list only after a client queries for it.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.BanListOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.BanList)
+        MumbleProto.Mumble.BanListOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_BanList_descriptor;
@@ -12235,7 +14162,6 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // repeated .MumbleProto.BanList.BanEntry bans = 1;
       private java.util.List<MumbleProto.Mumble.BanList.BanEntry> bans_ =
         java.util.Collections.emptyList();
       private void ensureBansIsMutable() {
@@ -12250,6 +14176,10 @@ public final class Mumble {
 
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public java.util.List<MumbleProto.Mumble.BanList.BanEntry> getBansList() {
         if (bansBuilder_ == null) {
@@ -12260,6 +14190,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public int getBansCount() {
         if (bansBuilder_ == null) {
@@ -12270,6 +14204,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public MumbleProto.Mumble.BanList.BanEntry getBans(int index) {
         if (bansBuilder_ == null) {
@@ -12280,6 +14218,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public Builder setBans(
           int index, MumbleProto.Mumble.BanList.BanEntry value) {
@@ -12297,6 +14239,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public Builder setBans(
           int index, MumbleProto.Mumble.BanList.BanEntry.Builder builderForValue) {
@@ -12311,6 +14257,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public Builder addBans(MumbleProto.Mumble.BanList.BanEntry value) {
         if (bansBuilder_ == null) {
@@ -12327,6 +14277,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public Builder addBans(
           int index, MumbleProto.Mumble.BanList.BanEntry value) {
@@ -12344,6 +14298,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public Builder addBans(
           MumbleProto.Mumble.BanList.BanEntry.Builder builderForValue) {
@@ -12358,6 +14316,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public Builder addBans(
           int index, MumbleProto.Mumble.BanList.BanEntry.Builder builderForValue) {
@@ -12372,12 +14334,17 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public Builder addAllBans(
           java.lang.Iterable<? extends MumbleProto.Mumble.BanList.BanEntry> values) {
         if (bansBuilder_ == null) {
           ensureBansIsMutable();
-          super.addAll(values, bans_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, bans_);
           onChanged();
         } else {
           bansBuilder_.addAllMessages(values);
@@ -12386,6 +14353,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public Builder clearBans() {
         if (bansBuilder_ == null) {
@@ -12399,6 +14370,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public Builder removeBans(int index) {
         if (bansBuilder_ == null) {
@@ -12412,6 +14387,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public MumbleProto.Mumble.BanList.BanEntry.Builder getBansBuilder(
           int index) {
@@ -12419,6 +14398,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public MumbleProto.Mumble.BanList.BanEntryOrBuilder getBansOrBuilder(
           int index) {
@@ -12429,6 +14412,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public java.util.List<? extends MumbleProto.Mumble.BanList.BanEntryOrBuilder> 
            getBansOrBuilderList() {
@@ -12440,6 +14427,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public MumbleProto.Mumble.BanList.BanEntry.Builder addBansBuilder() {
         return getBansFieldBuilder().addBuilder(
@@ -12447,6 +14438,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public MumbleProto.Mumble.BanList.BanEntry.Builder addBansBuilder(
           int index) {
@@ -12455,6 +14450,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.BanList.BanEntry bans = 1;</code>
+       *
+       * <pre>
+       * List of ban entries currently in place.
+       * </pre>
        */
       public java.util.List<MumbleProto.Mumble.BanList.BanEntry.Builder> 
            getBansBuilderList() {
@@ -12475,22 +14474,36 @@ public final class Mumble {
         return bansBuilder_;
       }
 
-      // optional bool query = 2 [default = false];
       private boolean query_ ;
       /**
        * <code>optional bool query = 2 [default = false];</code>
+       *
+       * <pre>
+       * True if the server should return the list, false if it should replace old
+       * ban list with the one provided.
+       * </pre>
        */
       public boolean hasQuery() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional bool query = 2 [default = false];</code>
+       *
+       * <pre>
+       * True if the server should return the list, false if it should replace old
+       * ban list with the one provided.
+       * </pre>
        */
       public boolean getQuery() {
         return query_;
       }
       /**
        * <code>optional bool query = 2 [default = false];</code>
+       *
+       * <pre>
+       * True if the server should return the list, false if it should replace old
+       * ban list with the one provided.
+       * </pre>
        */
       public Builder setQuery(boolean value) {
         bitField0_ |= 0x00000002;
@@ -12500,6 +14513,11 @@ public final class Mumble {
       }
       /**
        * <code>optional bool query = 2 [default = false];</code>
+       *
+       * <pre>
+       * True if the server should return the list, false if it should replace old
+       * ban list with the one provided.
+       * </pre>
        */
       public Builder clearQuery() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -12519,82 +14537,145 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.BanList)
   }
 
-  public interface TextMessageOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface TextMessageOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.TextMessage)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional uint32 actor = 1;
     /**
      * <code>optional uint32 actor = 1;</code>
+     *
+     * <pre>
+     * The message sender, identified by its session.
+     * </pre>
      */
     boolean hasActor();
     /**
      * <code>optional uint32 actor = 1;</code>
+     *
+     * <pre>
+     * The message sender, identified by its session.
+     * </pre>
      */
     int getActor();
 
-    // repeated uint32 session = 2;
     /**
      * <code>repeated uint32 session = 2;</code>
+     *
+     * <pre>
+     * Target users for the message, identified by their session.
+     * </pre>
      */
     java.util.List<java.lang.Integer> getSessionList();
     /**
      * <code>repeated uint32 session = 2;</code>
+     *
+     * <pre>
+     * Target users for the message, identified by their session.
+     * </pre>
      */
     int getSessionCount();
     /**
      * <code>repeated uint32 session = 2;</code>
+     *
+     * <pre>
+     * Target users for the message, identified by their session.
+     * </pre>
      */
     int getSession(int index);
 
-    // repeated uint32 channel_id = 3;
     /**
      * <code>repeated uint32 channel_id = 3;</code>
+     *
+     * <pre>
+     * The channels to which the message is sent, identified by their
+     * channel_ids.
+     * </pre>
      */
     java.util.List<java.lang.Integer> getChannelIdList();
     /**
      * <code>repeated uint32 channel_id = 3;</code>
+     *
+     * <pre>
+     * The channels to which the message is sent, identified by their
+     * channel_ids.
+     * </pre>
      */
     int getChannelIdCount();
     /**
      * <code>repeated uint32 channel_id = 3;</code>
+     *
+     * <pre>
+     * The channels to which the message is sent, identified by their
+     * channel_ids.
+     * </pre>
      */
     int getChannelId(int index);
 
-    // repeated uint32 tree_id = 4;
     /**
      * <code>repeated uint32 tree_id = 4;</code>
+     *
+     * <pre>
+     * The root channels when sending message recursively to several channels,
+     * identified by their channel_ids.
+     * </pre>
      */
     java.util.List<java.lang.Integer> getTreeIdList();
     /**
      * <code>repeated uint32 tree_id = 4;</code>
+     *
+     * <pre>
+     * The root channels when sending message recursively to several channels,
+     * identified by their channel_ids.
+     * </pre>
      */
     int getTreeIdCount();
     /**
      * <code>repeated uint32 tree_id = 4;</code>
+     *
+     * <pre>
+     * The root channels when sending message recursively to several channels,
+     * identified by their channel_ids.
+     * </pre>
      */
     int getTreeId(int index);
 
-    // required string message = 5;
     /**
      * <code>required string message = 5;</code>
+     *
+     * <pre>
+     * The UTF-8 encoded message. May be HTML if the server allows.
+     * </pre>
      */
     boolean hasMessage();
     /**
      * <code>required string message = 5;</code>
+     *
+     * <pre>
+     * The UTF-8 encoded message. May be HTML if the server allows.
+     * </pre>
      */
     java.lang.String getMessage();
     /**
      * <code>required string message = 5;</code>
+     *
+     * <pre>
+     * The UTF-8 encoded message. May be HTML if the server allows.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getMessageBytes();
   }
   /**
    * Protobuf type {@code MumbleProto.TextMessage}
+   *
+   * <pre>
+   * Used to send and broadcast text messages.
+   * </pre>
    */
   public static final class TextMessage extends
-      com.google.protobuf.GeneratedMessage
-      implements TextMessageOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.TextMessage)
+      TextMessageOrBuilder {
     // Use TextMessage.newBuilder() to construct.
     private TextMessage(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -12709,8 +14790,9 @@ public final class Mumble {
               break;
             }
             case 42: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              message_ = input.readBytes();
+              message_ = bs;
               break;
             }
           }
@@ -12762,27 +14844,37 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional uint32 actor = 1;
     public static final int ACTOR_FIELD_NUMBER = 1;
     private int actor_;
     /**
      * <code>optional uint32 actor = 1;</code>
+     *
+     * <pre>
+     * The message sender, identified by its session.
+     * </pre>
      */
     public boolean hasActor() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional uint32 actor = 1;</code>
+     *
+     * <pre>
+     * The message sender, identified by its session.
+     * </pre>
      */
     public int getActor() {
       return actor_;
     }
 
-    // repeated uint32 session = 2;
     public static final int SESSION_FIELD_NUMBER = 2;
     private java.util.List<java.lang.Integer> session_;
     /**
      * <code>repeated uint32 session = 2;</code>
+     *
+     * <pre>
+     * Target users for the message, identified by their session.
+     * </pre>
      */
     public java.util.List<java.lang.Integer>
         getSessionList() {
@@ -12790,22 +14882,34 @@ public final class Mumble {
     }
     /**
      * <code>repeated uint32 session = 2;</code>
+     *
+     * <pre>
+     * Target users for the message, identified by their session.
+     * </pre>
      */
     public int getSessionCount() {
       return session_.size();
     }
     /**
      * <code>repeated uint32 session = 2;</code>
+     *
+     * <pre>
+     * Target users for the message, identified by their session.
+     * </pre>
      */
     public int getSession(int index) {
       return session_.get(index);
     }
 
-    // repeated uint32 channel_id = 3;
     public static final int CHANNEL_ID_FIELD_NUMBER = 3;
     private java.util.List<java.lang.Integer> channelId_;
     /**
      * <code>repeated uint32 channel_id = 3;</code>
+     *
+     * <pre>
+     * The channels to which the message is sent, identified by their
+     * channel_ids.
+     * </pre>
      */
     public java.util.List<java.lang.Integer>
         getChannelIdList() {
@@ -12813,22 +14917,36 @@ public final class Mumble {
     }
     /**
      * <code>repeated uint32 channel_id = 3;</code>
+     *
+     * <pre>
+     * The channels to which the message is sent, identified by their
+     * channel_ids.
+     * </pre>
      */
     public int getChannelIdCount() {
       return channelId_.size();
     }
     /**
      * <code>repeated uint32 channel_id = 3;</code>
+     *
+     * <pre>
+     * The channels to which the message is sent, identified by their
+     * channel_ids.
+     * </pre>
      */
     public int getChannelId(int index) {
       return channelId_.get(index);
     }
 
-    // repeated uint32 tree_id = 4;
     public static final int TREE_ID_FIELD_NUMBER = 4;
     private java.util.List<java.lang.Integer> treeId_;
     /**
      * <code>repeated uint32 tree_id = 4;</code>
+     *
+     * <pre>
+     * The root channels when sending message recursively to several channels,
+     * identified by their channel_ids.
+     * </pre>
      */
     public java.util.List<java.lang.Integer>
         getTreeIdList() {
@@ -12836,28 +14954,45 @@ public final class Mumble {
     }
     /**
      * <code>repeated uint32 tree_id = 4;</code>
+     *
+     * <pre>
+     * The root channels when sending message recursively to several channels,
+     * identified by their channel_ids.
+     * </pre>
      */
     public int getTreeIdCount() {
       return treeId_.size();
     }
     /**
      * <code>repeated uint32 tree_id = 4;</code>
+     *
+     * <pre>
+     * The root channels when sending message recursively to several channels,
+     * identified by their channel_ids.
+     * </pre>
      */
     public int getTreeId(int index) {
       return treeId_.get(index);
     }
 
-    // required string message = 5;
     public static final int MESSAGE_FIELD_NUMBER = 5;
     private java.lang.Object message_;
     /**
      * <code>required string message = 5;</code>
+     *
+     * <pre>
+     * The UTF-8 encoded message. May be HTML if the server allows.
+     * </pre>
      */
     public boolean hasMessage() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>required string message = 5;</code>
+     *
+     * <pre>
+     * The UTF-8 encoded message. May be HTML if the server allows.
+     * </pre>
      */
     public java.lang.String getMessage() {
       java.lang.Object ref = message_;
@@ -12875,6 +15010,10 @@ public final class Mumble {
     }
     /**
      * <code>required string message = 5;</code>
+     *
+     * <pre>
+     * The UTF-8 encoded message. May be HTML if the server allows.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
@@ -12900,7 +15039,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasMessage()) {
         memoizedIsInitialized = 0;
@@ -13052,10 +15192,15 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.TextMessage}
+     *
+     * <pre>
+     * Used to send and broadcast text messages.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.TextMessageOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.TextMessage)
+        MumbleProto.Mumble.TextMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_TextMessage_descriptor;
@@ -13234,22 +15379,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional uint32 actor = 1;
       private int actor_ ;
       /**
        * <code>optional uint32 actor = 1;</code>
+       *
+       * <pre>
+       * The message sender, identified by its session.
+       * </pre>
        */
       public boolean hasActor() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional uint32 actor = 1;</code>
+       *
+       * <pre>
+       * The message sender, identified by its session.
+       * </pre>
        */
       public int getActor() {
         return actor_;
       }
       /**
        * <code>optional uint32 actor = 1;</code>
+       *
+       * <pre>
+       * The message sender, identified by its session.
+       * </pre>
        */
       public Builder setActor(int value) {
         bitField0_ |= 0x00000001;
@@ -13259,6 +15415,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 actor = 1;</code>
+       *
+       * <pre>
+       * The message sender, identified by its session.
+       * </pre>
        */
       public Builder clearActor() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -13267,7 +15427,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated uint32 session = 2;
       private java.util.List<java.lang.Integer> session_ = java.util.Collections.emptyList();
       private void ensureSessionIsMutable() {
         if (!((bitField0_ & 0x00000002) == 0x00000002)) {
@@ -13277,6 +15436,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 session = 2;</code>
+       *
+       * <pre>
+       * Target users for the message, identified by their session.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getSessionList() {
@@ -13284,18 +15447,30 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 session = 2;</code>
+       *
+       * <pre>
+       * Target users for the message, identified by their session.
+       * </pre>
        */
       public int getSessionCount() {
         return session_.size();
       }
       /**
        * <code>repeated uint32 session = 2;</code>
+       *
+       * <pre>
+       * Target users for the message, identified by their session.
+       * </pre>
        */
       public int getSession(int index) {
         return session_.get(index);
       }
       /**
        * <code>repeated uint32 session = 2;</code>
+       *
+       * <pre>
+       * Target users for the message, identified by their session.
+       * </pre>
        */
       public Builder setSession(
           int index, int value) {
@@ -13306,6 +15481,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 session = 2;</code>
+       *
+       * <pre>
+       * Target users for the message, identified by their session.
+       * </pre>
        */
       public Builder addSession(int value) {
         ensureSessionIsMutable();
@@ -13315,16 +15494,25 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 session = 2;</code>
+       *
+       * <pre>
+       * Target users for the message, identified by their session.
+       * </pre>
        */
       public Builder addAllSession(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureSessionIsMutable();
-        super.addAll(values, session_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, session_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated uint32 session = 2;</code>
+       *
+       * <pre>
+       * Target users for the message, identified by their session.
+       * </pre>
        */
       public Builder clearSession() {
         session_ = java.util.Collections.emptyList();
@@ -13333,7 +15521,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated uint32 channel_id = 3;
       private java.util.List<java.lang.Integer> channelId_ = java.util.Collections.emptyList();
       private void ensureChannelIdIsMutable() {
         if (!((bitField0_ & 0x00000004) == 0x00000004)) {
@@ -13343,6 +15530,11 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 channel_id = 3;</code>
+       *
+       * <pre>
+       * The channels to which the message is sent, identified by their
+       * channel_ids.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getChannelIdList() {
@@ -13350,18 +15542,33 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 channel_id = 3;</code>
+       *
+       * <pre>
+       * The channels to which the message is sent, identified by their
+       * channel_ids.
+       * </pre>
        */
       public int getChannelIdCount() {
         return channelId_.size();
       }
       /**
        * <code>repeated uint32 channel_id = 3;</code>
+       *
+       * <pre>
+       * The channels to which the message is sent, identified by their
+       * channel_ids.
+       * </pre>
        */
       public int getChannelId(int index) {
         return channelId_.get(index);
       }
       /**
        * <code>repeated uint32 channel_id = 3;</code>
+       *
+       * <pre>
+       * The channels to which the message is sent, identified by their
+       * channel_ids.
+       * </pre>
        */
       public Builder setChannelId(
           int index, int value) {
@@ -13372,6 +15579,11 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 channel_id = 3;</code>
+       *
+       * <pre>
+       * The channels to which the message is sent, identified by their
+       * channel_ids.
+       * </pre>
        */
       public Builder addChannelId(int value) {
         ensureChannelIdIsMutable();
@@ -13381,16 +15593,27 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 channel_id = 3;</code>
+       *
+       * <pre>
+       * The channels to which the message is sent, identified by their
+       * channel_ids.
+       * </pre>
        */
       public Builder addAllChannelId(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureChannelIdIsMutable();
-        super.addAll(values, channelId_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, channelId_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated uint32 channel_id = 3;</code>
+       *
+       * <pre>
+       * The channels to which the message is sent, identified by their
+       * channel_ids.
+       * </pre>
        */
       public Builder clearChannelId() {
         channelId_ = java.util.Collections.emptyList();
@@ -13399,7 +15622,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated uint32 tree_id = 4;
       private java.util.List<java.lang.Integer> treeId_ = java.util.Collections.emptyList();
       private void ensureTreeIdIsMutable() {
         if (!((bitField0_ & 0x00000008) == 0x00000008)) {
@@ -13409,6 +15631,11 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 tree_id = 4;</code>
+       *
+       * <pre>
+       * The root channels when sending message recursively to several channels,
+       * identified by their channel_ids.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getTreeIdList() {
@@ -13416,18 +15643,33 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 tree_id = 4;</code>
+       *
+       * <pre>
+       * The root channels when sending message recursively to several channels,
+       * identified by their channel_ids.
+       * </pre>
        */
       public int getTreeIdCount() {
         return treeId_.size();
       }
       /**
        * <code>repeated uint32 tree_id = 4;</code>
+       *
+       * <pre>
+       * The root channels when sending message recursively to several channels,
+       * identified by their channel_ids.
+       * </pre>
        */
       public int getTreeId(int index) {
         return treeId_.get(index);
       }
       /**
        * <code>repeated uint32 tree_id = 4;</code>
+       *
+       * <pre>
+       * The root channels when sending message recursively to several channels,
+       * identified by their channel_ids.
+       * </pre>
        */
       public Builder setTreeId(
           int index, int value) {
@@ -13438,6 +15680,11 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 tree_id = 4;</code>
+       *
+       * <pre>
+       * The root channels when sending message recursively to several channels,
+       * identified by their channel_ids.
+       * </pre>
        */
       public Builder addTreeId(int value) {
         ensureTreeIdIsMutable();
@@ -13447,16 +15694,27 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 tree_id = 4;</code>
+       *
+       * <pre>
+       * The root channels when sending message recursively to several channels,
+       * identified by their channel_ids.
+       * </pre>
        */
       public Builder addAllTreeId(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureTreeIdIsMutable();
-        super.addAll(values, treeId_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, treeId_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated uint32 tree_id = 4;</code>
+       *
+       * <pre>
+       * The root channels when sending message recursively to several channels,
+       * identified by their channel_ids.
+       * </pre>
        */
       public Builder clearTreeId() {
         treeId_ = java.util.Collections.emptyList();
@@ -13465,23 +15723,33 @@ public final class Mumble {
         return this;
       }
 
-      // required string message = 5;
       private java.lang.Object message_ = "";
       /**
        * <code>required string message = 5;</code>
+       *
+       * <pre>
+       * The UTF-8 encoded message. May be HTML if the server allows.
+       * </pre>
        */
       public boolean hasMessage() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
        * <code>required string message = 5;</code>
+       *
+       * <pre>
+       * The UTF-8 encoded message. May be HTML if the server allows.
+       * </pre>
        */
       public java.lang.String getMessage() {
         java.lang.Object ref = message_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          message_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            message_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -13489,6 +15757,10 @@ public final class Mumble {
       }
       /**
        * <code>required string message = 5;</code>
+       *
+       * <pre>
+       * The UTF-8 encoded message. May be HTML if the server allows.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getMessageBytes() {
@@ -13505,6 +15777,10 @@ public final class Mumble {
       }
       /**
        * <code>required string message = 5;</code>
+       *
+       * <pre>
+       * The UTF-8 encoded message. May be HTML if the server allows.
+       * </pre>
        */
       public Builder setMessage(
           java.lang.String value) {
@@ -13518,6 +15794,10 @@ public final class Mumble {
       }
       /**
        * <code>required string message = 5;</code>
+       *
+       * <pre>
+       * The UTF-8 encoded message. May be HTML if the server allows.
+       * </pre>
        */
       public Builder clearMessage() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -13527,6 +15807,10 @@ public final class Mumble {
       }
       /**
        * <code>required string message = 5;</code>
+       *
+       * <pre>
+       * The UTF-8 encoded message. May be HTML if the server allows.
+       * </pre>
        */
       public Builder setMessageBytes(
           com.google.protobuf.ByteString value) {
@@ -13550,75 +15834,128 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.TextMessage)
   }
 
-  public interface PermissionDeniedOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface PermissionDeniedOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.PermissionDenied)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional uint32 permission = 1;
     /**
      * <code>optional uint32 permission = 1;</code>
+     *
+     * <pre>
+     * The denied permission when type is Permission.
+     * </pre>
      */
     boolean hasPermission();
     /**
      * <code>optional uint32 permission = 1;</code>
+     *
+     * <pre>
+     * The denied permission when type is Permission.
+     * </pre>
      */
     int getPermission();
 
-    // optional uint32 channel_id = 2;
     /**
      * <code>optional uint32 channel_id = 2;</code>
+     *
+     * <pre>
+     * channel_id for the channel where the permission was denied when type is
+     * Permission.
+     * </pre>
      */
     boolean hasChannelId();
     /**
      * <code>optional uint32 channel_id = 2;</code>
+     *
+     * <pre>
+     * channel_id for the channel where the permission was denied when type is
+     * Permission.
+     * </pre>
      */
     int getChannelId();
 
-    // optional uint32 session = 3;
     /**
      * <code>optional uint32 session = 3;</code>
+     *
+     * <pre>
+     * The user who was denied permissions, identified by session.
+     * </pre>
      */
     boolean hasSession();
     /**
      * <code>optional uint32 session = 3;</code>
+     *
+     * <pre>
+     * The user who was denied permissions, identified by session.
+     * </pre>
      */
     int getSession();
 
-    // optional string reason = 4;
     /**
      * <code>optional string reason = 4;</code>
+     *
+     * <pre>
+     * Textual reason for the denial.
+     * </pre>
      */
     boolean hasReason();
     /**
      * <code>optional string reason = 4;</code>
+     *
+     * <pre>
+     * Textual reason for the denial.
+     * </pre>
      */
     java.lang.String getReason();
     /**
      * <code>optional string reason = 4;</code>
+     *
+     * <pre>
+     * Textual reason for the denial.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getReasonBytes();
 
-    // optional .MumbleProto.PermissionDenied.DenyType type = 5;
     /**
      * <code>optional .MumbleProto.PermissionDenied.DenyType type = 5;</code>
+     *
+     * <pre>
+     * Type of the denial.
+     * </pre>
      */
     boolean hasType();
     /**
      * <code>optional .MumbleProto.PermissionDenied.DenyType type = 5;</code>
+     *
+     * <pre>
+     * Type of the denial.
+     * </pre>
      */
     MumbleProto.Mumble.PermissionDenied.DenyType getType();
 
-    // optional string name = 6;
     /**
      * <code>optional string name = 6;</code>
+     *
+     * <pre>
+     * The name that is invalid when type is UserName.
+     * </pre>
      */
     boolean hasName();
     /**
      * <code>optional string name = 6;</code>
+     *
+     * <pre>
+     * The name that is invalid when type is UserName.
+     * </pre>
      */
     java.lang.String getName();
     /**
      * <code>optional string name = 6;</code>
+     *
+     * <pre>
+     * The name that is invalid when type is UserName.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getNameBytes();
@@ -13627,8 +15964,9 @@ public final class Mumble {
    * Protobuf type {@code MumbleProto.PermissionDenied}
    */
   public static final class PermissionDenied extends
-      com.google.protobuf.GeneratedMessage
-      implements PermissionDeniedOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.PermissionDenied)
+      PermissionDeniedOrBuilder {
     // Use PermissionDenied.newBuilder() to construct.
     private PermissionDenied(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -13690,8 +16028,9 @@ public final class Mumble {
               break;
             }
             case 34: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000008;
-              reason_ = input.readBytes();
+              reason_ = bs;
               break;
             }
             case 40: {
@@ -13706,8 +16045,9 @@ public final class Mumble {
               break;
             }
             case 50: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000020;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
           }
@@ -13756,42 +16096,82 @@ public final class Mumble {
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
        * <code>Text = 0;</code>
+       *
+       * <pre>
+       * Operation denied for other reason, see reason field.
+       * </pre>
        */
       Text(0, 0),
       /**
        * <code>Permission = 1;</code>
+       *
+       * <pre>
+       * Permissions were denied.
+       * </pre>
        */
       Permission(1, 1),
       /**
        * <code>SuperUser = 2;</code>
+       *
+       * <pre>
+       * Cannot modify SuperUser.
+       * </pre>
        */
       SuperUser(2, 2),
       /**
        * <code>ChannelName = 3;</code>
+       *
+       * <pre>
+       * Invalid channel name.
+       * </pre>
        */
       ChannelName(3, 3),
       /**
        * <code>TextTooLong = 4;</code>
+       *
+       * <pre>
+       * Text message too long.
+       * </pre>
        */
       TextTooLong(4, 4),
       /**
        * <code>H9K = 5;</code>
+       *
+       * <pre>
+       * The flux capacitor was spelled wrong.
+       * </pre>
        */
       H9K(5, 5),
       /**
        * <code>TemporaryChannel = 6;</code>
+       *
+       * <pre>
+       * Operation not permitted in temporary channel.
+       * </pre>
        */
       TemporaryChannel(6, 6),
       /**
        * <code>MissingCertificate = 7;</code>
+       *
+       * <pre>
+       * Operation requires certificate.
+       * </pre>
        */
       MissingCertificate(7, 7),
       /**
        * <code>UserName = 8;</code>
+       *
+       * <pre>
+       * Invalid username.
+       * </pre>
        */
       UserName(8, 8),
       /**
        * <code>ChannelFull = 9;</code>
+       *
+       * <pre>
+       * Channel is full.
+       * </pre>
        */
       ChannelFull(9, 9),
       /**
@@ -13802,42 +16182,82 @@ public final class Mumble {
 
       /**
        * <code>Text = 0;</code>
+       *
+       * <pre>
+       * Operation denied for other reason, see reason field.
+       * </pre>
        */
       public static final int Text_VALUE = 0;
       /**
        * <code>Permission = 1;</code>
+       *
+       * <pre>
+       * Permissions were denied.
+       * </pre>
        */
       public static final int Permission_VALUE = 1;
       /**
        * <code>SuperUser = 2;</code>
+       *
+       * <pre>
+       * Cannot modify SuperUser.
+       * </pre>
        */
       public static final int SuperUser_VALUE = 2;
       /**
        * <code>ChannelName = 3;</code>
+       *
+       * <pre>
+       * Invalid channel name.
+       * </pre>
        */
       public static final int ChannelName_VALUE = 3;
       /**
        * <code>TextTooLong = 4;</code>
+       *
+       * <pre>
+       * Text message too long.
+       * </pre>
        */
       public static final int TextTooLong_VALUE = 4;
       /**
        * <code>H9K = 5;</code>
+       *
+       * <pre>
+       * The flux capacitor was spelled wrong.
+       * </pre>
        */
       public static final int H9K_VALUE = 5;
       /**
        * <code>TemporaryChannel = 6;</code>
+       *
+       * <pre>
+       * Operation not permitted in temporary channel.
+       * </pre>
        */
       public static final int TemporaryChannel_VALUE = 6;
       /**
        * <code>MissingCertificate = 7;</code>
+       *
+       * <pre>
+       * Operation requires certificate.
+       * </pre>
        */
       public static final int MissingCertificate_VALUE = 7;
       /**
        * <code>UserName = 8;</code>
+       *
+       * <pre>
+       * Invalid username.
+       * </pre>
        */
       public static final int UserName_VALUE = 8;
       /**
        * <code>ChannelFull = 9;</code>
+       *
+       * <pre>
+       * Channel is full.
+       * </pre>
        */
       public static final int ChannelFull_VALUE = 9;
       /**
@@ -13913,65 +16333,95 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional uint32 permission = 1;
     public static final int PERMISSION_FIELD_NUMBER = 1;
     private int permission_;
     /**
      * <code>optional uint32 permission = 1;</code>
+     *
+     * <pre>
+     * The denied permission when type is Permission.
+     * </pre>
      */
     public boolean hasPermission() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional uint32 permission = 1;</code>
+     *
+     * <pre>
+     * The denied permission when type is Permission.
+     * </pre>
      */
     public int getPermission() {
       return permission_;
     }
 
-    // optional uint32 channel_id = 2;
     public static final int CHANNEL_ID_FIELD_NUMBER = 2;
     private int channelId_;
     /**
      * <code>optional uint32 channel_id = 2;</code>
+     *
+     * <pre>
+     * channel_id for the channel where the permission was denied when type is
+     * Permission.
+     * </pre>
      */
     public boolean hasChannelId() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional uint32 channel_id = 2;</code>
+     *
+     * <pre>
+     * channel_id for the channel where the permission was denied when type is
+     * Permission.
+     * </pre>
      */
     public int getChannelId() {
       return channelId_;
     }
 
-    // optional uint32 session = 3;
     public static final int SESSION_FIELD_NUMBER = 3;
     private int session_;
     /**
      * <code>optional uint32 session = 3;</code>
+     *
+     * <pre>
+     * The user who was denied permissions, identified by session.
+     * </pre>
      */
     public boolean hasSession() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>optional uint32 session = 3;</code>
+     *
+     * <pre>
+     * The user who was denied permissions, identified by session.
+     * </pre>
      */
     public int getSession() {
       return session_;
     }
 
-    // optional string reason = 4;
     public static final int REASON_FIELD_NUMBER = 4;
     private java.lang.Object reason_;
     /**
      * <code>optional string reason = 4;</code>
+     *
+     * <pre>
+     * Textual reason for the denial.
+     * </pre>
      */
     public boolean hasReason() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
      * <code>optional string reason = 4;</code>
+     *
+     * <pre>
+     * Textual reason for the denial.
+     * </pre>
      */
     public java.lang.String getReason() {
       java.lang.Object ref = reason_;
@@ -13989,6 +16439,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string reason = 4;</code>
+     *
+     * <pre>
+     * Textual reason for the denial.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getReasonBytes() {
@@ -14004,33 +16458,47 @@ public final class Mumble {
       }
     }
 
-    // optional .MumbleProto.PermissionDenied.DenyType type = 5;
     public static final int TYPE_FIELD_NUMBER = 5;
     private MumbleProto.Mumble.PermissionDenied.DenyType type_;
     /**
      * <code>optional .MumbleProto.PermissionDenied.DenyType type = 5;</code>
+     *
+     * <pre>
+     * Type of the denial.
+     * </pre>
      */
     public boolean hasType() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
      * <code>optional .MumbleProto.PermissionDenied.DenyType type = 5;</code>
+     *
+     * <pre>
+     * Type of the denial.
+     * </pre>
      */
     public MumbleProto.Mumble.PermissionDenied.DenyType getType() {
       return type_;
     }
 
-    // optional string name = 6;
     public static final int NAME_FIELD_NUMBER = 6;
     private java.lang.Object name_;
     /**
      * <code>optional string name = 6;</code>
+     *
+     * <pre>
+     * The name that is invalid when type is UserName.
+     * </pre>
      */
     public boolean hasName() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
      * <code>optional string name = 6;</code>
+     *
+     * <pre>
+     * The name that is invalid when type is UserName.
+     * </pre>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -14048,6 +16516,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string name = 6;</code>
+     *
+     * <pre>
+     * The name that is invalid when type is UserName.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -14074,7 +16546,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -14216,8 +16689,9 @@ public final class Mumble {
      * Protobuf type {@code MumbleProto.PermissionDenied}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.PermissionDeniedOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.PermissionDenied)
+        MumbleProto.Mumble.PermissionDeniedOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_PermissionDenied_descriptor;
@@ -14379,22 +16853,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional uint32 permission = 1;
       private int permission_ ;
       /**
        * <code>optional uint32 permission = 1;</code>
+       *
+       * <pre>
+       * The denied permission when type is Permission.
+       * </pre>
        */
       public boolean hasPermission() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional uint32 permission = 1;</code>
+       *
+       * <pre>
+       * The denied permission when type is Permission.
+       * </pre>
        */
       public int getPermission() {
         return permission_;
       }
       /**
        * <code>optional uint32 permission = 1;</code>
+       *
+       * <pre>
+       * The denied permission when type is Permission.
+       * </pre>
        */
       public Builder setPermission(int value) {
         bitField0_ |= 0x00000001;
@@ -14404,6 +16889,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 permission = 1;</code>
+       *
+       * <pre>
+       * The denied permission when type is Permission.
+       * </pre>
        */
       public Builder clearPermission() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -14412,22 +16901,36 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 channel_id = 2;
       private int channelId_ ;
       /**
        * <code>optional uint32 channel_id = 2;</code>
+       *
+       * <pre>
+       * channel_id for the channel where the permission was denied when type is
+       * Permission.
+       * </pre>
        */
       public boolean hasChannelId() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional uint32 channel_id = 2;</code>
+       *
+       * <pre>
+       * channel_id for the channel where the permission was denied when type is
+       * Permission.
+       * </pre>
        */
       public int getChannelId() {
         return channelId_;
       }
       /**
        * <code>optional uint32 channel_id = 2;</code>
+       *
+       * <pre>
+       * channel_id for the channel where the permission was denied when type is
+       * Permission.
+       * </pre>
        */
       public Builder setChannelId(int value) {
         bitField0_ |= 0x00000002;
@@ -14437,6 +16940,11 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 channel_id = 2;</code>
+       *
+       * <pre>
+       * channel_id for the channel where the permission was denied when type is
+       * Permission.
+       * </pre>
        */
       public Builder clearChannelId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -14445,22 +16953,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 session = 3;
       private int session_ ;
       /**
        * <code>optional uint32 session = 3;</code>
+       *
+       * <pre>
+       * The user who was denied permissions, identified by session.
+       * </pre>
        */
       public boolean hasSession() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional uint32 session = 3;</code>
+       *
+       * <pre>
+       * The user who was denied permissions, identified by session.
+       * </pre>
        */
       public int getSession() {
         return session_;
       }
       /**
        * <code>optional uint32 session = 3;</code>
+       *
+       * <pre>
+       * The user who was denied permissions, identified by session.
+       * </pre>
        */
       public Builder setSession(int value) {
         bitField0_ |= 0x00000004;
@@ -14470,6 +16989,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 session = 3;</code>
+       *
+       * <pre>
+       * The user who was denied permissions, identified by session.
+       * </pre>
        */
       public Builder clearSession() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -14478,23 +17001,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string reason = 4;
       private java.lang.Object reason_ = "";
       /**
        * <code>optional string reason = 4;</code>
+       *
+       * <pre>
+       * Textual reason for the denial.
+       * </pre>
        */
       public boolean hasReason() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <code>optional string reason = 4;</code>
+       *
+       * <pre>
+       * Textual reason for the denial.
+       * </pre>
        */
       public java.lang.String getReason() {
         java.lang.Object ref = reason_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          reason_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            reason_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -14502,6 +17035,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string reason = 4;</code>
+       *
+       * <pre>
+       * Textual reason for the denial.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getReasonBytes() {
@@ -14518,6 +17055,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string reason = 4;</code>
+       *
+       * <pre>
+       * Textual reason for the denial.
+       * </pre>
        */
       public Builder setReason(
           java.lang.String value) {
@@ -14531,6 +17072,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string reason = 4;</code>
+       *
+       * <pre>
+       * Textual reason for the denial.
+       * </pre>
        */
       public Builder clearReason() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -14540,6 +17085,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string reason = 4;</code>
+       *
+       * <pre>
+       * Textual reason for the denial.
+       * </pre>
        */
       public Builder setReasonBytes(
           com.google.protobuf.ByteString value) {
@@ -14552,22 +17101,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional .MumbleProto.PermissionDenied.DenyType type = 5;
       private MumbleProto.Mumble.PermissionDenied.DenyType type_ = MumbleProto.Mumble.PermissionDenied.DenyType.Text;
       /**
        * <code>optional .MumbleProto.PermissionDenied.DenyType type = 5;</code>
+       *
+       * <pre>
+       * Type of the denial.
+       * </pre>
        */
       public boolean hasType() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
        * <code>optional .MumbleProto.PermissionDenied.DenyType type = 5;</code>
+       *
+       * <pre>
+       * Type of the denial.
+       * </pre>
        */
       public MumbleProto.Mumble.PermissionDenied.DenyType getType() {
         return type_;
       }
       /**
        * <code>optional .MumbleProto.PermissionDenied.DenyType type = 5;</code>
+       *
+       * <pre>
+       * Type of the denial.
+       * </pre>
        */
       public Builder setType(MumbleProto.Mumble.PermissionDenied.DenyType value) {
         if (value == null) {
@@ -14580,6 +17140,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.PermissionDenied.DenyType type = 5;</code>
+       *
+       * <pre>
+       * Type of the denial.
+       * </pre>
        */
       public Builder clearType() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -14588,23 +17152,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string name = 6;
       private java.lang.Object name_ = "";
       /**
        * <code>optional string name = 6;</code>
+       *
+       * <pre>
+       * The name that is invalid when type is UserName.
+       * </pre>
        */
       public boolean hasName() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
        * <code>optional string name = 6;</code>
+       *
+       * <pre>
+       * The name that is invalid when type is UserName.
+       * </pre>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -14612,6 +17186,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 6;</code>
+       *
+       * <pre>
+       * The name that is invalid when type is UserName.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -14628,6 +17206,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 6;</code>
+       *
+       * <pre>
+       * The name that is invalid when type is UserName.
+       * </pre>
        */
       public Builder setName(
           java.lang.String value) {
@@ -14641,6 +17223,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 6;</code>
+       *
+       * <pre>
+       * The name that is invalid when type is UserName.
+       * </pre>
        */
       public Builder clearName() {
         bitField0_ = (bitField0_ & ~0x00000020);
@@ -14650,6 +17236,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 6;</code>
+       *
+       * <pre>
+       * The name that is invalid when type is UserName.
+       * </pre>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -14673,86 +17263,146 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.PermissionDenied)
   }
 
-  public interface ACLOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface ACLOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.ACL)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required uint32 channel_id = 1;
     /**
      * <code>required uint32 channel_id = 1;</code>
+     *
+     * <pre>
+     * Channel ID of the channel this message affects.
+     * </pre>
      */
     boolean hasChannelId();
     /**
      * <code>required uint32 channel_id = 1;</code>
+     *
+     * <pre>
+     * Channel ID of the channel this message affects.
+     * </pre>
      */
     int getChannelId();
 
-    // optional bool inherit_acls = 2 [default = true];
     /**
      * <code>optional bool inherit_acls = 2 [default = true];</code>
+     *
+     * <pre>
+     * True if the channel inherits its parent's ACLs.
+     * </pre>
      */
     boolean hasInheritAcls();
     /**
      * <code>optional bool inherit_acls = 2 [default = true];</code>
+     *
+     * <pre>
+     * True if the channel inherits its parent's ACLs.
+     * </pre>
      */
     boolean getInheritAcls();
 
-    // repeated .MumbleProto.ACL.ChanGroup groups = 3;
     /**
      * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+     *
+     * <pre>
+     * User group specifications.
+     * </pre>
      */
     java.util.List<MumbleProto.Mumble.ACL.ChanGroup> 
         getGroupsList();
     /**
      * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+     *
+     * <pre>
+     * User group specifications.
+     * </pre>
      */
     MumbleProto.Mumble.ACL.ChanGroup getGroups(int index);
     /**
      * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+     *
+     * <pre>
+     * User group specifications.
+     * </pre>
      */
     int getGroupsCount();
     /**
      * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+     *
+     * <pre>
+     * User group specifications.
+     * </pre>
      */
     java.util.List<? extends MumbleProto.Mumble.ACL.ChanGroupOrBuilder> 
         getGroupsOrBuilderList();
     /**
      * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+     *
+     * <pre>
+     * User group specifications.
+     * </pre>
      */
     MumbleProto.Mumble.ACL.ChanGroupOrBuilder getGroupsOrBuilder(
         int index);
 
-    // repeated .MumbleProto.ACL.ChanACL acls = 4;
     /**
      * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+     *
+     * <pre>
+     * ACL specifications.
+     * </pre>
      */
     java.util.List<MumbleProto.Mumble.ACL.ChanACL> 
         getAclsList();
     /**
      * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+     *
+     * <pre>
+     * ACL specifications.
+     * </pre>
      */
     MumbleProto.Mumble.ACL.ChanACL getAcls(int index);
     /**
      * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+     *
+     * <pre>
+     * ACL specifications.
+     * </pre>
      */
     int getAclsCount();
     /**
      * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+     *
+     * <pre>
+     * ACL specifications.
+     * </pre>
      */
     java.util.List<? extends MumbleProto.Mumble.ACL.ChanACLOrBuilder> 
         getAclsOrBuilderList();
     /**
      * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+     *
+     * <pre>
+     * ACL specifications.
+     * </pre>
      */
     MumbleProto.Mumble.ACL.ChanACLOrBuilder getAclsOrBuilder(
         int index);
 
-    // optional bool query = 5 [default = false];
     /**
      * <code>optional bool query = 5 [default = false];</code>
+     *
+     * <pre>
+     * True if the message is a query for ACLs instead of setting them.
+     * </pre>
      */
     boolean hasQuery();
     /**
      * <code>optional bool query = 5 [default = false];</code>
+     *
+     * <pre>
+     * True if the message is a query for ACLs instead of setting them.
+     * </pre>
      */
     boolean getQuery();
   }
@@ -14760,8 +17410,9 @@ public final class Mumble {
    * Protobuf type {@code MumbleProto.ACL}
    */
   public static final class ACL extends
-      com.google.protobuf.GeneratedMessage
-      implements ACLOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.ACL)
+      ACLOrBuilder {
     // Use ACL.newBuilder() to construct.
     private ACL(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -14883,93 +17534,162 @@ public final class Mumble {
       return PARSER;
     }
 
-    public interface ChanGroupOrBuilder
-        extends com.google.protobuf.MessageOrBuilder {
+    public interface ChanGroupOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:MumbleProto.ACL.ChanGroup)
+        com.google.protobuf.MessageOrBuilder {
 
-      // required string name = 1;
       /**
        * <code>required string name = 1;</code>
+       *
+       * <pre>
+       * Name of the channel group, UTF-8 encoded.
+       * </pre>
        */
       boolean hasName();
       /**
        * <code>required string name = 1;</code>
+       *
+       * <pre>
+       * Name of the channel group, UTF-8 encoded.
+       * </pre>
        */
       java.lang.String getName();
       /**
        * <code>required string name = 1;</code>
+       *
+       * <pre>
+       * Name of the channel group, UTF-8 encoded.
+       * </pre>
        */
       com.google.protobuf.ByteString
           getNameBytes();
 
-      // optional bool inherited = 2 [default = true];
       /**
        * <code>optional bool inherited = 2 [default = true];</code>
+       *
+       * <pre>
+       * True if the group has been inherited from the parent (Read only).
+       * </pre>
        */
       boolean hasInherited();
       /**
        * <code>optional bool inherited = 2 [default = true];</code>
+       *
+       * <pre>
+       * True if the group has been inherited from the parent (Read only).
+       * </pre>
        */
       boolean getInherited();
 
-      // optional bool inherit = 3 [default = true];
       /**
        * <code>optional bool inherit = 3 [default = true];</code>
+       *
+       * <pre>
+       * True if the group members are inherited.
+       * </pre>
        */
       boolean hasInherit();
       /**
        * <code>optional bool inherit = 3 [default = true];</code>
+       *
+       * <pre>
+       * True if the group members are inherited.
+       * </pre>
        */
       boolean getInherit();
 
-      // optional bool inheritable = 4 [default = true];
       /**
        * <code>optional bool inheritable = 4 [default = true];</code>
+       *
+       * <pre>
+       * True if the group can be inherited by sub channels.
+       * </pre>
        */
       boolean hasInheritable();
       /**
        * <code>optional bool inheritable = 4 [default = true];</code>
+       *
+       * <pre>
+       * True if the group can be inherited by sub channels.
+       * </pre>
        */
       boolean getInheritable();
 
-      // repeated uint32 add = 5;
       /**
        * <code>repeated uint32 add = 5;</code>
+       *
+       * <pre>
+       * Users explicitly included in this group, identified by user_id.
+       * </pre>
        */
       java.util.List<java.lang.Integer> getAddList();
       /**
        * <code>repeated uint32 add = 5;</code>
+       *
+       * <pre>
+       * Users explicitly included in this group, identified by user_id.
+       * </pre>
        */
       int getAddCount();
       /**
        * <code>repeated uint32 add = 5;</code>
+       *
+       * <pre>
+       * Users explicitly included in this group, identified by user_id.
+       * </pre>
        */
       int getAdd(int index);
 
-      // repeated uint32 remove = 6;
       /**
        * <code>repeated uint32 remove = 6;</code>
+       *
+       * <pre>
+       * Users explicitly removed from this group in this channel if the group
+       * has been inherited, identified by user_id.
+       * </pre>
        */
       java.util.List<java.lang.Integer> getRemoveList();
       /**
        * <code>repeated uint32 remove = 6;</code>
+       *
+       * <pre>
+       * Users explicitly removed from this group in this channel if the group
+       * has been inherited, identified by user_id.
+       * </pre>
        */
       int getRemoveCount();
       /**
        * <code>repeated uint32 remove = 6;</code>
+       *
+       * <pre>
+       * Users explicitly removed from this group in this channel if the group
+       * has been inherited, identified by user_id.
+       * </pre>
        */
       int getRemove(int index);
 
-      // repeated uint32 inherited_members = 7;
       /**
        * <code>repeated uint32 inherited_members = 7;</code>
+       *
+       * <pre>
+       * Users inherited, identified by user_id.
+       * </pre>
        */
       java.util.List<java.lang.Integer> getInheritedMembersList();
       /**
        * <code>repeated uint32 inherited_members = 7;</code>
+       *
+       * <pre>
+       * Users inherited, identified by user_id.
+       * </pre>
        */
       int getInheritedMembersCount();
       /**
        * <code>repeated uint32 inherited_members = 7;</code>
+       *
+       * <pre>
+       * Users inherited, identified by user_id.
+       * </pre>
        */
       int getInheritedMembers(int index);
     }
@@ -14977,8 +17697,9 @@ public final class Mumble {
      * Protobuf type {@code MumbleProto.ACL.ChanGroup}
      */
     public static final class ChanGroup extends
-        com.google.protobuf.GeneratedMessage
-        implements ChanGroupOrBuilder {
+        com.google.protobuf.GeneratedMessage implements
+        // @@protoc_insertion_point(message_implements:MumbleProto.ACL.ChanGroup)
+        ChanGroupOrBuilder {
       // Use ChanGroup.newBuilder() to construct.
       private ChanGroup(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
         super(builder);
@@ -15025,8 +17746,9 @@ public final class Mumble {
                 break;
               }
               case 10: {
+                com.google.protobuf.ByteString bs = input.readBytes();
                 bitField0_ |= 0x00000001;
-                name_ = input.readBytes();
+                name_ = bs;
                 break;
               }
               case 16: {
@@ -15156,17 +17878,24 @@ public final class Mumble {
       }
 
       private int bitField0_;
-      // required string name = 1;
       public static final int NAME_FIELD_NUMBER = 1;
       private java.lang.Object name_;
       /**
        * <code>required string name = 1;</code>
+       *
+       * <pre>
+       * Name of the channel group, UTF-8 encoded.
+       * </pre>
        */
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>required string name = 1;</code>
+       *
+       * <pre>
+       * Name of the channel group, UTF-8 encoded.
+       * </pre>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -15184,6 +17913,10 @@ public final class Mumble {
       }
       /**
        * <code>required string name = 1;</code>
+       *
+       * <pre>
+       * Name of the channel group, UTF-8 encoded.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -15199,59 +17932,83 @@ public final class Mumble {
         }
       }
 
-      // optional bool inherited = 2 [default = true];
       public static final int INHERITED_FIELD_NUMBER = 2;
       private boolean inherited_;
       /**
        * <code>optional bool inherited = 2 [default = true];</code>
+       *
+       * <pre>
+       * True if the group has been inherited from the parent (Read only).
+       * </pre>
        */
       public boolean hasInherited() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional bool inherited = 2 [default = true];</code>
+       *
+       * <pre>
+       * True if the group has been inherited from the parent (Read only).
+       * </pre>
        */
       public boolean getInherited() {
         return inherited_;
       }
 
-      // optional bool inherit = 3 [default = true];
       public static final int INHERIT_FIELD_NUMBER = 3;
       private boolean inherit_;
       /**
        * <code>optional bool inherit = 3 [default = true];</code>
+       *
+       * <pre>
+       * True if the group members are inherited.
+       * </pre>
        */
       public boolean hasInherit() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional bool inherit = 3 [default = true];</code>
+       *
+       * <pre>
+       * True if the group members are inherited.
+       * </pre>
        */
       public boolean getInherit() {
         return inherit_;
       }
 
-      // optional bool inheritable = 4 [default = true];
       public static final int INHERITABLE_FIELD_NUMBER = 4;
       private boolean inheritable_;
       /**
        * <code>optional bool inheritable = 4 [default = true];</code>
+       *
+       * <pre>
+       * True if the group can be inherited by sub channels.
+       * </pre>
        */
       public boolean hasInheritable() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <code>optional bool inheritable = 4 [default = true];</code>
+       *
+       * <pre>
+       * True if the group can be inherited by sub channels.
+       * </pre>
        */
       public boolean getInheritable() {
         return inheritable_;
       }
 
-      // repeated uint32 add = 5;
       public static final int ADD_FIELD_NUMBER = 5;
       private java.util.List<java.lang.Integer> add_;
       /**
        * <code>repeated uint32 add = 5;</code>
+       *
+       * <pre>
+       * Users explicitly included in this group, identified by user_id.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getAddList() {
@@ -15259,22 +18016,34 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 add = 5;</code>
+       *
+       * <pre>
+       * Users explicitly included in this group, identified by user_id.
+       * </pre>
        */
       public int getAddCount() {
         return add_.size();
       }
       /**
        * <code>repeated uint32 add = 5;</code>
+       *
+       * <pre>
+       * Users explicitly included in this group, identified by user_id.
+       * </pre>
        */
       public int getAdd(int index) {
         return add_.get(index);
       }
 
-      // repeated uint32 remove = 6;
       public static final int REMOVE_FIELD_NUMBER = 6;
       private java.util.List<java.lang.Integer> remove_;
       /**
        * <code>repeated uint32 remove = 6;</code>
+       *
+       * <pre>
+       * Users explicitly removed from this group in this channel if the group
+       * has been inherited, identified by user_id.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getRemoveList() {
@@ -15282,22 +18051,35 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 remove = 6;</code>
+       *
+       * <pre>
+       * Users explicitly removed from this group in this channel if the group
+       * has been inherited, identified by user_id.
+       * </pre>
        */
       public int getRemoveCount() {
         return remove_.size();
       }
       /**
        * <code>repeated uint32 remove = 6;</code>
+       *
+       * <pre>
+       * Users explicitly removed from this group in this channel if the group
+       * has been inherited, identified by user_id.
+       * </pre>
        */
       public int getRemove(int index) {
         return remove_.get(index);
       }
 
-      // repeated uint32 inherited_members = 7;
       public static final int INHERITED_MEMBERS_FIELD_NUMBER = 7;
       private java.util.List<java.lang.Integer> inheritedMembers_;
       /**
        * <code>repeated uint32 inherited_members = 7;</code>
+       *
+       * <pre>
+       * Users inherited, identified by user_id.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getInheritedMembersList() {
@@ -15305,12 +18087,20 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 inherited_members = 7;</code>
+       *
+       * <pre>
+       * Users inherited, identified by user_id.
+       * </pre>
        */
       public int getInheritedMembersCount() {
         return inheritedMembers_.size();
       }
       /**
        * <code>repeated uint32 inherited_members = 7;</code>
+       *
+       * <pre>
+       * Users inherited, identified by user_id.
+       * </pre>
        */
       public int getInheritedMembers(int index) {
         return inheritedMembers_.get(index);
@@ -15328,7 +18118,8 @@ public final class Mumble {
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
         byte isInitialized = memoizedIsInitialized;
-        if (isInitialized != -1) return isInitialized == 1;
+        if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
 
         if (!hasName()) {
           memoizedIsInitialized = 0;
@@ -15496,8 +18287,9 @@ public final class Mumble {
        * Protobuf type {@code MumbleProto.ACL.ChanGroup}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessage.Builder<Builder>
-         implements MumbleProto.Mumble.ACL.ChanGroupOrBuilder {
+          com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:MumbleProto.ACL.ChanGroup)
+          MumbleProto.Mumble.ACL.ChanGroupOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
           return MumbleProto.Mumble.internal_static_MumbleProto_ACL_ChanGroup_descriptor;
@@ -15694,23 +18486,33 @@ public final class Mumble {
         }
         private int bitField0_;
 
-        // required string name = 1;
         private java.lang.Object name_ = "";
         /**
          * <code>required string name = 1;</code>
+         *
+         * <pre>
+         * Name of the channel group, UTF-8 encoded.
+         * </pre>
          */
         public boolean hasName() {
           return ((bitField0_ & 0x00000001) == 0x00000001);
         }
         /**
          * <code>required string name = 1;</code>
+         *
+         * <pre>
+         * Name of the channel group, UTF-8 encoded.
+         * </pre>
          */
         public java.lang.String getName() {
           java.lang.Object ref = name_;
           if (!(ref instanceof java.lang.String)) {
-            java.lang.String s = ((com.google.protobuf.ByteString) ref)
-                .toStringUtf8();
-            name_ = s;
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            if (bs.isValidUtf8()) {
+              name_ = s;
+            }
             return s;
           } else {
             return (java.lang.String) ref;
@@ -15718,6 +18520,10 @@ public final class Mumble {
         }
         /**
          * <code>required string name = 1;</code>
+         *
+         * <pre>
+         * Name of the channel group, UTF-8 encoded.
+         * </pre>
          */
         public com.google.protobuf.ByteString
             getNameBytes() {
@@ -15734,6 +18540,10 @@ public final class Mumble {
         }
         /**
          * <code>required string name = 1;</code>
+         *
+         * <pre>
+         * Name of the channel group, UTF-8 encoded.
+         * </pre>
          */
         public Builder setName(
             java.lang.String value) {
@@ -15747,6 +18557,10 @@ public final class Mumble {
         }
         /**
          * <code>required string name = 1;</code>
+         *
+         * <pre>
+         * Name of the channel group, UTF-8 encoded.
+         * </pre>
          */
         public Builder clearName() {
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -15756,6 +18570,10 @@ public final class Mumble {
         }
         /**
          * <code>required string name = 1;</code>
+         *
+         * <pre>
+         * Name of the channel group, UTF-8 encoded.
+         * </pre>
          */
         public Builder setNameBytes(
             com.google.protobuf.ByteString value) {
@@ -15768,22 +18586,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional bool inherited = 2 [default = true];
         private boolean inherited_ = true;
         /**
          * <code>optional bool inherited = 2 [default = true];</code>
+         *
+         * <pre>
+         * True if the group has been inherited from the parent (Read only).
+         * </pre>
          */
         public boolean hasInherited() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
         /**
          * <code>optional bool inherited = 2 [default = true];</code>
+         *
+         * <pre>
+         * True if the group has been inherited from the parent (Read only).
+         * </pre>
          */
         public boolean getInherited() {
           return inherited_;
         }
         /**
          * <code>optional bool inherited = 2 [default = true];</code>
+         *
+         * <pre>
+         * True if the group has been inherited from the parent (Read only).
+         * </pre>
          */
         public Builder setInherited(boolean value) {
           bitField0_ |= 0x00000002;
@@ -15793,6 +18622,10 @@ public final class Mumble {
         }
         /**
          * <code>optional bool inherited = 2 [default = true];</code>
+         *
+         * <pre>
+         * True if the group has been inherited from the parent (Read only).
+         * </pre>
          */
         public Builder clearInherited() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -15801,22 +18634,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional bool inherit = 3 [default = true];
         private boolean inherit_ = true;
         /**
          * <code>optional bool inherit = 3 [default = true];</code>
+         *
+         * <pre>
+         * True if the group members are inherited.
+         * </pre>
          */
         public boolean hasInherit() {
           return ((bitField0_ & 0x00000004) == 0x00000004);
         }
         /**
          * <code>optional bool inherit = 3 [default = true];</code>
+         *
+         * <pre>
+         * True if the group members are inherited.
+         * </pre>
          */
         public boolean getInherit() {
           return inherit_;
         }
         /**
          * <code>optional bool inherit = 3 [default = true];</code>
+         *
+         * <pre>
+         * True if the group members are inherited.
+         * </pre>
          */
         public Builder setInherit(boolean value) {
           bitField0_ |= 0x00000004;
@@ -15826,6 +18670,10 @@ public final class Mumble {
         }
         /**
          * <code>optional bool inherit = 3 [default = true];</code>
+         *
+         * <pre>
+         * True if the group members are inherited.
+         * </pre>
          */
         public Builder clearInherit() {
           bitField0_ = (bitField0_ & ~0x00000004);
@@ -15834,22 +18682,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional bool inheritable = 4 [default = true];
         private boolean inheritable_ = true;
         /**
          * <code>optional bool inheritable = 4 [default = true];</code>
+         *
+         * <pre>
+         * True if the group can be inherited by sub channels.
+         * </pre>
          */
         public boolean hasInheritable() {
           return ((bitField0_ & 0x00000008) == 0x00000008);
         }
         /**
          * <code>optional bool inheritable = 4 [default = true];</code>
+         *
+         * <pre>
+         * True if the group can be inherited by sub channels.
+         * </pre>
          */
         public boolean getInheritable() {
           return inheritable_;
         }
         /**
          * <code>optional bool inheritable = 4 [default = true];</code>
+         *
+         * <pre>
+         * True if the group can be inherited by sub channels.
+         * </pre>
          */
         public Builder setInheritable(boolean value) {
           bitField0_ |= 0x00000008;
@@ -15859,6 +18718,10 @@ public final class Mumble {
         }
         /**
          * <code>optional bool inheritable = 4 [default = true];</code>
+         *
+         * <pre>
+         * True if the group can be inherited by sub channels.
+         * </pre>
          */
         public Builder clearInheritable() {
           bitField0_ = (bitField0_ & ~0x00000008);
@@ -15867,7 +18730,6 @@ public final class Mumble {
           return this;
         }
 
-        // repeated uint32 add = 5;
         private java.util.List<java.lang.Integer> add_ = java.util.Collections.emptyList();
         private void ensureAddIsMutable() {
           if (!((bitField0_ & 0x00000010) == 0x00000010)) {
@@ -15877,6 +18739,10 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 add = 5;</code>
+         *
+         * <pre>
+         * Users explicitly included in this group, identified by user_id.
+         * </pre>
          */
         public java.util.List<java.lang.Integer>
             getAddList() {
@@ -15884,18 +18750,30 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 add = 5;</code>
+         *
+         * <pre>
+         * Users explicitly included in this group, identified by user_id.
+         * </pre>
          */
         public int getAddCount() {
           return add_.size();
         }
         /**
          * <code>repeated uint32 add = 5;</code>
+         *
+         * <pre>
+         * Users explicitly included in this group, identified by user_id.
+         * </pre>
          */
         public int getAdd(int index) {
           return add_.get(index);
         }
         /**
          * <code>repeated uint32 add = 5;</code>
+         *
+         * <pre>
+         * Users explicitly included in this group, identified by user_id.
+         * </pre>
          */
         public Builder setAdd(
             int index, int value) {
@@ -15906,6 +18784,10 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 add = 5;</code>
+         *
+         * <pre>
+         * Users explicitly included in this group, identified by user_id.
+         * </pre>
          */
         public Builder addAdd(int value) {
           ensureAddIsMutable();
@@ -15915,16 +18797,25 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 add = 5;</code>
+         *
+         * <pre>
+         * Users explicitly included in this group, identified by user_id.
+         * </pre>
          */
         public Builder addAllAdd(
             java.lang.Iterable<? extends java.lang.Integer> values) {
           ensureAddIsMutable();
-          super.addAll(values, add_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, add_);
           onChanged();
           return this;
         }
         /**
          * <code>repeated uint32 add = 5;</code>
+         *
+         * <pre>
+         * Users explicitly included in this group, identified by user_id.
+         * </pre>
          */
         public Builder clearAdd() {
           add_ = java.util.Collections.emptyList();
@@ -15933,7 +18824,6 @@ public final class Mumble {
           return this;
         }
 
-        // repeated uint32 remove = 6;
         private java.util.List<java.lang.Integer> remove_ = java.util.Collections.emptyList();
         private void ensureRemoveIsMutable() {
           if (!((bitField0_ & 0x00000020) == 0x00000020)) {
@@ -15943,6 +18833,11 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 remove = 6;</code>
+         *
+         * <pre>
+         * Users explicitly removed from this group in this channel if the group
+         * has been inherited, identified by user_id.
+         * </pre>
          */
         public java.util.List<java.lang.Integer>
             getRemoveList() {
@@ -15950,18 +18845,33 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 remove = 6;</code>
+         *
+         * <pre>
+         * Users explicitly removed from this group in this channel if the group
+         * has been inherited, identified by user_id.
+         * </pre>
          */
         public int getRemoveCount() {
           return remove_.size();
         }
         /**
          * <code>repeated uint32 remove = 6;</code>
+         *
+         * <pre>
+         * Users explicitly removed from this group in this channel if the group
+         * has been inherited, identified by user_id.
+         * </pre>
          */
         public int getRemove(int index) {
           return remove_.get(index);
         }
         /**
          * <code>repeated uint32 remove = 6;</code>
+         *
+         * <pre>
+         * Users explicitly removed from this group in this channel if the group
+         * has been inherited, identified by user_id.
+         * </pre>
          */
         public Builder setRemove(
             int index, int value) {
@@ -15972,6 +18882,11 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 remove = 6;</code>
+         *
+         * <pre>
+         * Users explicitly removed from this group in this channel if the group
+         * has been inherited, identified by user_id.
+         * </pre>
          */
         public Builder addRemove(int value) {
           ensureRemoveIsMutable();
@@ -15981,16 +18896,27 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 remove = 6;</code>
+         *
+         * <pre>
+         * Users explicitly removed from this group in this channel if the group
+         * has been inherited, identified by user_id.
+         * </pre>
          */
         public Builder addAllRemove(
             java.lang.Iterable<? extends java.lang.Integer> values) {
           ensureRemoveIsMutable();
-          super.addAll(values, remove_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, remove_);
           onChanged();
           return this;
         }
         /**
          * <code>repeated uint32 remove = 6;</code>
+         *
+         * <pre>
+         * Users explicitly removed from this group in this channel if the group
+         * has been inherited, identified by user_id.
+         * </pre>
          */
         public Builder clearRemove() {
           remove_ = java.util.Collections.emptyList();
@@ -15999,7 +18925,6 @@ public final class Mumble {
           return this;
         }
 
-        // repeated uint32 inherited_members = 7;
         private java.util.List<java.lang.Integer> inheritedMembers_ = java.util.Collections.emptyList();
         private void ensureInheritedMembersIsMutable() {
           if (!((bitField0_ & 0x00000040) == 0x00000040)) {
@@ -16009,6 +18934,10 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 inherited_members = 7;</code>
+         *
+         * <pre>
+         * Users inherited, identified by user_id.
+         * </pre>
          */
         public java.util.List<java.lang.Integer>
             getInheritedMembersList() {
@@ -16016,18 +18945,30 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 inherited_members = 7;</code>
+         *
+         * <pre>
+         * Users inherited, identified by user_id.
+         * </pre>
          */
         public int getInheritedMembersCount() {
           return inheritedMembers_.size();
         }
         /**
          * <code>repeated uint32 inherited_members = 7;</code>
+         *
+         * <pre>
+         * Users inherited, identified by user_id.
+         * </pre>
          */
         public int getInheritedMembers(int index) {
           return inheritedMembers_.get(index);
         }
         /**
          * <code>repeated uint32 inherited_members = 7;</code>
+         *
+         * <pre>
+         * Users inherited, identified by user_id.
+         * </pre>
          */
         public Builder setInheritedMembers(
             int index, int value) {
@@ -16038,6 +18979,10 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 inherited_members = 7;</code>
+         *
+         * <pre>
+         * Users inherited, identified by user_id.
+         * </pre>
          */
         public Builder addInheritedMembers(int value) {
           ensureInheritedMembersIsMutable();
@@ -16047,16 +18992,25 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 inherited_members = 7;</code>
+         *
+         * <pre>
+         * Users inherited, identified by user_id.
+         * </pre>
          */
         public Builder addAllInheritedMembers(
             java.lang.Iterable<? extends java.lang.Integer> values) {
           ensureInheritedMembersIsMutable();
-          super.addAll(values, inheritedMembers_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, inheritedMembers_);
           onChanged();
           return this;
         }
         /**
          * <code>repeated uint32 inherited_members = 7;</code>
+         *
+         * <pre>
+         * Users inherited, identified by user_id.
+         * </pre>
          */
         public Builder clearInheritedMembers() {
           inheritedMembers_ = java.util.Collections.emptyList();
@@ -16076,81 +19030,135 @@ public final class Mumble {
       // @@protoc_insertion_point(class_scope:MumbleProto.ACL.ChanGroup)
     }
 
-    public interface ChanACLOrBuilder
-        extends com.google.protobuf.MessageOrBuilder {
+    public interface ChanACLOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:MumbleProto.ACL.ChanACL)
+        com.google.protobuf.MessageOrBuilder {
 
-      // optional bool apply_here = 1 [default = true];
       /**
        * <code>optional bool apply_here = 1 [default = true];</code>
+       *
+       * <pre>
+       * True if this ACL applies to the current channel.
+       * </pre>
        */
       boolean hasApplyHere();
       /**
        * <code>optional bool apply_here = 1 [default = true];</code>
+       *
+       * <pre>
+       * True if this ACL applies to the current channel.
+       * </pre>
        */
       boolean getApplyHere();
 
-      // optional bool apply_subs = 2 [default = true];
       /**
        * <code>optional bool apply_subs = 2 [default = true];</code>
+       *
+       * <pre>
+       * True if this ACL applies to the sub channels.
+       * </pre>
        */
       boolean hasApplySubs();
       /**
        * <code>optional bool apply_subs = 2 [default = true];</code>
+       *
+       * <pre>
+       * True if this ACL applies to the sub channels.
+       * </pre>
        */
       boolean getApplySubs();
 
-      // optional bool inherited = 3 [default = true];
       /**
        * <code>optional bool inherited = 3 [default = true];</code>
+       *
+       * <pre>
+       * True if the ACL has been inherited from the parent.
+       * </pre>
        */
       boolean hasInherited();
       /**
        * <code>optional bool inherited = 3 [default = true];</code>
+       *
+       * <pre>
+       * True if the ACL has been inherited from the parent.
+       * </pre>
        */
       boolean getInherited();
 
-      // optional uint32 user_id = 4;
       /**
        * <code>optional uint32 user_id = 4;</code>
+       *
+       * <pre>
+       * ID of the user that is affected by this ACL.
+       * </pre>
        */
       boolean hasUserId();
       /**
        * <code>optional uint32 user_id = 4;</code>
+       *
+       * <pre>
+       * ID of the user that is affected by this ACL.
+       * </pre>
        */
       int getUserId();
 
-      // optional string group = 5;
       /**
        * <code>optional string group = 5;</code>
+       *
+       * <pre>
+       * ID of the group that is affected by this ACL.
+       * </pre>
        */
       boolean hasGroup();
       /**
        * <code>optional string group = 5;</code>
+       *
+       * <pre>
+       * ID of the group that is affected by this ACL.
+       * </pre>
        */
       java.lang.String getGroup();
       /**
        * <code>optional string group = 5;</code>
+       *
+       * <pre>
+       * ID of the group that is affected by this ACL.
+       * </pre>
        */
       com.google.protobuf.ByteString
           getGroupBytes();
 
-      // optional uint32 grant = 6;
       /**
        * <code>optional uint32 grant = 6;</code>
+       *
+       * <pre>
+       * Bit flag field of the permissions granted by this ACL.
+       * </pre>
        */
       boolean hasGrant();
       /**
        * <code>optional uint32 grant = 6;</code>
+       *
+       * <pre>
+       * Bit flag field of the permissions granted by this ACL.
+       * </pre>
        */
       int getGrant();
 
-      // optional uint32 deny = 7;
       /**
        * <code>optional uint32 deny = 7;</code>
+       *
+       * <pre>
+       * Bit flag field of the permissions denied by this ACL.
+       * </pre>
        */
       boolean hasDeny();
       /**
        * <code>optional uint32 deny = 7;</code>
+       *
+       * <pre>
+       * Bit flag field of the permissions denied by this ACL.
+       * </pre>
        */
       int getDeny();
     }
@@ -16158,8 +19166,9 @@ public final class Mumble {
      * Protobuf type {@code MumbleProto.ACL.ChanACL}
      */
     public static final class ChanACL extends
-        com.google.protobuf.GeneratedMessage
-        implements ChanACLOrBuilder {
+        com.google.protobuf.GeneratedMessage implements
+        // @@protoc_insertion_point(message_implements:MumbleProto.ACL.ChanACL)
+        ChanACLOrBuilder {
       // Use ChanACL.newBuilder() to construct.
       private ChanACL(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
         super(builder);
@@ -16226,8 +19235,9 @@ public final class Mumble {
                 break;
               }
               case 42: {
+                com.google.protobuf.ByteString bs = input.readBytes();
                 bitField0_ |= 0x00000010;
-                group_ = input.readBytes();
+                group_ = bs;
                 break;
               }
               case 48: {
@@ -16280,81 +19290,116 @@ public final class Mumble {
       }
 
       private int bitField0_;
-      // optional bool apply_here = 1 [default = true];
       public static final int APPLY_HERE_FIELD_NUMBER = 1;
       private boolean applyHere_;
       /**
        * <code>optional bool apply_here = 1 [default = true];</code>
+       *
+       * <pre>
+       * True if this ACL applies to the current channel.
+       * </pre>
        */
       public boolean hasApplyHere() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional bool apply_here = 1 [default = true];</code>
+       *
+       * <pre>
+       * True if this ACL applies to the current channel.
+       * </pre>
        */
       public boolean getApplyHere() {
         return applyHere_;
       }
 
-      // optional bool apply_subs = 2 [default = true];
       public static final int APPLY_SUBS_FIELD_NUMBER = 2;
       private boolean applySubs_;
       /**
        * <code>optional bool apply_subs = 2 [default = true];</code>
+       *
+       * <pre>
+       * True if this ACL applies to the sub channels.
+       * </pre>
        */
       public boolean hasApplySubs() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional bool apply_subs = 2 [default = true];</code>
+       *
+       * <pre>
+       * True if this ACL applies to the sub channels.
+       * </pre>
        */
       public boolean getApplySubs() {
         return applySubs_;
       }
 
-      // optional bool inherited = 3 [default = true];
       public static final int INHERITED_FIELD_NUMBER = 3;
       private boolean inherited_;
       /**
        * <code>optional bool inherited = 3 [default = true];</code>
+       *
+       * <pre>
+       * True if the ACL has been inherited from the parent.
+       * </pre>
        */
       public boolean hasInherited() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional bool inherited = 3 [default = true];</code>
+       *
+       * <pre>
+       * True if the ACL has been inherited from the parent.
+       * </pre>
        */
       public boolean getInherited() {
         return inherited_;
       }
 
-      // optional uint32 user_id = 4;
       public static final int USER_ID_FIELD_NUMBER = 4;
       private int userId_;
       /**
        * <code>optional uint32 user_id = 4;</code>
+       *
+       * <pre>
+       * ID of the user that is affected by this ACL.
+       * </pre>
        */
       public boolean hasUserId() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <code>optional uint32 user_id = 4;</code>
+       *
+       * <pre>
+       * ID of the user that is affected by this ACL.
+       * </pre>
        */
       public int getUserId() {
         return userId_;
       }
 
-      // optional string group = 5;
       public static final int GROUP_FIELD_NUMBER = 5;
       private java.lang.Object group_;
       /**
        * <code>optional string group = 5;</code>
+       *
+       * <pre>
+       * ID of the group that is affected by this ACL.
+       * </pre>
        */
       public boolean hasGroup() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
        * <code>optional string group = 5;</code>
+       *
+       * <pre>
+       * ID of the group that is affected by this ACL.
+       * </pre>
        */
       public java.lang.String getGroup() {
         java.lang.Object ref = group_;
@@ -16372,6 +19417,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string group = 5;</code>
+       *
+       * <pre>
+       * ID of the group that is affected by this ACL.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getGroupBytes() {
@@ -16387,33 +19436,47 @@ public final class Mumble {
         }
       }
 
-      // optional uint32 grant = 6;
       public static final int GRANT_FIELD_NUMBER = 6;
       private int grant_;
       /**
        * <code>optional uint32 grant = 6;</code>
+       *
+       * <pre>
+       * Bit flag field of the permissions granted by this ACL.
+       * </pre>
        */
       public boolean hasGrant() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
        * <code>optional uint32 grant = 6;</code>
+       *
+       * <pre>
+       * Bit flag field of the permissions granted by this ACL.
+       * </pre>
        */
       public int getGrant() {
         return grant_;
       }
 
-      // optional uint32 deny = 7;
       public static final int DENY_FIELD_NUMBER = 7;
       private int deny_;
       /**
        * <code>optional uint32 deny = 7;</code>
+       *
+       * <pre>
+       * Bit flag field of the permissions denied by this ACL.
+       * </pre>
        */
       public boolean hasDeny() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       /**
        * <code>optional uint32 deny = 7;</code>
+       *
+       * <pre>
+       * Bit flag field of the permissions denied by this ACL.
+       * </pre>
        */
       public int getDeny() {
         return deny_;
@@ -16431,7 +19494,8 @@ public final class Mumble {
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
         byte isInitialized = memoizedIsInitialized;
-        if (isInitialized != -1) return isInitialized == 1;
+        if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
 
         memoizedIsInitialized = 1;
         return true;
@@ -16580,8 +19644,9 @@ public final class Mumble {
        * Protobuf type {@code MumbleProto.ACL.ChanACL}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessage.Builder<Builder>
-         implements MumbleProto.Mumble.ACL.ChanACLOrBuilder {
+          com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:MumbleProto.ACL.ChanACL)
+          MumbleProto.Mumble.ACL.ChanACLOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
           return MumbleProto.Mumble.internal_static_MumbleProto_ACL_ChanACL_descriptor;
@@ -16750,22 +19815,33 @@ public final class Mumble {
         }
         private int bitField0_;
 
-        // optional bool apply_here = 1 [default = true];
         private boolean applyHere_ = true;
         /**
          * <code>optional bool apply_here = 1 [default = true];</code>
+         *
+         * <pre>
+         * True if this ACL applies to the current channel.
+         * </pre>
          */
         public boolean hasApplyHere() {
           return ((bitField0_ & 0x00000001) == 0x00000001);
         }
         /**
          * <code>optional bool apply_here = 1 [default = true];</code>
+         *
+         * <pre>
+         * True if this ACL applies to the current channel.
+         * </pre>
          */
         public boolean getApplyHere() {
           return applyHere_;
         }
         /**
          * <code>optional bool apply_here = 1 [default = true];</code>
+         *
+         * <pre>
+         * True if this ACL applies to the current channel.
+         * </pre>
          */
         public Builder setApplyHere(boolean value) {
           bitField0_ |= 0x00000001;
@@ -16775,6 +19851,10 @@ public final class Mumble {
         }
         /**
          * <code>optional bool apply_here = 1 [default = true];</code>
+         *
+         * <pre>
+         * True if this ACL applies to the current channel.
+         * </pre>
          */
         public Builder clearApplyHere() {
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -16783,22 +19863,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional bool apply_subs = 2 [default = true];
         private boolean applySubs_ = true;
         /**
          * <code>optional bool apply_subs = 2 [default = true];</code>
+         *
+         * <pre>
+         * True if this ACL applies to the sub channels.
+         * </pre>
          */
         public boolean hasApplySubs() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
         /**
          * <code>optional bool apply_subs = 2 [default = true];</code>
+         *
+         * <pre>
+         * True if this ACL applies to the sub channels.
+         * </pre>
          */
         public boolean getApplySubs() {
           return applySubs_;
         }
         /**
          * <code>optional bool apply_subs = 2 [default = true];</code>
+         *
+         * <pre>
+         * True if this ACL applies to the sub channels.
+         * </pre>
          */
         public Builder setApplySubs(boolean value) {
           bitField0_ |= 0x00000002;
@@ -16808,6 +19899,10 @@ public final class Mumble {
         }
         /**
          * <code>optional bool apply_subs = 2 [default = true];</code>
+         *
+         * <pre>
+         * True if this ACL applies to the sub channels.
+         * </pre>
          */
         public Builder clearApplySubs() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -16816,22 +19911,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional bool inherited = 3 [default = true];
         private boolean inherited_ = true;
         /**
          * <code>optional bool inherited = 3 [default = true];</code>
+         *
+         * <pre>
+         * True if the ACL has been inherited from the parent.
+         * </pre>
          */
         public boolean hasInherited() {
           return ((bitField0_ & 0x00000004) == 0x00000004);
         }
         /**
          * <code>optional bool inherited = 3 [default = true];</code>
+         *
+         * <pre>
+         * True if the ACL has been inherited from the parent.
+         * </pre>
          */
         public boolean getInherited() {
           return inherited_;
         }
         /**
          * <code>optional bool inherited = 3 [default = true];</code>
+         *
+         * <pre>
+         * True if the ACL has been inherited from the parent.
+         * </pre>
          */
         public Builder setInherited(boolean value) {
           bitField0_ |= 0x00000004;
@@ -16841,6 +19947,10 @@ public final class Mumble {
         }
         /**
          * <code>optional bool inherited = 3 [default = true];</code>
+         *
+         * <pre>
+         * True if the ACL has been inherited from the parent.
+         * </pre>
          */
         public Builder clearInherited() {
           bitField0_ = (bitField0_ & ~0x00000004);
@@ -16849,22 +19959,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional uint32 user_id = 4;
         private int userId_ ;
         /**
          * <code>optional uint32 user_id = 4;</code>
+         *
+         * <pre>
+         * ID of the user that is affected by this ACL.
+         * </pre>
          */
         public boolean hasUserId() {
           return ((bitField0_ & 0x00000008) == 0x00000008);
         }
         /**
          * <code>optional uint32 user_id = 4;</code>
+         *
+         * <pre>
+         * ID of the user that is affected by this ACL.
+         * </pre>
          */
         public int getUserId() {
           return userId_;
         }
         /**
          * <code>optional uint32 user_id = 4;</code>
+         *
+         * <pre>
+         * ID of the user that is affected by this ACL.
+         * </pre>
          */
         public Builder setUserId(int value) {
           bitField0_ |= 0x00000008;
@@ -16874,6 +19995,10 @@ public final class Mumble {
         }
         /**
          * <code>optional uint32 user_id = 4;</code>
+         *
+         * <pre>
+         * ID of the user that is affected by this ACL.
+         * </pre>
          */
         public Builder clearUserId() {
           bitField0_ = (bitField0_ & ~0x00000008);
@@ -16882,23 +20007,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional string group = 5;
         private java.lang.Object group_ = "";
         /**
          * <code>optional string group = 5;</code>
+         *
+         * <pre>
+         * ID of the group that is affected by this ACL.
+         * </pre>
          */
         public boolean hasGroup() {
           return ((bitField0_ & 0x00000010) == 0x00000010);
         }
         /**
          * <code>optional string group = 5;</code>
+         *
+         * <pre>
+         * ID of the group that is affected by this ACL.
+         * </pre>
          */
         public java.lang.String getGroup() {
           java.lang.Object ref = group_;
           if (!(ref instanceof java.lang.String)) {
-            java.lang.String s = ((com.google.protobuf.ByteString) ref)
-                .toStringUtf8();
-            group_ = s;
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            if (bs.isValidUtf8()) {
+              group_ = s;
+            }
             return s;
           } else {
             return (java.lang.String) ref;
@@ -16906,6 +20041,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string group = 5;</code>
+         *
+         * <pre>
+         * ID of the group that is affected by this ACL.
+         * </pre>
          */
         public com.google.protobuf.ByteString
             getGroupBytes() {
@@ -16922,6 +20061,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string group = 5;</code>
+         *
+         * <pre>
+         * ID of the group that is affected by this ACL.
+         * </pre>
          */
         public Builder setGroup(
             java.lang.String value) {
@@ -16935,6 +20078,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string group = 5;</code>
+         *
+         * <pre>
+         * ID of the group that is affected by this ACL.
+         * </pre>
          */
         public Builder clearGroup() {
           bitField0_ = (bitField0_ & ~0x00000010);
@@ -16944,6 +20091,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string group = 5;</code>
+         *
+         * <pre>
+         * ID of the group that is affected by this ACL.
+         * </pre>
          */
         public Builder setGroupBytes(
             com.google.protobuf.ByteString value) {
@@ -16956,22 +20107,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional uint32 grant = 6;
         private int grant_ ;
         /**
          * <code>optional uint32 grant = 6;</code>
+         *
+         * <pre>
+         * Bit flag field of the permissions granted by this ACL.
+         * </pre>
          */
         public boolean hasGrant() {
           return ((bitField0_ & 0x00000020) == 0x00000020);
         }
         /**
          * <code>optional uint32 grant = 6;</code>
+         *
+         * <pre>
+         * Bit flag field of the permissions granted by this ACL.
+         * </pre>
          */
         public int getGrant() {
           return grant_;
         }
         /**
          * <code>optional uint32 grant = 6;</code>
+         *
+         * <pre>
+         * Bit flag field of the permissions granted by this ACL.
+         * </pre>
          */
         public Builder setGrant(int value) {
           bitField0_ |= 0x00000020;
@@ -16981,6 +20143,10 @@ public final class Mumble {
         }
         /**
          * <code>optional uint32 grant = 6;</code>
+         *
+         * <pre>
+         * Bit flag field of the permissions granted by this ACL.
+         * </pre>
          */
         public Builder clearGrant() {
           bitField0_ = (bitField0_ & ~0x00000020);
@@ -16989,22 +20155,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional uint32 deny = 7;
         private int deny_ ;
         /**
          * <code>optional uint32 deny = 7;</code>
+         *
+         * <pre>
+         * Bit flag field of the permissions denied by this ACL.
+         * </pre>
          */
         public boolean hasDeny() {
           return ((bitField0_ & 0x00000040) == 0x00000040);
         }
         /**
          * <code>optional uint32 deny = 7;</code>
+         *
+         * <pre>
+         * Bit flag field of the permissions denied by this ACL.
+         * </pre>
          */
         public int getDeny() {
           return deny_;
         }
         /**
          * <code>optional uint32 deny = 7;</code>
+         *
+         * <pre>
+         * Bit flag field of the permissions denied by this ACL.
+         * </pre>
          */
         public Builder setDeny(int value) {
           bitField0_ |= 0x00000040;
@@ -17014,6 +20191,10 @@ public final class Mumble {
         }
         /**
          * <code>optional uint32 deny = 7;</code>
+         *
+         * <pre>
+         * Bit flag field of the permissions denied by this ACL.
+         * </pre>
          */
         public Builder clearDeny() {
           bitField0_ = (bitField0_ & ~0x00000040);
@@ -17034,49 +20215,70 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // required uint32 channel_id = 1;
     public static final int CHANNEL_ID_FIELD_NUMBER = 1;
     private int channelId_;
     /**
      * <code>required uint32 channel_id = 1;</code>
+     *
+     * <pre>
+     * Channel ID of the channel this message affects.
+     * </pre>
      */
     public boolean hasChannelId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>required uint32 channel_id = 1;</code>
+     *
+     * <pre>
+     * Channel ID of the channel this message affects.
+     * </pre>
      */
     public int getChannelId() {
       return channelId_;
     }
 
-    // optional bool inherit_acls = 2 [default = true];
     public static final int INHERIT_ACLS_FIELD_NUMBER = 2;
     private boolean inheritAcls_;
     /**
      * <code>optional bool inherit_acls = 2 [default = true];</code>
+     *
+     * <pre>
+     * True if the channel inherits its parent's ACLs.
+     * </pre>
      */
     public boolean hasInheritAcls() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional bool inherit_acls = 2 [default = true];</code>
+     *
+     * <pre>
+     * True if the channel inherits its parent's ACLs.
+     * </pre>
      */
     public boolean getInheritAcls() {
       return inheritAcls_;
     }
 
-    // repeated .MumbleProto.ACL.ChanGroup groups = 3;
     public static final int GROUPS_FIELD_NUMBER = 3;
     private java.util.List<MumbleProto.Mumble.ACL.ChanGroup> groups_;
     /**
      * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+     *
+     * <pre>
+     * User group specifications.
+     * </pre>
      */
     public java.util.List<MumbleProto.Mumble.ACL.ChanGroup> getGroupsList() {
       return groups_;
     }
     /**
      * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+     *
+     * <pre>
+     * User group specifications.
+     * </pre>
      */
     public java.util.List<? extends MumbleProto.Mumble.ACL.ChanGroupOrBuilder> 
         getGroupsOrBuilderList() {
@@ -17084,35 +20286,54 @@ public final class Mumble {
     }
     /**
      * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+     *
+     * <pre>
+     * User group specifications.
+     * </pre>
      */
     public int getGroupsCount() {
       return groups_.size();
     }
     /**
      * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+     *
+     * <pre>
+     * User group specifications.
+     * </pre>
      */
     public MumbleProto.Mumble.ACL.ChanGroup getGroups(int index) {
       return groups_.get(index);
     }
     /**
      * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+     *
+     * <pre>
+     * User group specifications.
+     * </pre>
      */
     public MumbleProto.Mumble.ACL.ChanGroupOrBuilder getGroupsOrBuilder(
         int index) {
       return groups_.get(index);
     }
 
-    // repeated .MumbleProto.ACL.ChanACL acls = 4;
     public static final int ACLS_FIELD_NUMBER = 4;
     private java.util.List<MumbleProto.Mumble.ACL.ChanACL> acls_;
     /**
      * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+     *
+     * <pre>
+     * ACL specifications.
+     * </pre>
      */
     public java.util.List<MumbleProto.Mumble.ACL.ChanACL> getAclsList() {
       return acls_;
     }
     /**
      * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+     *
+     * <pre>
+     * ACL specifications.
+     * </pre>
      */
     public java.util.List<? extends MumbleProto.Mumble.ACL.ChanACLOrBuilder> 
         getAclsOrBuilderList() {
@@ -17120,35 +20341,54 @@ public final class Mumble {
     }
     /**
      * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+     *
+     * <pre>
+     * ACL specifications.
+     * </pre>
      */
     public int getAclsCount() {
       return acls_.size();
     }
     /**
      * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+     *
+     * <pre>
+     * ACL specifications.
+     * </pre>
      */
     public MumbleProto.Mumble.ACL.ChanACL getAcls(int index) {
       return acls_.get(index);
     }
     /**
      * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+     *
+     * <pre>
+     * ACL specifications.
+     * </pre>
      */
     public MumbleProto.Mumble.ACL.ChanACLOrBuilder getAclsOrBuilder(
         int index) {
       return acls_.get(index);
     }
 
-    // optional bool query = 5 [default = false];
     public static final int QUERY_FIELD_NUMBER = 5;
     private boolean query_;
     /**
      * <code>optional bool query = 5 [default = false];</code>
+     *
+     * <pre>
+     * True if the message is a query for ACLs instead of setting them.
+     * </pre>
      */
     public boolean hasQuery() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>optional bool query = 5 [default = false];</code>
+     *
+     * <pre>
+     * True if the message is a query for ACLs instead of setting them.
+     * </pre>
      */
     public boolean getQuery() {
       return query_;
@@ -17164,7 +20404,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasChannelId()) {
         memoizedIsInitialized = 0;
@@ -17309,8 +20550,9 @@ public final class Mumble {
      * Protobuf type {@code MumbleProto.ACL}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.ACLOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.ACL)
+        MumbleProto.Mumble.ACLOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_ACL_descriptor;
@@ -17535,22 +20777,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // required uint32 channel_id = 1;
       private int channelId_ ;
       /**
        * <code>required uint32 channel_id = 1;</code>
+       *
+       * <pre>
+       * Channel ID of the channel this message affects.
+       * </pre>
        */
       public boolean hasChannelId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>required uint32 channel_id = 1;</code>
+       *
+       * <pre>
+       * Channel ID of the channel this message affects.
+       * </pre>
        */
       public int getChannelId() {
         return channelId_;
       }
       /**
        * <code>required uint32 channel_id = 1;</code>
+       *
+       * <pre>
+       * Channel ID of the channel this message affects.
+       * </pre>
        */
       public Builder setChannelId(int value) {
         bitField0_ |= 0x00000001;
@@ -17560,6 +20813,10 @@ public final class Mumble {
       }
       /**
        * <code>required uint32 channel_id = 1;</code>
+       *
+       * <pre>
+       * Channel ID of the channel this message affects.
+       * </pre>
        */
       public Builder clearChannelId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -17568,22 +20825,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool inherit_acls = 2 [default = true];
       private boolean inheritAcls_ = true;
       /**
        * <code>optional bool inherit_acls = 2 [default = true];</code>
+       *
+       * <pre>
+       * True if the channel inherits its parent's ACLs.
+       * </pre>
        */
       public boolean hasInheritAcls() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional bool inherit_acls = 2 [default = true];</code>
+       *
+       * <pre>
+       * True if the channel inherits its parent's ACLs.
+       * </pre>
        */
       public boolean getInheritAcls() {
         return inheritAcls_;
       }
       /**
        * <code>optional bool inherit_acls = 2 [default = true];</code>
+       *
+       * <pre>
+       * True if the channel inherits its parent's ACLs.
+       * </pre>
        */
       public Builder setInheritAcls(boolean value) {
         bitField0_ |= 0x00000002;
@@ -17593,6 +20861,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bool inherit_acls = 2 [default = true];</code>
+       *
+       * <pre>
+       * True if the channel inherits its parent's ACLs.
+       * </pre>
        */
       public Builder clearInheritAcls() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -17601,7 +20873,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated .MumbleProto.ACL.ChanGroup groups = 3;
       private java.util.List<MumbleProto.Mumble.ACL.ChanGroup> groups_ =
         java.util.Collections.emptyList();
       private void ensureGroupsIsMutable() {
@@ -17616,6 +20887,10 @@ public final class Mumble {
 
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public java.util.List<MumbleProto.Mumble.ACL.ChanGroup> getGroupsList() {
         if (groupsBuilder_ == null) {
@@ -17626,6 +20901,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public int getGroupsCount() {
         if (groupsBuilder_ == null) {
@@ -17636,6 +20915,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public MumbleProto.Mumble.ACL.ChanGroup getGroups(int index) {
         if (groupsBuilder_ == null) {
@@ -17646,6 +20929,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public Builder setGroups(
           int index, MumbleProto.Mumble.ACL.ChanGroup value) {
@@ -17663,6 +20950,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public Builder setGroups(
           int index, MumbleProto.Mumble.ACL.ChanGroup.Builder builderForValue) {
@@ -17677,6 +20968,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public Builder addGroups(MumbleProto.Mumble.ACL.ChanGroup value) {
         if (groupsBuilder_ == null) {
@@ -17693,6 +20988,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public Builder addGroups(
           int index, MumbleProto.Mumble.ACL.ChanGroup value) {
@@ -17710,6 +21009,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public Builder addGroups(
           MumbleProto.Mumble.ACL.ChanGroup.Builder builderForValue) {
@@ -17724,6 +21027,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public Builder addGroups(
           int index, MumbleProto.Mumble.ACL.ChanGroup.Builder builderForValue) {
@@ -17738,12 +21045,17 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public Builder addAllGroups(
           java.lang.Iterable<? extends MumbleProto.Mumble.ACL.ChanGroup> values) {
         if (groupsBuilder_ == null) {
           ensureGroupsIsMutable();
-          super.addAll(values, groups_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, groups_);
           onChanged();
         } else {
           groupsBuilder_.addAllMessages(values);
@@ -17752,6 +21064,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public Builder clearGroups() {
         if (groupsBuilder_ == null) {
@@ -17765,6 +21081,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public Builder removeGroups(int index) {
         if (groupsBuilder_ == null) {
@@ -17778,6 +21098,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public MumbleProto.Mumble.ACL.ChanGroup.Builder getGroupsBuilder(
           int index) {
@@ -17785,6 +21109,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public MumbleProto.Mumble.ACL.ChanGroupOrBuilder getGroupsOrBuilder(
           int index) {
@@ -17795,6 +21123,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public java.util.List<? extends MumbleProto.Mumble.ACL.ChanGroupOrBuilder> 
            getGroupsOrBuilderList() {
@@ -17806,6 +21138,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public MumbleProto.Mumble.ACL.ChanGroup.Builder addGroupsBuilder() {
         return getGroupsFieldBuilder().addBuilder(
@@ -17813,6 +21149,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public MumbleProto.Mumble.ACL.ChanGroup.Builder addGroupsBuilder(
           int index) {
@@ -17821,6 +21161,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanGroup groups = 3;</code>
+       *
+       * <pre>
+       * User group specifications.
+       * </pre>
        */
       public java.util.List<MumbleProto.Mumble.ACL.ChanGroup.Builder> 
            getGroupsBuilderList() {
@@ -17841,7 +21185,6 @@ public final class Mumble {
         return groupsBuilder_;
       }
 
-      // repeated .MumbleProto.ACL.ChanACL acls = 4;
       private java.util.List<MumbleProto.Mumble.ACL.ChanACL> acls_ =
         java.util.Collections.emptyList();
       private void ensureAclsIsMutable() {
@@ -17856,6 +21199,10 @@ public final class Mumble {
 
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public java.util.List<MumbleProto.Mumble.ACL.ChanACL> getAclsList() {
         if (aclsBuilder_ == null) {
@@ -17866,6 +21213,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public int getAclsCount() {
         if (aclsBuilder_ == null) {
@@ -17876,6 +21227,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public MumbleProto.Mumble.ACL.ChanACL getAcls(int index) {
         if (aclsBuilder_ == null) {
@@ -17886,6 +21241,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public Builder setAcls(
           int index, MumbleProto.Mumble.ACL.ChanACL value) {
@@ -17903,6 +21262,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public Builder setAcls(
           int index, MumbleProto.Mumble.ACL.ChanACL.Builder builderForValue) {
@@ -17917,6 +21280,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public Builder addAcls(MumbleProto.Mumble.ACL.ChanACL value) {
         if (aclsBuilder_ == null) {
@@ -17933,6 +21300,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public Builder addAcls(
           int index, MumbleProto.Mumble.ACL.ChanACL value) {
@@ -17950,6 +21321,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public Builder addAcls(
           MumbleProto.Mumble.ACL.ChanACL.Builder builderForValue) {
@@ -17964,6 +21339,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public Builder addAcls(
           int index, MumbleProto.Mumble.ACL.ChanACL.Builder builderForValue) {
@@ -17978,12 +21357,17 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public Builder addAllAcls(
           java.lang.Iterable<? extends MumbleProto.Mumble.ACL.ChanACL> values) {
         if (aclsBuilder_ == null) {
           ensureAclsIsMutable();
-          super.addAll(values, acls_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, acls_);
           onChanged();
         } else {
           aclsBuilder_.addAllMessages(values);
@@ -17992,6 +21376,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public Builder clearAcls() {
         if (aclsBuilder_ == null) {
@@ -18005,6 +21393,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public Builder removeAcls(int index) {
         if (aclsBuilder_ == null) {
@@ -18018,6 +21410,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public MumbleProto.Mumble.ACL.ChanACL.Builder getAclsBuilder(
           int index) {
@@ -18025,6 +21421,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public MumbleProto.Mumble.ACL.ChanACLOrBuilder getAclsOrBuilder(
           int index) {
@@ -18035,6 +21435,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public java.util.List<? extends MumbleProto.Mumble.ACL.ChanACLOrBuilder> 
            getAclsOrBuilderList() {
@@ -18046,6 +21450,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public MumbleProto.Mumble.ACL.ChanACL.Builder addAclsBuilder() {
         return getAclsFieldBuilder().addBuilder(
@@ -18053,6 +21461,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public MumbleProto.Mumble.ACL.ChanACL.Builder addAclsBuilder(
           int index) {
@@ -18061,6 +21473,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.ACL.ChanACL acls = 4;</code>
+       *
+       * <pre>
+       * ACL specifications.
+       * </pre>
        */
       public java.util.List<MumbleProto.Mumble.ACL.ChanACL.Builder> 
            getAclsBuilderList() {
@@ -18081,22 +21497,33 @@ public final class Mumble {
         return aclsBuilder_;
       }
 
-      // optional bool query = 5 [default = false];
       private boolean query_ ;
       /**
        * <code>optional bool query = 5 [default = false];</code>
+       *
+       * <pre>
+       * True if the message is a query for ACLs instead of setting them.
+       * </pre>
        */
       public boolean hasQuery() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
        * <code>optional bool query = 5 [default = false];</code>
+       *
+       * <pre>
+       * True if the message is a query for ACLs instead of setting them.
+       * </pre>
        */
       public boolean getQuery() {
         return query_;
       }
       /**
        * <code>optional bool query = 5 [default = false];</code>
+       *
+       * <pre>
+       * True if the message is a query for ACLs instead of setting them.
+       * </pre>
        */
       public Builder setQuery(boolean value) {
         bitField0_ |= 0x00000010;
@@ -18106,6 +21533,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bool query = 5 [default = false];</code>
+       *
+       * <pre>
+       * True if the message is a query for ACLs instead of setting them.
+       * </pre>
        */
       public Builder clearQuery() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -18125,49 +21556,83 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.ACL)
   }
 
-  public interface QueryUsersOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface QueryUsersOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.QueryUsers)
+      com.google.protobuf.MessageOrBuilder {
 
-    // repeated uint32 ids = 1;
     /**
      * <code>repeated uint32 ids = 1;</code>
+     *
+     * <pre>
+     * user_ids.
+     * </pre>
      */
     java.util.List<java.lang.Integer> getIdsList();
     /**
      * <code>repeated uint32 ids = 1;</code>
+     *
+     * <pre>
+     * user_ids.
+     * </pre>
      */
     int getIdsCount();
     /**
      * <code>repeated uint32 ids = 1;</code>
+     *
+     * <pre>
+     * user_ids.
+     * </pre>
      */
     int getIds(int index);
 
-    // repeated string names = 2;
     /**
      * <code>repeated string names = 2;</code>
+     *
+     * <pre>
+     * User names in the same order as ids.
+     * </pre>
      */
-    java.util.List<java.lang.String>
-    getNamesList();
+    com.google.protobuf.ProtocolStringList
+        getNamesList();
     /**
      * <code>repeated string names = 2;</code>
+     *
+     * <pre>
+     * User names in the same order as ids.
+     * </pre>
      */
     int getNamesCount();
     /**
      * <code>repeated string names = 2;</code>
+     *
+     * <pre>
+     * User names in the same order as ids.
+     * </pre>
      */
     java.lang.String getNames(int index);
     /**
      * <code>repeated string names = 2;</code>
+     *
+     * <pre>
+     * User names in the same order as ids.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getNamesBytes(int index);
   }
   /**
    * Protobuf type {@code MumbleProto.QueryUsers}
+   *
+   * <pre>
+   * Client may use this message to refresh its registered user information. The
+   * client should fill the IDs or Names of the users it wants to refresh. The
+   * server fills the missing parts and sends the message back.
+   * </pre>
    */
   public static final class QueryUsers extends
-      com.google.protobuf.GeneratedMessage
-      implements QueryUsersOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.QueryUsers)
+      QueryUsersOrBuilder {
     // Use QueryUsers.newBuilder() to construct.
     private QueryUsers(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -18235,11 +21700,12 @@ public final class Mumble {
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
                 names_ = new com.google.protobuf.LazyStringArrayList();
                 mutable_bitField0_ |= 0x00000002;
               }
-              names_.add(input.readBytes());
+              names_.add(bs);
               break;
             }
           }
@@ -18254,7 +21720,7 @@ public final class Mumble {
           ids_ = java.util.Collections.unmodifiableList(ids_);
         }
         if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-          names_ = new com.google.protobuf.UnmodifiableLazyStringList(names_);
+          names_ = names_.getUnmodifiableView();
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -18287,11 +21753,14 @@ public final class Mumble {
       return PARSER;
     }
 
-    // repeated uint32 ids = 1;
     public static final int IDS_FIELD_NUMBER = 1;
     private java.util.List<java.lang.Integer> ids_;
     /**
      * <code>repeated uint32 ids = 1;</code>
+     *
+     * <pre>
+     * user_ids.
+     * </pre>
      */
     public java.util.List<java.lang.Integer>
         getIdsList() {
@@ -18299,41 +21768,64 @@ public final class Mumble {
     }
     /**
      * <code>repeated uint32 ids = 1;</code>
+     *
+     * <pre>
+     * user_ids.
+     * </pre>
      */
     public int getIdsCount() {
       return ids_.size();
     }
     /**
      * <code>repeated uint32 ids = 1;</code>
+     *
+     * <pre>
+     * user_ids.
+     * </pre>
      */
     public int getIds(int index) {
       return ids_.get(index);
     }
 
-    // repeated string names = 2;
     public static final int NAMES_FIELD_NUMBER = 2;
     private com.google.protobuf.LazyStringList names_;
     /**
      * <code>repeated string names = 2;</code>
+     *
+     * <pre>
+     * User names in the same order as ids.
+     * </pre>
      */
-    public java.util.List<java.lang.String>
+    public com.google.protobuf.ProtocolStringList
         getNamesList() {
       return names_;
     }
     /**
      * <code>repeated string names = 2;</code>
+     *
+     * <pre>
+     * User names in the same order as ids.
+     * </pre>
      */
     public int getNamesCount() {
       return names_.size();
     }
     /**
      * <code>repeated string names = 2;</code>
+     *
+     * <pre>
+     * User names in the same order as ids.
+     * </pre>
      */
     public java.lang.String getNames(int index) {
       return names_.get(index);
     }
     /**
      * <code>repeated string names = 2;</code>
+     *
+     * <pre>
+     * User names in the same order as ids.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getNamesBytes(int index) {
@@ -18347,7 +21839,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -18469,10 +21962,17 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.QueryUsers}
+     *
+     * <pre>
+     * Client may use this message to refresh its registered user information. The
+     * client should fill the IDs or Names of the users it wants to refresh. The
+     * server fills the missing parts and sends the message back.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.QueryUsersOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.QueryUsers)
+        MumbleProto.Mumble.QueryUsersOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_QueryUsers_descriptor;
@@ -18542,8 +22042,7 @@ public final class Mumble {
         }
         result.ids_ = ids_;
         if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          names_ = new com.google.protobuf.UnmodifiableLazyStringList(
-              names_);
+          names_ = names_.getUnmodifiableView();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.names_ = names_;
@@ -18609,7 +22108,6 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // repeated uint32 ids = 1;
       private java.util.List<java.lang.Integer> ids_ = java.util.Collections.emptyList();
       private void ensureIdsIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -18619,6 +22117,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 ids = 1;</code>
+       *
+       * <pre>
+       * user_ids.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getIdsList() {
@@ -18626,18 +22128,30 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 ids = 1;</code>
+       *
+       * <pre>
+       * user_ids.
+       * </pre>
        */
       public int getIdsCount() {
         return ids_.size();
       }
       /**
        * <code>repeated uint32 ids = 1;</code>
+       *
+       * <pre>
+       * user_ids.
+       * </pre>
        */
       public int getIds(int index) {
         return ids_.get(index);
       }
       /**
        * <code>repeated uint32 ids = 1;</code>
+       *
+       * <pre>
+       * user_ids.
+       * </pre>
        */
       public Builder setIds(
           int index, int value) {
@@ -18648,6 +22162,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 ids = 1;</code>
+       *
+       * <pre>
+       * user_ids.
+       * </pre>
        */
       public Builder addIds(int value) {
         ensureIdsIsMutable();
@@ -18657,16 +22175,25 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 ids = 1;</code>
+       *
+       * <pre>
+       * user_ids.
+       * </pre>
        */
       public Builder addAllIds(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureIdsIsMutable();
-        super.addAll(values, ids_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, ids_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated uint32 ids = 1;</code>
+       *
+       * <pre>
+       * user_ids.
+       * </pre>
        */
       public Builder clearIds() {
         ids_ = java.util.Collections.emptyList();
@@ -18675,7 +22202,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated string names = 2;
       private com.google.protobuf.LazyStringList names_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureNamesIsMutable() {
         if (!((bitField0_ & 0x00000002) == 0x00000002)) {
@@ -18685,25 +22211,41 @@ public final class Mumble {
       }
       /**
        * <code>repeated string names = 2;</code>
+       *
+       * <pre>
+       * User names in the same order as ids.
+       * </pre>
        */
-      public java.util.List<java.lang.String>
+      public com.google.protobuf.ProtocolStringList
           getNamesList() {
-        return java.util.Collections.unmodifiableList(names_);
+        return names_.getUnmodifiableView();
       }
       /**
        * <code>repeated string names = 2;</code>
+       *
+       * <pre>
+       * User names in the same order as ids.
+       * </pre>
        */
       public int getNamesCount() {
         return names_.size();
       }
       /**
        * <code>repeated string names = 2;</code>
+       *
+       * <pre>
+       * User names in the same order as ids.
+       * </pre>
        */
       public java.lang.String getNames(int index) {
         return names_.get(index);
       }
       /**
        * <code>repeated string names = 2;</code>
+       *
+       * <pre>
+       * User names in the same order as ids.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getNamesBytes(int index) {
@@ -18711,6 +22253,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated string names = 2;</code>
+       *
+       * <pre>
+       * User names in the same order as ids.
+       * </pre>
        */
       public Builder setNames(
           int index, java.lang.String value) {
@@ -18724,6 +22270,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated string names = 2;</code>
+       *
+       * <pre>
+       * User names in the same order as ids.
+       * </pre>
        */
       public Builder addNames(
           java.lang.String value) {
@@ -18737,16 +22287,25 @@ public final class Mumble {
       }
       /**
        * <code>repeated string names = 2;</code>
+       *
+       * <pre>
+       * User names in the same order as ids.
+       * </pre>
        */
       public Builder addAllNames(
           java.lang.Iterable<java.lang.String> values) {
         ensureNamesIsMutable();
-        super.addAll(values, names_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, names_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated string names = 2;</code>
+       *
+       * <pre>
+       * User names in the same order as ids.
+       * </pre>
        */
       public Builder clearNames() {
         names_ = com.google.protobuf.LazyStringArrayList.EMPTY;
@@ -18756,6 +22315,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated string names = 2;</code>
+       *
+       * <pre>
+       * User names in the same order as ids.
+       * </pre>
        */
       public Builder addNamesBytes(
           com.google.protobuf.ByteString value) {
@@ -18779,45 +22342,75 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.QueryUsers)
   }
 
-  public interface CryptSetupOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface CryptSetupOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.CryptSetup)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional bytes key = 1;
     /**
      * <code>optional bytes key = 1;</code>
+     *
+     * <pre>
+     * Encryption key.
+     * </pre>
      */
     boolean hasKey();
     /**
      * <code>optional bytes key = 1;</code>
+     *
+     * <pre>
+     * Encryption key.
+     * </pre>
      */
     com.google.protobuf.ByteString getKey();
 
-    // optional bytes client_nonce = 2;
     /**
      * <code>optional bytes client_nonce = 2;</code>
+     *
+     * <pre>
+     * Client nonce.
+     * </pre>
      */
     boolean hasClientNonce();
     /**
      * <code>optional bytes client_nonce = 2;</code>
+     *
+     * <pre>
+     * Client nonce.
+     * </pre>
      */
     com.google.protobuf.ByteString getClientNonce();
 
-    // optional bytes server_nonce = 3;
     /**
      * <code>optional bytes server_nonce = 3;</code>
+     *
+     * <pre>
+     * Server nonce.
+     * </pre>
      */
     boolean hasServerNonce();
     /**
      * <code>optional bytes server_nonce = 3;</code>
+     *
+     * <pre>
+     * Server nonce.
+     * </pre>
      */
     com.google.protobuf.ByteString getServerNonce();
   }
   /**
    * Protobuf type {@code MumbleProto.CryptSetup}
+   *
+   * <pre>
+   * Used to initialize and resync the UDP encryption. Either side may request a
+   * resync by sending the message without any values filled. The resync is
+   * performed by sending the message with only the client or server nonce
+   * filled.
+   * </pre>
    */
   public static final class CryptSetup extends
-      com.google.protobuf.GeneratedMessage
-      implements CryptSetupOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.CryptSetup)
+      CryptSetupOrBuilder {
     // Use CryptSetup.newBuilder() to construct.
     private CryptSetup(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -18918,49 +22511,70 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional bytes key = 1;
     public static final int KEY_FIELD_NUMBER = 1;
     private com.google.protobuf.ByteString key_;
     /**
      * <code>optional bytes key = 1;</code>
+     *
+     * <pre>
+     * Encryption key.
+     * </pre>
      */
     public boolean hasKey() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional bytes key = 1;</code>
+     *
+     * <pre>
+     * Encryption key.
+     * </pre>
      */
     public com.google.protobuf.ByteString getKey() {
       return key_;
     }
 
-    // optional bytes client_nonce = 2;
     public static final int CLIENT_NONCE_FIELD_NUMBER = 2;
     private com.google.protobuf.ByteString clientNonce_;
     /**
      * <code>optional bytes client_nonce = 2;</code>
+     *
+     * <pre>
+     * Client nonce.
+     * </pre>
      */
     public boolean hasClientNonce() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional bytes client_nonce = 2;</code>
+     *
+     * <pre>
+     * Client nonce.
+     * </pre>
      */
     public com.google.protobuf.ByteString getClientNonce() {
       return clientNonce_;
     }
 
-    // optional bytes server_nonce = 3;
     public static final int SERVER_NONCE_FIELD_NUMBER = 3;
     private com.google.protobuf.ByteString serverNonce_;
     /**
      * <code>optional bytes server_nonce = 3;</code>
+     *
+     * <pre>
+     * Server nonce.
+     * </pre>
      */
     public boolean hasServerNonce() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>optional bytes server_nonce = 3;</code>
+     *
+     * <pre>
+     * Server nonce.
+     * </pre>
      */
     public com.google.protobuf.ByteString getServerNonce() {
       return serverNonce_;
@@ -18974,7 +22588,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -19093,10 +22708,18 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.CryptSetup}
+     *
+     * <pre>
+     * Used to initialize and resync the UDP encryption. Either side may request a
+     * resync by sending the message without any values filled. The resync is
+     * performed by sending the message with only the client or server nonce
+     * filled.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.CryptSetupOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.CryptSetup)
+        MumbleProto.Mumble.CryptSetupOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_CryptSetup_descriptor;
@@ -19227,22 +22850,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional bytes key = 1;
       private com.google.protobuf.ByteString key_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>optional bytes key = 1;</code>
+       *
+       * <pre>
+       * Encryption key.
+       * </pre>
        */
       public boolean hasKey() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional bytes key = 1;</code>
+       *
+       * <pre>
+       * Encryption key.
+       * </pre>
        */
       public com.google.protobuf.ByteString getKey() {
         return key_;
       }
       /**
        * <code>optional bytes key = 1;</code>
+       *
+       * <pre>
+       * Encryption key.
+       * </pre>
        */
       public Builder setKey(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -19255,6 +22889,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bytes key = 1;</code>
+       *
+       * <pre>
+       * Encryption key.
+       * </pre>
        */
       public Builder clearKey() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -19263,22 +22901,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bytes client_nonce = 2;
       private com.google.protobuf.ByteString clientNonce_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>optional bytes client_nonce = 2;</code>
+       *
+       * <pre>
+       * Client nonce.
+       * </pre>
        */
       public boolean hasClientNonce() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional bytes client_nonce = 2;</code>
+       *
+       * <pre>
+       * Client nonce.
+       * </pre>
        */
       public com.google.protobuf.ByteString getClientNonce() {
         return clientNonce_;
       }
       /**
        * <code>optional bytes client_nonce = 2;</code>
+       *
+       * <pre>
+       * Client nonce.
+       * </pre>
        */
       public Builder setClientNonce(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -19291,6 +22940,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bytes client_nonce = 2;</code>
+       *
+       * <pre>
+       * Client nonce.
+       * </pre>
        */
       public Builder clearClientNonce() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -19299,22 +22952,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bytes server_nonce = 3;
       private com.google.protobuf.ByteString serverNonce_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>optional bytes server_nonce = 3;</code>
+       *
+       * <pre>
+       * Server nonce.
+       * </pre>
        */
       public boolean hasServerNonce() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional bytes server_nonce = 3;</code>
+       *
+       * <pre>
+       * Server nonce.
+       * </pre>
        */
       public com.google.protobuf.ByteString getServerNonce() {
         return serverNonce_;
       }
       /**
        * <code>optional bytes server_nonce = 3;</code>
+       *
+       * <pre>
+       * Server nonce.
+       * </pre>
        */
       public Builder setServerNonce(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -19327,6 +22991,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bytes server_nonce = 3;</code>
+       *
+       * <pre>
+       * Server nonce.
+       * </pre>
        */
       public Builder clearServerNonce() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -19346,50 +23014,79 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.CryptSetup)
   }
 
-  public interface ContextActionModifyOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface ContextActionModifyOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.ContextActionModify)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string action = 1;
     /**
      * <code>required string action = 1;</code>
+     *
+     * <pre>
+     * The action name.
+     * </pre>
      */
     boolean hasAction();
     /**
      * <code>required string action = 1;</code>
+     *
+     * <pre>
+     * The action name.
+     * </pre>
      */
     java.lang.String getAction();
     /**
      * <code>required string action = 1;</code>
+     *
+     * <pre>
+     * The action name.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getActionBytes();
 
-    // optional string text = 2;
     /**
      * <code>optional string text = 2;</code>
+     *
+     * <pre>
+     * The display name of the action.
+     * </pre>
      */
     boolean hasText();
     /**
      * <code>optional string text = 2;</code>
+     *
+     * <pre>
+     * The display name of the action.
+     * </pre>
      */
     java.lang.String getText();
     /**
      * <code>optional string text = 2;</code>
+     *
+     * <pre>
+     * The display name of the action.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getTextBytes();
 
-    // optional uint32 context = 3;
     /**
      * <code>optional uint32 context = 3;</code>
+     *
+     * <pre>
+     * Context bit flags defining where the action should be displayed.
+     * </pre>
      */
     boolean hasContext();
     /**
      * <code>optional uint32 context = 3;</code>
+     *
+     * <pre>
+     * Context bit flags defining where the action should be displayed.
+     * </pre>
      */
     int getContext();
 
-    // optional .MumbleProto.ContextActionModify.Operation operation = 4;
     /**
      * <code>optional .MumbleProto.ContextActionModify.Operation operation = 4;</code>
      */
@@ -19403,8 +23100,9 @@ public final class Mumble {
    * Protobuf type {@code MumbleProto.ContextActionModify}
    */
   public static final class ContextActionModify extends
-      com.google.protobuf.GeneratedMessage
-      implements ContextActionModifyOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.ContextActionModify)
+      ContextActionModifyOrBuilder {
     // Use ContextActionModify.newBuilder() to construct.
     private ContextActionModify(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -19451,13 +23149,15 @@ public final class Mumble {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              action_ = input.readBytes();
+              action_ = bs;
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              text_ = input.readBytes();
+              text_ = bs;
               break;
             }
             case 24: {
@@ -19522,28 +23222,52 @@ public final class Mumble {
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
        * <code>Server = 1;</code>
+       *
+       * <pre>
+       * Action is applicable to the server.
+       * </pre>
        */
       Server(0, 1),
       /**
        * <code>Channel = 2;</code>
+       *
+       * <pre>
+       * Action can target a Channel.
+       * </pre>
        */
       Channel(1, 2),
       /**
        * <code>User = 4;</code>
+       *
+       * <pre>
+       * Action can target a User.
+       * </pre>
        */
       User(2, 4),
       ;
 
       /**
        * <code>Server = 1;</code>
+       *
+       * <pre>
+       * Action is applicable to the server.
+       * </pre>
        */
       public static final int Server_VALUE = 1;
       /**
        * <code>Channel = 2;</code>
+       *
+       * <pre>
+       * Action can target a Channel.
+       * </pre>
        */
       public static final int Channel_VALUE = 2;
       /**
        * <code>User = 4;</code>
+       *
+       * <pre>
+       * Action can target a User.
+       * </pre>
        */
       public static final int User_VALUE = 4;
 
@@ -19689,17 +23413,24 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // required string action = 1;
     public static final int ACTION_FIELD_NUMBER = 1;
     private java.lang.Object action_;
     /**
      * <code>required string action = 1;</code>
+     *
+     * <pre>
+     * The action name.
+     * </pre>
      */
     public boolean hasAction() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>required string action = 1;</code>
+     *
+     * <pre>
+     * The action name.
+     * </pre>
      */
     public java.lang.String getAction() {
       java.lang.Object ref = action_;
@@ -19717,6 +23448,10 @@ public final class Mumble {
     }
     /**
      * <code>required string action = 1;</code>
+     *
+     * <pre>
+     * The action name.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getActionBytes() {
@@ -19732,17 +23467,24 @@ public final class Mumble {
       }
     }
 
-    // optional string text = 2;
     public static final int TEXT_FIELD_NUMBER = 2;
     private java.lang.Object text_;
     /**
      * <code>optional string text = 2;</code>
+     *
+     * <pre>
+     * The display name of the action.
+     * </pre>
      */
     public boolean hasText() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional string text = 2;</code>
+     *
+     * <pre>
+     * The display name of the action.
+     * </pre>
      */
     public java.lang.String getText() {
       java.lang.Object ref = text_;
@@ -19760,6 +23502,10 @@ public final class Mumble {
     }
     /**
      * <code>optional string text = 2;</code>
+     *
+     * <pre>
+     * The display name of the action.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getTextBytes() {
@@ -19775,23 +23521,29 @@ public final class Mumble {
       }
     }
 
-    // optional uint32 context = 3;
     public static final int CONTEXT_FIELD_NUMBER = 3;
     private int context_;
     /**
      * <code>optional uint32 context = 3;</code>
+     *
+     * <pre>
+     * Context bit flags defining where the action should be displayed.
+     * </pre>
      */
     public boolean hasContext() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>optional uint32 context = 3;</code>
+     *
+     * <pre>
+     * Context bit flags defining where the action should be displayed.
+     * </pre>
      */
     public int getContext() {
       return context_;
     }
 
-    // optional .MumbleProto.ContextActionModify.Operation operation = 4;
     public static final int OPERATION_FIELD_NUMBER = 4;
     private MumbleProto.Mumble.ContextActionModify.Operation operation_;
     /**
@@ -19816,7 +23568,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasAction()) {
         memoizedIsInitialized = 0;
@@ -19948,8 +23701,9 @@ public final class Mumble {
      * Protobuf type {@code MumbleProto.ContextActionModify}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.ContextActionModifyOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.ContextActionModify)
+        MumbleProto.Mumble.ContextActionModifyOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_ContextActionModify_descriptor;
@@ -20097,23 +23851,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // required string action = 1;
       private java.lang.Object action_ = "";
       /**
        * <code>required string action = 1;</code>
+       *
+       * <pre>
+       * The action name.
+       * </pre>
        */
       public boolean hasAction() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>required string action = 1;</code>
+       *
+       * <pre>
+       * The action name.
+       * </pre>
        */
       public java.lang.String getAction() {
         java.lang.Object ref = action_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          action_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            action_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -20121,6 +23885,10 @@ public final class Mumble {
       }
       /**
        * <code>required string action = 1;</code>
+       *
+       * <pre>
+       * The action name.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getActionBytes() {
@@ -20137,6 +23905,10 @@ public final class Mumble {
       }
       /**
        * <code>required string action = 1;</code>
+       *
+       * <pre>
+       * The action name.
+       * </pre>
        */
       public Builder setAction(
           java.lang.String value) {
@@ -20150,6 +23922,10 @@ public final class Mumble {
       }
       /**
        * <code>required string action = 1;</code>
+       *
+       * <pre>
+       * The action name.
+       * </pre>
        */
       public Builder clearAction() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -20159,6 +23935,10 @@ public final class Mumble {
       }
       /**
        * <code>required string action = 1;</code>
+       *
+       * <pre>
+       * The action name.
+       * </pre>
        */
       public Builder setActionBytes(
           com.google.protobuf.ByteString value) {
@@ -20171,23 +23951,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional string text = 2;
       private java.lang.Object text_ = "";
       /**
        * <code>optional string text = 2;</code>
+       *
+       * <pre>
+       * The display name of the action.
+       * </pre>
        */
       public boolean hasText() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional string text = 2;</code>
+       *
+       * <pre>
+       * The display name of the action.
+       * </pre>
        */
       public java.lang.String getText() {
         java.lang.Object ref = text_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          text_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            text_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -20195,6 +23985,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string text = 2;</code>
+       *
+       * <pre>
+       * The display name of the action.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getTextBytes() {
@@ -20211,6 +24005,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string text = 2;</code>
+       *
+       * <pre>
+       * The display name of the action.
+       * </pre>
        */
       public Builder setText(
           java.lang.String value) {
@@ -20224,6 +24022,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string text = 2;</code>
+       *
+       * <pre>
+       * The display name of the action.
+       * </pre>
        */
       public Builder clearText() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -20233,6 +24035,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string text = 2;</code>
+       *
+       * <pre>
+       * The display name of the action.
+       * </pre>
        */
       public Builder setTextBytes(
           com.google.protobuf.ByteString value) {
@@ -20245,22 +24051,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 context = 3;
       private int context_ ;
       /**
        * <code>optional uint32 context = 3;</code>
+       *
+       * <pre>
+       * Context bit flags defining where the action should be displayed.
+       * </pre>
        */
       public boolean hasContext() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional uint32 context = 3;</code>
+       *
+       * <pre>
+       * Context bit flags defining where the action should be displayed.
+       * </pre>
        */
       public int getContext() {
         return context_;
       }
       /**
        * <code>optional uint32 context = 3;</code>
+       *
+       * <pre>
+       * Context bit flags defining where the action should be displayed.
+       * </pre>
        */
       public Builder setContext(int value) {
         bitField0_ |= 0x00000004;
@@ -20270,6 +24087,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 context = 3;</code>
+       *
+       * <pre>
+       * Context bit flags defining where the action should be displayed.
+       * </pre>
        */
       public Builder clearContext() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -20278,7 +24099,6 @@ public final class Mumble {
         return this;
       }
 
-      // optional .MumbleProto.ContextActionModify.Operation operation = 4;
       private MumbleProto.Mumble.ContextActionModify.Operation operation_ = MumbleProto.Mumble.ContextActionModify.Operation.Add;
       /**
        * <code>optional .MumbleProto.ContextActionModify.Operation operation = 4;</code>
@@ -20325,50 +24145,81 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.ContextActionModify)
   }
 
-  public interface ContextActionOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface ContextActionOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.ContextAction)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional uint32 session = 1;
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * The target User for the action, identified by session.
+     * </pre>
      */
     boolean hasSession();
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * The target User for the action, identified by session.
+     * </pre>
      */
     int getSession();
 
-    // optional uint32 channel_id = 2;
     /**
      * <code>optional uint32 channel_id = 2;</code>
+     *
+     * <pre>
+     * The target Channel for the action, identified by channel_id.
+     * </pre>
      */
     boolean hasChannelId();
     /**
      * <code>optional uint32 channel_id = 2;</code>
+     *
+     * <pre>
+     * The target Channel for the action, identified by channel_id.
+     * </pre>
      */
     int getChannelId();
 
-    // required string action = 3;
     /**
      * <code>required string action = 3;</code>
+     *
+     * <pre>
+     * The action that should be executed.
+     * </pre>
      */
     boolean hasAction();
     /**
      * <code>required string action = 3;</code>
+     *
+     * <pre>
+     * The action that should be executed.
+     * </pre>
      */
     java.lang.String getAction();
     /**
      * <code>required string action = 3;</code>
+     *
+     * <pre>
+     * The action that should be executed.
+     * </pre>
      */
     com.google.protobuf.ByteString
         getActionBytes();
   }
   /**
    * Protobuf type {@code MumbleProto.ContextAction}
+   *
+   * <pre>
+   * Sent by the client when it wants to initiate a Context action.
+   * </pre>
    */
   public static final class ContextAction extends
-      com.google.protobuf.GeneratedMessage
-      implements ContextActionOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.ContextAction)
+      ContextActionOrBuilder {
     // Use ContextAction.newBuilder() to construct.
     private ContextAction(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -20425,8 +24276,9 @@ public final class Mumble {
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              action_ = input.readBytes();
+              action_ = bs;
               break;
             }
           }
@@ -20469,49 +24321,70 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional uint32 session = 1;
     public static final int SESSION_FIELD_NUMBER = 1;
     private int session_;
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * The target User for the action, identified by session.
+     * </pre>
      */
     public boolean hasSession() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * The target User for the action, identified by session.
+     * </pre>
      */
     public int getSession() {
       return session_;
     }
 
-    // optional uint32 channel_id = 2;
     public static final int CHANNEL_ID_FIELD_NUMBER = 2;
     private int channelId_;
     /**
      * <code>optional uint32 channel_id = 2;</code>
+     *
+     * <pre>
+     * The target Channel for the action, identified by channel_id.
+     * </pre>
      */
     public boolean hasChannelId() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional uint32 channel_id = 2;</code>
+     *
+     * <pre>
+     * The target Channel for the action, identified by channel_id.
+     * </pre>
      */
     public int getChannelId() {
       return channelId_;
     }
 
-    // required string action = 3;
     public static final int ACTION_FIELD_NUMBER = 3;
     private java.lang.Object action_;
     /**
      * <code>required string action = 3;</code>
+     *
+     * <pre>
+     * The action that should be executed.
+     * </pre>
      */
     public boolean hasAction() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>required string action = 3;</code>
+     *
+     * <pre>
+     * The action that should be executed.
+     * </pre>
      */
     public java.lang.String getAction() {
       java.lang.Object ref = action_;
@@ -20529,6 +24402,10 @@ public final class Mumble {
     }
     /**
      * <code>required string action = 3;</code>
+     *
+     * <pre>
+     * The action that should be executed.
+     * </pre>
      */
     public com.google.protobuf.ByteString
         getActionBytes() {
@@ -20552,7 +24429,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasAction()) {
         memoizedIsInitialized = 0;
@@ -20675,10 +24553,15 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.ContextAction}
+     *
+     * <pre>
+     * Sent by the client when it wants to initiate a Context action.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.ContextActionOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.ContextAction)
+        MumbleProto.Mumble.ContextActionOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_ContextAction_descriptor;
@@ -20815,22 +24698,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional uint32 session = 1;
       private int session_ ;
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * The target User for the action, identified by session.
+       * </pre>
        */
       public boolean hasSession() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * The target User for the action, identified by session.
+       * </pre>
        */
       public int getSession() {
         return session_;
       }
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * The target User for the action, identified by session.
+       * </pre>
        */
       public Builder setSession(int value) {
         bitField0_ |= 0x00000001;
@@ -20840,6 +24734,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * The target User for the action, identified by session.
+       * </pre>
        */
       public Builder clearSession() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -20848,22 +24746,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 channel_id = 2;
       private int channelId_ ;
       /**
        * <code>optional uint32 channel_id = 2;</code>
+       *
+       * <pre>
+       * The target Channel for the action, identified by channel_id.
+       * </pre>
        */
       public boolean hasChannelId() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional uint32 channel_id = 2;</code>
+       *
+       * <pre>
+       * The target Channel for the action, identified by channel_id.
+       * </pre>
        */
       public int getChannelId() {
         return channelId_;
       }
       /**
        * <code>optional uint32 channel_id = 2;</code>
+       *
+       * <pre>
+       * The target Channel for the action, identified by channel_id.
+       * </pre>
        */
       public Builder setChannelId(int value) {
         bitField0_ |= 0x00000002;
@@ -20873,6 +24782,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 channel_id = 2;</code>
+       *
+       * <pre>
+       * The target Channel for the action, identified by channel_id.
+       * </pre>
        */
       public Builder clearChannelId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -20881,23 +24794,33 @@ public final class Mumble {
         return this;
       }
 
-      // required string action = 3;
       private java.lang.Object action_ = "";
       /**
        * <code>required string action = 3;</code>
+       *
+       * <pre>
+       * The action that should be executed.
+       * </pre>
        */
       public boolean hasAction() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>required string action = 3;</code>
+       *
+       * <pre>
+       * The action that should be executed.
+       * </pre>
        */
       public java.lang.String getAction() {
         java.lang.Object ref = action_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          action_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            action_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -20905,6 +24828,10 @@ public final class Mumble {
       }
       /**
        * <code>required string action = 3;</code>
+       *
+       * <pre>
+       * The action that should be executed.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getActionBytes() {
@@ -20921,6 +24848,10 @@ public final class Mumble {
       }
       /**
        * <code>required string action = 3;</code>
+       *
+       * <pre>
+       * The action that should be executed.
+       * </pre>
        */
       public Builder setAction(
           java.lang.String value) {
@@ -20934,6 +24865,10 @@ public final class Mumble {
       }
       /**
        * <code>required string action = 3;</code>
+       *
+       * <pre>
+       * The action that should be executed.
+       * </pre>
        */
       public Builder clearAction() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -20943,6 +24878,10 @@ public final class Mumble {
       }
       /**
        * <code>required string action = 3;</code>
+       *
+       * <pre>
+       * The action that should be executed.
+       * </pre>
        */
       public Builder setActionBytes(
           com.google.protobuf.ByteString value) {
@@ -20966,40 +24905,65 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.ContextAction)
   }
 
-  public interface UserListOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface UserListOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.UserList)
+      com.google.protobuf.MessageOrBuilder {
 
-    // repeated .MumbleProto.UserList.User users = 1;
     /**
      * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+     *
+     * <pre>
+     * A list of registered users.
+     * </pre>
      */
     java.util.List<MumbleProto.Mumble.UserList.User> 
         getUsersList();
     /**
      * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+     *
+     * <pre>
+     * A list of registered users.
+     * </pre>
      */
     MumbleProto.Mumble.UserList.User getUsers(int index);
     /**
      * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+     *
+     * <pre>
+     * A list of registered users.
+     * </pre>
      */
     int getUsersCount();
     /**
      * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+     *
+     * <pre>
+     * A list of registered users.
+     * </pre>
      */
     java.util.List<? extends MumbleProto.Mumble.UserList.UserOrBuilder> 
         getUsersOrBuilderList();
     /**
      * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+     *
+     * <pre>
+     * A list of registered users.
+     * </pre>
      */
     MumbleProto.Mumble.UserList.UserOrBuilder getUsersOrBuilder(
         int index);
   }
   /**
    * Protobuf type {@code MumbleProto.UserList}
+   *
+   * <pre>
+   * Lists the registered users.
+   * </pre>
    */
   public static final class UserList extends
-      com.google.protobuf.GeneratedMessage
-      implements UserListOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.UserList)
+      UserListOrBuilder {
     // Use UserList.newBuilder() to construct.
     private UserList(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -21095,35 +25059,53 @@ public final class Mumble {
       return PARSER;
     }
 
-    public interface UserOrBuilder
-        extends com.google.protobuf.MessageOrBuilder {
+    public interface UserOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:MumbleProto.UserList.User)
+        com.google.protobuf.MessageOrBuilder {
 
-      // required uint32 user_id = 1;
       /**
        * <code>required uint32 user_id = 1;</code>
+       *
+       * <pre>
+       * Registered user ID.
+       * </pre>
        */
       boolean hasUserId();
       /**
        * <code>required uint32 user_id = 1;</code>
+       *
+       * <pre>
+       * Registered user ID.
+       * </pre>
        */
       int getUserId();
 
-      // optional string name = 2;
       /**
        * <code>optional string name = 2;</code>
+       *
+       * <pre>
+       * Registered user name.
+       * </pre>
        */
       boolean hasName();
       /**
        * <code>optional string name = 2;</code>
+       *
+       * <pre>
+       * Registered user name.
+       * </pre>
        */
       java.lang.String getName();
       /**
        * <code>optional string name = 2;</code>
+       *
+       * <pre>
+       * Registered user name.
+       * </pre>
        */
       com.google.protobuf.ByteString
           getNameBytes();
 
-      // optional string last_seen = 3;
       /**
        * <code>optional string last_seen = 3;</code>
        */
@@ -21138,7 +25120,6 @@ public final class Mumble {
       com.google.protobuf.ByteString
           getLastSeenBytes();
 
-      // optional uint32 last_channel = 4;
       /**
        * <code>optional uint32 last_channel = 4;</code>
        */
@@ -21152,8 +25133,9 @@ public final class Mumble {
      * Protobuf type {@code MumbleProto.UserList.User}
      */
     public static final class User extends
-        com.google.protobuf.GeneratedMessage
-        implements UserOrBuilder {
+        com.google.protobuf.GeneratedMessage implements
+        // @@protoc_insertion_point(message_implements:MumbleProto.UserList.User)
+        UserOrBuilder {
       // Use User.newBuilder() to construct.
       private User(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
         super(builder);
@@ -21205,13 +25187,15 @@ public final class Mumble {
                 break;
               }
               case 18: {
+                com.google.protobuf.ByteString bs = input.readBytes();
                 bitField0_ |= 0x00000002;
-                name_ = input.readBytes();
+                name_ = bs;
                 break;
               }
               case 26: {
+                com.google.protobuf.ByteString bs = input.readBytes();
                 bitField0_ |= 0x00000004;
-                lastSeen_ = input.readBytes();
+                lastSeen_ = bs;
                 break;
               }
               case 32: {
@@ -21259,33 +25243,47 @@ public final class Mumble {
       }
 
       private int bitField0_;
-      // required uint32 user_id = 1;
       public static final int USER_ID_FIELD_NUMBER = 1;
       private int userId_;
       /**
        * <code>required uint32 user_id = 1;</code>
+       *
+       * <pre>
+       * Registered user ID.
+       * </pre>
        */
       public boolean hasUserId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>required uint32 user_id = 1;</code>
+       *
+       * <pre>
+       * Registered user ID.
+       * </pre>
        */
       public int getUserId() {
         return userId_;
       }
 
-      // optional string name = 2;
       public static final int NAME_FIELD_NUMBER = 2;
       private java.lang.Object name_;
       /**
        * <code>optional string name = 2;</code>
+       *
+       * <pre>
+       * Registered user name.
+       * </pre>
        */
       public boolean hasName() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional string name = 2;</code>
+       *
+       * <pre>
+       * Registered user name.
+       * </pre>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -21303,6 +25301,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string name = 2;</code>
+       *
+       * <pre>
+       * Registered user name.
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -21318,7 +25320,6 @@ public final class Mumble {
         }
       }
 
-      // optional string last_seen = 3;
       public static final int LAST_SEEN_FIELD_NUMBER = 3;
       private java.lang.Object lastSeen_;
       /**
@@ -21361,7 +25362,6 @@ public final class Mumble {
         }
       }
 
-      // optional uint32 last_channel = 4;
       public static final int LAST_CHANNEL_FIELD_NUMBER = 4;
       private int lastChannel_;
       /**
@@ -21386,7 +25386,8 @@ public final class Mumble {
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
         byte isInitialized = memoizedIsInitialized;
-        if (isInitialized != -1) return isInitialized == 1;
+        if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
 
         if (!hasUserId()) {
           memoizedIsInitialized = 0;
@@ -21518,8 +25519,9 @@ public final class Mumble {
        * Protobuf type {@code MumbleProto.UserList.User}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessage.Builder<Builder>
-         implements MumbleProto.Mumble.UserList.UserOrBuilder {
+          com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:MumbleProto.UserList.User)
+          MumbleProto.Mumble.UserList.UserOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
           return MumbleProto.Mumble.internal_static_MumbleProto_UserList_User_descriptor;
@@ -21667,22 +25669,33 @@ public final class Mumble {
         }
         private int bitField0_;
 
-        // required uint32 user_id = 1;
         private int userId_ ;
         /**
          * <code>required uint32 user_id = 1;</code>
+         *
+         * <pre>
+         * Registered user ID.
+         * </pre>
          */
         public boolean hasUserId() {
           return ((bitField0_ & 0x00000001) == 0x00000001);
         }
         /**
          * <code>required uint32 user_id = 1;</code>
+         *
+         * <pre>
+         * Registered user ID.
+         * </pre>
          */
         public int getUserId() {
           return userId_;
         }
         /**
          * <code>required uint32 user_id = 1;</code>
+         *
+         * <pre>
+         * Registered user ID.
+         * </pre>
          */
         public Builder setUserId(int value) {
           bitField0_ |= 0x00000001;
@@ -21692,6 +25705,10 @@ public final class Mumble {
         }
         /**
          * <code>required uint32 user_id = 1;</code>
+         *
+         * <pre>
+         * Registered user ID.
+         * </pre>
          */
         public Builder clearUserId() {
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -21700,23 +25717,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional string name = 2;
         private java.lang.Object name_ = "";
         /**
          * <code>optional string name = 2;</code>
+         *
+         * <pre>
+         * Registered user name.
+         * </pre>
          */
         public boolean hasName() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
         /**
          * <code>optional string name = 2;</code>
+         *
+         * <pre>
+         * Registered user name.
+         * </pre>
          */
         public java.lang.String getName() {
           java.lang.Object ref = name_;
           if (!(ref instanceof java.lang.String)) {
-            java.lang.String s = ((com.google.protobuf.ByteString) ref)
-                .toStringUtf8();
-            name_ = s;
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            if (bs.isValidUtf8()) {
+              name_ = s;
+            }
             return s;
           } else {
             return (java.lang.String) ref;
@@ -21724,6 +25751,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string name = 2;</code>
+         *
+         * <pre>
+         * Registered user name.
+         * </pre>
          */
         public com.google.protobuf.ByteString
             getNameBytes() {
@@ -21740,6 +25771,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string name = 2;</code>
+         *
+         * <pre>
+         * Registered user name.
+         * </pre>
          */
         public Builder setName(
             java.lang.String value) {
@@ -21753,6 +25788,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string name = 2;</code>
+         *
+         * <pre>
+         * Registered user name.
+         * </pre>
          */
         public Builder clearName() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -21762,6 +25801,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string name = 2;</code>
+         *
+         * <pre>
+         * Registered user name.
+         * </pre>
          */
         public Builder setNameBytes(
             com.google.protobuf.ByteString value) {
@@ -21774,7 +25817,6 @@ public final class Mumble {
           return this;
         }
 
-        // optional string last_seen = 3;
         private java.lang.Object lastSeen_ = "";
         /**
          * <code>optional string last_seen = 3;</code>
@@ -21788,9 +25830,12 @@ public final class Mumble {
         public java.lang.String getLastSeen() {
           java.lang.Object ref = lastSeen_;
           if (!(ref instanceof java.lang.String)) {
-            java.lang.String s = ((com.google.protobuf.ByteString) ref)
-                .toStringUtf8();
-            lastSeen_ = s;
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            if (bs.isValidUtf8()) {
+              lastSeen_ = s;
+            }
             return s;
           } else {
             return (java.lang.String) ref;
@@ -21848,7 +25893,6 @@ public final class Mumble {
           return this;
         }
 
-        // optional uint32 last_channel = 4;
         private int lastChannel_ ;
         /**
          * <code>optional uint32 last_channel = 4;</code>
@@ -21892,17 +25936,24 @@ public final class Mumble {
       // @@protoc_insertion_point(class_scope:MumbleProto.UserList.User)
     }
 
-    // repeated .MumbleProto.UserList.User users = 1;
     public static final int USERS_FIELD_NUMBER = 1;
     private java.util.List<MumbleProto.Mumble.UserList.User> users_;
     /**
      * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+     *
+     * <pre>
+     * A list of registered users.
+     * </pre>
      */
     public java.util.List<MumbleProto.Mumble.UserList.User> getUsersList() {
       return users_;
     }
     /**
      * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+     *
+     * <pre>
+     * A list of registered users.
+     * </pre>
      */
     public java.util.List<? extends MumbleProto.Mumble.UserList.UserOrBuilder> 
         getUsersOrBuilderList() {
@@ -21910,18 +25961,30 @@ public final class Mumble {
     }
     /**
      * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+     *
+     * <pre>
+     * A list of registered users.
+     * </pre>
      */
     public int getUsersCount() {
       return users_.size();
     }
     /**
      * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+     *
+     * <pre>
+     * A list of registered users.
+     * </pre>
      */
     public MumbleProto.Mumble.UserList.User getUsers(int index) {
       return users_.get(index);
     }
     /**
      * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+     *
+     * <pre>
+     * A list of registered users.
+     * </pre>
      */
     public MumbleProto.Mumble.UserList.UserOrBuilder getUsersOrBuilder(
         int index) {
@@ -21934,7 +25997,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       for (int i = 0; i < getUsersCount(); i++) {
         if (!getUsers(i).isInitialized()) {
@@ -22045,10 +26109,15 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.UserList}
+     *
+     * <pre>
+     * Lists the registered users.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.UserListOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.UserList)
+        MumbleProto.Mumble.UserListOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_UserList_descriptor;
@@ -22198,7 +26267,6 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // repeated .MumbleProto.UserList.User users = 1;
       private java.util.List<MumbleProto.Mumble.UserList.User> users_ =
         java.util.Collections.emptyList();
       private void ensureUsersIsMutable() {
@@ -22213,6 +26281,10 @@ public final class Mumble {
 
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public java.util.List<MumbleProto.Mumble.UserList.User> getUsersList() {
         if (usersBuilder_ == null) {
@@ -22223,6 +26295,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public int getUsersCount() {
         if (usersBuilder_ == null) {
@@ -22233,6 +26309,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public MumbleProto.Mumble.UserList.User getUsers(int index) {
         if (usersBuilder_ == null) {
@@ -22243,6 +26323,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public Builder setUsers(
           int index, MumbleProto.Mumble.UserList.User value) {
@@ -22260,6 +26344,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public Builder setUsers(
           int index, MumbleProto.Mumble.UserList.User.Builder builderForValue) {
@@ -22274,6 +26362,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public Builder addUsers(MumbleProto.Mumble.UserList.User value) {
         if (usersBuilder_ == null) {
@@ -22290,6 +26382,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public Builder addUsers(
           int index, MumbleProto.Mumble.UserList.User value) {
@@ -22307,6 +26403,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public Builder addUsers(
           MumbleProto.Mumble.UserList.User.Builder builderForValue) {
@@ -22321,6 +26421,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public Builder addUsers(
           int index, MumbleProto.Mumble.UserList.User.Builder builderForValue) {
@@ -22335,12 +26439,17 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public Builder addAllUsers(
           java.lang.Iterable<? extends MumbleProto.Mumble.UserList.User> values) {
         if (usersBuilder_ == null) {
           ensureUsersIsMutable();
-          super.addAll(values, users_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, users_);
           onChanged();
         } else {
           usersBuilder_.addAllMessages(values);
@@ -22349,6 +26458,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public Builder clearUsers() {
         if (usersBuilder_ == null) {
@@ -22362,6 +26475,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public Builder removeUsers(int index) {
         if (usersBuilder_ == null) {
@@ -22375,6 +26492,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public MumbleProto.Mumble.UserList.User.Builder getUsersBuilder(
           int index) {
@@ -22382,6 +26503,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public MumbleProto.Mumble.UserList.UserOrBuilder getUsersOrBuilder(
           int index) {
@@ -22392,6 +26517,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public java.util.List<? extends MumbleProto.Mumble.UserList.UserOrBuilder> 
            getUsersOrBuilderList() {
@@ -22403,6 +26532,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public MumbleProto.Mumble.UserList.User.Builder addUsersBuilder() {
         return getUsersFieldBuilder().addBuilder(
@@ -22410,6 +26543,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public MumbleProto.Mumble.UserList.User.Builder addUsersBuilder(
           int index) {
@@ -22418,6 +26555,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.UserList.User users = 1;</code>
+       *
+       * <pre>
+       * A list of registered users.
+       * </pre>
        */
       public java.util.List<MumbleProto.Mumble.UserList.User.Builder> 
            getUsersBuilderList() {
@@ -22449,50 +26590,84 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.UserList)
   }
 
-  public interface VoiceTargetOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VoiceTargetOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.VoiceTarget)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional uint32 id = 1;
     /**
      * <code>optional uint32 id = 1;</code>
+     *
+     * <pre>
+     * Voice target ID.
+     * </pre>
      */
     boolean hasId();
     /**
      * <code>optional uint32 id = 1;</code>
+     *
+     * <pre>
+     * Voice target ID.
+     * </pre>
      */
     int getId();
 
-    // repeated .MumbleProto.VoiceTarget.Target targets = 2;
     /**
      * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+     *
+     * <pre>
+     * The receivers that this voice target includes.
+     * </pre>
      */
     java.util.List<MumbleProto.Mumble.VoiceTarget.Target> 
         getTargetsList();
     /**
      * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+     *
+     * <pre>
+     * The receivers that this voice target includes.
+     * </pre>
      */
     MumbleProto.Mumble.VoiceTarget.Target getTargets(int index);
     /**
      * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+     *
+     * <pre>
+     * The receivers that this voice target includes.
+     * </pre>
      */
     int getTargetsCount();
     /**
      * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+     *
+     * <pre>
+     * The receivers that this voice target includes.
+     * </pre>
      */
     java.util.List<? extends MumbleProto.Mumble.VoiceTarget.TargetOrBuilder> 
         getTargetsOrBuilderList();
     /**
      * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+     *
+     * <pre>
+     * The receivers that this voice target includes.
+     * </pre>
      */
     MumbleProto.Mumble.VoiceTarget.TargetOrBuilder getTargetsOrBuilder(
         int index);
   }
   /**
    * Protobuf type {@code MumbleProto.VoiceTarget}
+   *
+   * <pre>
+   * Sent by the client when it wants to register or clear whisper targets.
+   * Note: The first available target ID is 1 as 0 is reserved for normal
+   * talking. Maximum target ID is 30.
+   * </pre>
    */
   public static final class VoiceTarget extends
-      com.google.protobuf.GeneratedMessage
-      implements VoiceTargetOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.VoiceTarget)
+      VoiceTargetOrBuilder {
     // Use VoiceTarget.newBuilder() to construct.
     private VoiceTarget(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -22593,65 +26768,111 @@ public final class Mumble {
       return PARSER;
     }
 
-    public interface TargetOrBuilder
-        extends com.google.protobuf.MessageOrBuilder {
+    public interface TargetOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:MumbleProto.VoiceTarget.Target)
+        com.google.protobuf.MessageOrBuilder {
 
-      // repeated uint32 session = 1;
       /**
        * <code>repeated uint32 session = 1;</code>
+       *
+       * <pre>
+       * Users that are included as targets.
+       * </pre>
        */
       java.util.List<java.lang.Integer> getSessionList();
       /**
        * <code>repeated uint32 session = 1;</code>
+       *
+       * <pre>
+       * Users that are included as targets.
+       * </pre>
        */
       int getSessionCount();
       /**
        * <code>repeated uint32 session = 1;</code>
+       *
+       * <pre>
+       * Users that are included as targets.
+       * </pre>
        */
       int getSession(int index);
 
-      // optional uint32 channel_id = 2;
       /**
        * <code>optional uint32 channel_id = 2;</code>
+       *
+       * <pre>
+       * Channels that are included as targets.
+       * </pre>
        */
       boolean hasChannelId();
       /**
        * <code>optional uint32 channel_id = 2;</code>
+       *
+       * <pre>
+       * Channels that are included as targets.
+       * </pre>
        */
       int getChannelId();
 
-      // optional string group = 3;
       /**
        * <code>optional string group = 3;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       boolean hasGroup();
       /**
        * <code>optional string group = 3;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       java.lang.String getGroup();
       /**
        * <code>optional string group = 3;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       com.google.protobuf.ByteString
           getGroupBytes();
 
-      // optional bool links = 4 [default = false];
       /**
        * <code>optional bool links = 4 [default = false];</code>
+       *
+       * <pre>
+       * True if the voice should follow links from the specified channel.
+       * </pre>
        */
       boolean hasLinks();
       /**
        * <code>optional bool links = 4 [default = false];</code>
+       *
+       * <pre>
+       * True if the voice should follow links from the specified channel.
+       * </pre>
        */
       boolean getLinks();
 
-      // optional bool children = 5 [default = false];
       /**
        * <code>optional bool children = 5 [default = false];</code>
+       *
+       * <pre>
+       * True if the voice should also be sent to children of the specific
+       * channel.
+       * </pre>
        */
       boolean hasChildren();
       /**
        * <code>optional bool children = 5 [default = false];</code>
+       *
+       * <pre>
+       * True if the voice should also be sent to children of the specific
+       * channel.
+       * </pre>
        */
       boolean getChildren();
     }
@@ -22659,8 +26880,9 @@ public final class Mumble {
      * Protobuf type {@code MumbleProto.VoiceTarget.Target}
      */
     public static final class Target extends
-        com.google.protobuf.GeneratedMessage
-        implements TargetOrBuilder {
+        com.google.protobuf.GeneratedMessage implements
+        // @@protoc_insertion_point(message_implements:MumbleProto.VoiceTarget.Target)
+        TargetOrBuilder {
       // Use Target.newBuilder() to construct.
       private Target(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
         super(builder);
@@ -22733,8 +26955,9 @@ public final class Mumble {
                 break;
               }
               case 26: {
+                com.google.protobuf.ByteString bs = input.readBytes();
                 bitField0_ |= 0x00000002;
-                group_ = input.readBytes();
+                group_ = bs;
                 break;
               }
               case 32: {
@@ -22790,11 +27013,14 @@ public final class Mumble {
       }
 
       private int bitField0_;
-      // repeated uint32 session = 1;
       public static final int SESSION_FIELD_NUMBER = 1;
       private java.util.List<java.lang.Integer> session_;
       /**
        * <code>repeated uint32 session = 1;</code>
+       *
+       * <pre>
+       * Users that are included as targets.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getSessionList() {
@@ -22802,44 +27028,66 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 session = 1;</code>
+       *
+       * <pre>
+       * Users that are included as targets.
+       * </pre>
        */
       public int getSessionCount() {
         return session_.size();
       }
       /**
        * <code>repeated uint32 session = 1;</code>
+       *
+       * <pre>
+       * Users that are included as targets.
+       * </pre>
        */
       public int getSession(int index) {
         return session_.get(index);
       }
 
-      // optional uint32 channel_id = 2;
       public static final int CHANNEL_ID_FIELD_NUMBER = 2;
       private int channelId_;
       /**
        * <code>optional uint32 channel_id = 2;</code>
+       *
+       * <pre>
+       * Channels that are included as targets.
+       * </pre>
        */
       public boolean hasChannelId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional uint32 channel_id = 2;</code>
+       *
+       * <pre>
+       * Channels that are included as targets.
+       * </pre>
        */
       public int getChannelId() {
         return channelId_;
       }
 
-      // optional string group = 3;
       public static final int GROUP_FIELD_NUMBER = 3;
       private java.lang.Object group_;
       /**
        * <code>optional string group = 3;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public boolean hasGroup() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional string group = 3;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public java.lang.String getGroup() {
         java.lang.Object ref = group_;
@@ -22857,6 +27105,10 @@ public final class Mumble {
       }
       /**
        * <code>optional string group = 3;</code>
+       *
+       * <pre>
+       * TODO ??
+       * </pre>
        */
       public com.google.protobuf.ByteString
           getGroupBytes() {
@@ -22872,33 +27124,49 @@ public final class Mumble {
         }
       }
 
-      // optional bool links = 4 [default = false];
       public static final int LINKS_FIELD_NUMBER = 4;
       private boolean links_;
       /**
        * <code>optional bool links = 4 [default = false];</code>
+       *
+       * <pre>
+       * True if the voice should follow links from the specified channel.
+       * </pre>
        */
       public boolean hasLinks() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional bool links = 4 [default = false];</code>
+       *
+       * <pre>
+       * True if the voice should follow links from the specified channel.
+       * </pre>
        */
       public boolean getLinks() {
         return links_;
       }
 
-      // optional bool children = 5 [default = false];
       public static final int CHILDREN_FIELD_NUMBER = 5;
       private boolean children_;
       /**
        * <code>optional bool children = 5 [default = false];</code>
+       *
+       * <pre>
+       * True if the voice should also be sent to children of the specific
+       * channel.
+       * </pre>
        */
       public boolean hasChildren() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <code>optional bool children = 5 [default = false];</code>
+       *
+       * <pre>
+       * True if the voice should also be sent to children of the specific
+       * channel.
+       * </pre>
        */
       public boolean getChildren() {
         return children_;
@@ -22914,7 +27182,8 @@ public final class Mumble {
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
         byte isInitialized = memoizedIsInitialized;
-        if (isInitialized != -1) return isInitialized == 1;
+        if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
 
         memoizedIsInitialized = 1;
         return true;
@@ -23054,8 +27323,9 @@ public final class Mumble {
        * Protobuf type {@code MumbleProto.VoiceTarget.Target}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessage.Builder<Builder>
-         implements MumbleProto.Mumble.VoiceTarget.TargetOrBuilder {
+          com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:MumbleProto.VoiceTarget.Target)
+          MumbleProto.Mumble.VoiceTarget.TargetOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
           return MumbleProto.Mumble.internal_static_MumbleProto_VoiceTarget_Target_descriptor;
@@ -23214,7 +27484,6 @@ public final class Mumble {
         }
         private int bitField0_;
 
-        // repeated uint32 session = 1;
         private java.util.List<java.lang.Integer> session_ = java.util.Collections.emptyList();
         private void ensureSessionIsMutable() {
           if (!((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -23224,6 +27493,10 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 session = 1;</code>
+         *
+         * <pre>
+         * Users that are included as targets.
+         * </pre>
          */
         public java.util.List<java.lang.Integer>
             getSessionList() {
@@ -23231,18 +27504,30 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 session = 1;</code>
+         *
+         * <pre>
+         * Users that are included as targets.
+         * </pre>
          */
         public int getSessionCount() {
           return session_.size();
         }
         /**
          * <code>repeated uint32 session = 1;</code>
+         *
+         * <pre>
+         * Users that are included as targets.
+         * </pre>
          */
         public int getSession(int index) {
           return session_.get(index);
         }
         /**
          * <code>repeated uint32 session = 1;</code>
+         *
+         * <pre>
+         * Users that are included as targets.
+         * </pre>
          */
         public Builder setSession(
             int index, int value) {
@@ -23253,6 +27538,10 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 session = 1;</code>
+         *
+         * <pre>
+         * Users that are included as targets.
+         * </pre>
          */
         public Builder addSession(int value) {
           ensureSessionIsMutable();
@@ -23262,16 +27551,25 @@ public final class Mumble {
         }
         /**
          * <code>repeated uint32 session = 1;</code>
+         *
+         * <pre>
+         * Users that are included as targets.
+         * </pre>
          */
         public Builder addAllSession(
             java.lang.Iterable<? extends java.lang.Integer> values) {
           ensureSessionIsMutable();
-          super.addAll(values, session_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, session_);
           onChanged();
           return this;
         }
         /**
          * <code>repeated uint32 session = 1;</code>
+         *
+         * <pre>
+         * Users that are included as targets.
+         * </pre>
          */
         public Builder clearSession() {
           session_ = java.util.Collections.emptyList();
@@ -23280,22 +27578,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional uint32 channel_id = 2;
         private int channelId_ ;
         /**
          * <code>optional uint32 channel_id = 2;</code>
+         *
+         * <pre>
+         * Channels that are included as targets.
+         * </pre>
          */
         public boolean hasChannelId() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
         /**
          * <code>optional uint32 channel_id = 2;</code>
+         *
+         * <pre>
+         * Channels that are included as targets.
+         * </pre>
          */
         public int getChannelId() {
           return channelId_;
         }
         /**
          * <code>optional uint32 channel_id = 2;</code>
+         *
+         * <pre>
+         * Channels that are included as targets.
+         * </pre>
          */
         public Builder setChannelId(int value) {
           bitField0_ |= 0x00000002;
@@ -23305,6 +27614,10 @@ public final class Mumble {
         }
         /**
          * <code>optional uint32 channel_id = 2;</code>
+         *
+         * <pre>
+         * Channels that are included as targets.
+         * </pre>
          */
         public Builder clearChannelId() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -23313,23 +27626,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional string group = 3;
         private java.lang.Object group_ = "";
         /**
          * <code>optional string group = 3;</code>
+         *
+         * <pre>
+         * TODO ??
+         * </pre>
          */
         public boolean hasGroup() {
           return ((bitField0_ & 0x00000004) == 0x00000004);
         }
         /**
          * <code>optional string group = 3;</code>
+         *
+         * <pre>
+         * TODO ??
+         * </pre>
          */
         public java.lang.String getGroup() {
           java.lang.Object ref = group_;
           if (!(ref instanceof java.lang.String)) {
-            java.lang.String s = ((com.google.protobuf.ByteString) ref)
-                .toStringUtf8();
-            group_ = s;
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            if (bs.isValidUtf8()) {
+              group_ = s;
+            }
             return s;
           } else {
             return (java.lang.String) ref;
@@ -23337,6 +27660,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string group = 3;</code>
+         *
+         * <pre>
+         * TODO ??
+         * </pre>
          */
         public com.google.protobuf.ByteString
             getGroupBytes() {
@@ -23353,6 +27680,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string group = 3;</code>
+         *
+         * <pre>
+         * TODO ??
+         * </pre>
          */
         public Builder setGroup(
             java.lang.String value) {
@@ -23366,6 +27697,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string group = 3;</code>
+         *
+         * <pre>
+         * TODO ??
+         * </pre>
          */
         public Builder clearGroup() {
           bitField0_ = (bitField0_ & ~0x00000004);
@@ -23375,6 +27710,10 @@ public final class Mumble {
         }
         /**
          * <code>optional string group = 3;</code>
+         *
+         * <pre>
+         * TODO ??
+         * </pre>
          */
         public Builder setGroupBytes(
             com.google.protobuf.ByteString value) {
@@ -23387,22 +27726,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional bool links = 4 [default = false];
         private boolean links_ ;
         /**
          * <code>optional bool links = 4 [default = false];</code>
+         *
+         * <pre>
+         * True if the voice should follow links from the specified channel.
+         * </pre>
          */
         public boolean hasLinks() {
           return ((bitField0_ & 0x00000008) == 0x00000008);
         }
         /**
          * <code>optional bool links = 4 [default = false];</code>
+         *
+         * <pre>
+         * True if the voice should follow links from the specified channel.
+         * </pre>
          */
         public boolean getLinks() {
           return links_;
         }
         /**
          * <code>optional bool links = 4 [default = false];</code>
+         *
+         * <pre>
+         * True if the voice should follow links from the specified channel.
+         * </pre>
          */
         public Builder setLinks(boolean value) {
           bitField0_ |= 0x00000008;
@@ -23412,6 +27762,10 @@ public final class Mumble {
         }
         /**
          * <code>optional bool links = 4 [default = false];</code>
+         *
+         * <pre>
+         * True if the voice should follow links from the specified channel.
+         * </pre>
          */
         public Builder clearLinks() {
           bitField0_ = (bitField0_ & ~0x00000008);
@@ -23420,22 +27774,36 @@ public final class Mumble {
           return this;
         }
 
-        // optional bool children = 5 [default = false];
         private boolean children_ ;
         /**
          * <code>optional bool children = 5 [default = false];</code>
+         *
+         * <pre>
+         * True if the voice should also be sent to children of the specific
+         * channel.
+         * </pre>
          */
         public boolean hasChildren() {
           return ((bitField0_ & 0x00000010) == 0x00000010);
         }
         /**
          * <code>optional bool children = 5 [default = false];</code>
+         *
+         * <pre>
+         * True if the voice should also be sent to children of the specific
+         * channel.
+         * </pre>
          */
         public boolean getChildren() {
           return children_;
         }
         /**
          * <code>optional bool children = 5 [default = false];</code>
+         *
+         * <pre>
+         * True if the voice should also be sent to children of the specific
+         * channel.
+         * </pre>
          */
         public Builder setChildren(boolean value) {
           bitField0_ |= 0x00000010;
@@ -23445,6 +27813,11 @@ public final class Mumble {
         }
         /**
          * <code>optional bool children = 5 [default = false];</code>
+         *
+         * <pre>
+         * True if the voice should also be sent to children of the specific
+         * channel.
+         * </pre>
          */
         public Builder clearChildren() {
           bitField0_ = (bitField0_ & ~0x00000010);
@@ -23465,33 +27838,47 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional uint32 id = 1;
     public static final int ID_FIELD_NUMBER = 1;
     private int id_;
     /**
      * <code>optional uint32 id = 1;</code>
+     *
+     * <pre>
+     * Voice target ID.
+     * </pre>
      */
     public boolean hasId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional uint32 id = 1;</code>
+     *
+     * <pre>
+     * Voice target ID.
+     * </pre>
      */
     public int getId() {
       return id_;
     }
 
-    // repeated .MumbleProto.VoiceTarget.Target targets = 2;
     public static final int TARGETS_FIELD_NUMBER = 2;
     private java.util.List<MumbleProto.Mumble.VoiceTarget.Target> targets_;
     /**
      * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+     *
+     * <pre>
+     * The receivers that this voice target includes.
+     * </pre>
      */
     public java.util.List<MumbleProto.Mumble.VoiceTarget.Target> getTargetsList() {
       return targets_;
     }
     /**
      * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+     *
+     * <pre>
+     * The receivers that this voice target includes.
+     * </pre>
      */
     public java.util.List<? extends MumbleProto.Mumble.VoiceTarget.TargetOrBuilder> 
         getTargetsOrBuilderList() {
@@ -23499,18 +27886,30 @@ public final class Mumble {
     }
     /**
      * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+     *
+     * <pre>
+     * The receivers that this voice target includes.
+     * </pre>
      */
     public int getTargetsCount() {
       return targets_.size();
     }
     /**
      * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+     *
+     * <pre>
+     * The receivers that this voice target includes.
+     * </pre>
      */
     public MumbleProto.Mumble.VoiceTarget.Target getTargets(int index) {
       return targets_.get(index);
     }
     /**
      * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+     *
+     * <pre>
+     * The receivers that this voice target includes.
+     * </pre>
      */
     public MumbleProto.Mumble.VoiceTarget.TargetOrBuilder getTargetsOrBuilder(
         int index) {
@@ -23524,7 +27923,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -23636,10 +28036,17 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.VoiceTarget}
+     *
+     * <pre>
+     * Sent by the client when it wants to register or clear whisper targets.
+     * Note: The first available target ID is 1 as 0 is reserved for normal
+     * talking. Maximum target ID is 30.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.VoiceTargetOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.VoiceTarget)
+        MumbleProto.Mumble.VoiceTargetOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_VoiceTarget_descriptor;
@@ -23794,22 +28201,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional uint32 id = 1;
       private int id_ ;
       /**
        * <code>optional uint32 id = 1;</code>
+       *
+       * <pre>
+       * Voice target ID.
+       * </pre>
        */
       public boolean hasId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional uint32 id = 1;</code>
+       *
+       * <pre>
+       * Voice target ID.
+       * </pre>
        */
       public int getId() {
         return id_;
       }
       /**
        * <code>optional uint32 id = 1;</code>
+       *
+       * <pre>
+       * Voice target ID.
+       * </pre>
        */
       public Builder setId(int value) {
         bitField0_ |= 0x00000001;
@@ -23819,6 +28237,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 id = 1;</code>
+       *
+       * <pre>
+       * Voice target ID.
+       * </pre>
        */
       public Builder clearId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -23827,7 +28249,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated .MumbleProto.VoiceTarget.Target targets = 2;
       private java.util.List<MumbleProto.Mumble.VoiceTarget.Target> targets_ =
         java.util.Collections.emptyList();
       private void ensureTargetsIsMutable() {
@@ -23842,6 +28263,10 @@ public final class Mumble {
 
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public java.util.List<MumbleProto.Mumble.VoiceTarget.Target> getTargetsList() {
         if (targetsBuilder_ == null) {
@@ -23852,6 +28277,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public int getTargetsCount() {
         if (targetsBuilder_ == null) {
@@ -23862,6 +28291,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public MumbleProto.Mumble.VoiceTarget.Target getTargets(int index) {
         if (targetsBuilder_ == null) {
@@ -23872,6 +28305,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public Builder setTargets(
           int index, MumbleProto.Mumble.VoiceTarget.Target value) {
@@ -23889,6 +28326,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public Builder setTargets(
           int index, MumbleProto.Mumble.VoiceTarget.Target.Builder builderForValue) {
@@ -23903,6 +28344,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public Builder addTargets(MumbleProto.Mumble.VoiceTarget.Target value) {
         if (targetsBuilder_ == null) {
@@ -23919,6 +28364,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public Builder addTargets(
           int index, MumbleProto.Mumble.VoiceTarget.Target value) {
@@ -23936,6 +28385,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public Builder addTargets(
           MumbleProto.Mumble.VoiceTarget.Target.Builder builderForValue) {
@@ -23950,6 +28403,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public Builder addTargets(
           int index, MumbleProto.Mumble.VoiceTarget.Target.Builder builderForValue) {
@@ -23964,12 +28421,17 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public Builder addAllTargets(
           java.lang.Iterable<? extends MumbleProto.Mumble.VoiceTarget.Target> values) {
         if (targetsBuilder_ == null) {
           ensureTargetsIsMutable();
-          super.addAll(values, targets_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, targets_);
           onChanged();
         } else {
           targetsBuilder_.addAllMessages(values);
@@ -23978,6 +28440,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public Builder clearTargets() {
         if (targetsBuilder_ == null) {
@@ -23991,6 +28457,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public Builder removeTargets(int index) {
         if (targetsBuilder_ == null) {
@@ -24004,6 +28474,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public MumbleProto.Mumble.VoiceTarget.Target.Builder getTargetsBuilder(
           int index) {
@@ -24011,6 +28485,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public MumbleProto.Mumble.VoiceTarget.TargetOrBuilder getTargetsOrBuilder(
           int index) {
@@ -24021,6 +28499,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public java.util.List<? extends MumbleProto.Mumble.VoiceTarget.TargetOrBuilder> 
            getTargetsOrBuilderList() {
@@ -24032,6 +28514,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public MumbleProto.Mumble.VoiceTarget.Target.Builder addTargetsBuilder() {
         return getTargetsFieldBuilder().addBuilder(
@@ -24039,6 +28525,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public MumbleProto.Mumble.VoiceTarget.Target.Builder addTargetsBuilder(
           int index) {
@@ -24047,6 +28537,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated .MumbleProto.VoiceTarget.Target targets = 2;</code>
+       *
+       * <pre>
+       * The receivers that this voice target includes.
+       * </pre>
        */
       public java.util.List<MumbleProto.Mumble.VoiceTarget.Target.Builder> 
            getTargetsBuilderList() {
@@ -24078,45 +28572,76 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.VoiceTarget)
   }
 
-  public interface PermissionQueryOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface PermissionQueryOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.PermissionQuery)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional uint32 channel_id = 1;
     /**
      * <code>optional uint32 channel_id = 1;</code>
+     *
+     * <pre>
+     * channel_id of the channel for which the permissions are queried.
+     * </pre>
      */
     boolean hasChannelId();
     /**
      * <code>optional uint32 channel_id = 1;</code>
+     *
+     * <pre>
+     * channel_id of the channel for which the permissions are queried.
+     * </pre>
      */
     int getChannelId();
 
-    // optional uint32 permissions = 2;
     /**
      * <code>optional uint32 permissions = 2;</code>
+     *
+     * <pre>
+     * Channel permissions.
+     * </pre>
      */
     boolean hasPermissions();
     /**
      * <code>optional uint32 permissions = 2;</code>
+     *
+     * <pre>
+     * Channel permissions.
+     * </pre>
      */
     int getPermissions();
 
-    // optional bool flush = 3 [default = false];
     /**
      * <code>optional bool flush = 3 [default = false];</code>
+     *
+     * <pre>
+     * True if the client should drop its current permission information for all
+     * channels.
+     * </pre>
      */
     boolean hasFlush();
     /**
      * <code>optional bool flush = 3 [default = false];</code>
+     *
+     * <pre>
+     * True if the client should drop its current permission information for all
+     * channels.
+     * </pre>
      */
     boolean getFlush();
   }
   /**
    * Protobuf type {@code MumbleProto.PermissionQuery}
+   *
+   * <pre>
+   * Sent by the client when it wants permissions for a certain channel. Sent by
+   * the server when it replies to the query or wants the user to resync all
+   * channel permissions.
+   * </pre>
    */
   public static final class PermissionQuery extends
-      com.google.protobuf.GeneratedMessage
-      implements PermissionQueryOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.PermissionQuery)
+      PermissionQueryOrBuilder {
     // Use PermissionQuery.newBuilder() to construct.
     private PermissionQuery(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -24217,49 +28742,72 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional uint32 channel_id = 1;
     public static final int CHANNEL_ID_FIELD_NUMBER = 1;
     private int channelId_;
     /**
      * <code>optional uint32 channel_id = 1;</code>
+     *
+     * <pre>
+     * channel_id of the channel for which the permissions are queried.
+     * </pre>
      */
     public boolean hasChannelId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional uint32 channel_id = 1;</code>
+     *
+     * <pre>
+     * channel_id of the channel for which the permissions are queried.
+     * </pre>
      */
     public int getChannelId() {
       return channelId_;
     }
 
-    // optional uint32 permissions = 2;
     public static final int PERMISSIONS_FIELD_NUMBER = 2;
     private int permissions_;
     /**
      * <code>optional uint32 permissions = 2;</code>
+     *
+     * <pre>
+     * Channel permissions.
+     * </pre>
      */
     public boolean hasPermissions() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional uint32 permissions = 2;</code>
+     *
+     * <pre>
+     * Channel permissions.
+     * </pre>
      */
     public int getPermissions() {
       return permissions_;
     }
 
-    // optional bool flush = 3 [default = false];
     public static final int FLUSH_FIELD_NUMBER = 3;
     private boolean flush_;
     /**
      * <code>optional bool flush = 3 [default = false];</code>
+     *
+     * <pre>
+     * True if the client should drop its current permission information for all
+     * channels.
+     * </pre>
      */
     public boolean hasFlush() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>optional bool flush = 3 [default = false];</code>
+     *
+     * <pre>
+     * True if the client should drop its current permission information for all
+     * channels.
+     * </pre>
      */
     public boolean getFlush() {
       return flush_;
@@ -24273,7 +28821,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -24392,10 +28941,17 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.PermissionQuery}
+     *
+     * <pre>
+     * Sent by the client when it wants permissions for a certain channel. Sent by
+     * the server when it replies to the query or wants the user to resync all
+     * channel permissions.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.PermissionQueryOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.PermissionQuery)
+        MumbleProto.Mumble.PermissionQueryOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_PermissionQuery_descriptor;
@@ -24526,22 +29082,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional uint32 channel_id = 1;
       private int channelId_ ;
       /**
        * <code>optional uint32 channel_id = 1;</code>
+       *
+       * <pre>
+       * channel_id of the channel for which the permissions are queried.
+       * </pre>
        */
       public boolean hasChannelId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional uint32 channel_id = 1;</code>
+       *
+       * <pre>
+       * channel_id of the channel for which the permissions are queried.
+       * </pre>
        */
       public int getChannelId() {
         return channelId_;
       }
       /**
        * <code>optional uint32 channel_id = 1;</code>
+       *
+       * <pre>
+       * channel_id of the channel for which the permissions are queried.
+       * </pre>
        */
       public Builder setChannelId(int value) {
         bitField0_ |= 0x00000001;
@@ -24551,6 +29118,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 channel_id = 1;</code>
+       *
+       * <pre>
+       * channel_id of the channel for which the permissions are queried.
+       * </pre>
        */
       public Builder clearChannelId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -24559,22 +29130,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 permissions = 2;
       private int permissions_ ;
       /**
        * <code>optional uint32 permissions = 2;</code>
+       *
+       * <pre>
+       * Channel permissions.
+       * </pre>
        */
       public boolean hasPermissions() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional uint32 permissions = 2;</code>
+       *
+       * <pre>
+       * Channel permissions.
+       * </pre>
        */
       public int getPermissions() {
         return permissions_;
       }
       /**
        * <code>optional uint32 permissions = 2;</code>
+       *
+       * <pre>
+       * Channel permissions.
+       * </pre>
        */
       public Builder setPermissions(int value) {
         bitField0_ |= 0x00000002;
@@ -24584,6 +29166,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 permissions = 2;</code>
+       *
+       * <pre>
+       * Channel permissions.
+       * </pre>
        */
       public Builder clearPermissions() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -24592,22 +29178,36 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool flush = 3 [default = false];
       private boolean flush_ ;
       /**
        * <code>optional bool flush = 3 [default = false];</code>
+       *
+       * <pre>
+       * True if the client should drop its current permission information for all
+       * channels.
+       * </pre>
        */
       public boolean hasFlush() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional bool flush = 3 [default = false];</code>
+       *
+       * <pre>
+       * True if the client should drop its current permission information for all
+       * channels.
+       * </pre>
        */
       public boolean getFlush() {
         return flush_;
       }
       /**
        * <code>optional bool flush = 3 [default = false];</code>
+       *
+       * <pre>
+       * True if the client should drop its current permission information for all
+       * channels.
+       * </pre>
        */
       public Builder setFlush(boolean value) {
         bitField0_ |= 0x00000004;
@@ -24617,6 +29217,11 @@ public final class Mumble {
       }
       /**
        * <code>optional bool flush = 3 [default = false];</code>
+       *
+       * <pre>
+       * True if the client should drop its current permission information for all
+       * channels.
+       * </pre>
        */
       public Builder clearFlush() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -24636,40 +29241,61 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.PermissionQuery)
   }
 
-  public interface CodecVersionOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface CodecVersionOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.CodecVersion)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 alpha = 1;
     /**
      * <code>required int32 alpha = 1;</code>
+     *
+     * <pre>
+     * The version of the CELT Alpha codec.
+     * </pre>
      */
     boolean hasAlpha();
     /**
      * <code>required int32 alpha = 1;</code>
+     *
+     * <pre>
+     * The version of the CELT Alpha codec.
+     * </pre>
      */
     int getAlpha();
 
-    // required int32 beta = 2;
     /**
      * <code>required int32 beta = 2;</code>
+     *
+     * <pre>
+     * The version of the CELT Beta codec.
+     * </pre>
      */
     boolean hasBeta();
     /**
      * <code>required int32 beta = 2;</code>
+     *
+     * <pre>
+     * The version of the CELT Beta codec.
+     * </pre>
      */
     int getBeta();
 
-    // required bool prefer_alpha = 3 [default = true];
     /**
      * <code>required bool prefer_alpha = 3 [default = true];</code>
+     *
+     * <pre>
+     * True if the user should prefer Alpha over Beta.
+     * </pre>
      */
     boolean hasPreferAlpha();
     /**
      * <code>required bool prefer_alpha = 3 [default = true];</code>
+     *
+     * <pre>
+     * True if the user should prefer Alpha over Beta.
+     * </pre>
      */
     boolean getPreferAlpha();
 
-    // optional bool opus = 4 [default = false];
     /**
      * <code>optional bool opus = 4 [default = false];</code>
      */
@@ -24681,10 +29307,16 @@ public final class Mumble {
   }
   /**
    * Protobuf type {@code MumbleProto.CodecVersion}
+   *
+   * <pre>
+   * Sent by the server to notify the users of the version of the CELT codec they
+   * should use. This may change during the connection when new users join.
+   * </pre>
    */
   public static final class CodecVersion extends
-      com.google.protobuf.GeneratedMessage
-      implements CodecVersionOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.CodecVersion)
+      CodecVersionOrBuilder {
     // Use CodecVersion.newBuilder() to construct.
     private CodecVersion(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -24790,55 +29422,75 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // required int32 alpha = 1;
     public static final int ALPHA_FIELD_NUMBER = 1;
     private int alpha_;
     /**
      * <code>required int32 alpha = 1;</code>
+     *
+     * <pre>
+     * The version of the CELT Alpha codec.
+     * </pre>
      */
     public boolean hasAlpha() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>required int32 alpha = 1;</code>
+     *
+     * <pre>
+     * The version of the CELT Alpha codec.
+     * </pre>
      */
     public int getAlpha() {
       return alpha_;
     }
 
-    // required int32 beta = 2;
     public static final int BETA_FIELD_NUMBER = 2;
     private int beta_;
     /**
      * <code>required int32 beta = 2;</code>
+     *
+     * <pre>
+     * The version of the CELT Beta codec.
+     * </pre>
      */
     public boolean hasBeta() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>required int32 beta = 2;</code>
+     *
+     * <pre>
+     * The version of the CELT Beta codec.
+     * </pre>
      */
     public int getBeta() {
       return beta_;
     }
 
-    // required bool prefer_alpha = 3 [default = true];
     public static final int PREFER_ALPHA_FIELD_NUMBER = 3;
     private boolean preferAlpha_;
     /**
      * <code>required bool prefer_alpha = 3 [default = true];</code>
+     *
+     * <pre>
+     * True if the user should prefer Alpha over Beta.
+     * </pre>
      */
     public boolean hasPreferAlpha() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>required bool prefer_alpha = 3 [default = true];</code>
+     *
+     * <pre>
+     * True if the user should prefer Alpha over Beta.
+     * </pre>
      */
     public boolean getPreferAlpha() {
       return preferAlpha_;
     }
 
-    // optional bool opus = 4 [default = false];
     public static final int OPUS_FIELD_NUMBER = 4;
     private boolean opus_;
     /**
@@ -24863,7 +29515,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasAlpha()) {
         memoizedIsInitialized = 0;
@@ -25001,10 +29654,16 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.CodecVersion}
+     *
+     * <pre>
+     * Sent by the server to notify the users of the version of the CELT codec they
+     * should use. This may change during the connection when new users join.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.CodecVersionOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.CodecVersion)
+        MumbleProto.Mumble.CodecVersionOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_CodecVersion_descriptor;
@@ -25156,22 +29815,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // required int32 alpha = 1;
       private int alpha_ ;
       /**
        * <code>required int32 alpha = 1;</code>
+       *
+       * <pre>
+       * The version of the CELT Alpha codec.
+       * </pre>
        */
       public boolean hasAlpha() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>required int32 alpha = 1;</code>
+       *
+       * <pre>
+       * The version of the CELT Alpha codec.
+       * </pre>
        */
       public int getAlpha() {
         return alpha_;
       }
       /**
        * <code>required int32 alpha = 1;</code>
+       *
+       * <pre>
+       * The version of the CELT Alpha codec.
+       * </pre>
        */
       public Builder setAlpha(int value) {
         bitField0_ |= 0x00000001;
@@ -25181,6 +29851,10 @@ public final class Mumble {
       }
       /**
        * <code>required int32 alpha = 1;</code>
+       *
+       * <pre>
+       * The version of the CELT Alpha codec.
+       * </pre>
        */
       public Builder clearAlpha() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -25189,22 +29863,33 @@ public final class Mumble {
         return this;
       }
 
-      // required int32 beta = 2;
       private int beta_ ;
       /**
        * <code>required int32 beta = 2;</code>
+       *
+       * <pre>
+       * The version of the CELT Beta codec.
+       * </pre>
        */
       public boolean hasBeta() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>required int32 beta = 2;</code>
+       *
+       * <pre>
+       * The version of the CELT Beta codec.
+       * </pre>
        */
       public int getBeta() {
         return beta_;
       }
       /**
        * <code>required int32 beta = 2;</code>
+       *
+       * <pre>
+       * The version of the CELT Beta codec.
+       * </pre>
        */
       public Builder setBeta(int value) {
         bitField0_ |= 0x00000002;
@@ -25214,6 +29899,10 @@ public final class Mumble {
       }
       /**
        * <code>required int32 beta = 2;</code>
+       *
+       * <pre>
+       * The version of the CELT Beta codec.
+       * </pre>
        */
       public Builder clearBeta() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -25222,22 +29911,33 @@ public final class Mumble {
         return this;
       }
 
-      // required bool prefer_alpha = 3 [default = true];
       private boolean preferAlpha_ = true;
       /**
        * <code>required bool prefer_alpha = 3 [default = true];</code>
+       *
+       * <pre>
+       * True if the user should prefer Alpha over Beta.
+       * </pre>
        */
       public boolean hasPreferAlpha() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>required bool prefer_alpha = 3 [default = true];</code>
+       *
+       * <pre>
+       * True if the user should prefer Alpha over Beta.
+       * </pre>
        */
       public boolean getPreferAlpha() {
         return preferAlpha_;
       }
       /**
        * <code>required bool prefer_alpha = 3 [default = true];</code>
+       *
+       * <pre>
+       * True if the user should prefer Alpha over Beta.
+       * </pre>
        */
       public Builder setPreferAlpha(boolean value) {
         bitField0_ |= 0x00000004;
@@ -25247,6 +29947,10 @@ public final class Mumble {
       }
       /**
        * <code>required bool prefer_alpha = 3 [default = true];</code>
+       *
+       * <pre>
+       * True if the user should prefer Alpha over Beta.
+       * </pre>
        */
       public Builder clearPreferAlpha() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -25255,7 +29959,6 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool opus = 4 [default = false];
       private boolean opus_ ;
       /**
        * <code>optional bool opus = 4 [default = false];</code>
@@ -25299,210 +30002,359 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.CodecVersion)
   }
 
-  public interface UserStatsOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface UserStatsOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.UserStats)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional uint32 session = 1;
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * User whose stats these are.
+     * </pre>
      */
     boolean hasSession();
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * User whose stats these are.
+     * </pre>
      */
     int getSession();
 
-    // optional bool stats_only = 2 [default = false];
     /**
      * <code>optional bool stats_only = 2 [default = false];</code>
+     *
+     * <pre>
+     * True if the message contains only mutable stats (packets, ping).
+     * </pre>
      */
     boolean hasStatsOnly();
     /**
      * <code>optional bool stats_only = 2 [default = false];</code>
+     *
+     * <pre>
+     * True if the message contains only mutable stats (packets, ping).
+     * </pre>
      */
     boolean getStatsOnly();
 
-    // repeated bytes certificates = 3;
     /**
      * <code>repeated bytes certificates = 3;</code>
+     *
+     * <pre>
+     * Full user certificate chain of the user certificate in DER format.
+     * </pre>
      */
     java.util.List<com.google.protobuf.ByteString> getCertificatesList();
     /**
      * <code>repeated bytes certificates = 3;</code>
+     *
+     * <pre>
+     * Full user certificate chain of the user certificate in DER format.
+     * </pre>
      */
     int getCertificatesCount();
     /**
      * <code>repeated bytes certificates = 3;</code>
+     *
+     * <pre>
+     * Full user certificate chain of the user certificate in DER format.
+     * </pre>
      */
     com.google.protobuf.ByteString getCertificates(int index);
 
-    // optional .MumbleProto.UserStats.Stats from_client = 4;
     /**
      * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+     *
+     * <pre>
+     * Packet statistics for packets received from the client.
+     * </pre>
      */
     boolean hasFromClient();
     /**
      * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+     *
+     * <pre>
+     * Packet statistics for packets received from the client.
+     * </pre>
      */
     MumbleProto.Mumble.UserStats.Stats getFromClient();
     /**
      * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+     *
+     * <pre>
+     * Packet statistics for packets received from the client.
+     * </pre>
      */
     MumbleProto.Mumble.UserStats.StatsOrBuilder getFromClientOrBuilder();
 
-    // optional .MumbleProto.UserStats.Stats from_server = 5;
     /**
      * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+     *
+     * <pre>
+     * Packet statistics for packets sent by the server.
+     * </pre>
      */
     boolean hasFromServer();
     /**
      * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+     *
+     * <pre>
+     * Packet statistics for packets sent by the server.
+     * </pre>
      */
     MumbleProto.Mumble.UserStats.Stats getFromServer();
     /**
      * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+     *
+     * <pre>
+     * Packet statistics for packets sent by the server.
+     * </pre>
      */
     MumbleProto.Mumble.UserStats.StatsOrBuilder getFromServerOrBuilder();
 
-    // optional uint32 udp_packets = 6;
     /**
      * <code>optional uint32 udp_packets = 6;</code>
+     *
+     * <pre>
+     * Amount of UDP packets sent.
+     * </pre>
      */
     boolean hasUdpPackets();
     /**
      * <code>optional uint32 udp_packets = 6;</code>
+     *
+     * <pre>
+     * Amount of UDP packets sent.
+     * </pre>
      */
     int getUdpPackets();
 
-    // optional uint32 tcp_packets = 7;
     /**
      * <code>optional uint32 tcp_packets = 7;</code>
+     *
+     * <pre>
+     * Amount of TCP packets sent.
+     * </pre>
      */
     boolean hasTcpPackets();
     /**
      * <code>optional uint32 tcp_packets = 7;</code>
+     *
+     * <pre>
+     * Amount of TCP packets sent.
+     * </pre>
      */
     int getTcpPackets();
 
-    // optional float udp_ping_avg = 8;
     /**
      * <code>optional float udp_ping_avg = 8;</code>
+     *
+     * <pre>
+     * UDP ping average.
+     * </pre>
      */
     boolean hasUdpPingAvg();
     /**
      * <code>optional float udp_ping_avg = 8;</code>
+     *
+     * <pre>
+     * UDP ping average.
+     * </pre>
      */
     float getUdpPingAvg();
 
-    // optional float udp_ping_var = 9;
     /**
      * <code>optional float udp_ping_var = 9;</code>
+     *
+     * <pre>
+     * UDP ping variance.
+     * </pre>
      */
     boolean hasUdpPingVar();
     /**
      * <code>optional float udp_ping_var = 9;</code>
+     *
+     * <pre>
+     * UDP ping variance.
+     * </pre>
      */
     float getUdpPingVar();
 
-    // optional float tcp_ping_avg = 10;
     /**
      * <code>optional float tcp_ping_avg = 10;</code>
+     *
+     * <pre>
+     * TCP ping average.
+     * </pre>
      */
     boolean hasTcpPingAvg();
     /**
      * <code>optional float tcp_ping_avg = 10;</code>
+     *
+     * <pre>
+     * TCP ping average.
+     * </pre>
      */
     float getTcpPingAvg();
 
-    // optional float tcp_ping_var = 11;
     /**
      * <code>optional float tcp_ping_var = 11;</code>
+     *
+     * <pre>
+     * TCP ping variance.
+     * </pre>
      */
     boolean hasTcpPingVar();
     /**
      * <code>optional float tcp_ping_var = 11;</code>
+     *
+     * <pre>
+     * TCP ping variance.
+     * </pre>
      */
     float getTcpPingVar();
 
-    // optional .MumbleProto.Version version = 12;
     /**
      * <code>optional .MumbleProto.Version version = 12;</code>
+     *
+     * <pre>
+     * Client version.
+     * </pre>
      */
     boolean hasVersion();
     /**
      * <code>optional .MumbleProto.Version version = 12;</code>
+     *
+     * <pre>
+     * Client version.
+     * </pre>
      */
     MumbleProto.Mumble.Version getVersion();
     /**
      * <code>optional .MumbleProto.Version version = 12;</code>
+     *
+     * <pre>
+     * Client version.
+     * </pre>
      */
     MumbleProto.Mumble.VersionOrBuilder getVersionOrBuilder();
 
-    // repeated int32 celt_versions = 13;
     /**
      * <code>repeated int32 celt_versions = 13;</code>
+     *
+     * <pre>
+     * A list of CELT bitstream version constants supported by the client of this
+     * user.
+     * </pre>
      */
     java.util.List<java.lang.Integer> getCeltVersionsList();
     /**
      * <code>repeated int32 celt_versions = 13;</code>
+     *
+     * <pre>
+     * A list of CELT bitstream version constants supported by the client of this
+     * user.
+     * </pre>
      */
     int getCeltVersionsCount();
     /**
      * <code>repeated int32 celt_versions = 13;</code>
+     *
+     * <pre>
+     * A list of CELT bitstream version constants supported by the client of this
+     * user.
+     * </pre>
      */
     int getCeltVersions(int index);
 
-    // optional bytes address = 14;
     /**
      * <code>optional bytes address = 14;</code>
+     *
+     * <pre>
+     * Client IP address.
+     * </pre>
      */
     boolean hasAddress();
     /**
      * <code>optional bytes address = 14;</code>
+     *
+     * <pre>
+     * Client IP address.
+     * </pre>
      */
     com.google.protobuf.ByteString getAddress();
 
-    // optional uint32 bandwidth = 15;
     /**
      * <code>optional uint32 bandwidth = 15;</code>
+     *
+     * <pre>
+     * Bandwith used by this client.
+     * </pre>
      */
     boolean hasBandwidth();
     /**
      * <code>optional uint32 bandwidth = 15;</code>
+     *
+     * <pre>
+     * Bandwith used by this client.
+     * </pre>
      */
     int getBandwidth();
 
-    // optional uint32 onlinesecs = 16;
     /**
      * <code>optional uint32 onlinesecs = 16;</code>
+     *
+     * <pre>
+     * Connection duration.
+     * </pre>
      */
     boolean hasOnlinesecs();
     /**
      * <code>optional uint32 onlinesecs = 16;</code>
+     *
+     * <pre>
+     * Connection duration.
+     * </pre>
      */
     int getOnlinesecs();
 
-    // optional uint32 idlesecs = 17;
     /**
      * <code>optional uint32 idlesecs = 17;</code>
+     *
+     * <pre>
+     * Duration since last activity.
+     * </pre>
      */
     boolean hasIdlesecs();
     /**
      * <code>optional uint32 idlesecs = 17;</code>
+     *
+     * <pre>
+     * Duration since last activity.
+     * </pre>
      */
     int getIdlesecs();
 
-    // optional bool strong_certificate = 18 [default = false];
     /**
      * <code>optional bool strong_certificate = 18 [default = false];</code>
+     *
+     * <pre>
+     * True if the user has a strong certificate.
+     * </pre>
      */
     boolean hasStrongCertificate();
     /**
      * <code>optional bool strong_certificate = 18 [default = false];</code>
+     *
+     * <pre>
+     * True if the user has a strong certificate.
+     * </pre>
      */
     boolean getStrongCertificate();
 
-    // optional bool opus = 19 [default = false];
     /**
      * <code>optional bool opus = 19 [default = false];</code>
      */
@@ -25514,10 +30366,15 @@ public final class Mumble {
   }
   /**
    * Protobuf type {@code MumbleProto.UserStats}
+   *
+   * <pre>
+   * Used to communicate user stats between the server and clients.
+   * </pre>
    */
   public static final class UserStats extends
-      com.google.protobuf.GeneratedMessage
-      implements UserStatsOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.UserStats)
+      UserStatsOrBuilder {
     // Use UserStats.newBuilder() to construct.
     private UserStats(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -25746,46 +30603,75 @@ public final class Mumble {
       return PARSER;
     }
 
-    public interface StatsOrBuilder
-        extends com.google.protobuf.MessageOrBuilder {
+    public interface StatsOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:MumbleProto.UserStats.Stats)
+        com.google.protobuf.MessageOrBuilder {
 
-      // optional uint32 good = 1;
       /**
        * <code>optional uint32 good = 1;</code>
+       *
+       * <pre>
+       * The amount of good packets received.
+       * </pre>
        */
       boolean hasGood();
       /**
        * <code>optional uint32 good = 1;</code>
+       *
+       * <pre>
+       * The amount of good packets received.
+       * </pre>
        */
       int getGood();
 
-      // optional uint32 late = 2;
       /**
        * <code>optional uint32 late = 2;</code>
+       *
+       * <pre>
+       * The amount of late packets received.
+       * </pre>
        */
       boolean hasLate();
       /**
        * <code>optional uint32 late = 2;</code>
+       *
+       * <pre>
+       * The amount of late packets received.
+       * </pre>
        */
       int getLate();
 
-      // optional uint32 lost = 3;
       /**
        * <code>optional uint32 lost = 3;</code>
+       *
+       * <pre>
+       * The amount of packets never received.
+       * </pre>
        */
       boolean hasLost();
       /**
        * <code>optional uint32 lost = 3;</code>
+       *
+       * <pre>
+       * The amount of packets never received.
+       * </pre>
        */
       int getLost();
 
-      // optional uint32 resync = 4;
       /**
        * <code>optional uint32 resync = 4;</code>
+       *
+       * <pre>
+       * The amount of nonce resyncs.
+       * </pre>
        */
       boolean hasResync();
       /**
        * <code>optional uint32 resync = 4;</code>
+       *
+       * <pre>
+       * The amount of nonce resyncs.
+       * </pre>
        */
       int getResync();
     }
@@ -25793,8 +30679,9 @@ public final class Mumble {
      * Protobuf type {@code MumbleProto.UserStats.Stats}
      */
     public static final class Stats extends
-        com.google.protobuf.GeneratedMessage
-        implements StatsOrBuilder {
+        com.google.protobuf.GeneratedMessage implements
+        // @@protoc_insertion_point(message_implements:MumbleProto.UserStats.Stats)
+        StatsOrBuilder {
       // Use Stats.newBuilder() to construct.
       private Stats(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
         super(builder);
@@ -25900,65 +30787,93 @@ public final class Mumble {
       }
 
       private int bitField0_;
-      // optional uint32 good = 1;
       public static final int GOOD_FIELD_NUMBER = 1;
       private int good_;
       /**
        * <code>optional uint32 good = 1;</code>
+       *
+       * <pre>
+       * The amount of good packets received.
+       * </pre>
        */
       public boolean hasGood() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional uint32 good = 1;</code>
+       *
+       * <pre>
+       * The amount of good packets received.
+       * </pre>
        */
       public int getGood() {
         return good_;
       }
 
-      // optional uint32 late = 2;
       public static final int LATE_FIELD_NUMBER = 2;
       private int late_;
       /**
        * <code>optional uint32 late = 2;</code>
+       *
+       * <pre>
+       * The amount of late packets received.
+       * </pre>
        */
       public boolean hasLate() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional uint32 late = 2;</code>
+       *
+       * <pre>
+       * The amount of late packets received.
+       * </pre>
        */
       public int getLate() {
         return late_;
       }
 
-      // optional uint32 lost = 3;
       public static final int LOST_FIELD_NUMBER = 3;
       private int lost_;
       /**
        * <code>optional uint32 lost = 3;</code>
+       *
+       * <pre>
+       * The amount of packets never received.
+       * </pre>
        */
       public boolean hasLost() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <code>optional uint32 lost = 3;</code>
+       *
+       * <pre>
+       * The amount of packets never received.
+       * </pre>
        */
       public int getLost() {
         return lost_;
       }
 
-      // optional uint32 resync = 4;
       public static final int RESYNC_FIELD_NUMBER = 4;
       private int resync_;
       /**
        * <code>optional uint32 resync = 4;</code>
+       *
+       * <pre>
+       * The amount of nonce resyncs.
+       * </pre>
        */
       public boolean hasResync() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <code>optional uint32 resync = 4;</code>
+       *
+       * <pre>
+       * The amount of nonce resyncs.
+       * </pre>
        */
       public int getResync() {
         return resync_;
@@ -25973,7 +30888,8 @@ public final class Mumble {
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
         byte isInitialized = memoizedIsInitialized;
-        if (isInitialized != -1) return isInitialized == 1;
+        if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
 
         memoizedIsInitialized = 1;
         return true;
@@ -26101,8 +31017,9 @@ public final class Mumble {
        * Protobuf type {@code MumbleProto.UserStats.Stats}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessage.Builder<Builder>
-         implements MumbleProto.Mumble.UserStats.StatsOrBuilder {
+          com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:MumbleProto.UserStats.Stats)
+          MumbleProto.Mumble.UserStats.StatsOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
           return MumbleProto.Mumble.internal_static_MumbleProto_UserStats_Stats_descriptor;
@@ -26242,22 +31159,33 @@ public final class Mumble {
         }
         private int bitField0_;
 
-        // optional uint32 good = 1;
         private int good_ ;
         /**
          * <code>optional uint32 good = 1;</code>
+         *
+         * <pre>
+         * The amount of good packets received.
+         * </pre>
          */
         public boolean hasGood() {
           return ((bitField0_ & 0x00000001) == 0x00000001);
         }
         /**
          * <code>optional uint32 good = 1;</code>
+         *
+         * <pre>
+         * The amount of good packets received.
+         * </pre>
          */
         public int getGood() {
           return good_;
         }
         /**
          * <code>optional uint32 good = 1;</code>
+         *
+         * <pre>
+         * The amount of good packets received.
+         * </pre>
          */
         public Builder setGood(int value) {
           bitField0_ |= 0x00000001;
@@ -26267,6 +31195,10 @@ public final class Mumble {
         }
         /**
          * <code>optional uint32 good = 1;</code>
+         *
+         * <pre>
+         * The amount of good packets received.
+         * </pre>
          */
         public Builder clearGood() {
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -26275,22 +31207,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional uint32 late = 2;
         private int late_ ;
         /**
          * <code>optional uint32 late = 2;</code>
+         *
+         * <pre>
+         * The amount of late packets received.
+         * </pre>
          */
         public boolean hasLate() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
         /**
          * <code>optional uint32 late = 2;</code>
+         *
+         * <pre>
+         * The amount of late packets received.
+         * </pre>
          */
         public int getLate() {
           return late_;
         }
         /**
          * <code>optional uint32 late = 2;</code>
+         *
+         * <pre>
+         * The amount of late packets received.
+         * </pre>
          */
         public Builder setLate(int value) {
           bitField0_ |= 0x00000002;
@@ -26300,6 +31243,10 @@ public final class Mumble {
         }
         /**
          * <code>optional uint32 late = 2;</code>
+         *
+         * <pre>
+         * The amount of late packets received.
+         * </pre>
          */
         public Builder clearLate() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -26308,22 +31255,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional uint32 lost = 3;
         private int lost_ ;
         /**
          * <code>optional uint32 lost = 3;</code>
+         *
+         * <pre>
+         * The amount of packets never received.
+         * </pre>
          */
         public boolean hasLost() {
           return ((bitField0_ & 0x00000004) == 0x00000004);
         }
         /**
          * <code>optional uint32 lost = 3;</code>
+         *
+         * <pre>
+         * The amount of packets never received.
+         * </pre>
          */
         public int getLost() {
           return lost_;
         }
         /**
          * <code>optional uint32 lost = 3;</code>
+         *
+         * <pre>
+         * The amount of packets never received.
+         * </pre>
          */
         public Builder setLost(int value) {
           bitField0_ |= 0x00000004;
@@ -26333,6 +31291,10 @@ public final class Mumble {
         }
         /**
          * <code>optional uint32 lost = 3;</code>
+         *
+         * <pre>
+         * The amount of packets never received.
+         * </pre>
          */
         public Builder clearLost() {
           bitField0_ = (bitField0_ & ~0x00000004);
@@ -26341,22 +31303,33 @@ public final class Mumble {
           return this;
         }
 
-        // optional uint32 resync = 4;
         private int resync_ ;
         /**
          * <code>optional uint32 resync = 4;</code>
+         *
+         * <pre>
+         * The amount of nonce resyncs.
+         * </pre>
          */
         public boolean hasResync() {
           return ((bitField0_ & 0x00000008) == 0x00000008);
         }
         /**
          * <code>optional uint32 resync = 4;</code>
+         *
+         * <pre>
+         * The amount of nonce resyncs.
+         * </pre>
          */
         public int getResync() {
           return resync_;
         }
         /**
          * <code>optional uint32 resync = 4;</code>
+         *
+         * <pre>
+         * The amount of nonce resyncs.
+         * </pre>
          */
         public Builder setResync(int value) {
           bitField0_ |= 0x00000008;
@@ -26366,6 +31339,10 @@ public final class Mumble {
         }
         /**
          * <code>optional uint32 resync = 4;</code>
+         *
+         * <pre>
+         * The amount of nonce resyncs.
+         * </pre>
          */
         public Builder clearResync() {
           bitField0_ = (bitField0_ & ~0x00000008);
@@ -26386,43 +31363,60 @@ public final class Mumble {
     }
 
     private int bitField0_;
-    // optional uint32 session = 1;
     public static final int SESSION_FIELD_NUMBER = 1;
     private int session_;
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * User whose stats these are.
+     * </pre>
      */
     public boolean hasSession() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
      * <code>optional uint32 session = 1;</code>
+     *
+     * <pre>
+     * User whose stats these are.
+     * </pre>
      */
     public int getSession() {
       return session_;
     }
 
-    // optional bool stats_only = 2 [default = false];
     public static final int STATS_ONLY_FIELD_NUMBER = 2;
     private boolean statsOnly_;
     /**
      * <code>optional bool stats_only = 2 [default = false];</code>
+     *
+     * <pre>
+     * True if the message contains only mutable stats (packets, ping).
+     * </pre>
      */
     public boolean hasStatsOnly() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>optional bool stats_only = 2 [default = false];</code>
+     *
+     * <pre>
+     * True if the message contains only mutable stats (packets, ping).
+     * </pre>
      */
     public boolean getStatsOnly() {
       return statsOnly_;
     }
 
-    // repeated bytes certificates = 3;
     public static final int CERTIFICATES_FIELD_NUMBER = 3;
     private java.util.List<com.google.protobuf.ByteString> certificates_;
     /**
      * <code>repeated bytes certificates = 3;</code>
+     *
+     * <pre>
+     * Full user certificate chain of the user certificate in DER format.
+     * </pre>
      */
     public java.util.List<com.google.protobuf.ByteString>
         getCertificatesList() {
@@ -26430,184 +31424,271 @@ public final class Mumble {
     }
     /**
      * <code>repeated bytes certificates = 3;</code>
+     *
+     * <pre>
+     * Full user certificate chain of the user certificate in DER format.
+     * </pre>
      */
     public int getCertificatesCount() {
       return certificates_.size();
     }
     /**
      * <code>repeated bytes certificates = 3;</code>
+     *
+     * <pre>
+     * Full user certificate chain of the user certificate in DER format.
+     * </pre>
      */
     public com.google.protobuf.ByteString getCertificates(int index) {
       return certificates_.get(index);
     }
 
-    // optional .MumbleProto.UserStats.Stats from_client = 4;
     public static final int FROM_CLIENT_FIELD_NUMBER = 4;
     private MumbleProto.Mumble.UserStats.Stats fromClient_;
     /**
      * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+     *
+     * <pre>
+     * Packet statistics for packets received from the client.
+     * </pre>
      */
     public boolean hasFromClient() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+     *
+     * <pre>
+     * Packet statistics for packets received from the client.
+     * </pre>
      */
     public MumbleProto.Mumble.UserStats.Stats getFromClient() {
       return fromClient_;
     }
     /**
      * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+     *
+     * <pre>
+     * Packet statistics for packets received from the client.
+     * </pre>
      */
     public MumbleProto.Mumble.UserStats.StatsOrBuilder getFromClientOrBuilder() {
       return fromClient_;
     }
 
-    // optional .MumbleProto.UserStats.Stats from_server = 5;
     public static final int FROM_SERVER_FIELD_NUMBER = 5;
     private MumbleProto.Mumble.UserStats.Stats fromServer_;
     /**
      * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+     *
+     * <pre>
+     * Packet statistics for packets sent by the server.
+     * </pre>
      */
     public boolean hasFromServer() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
      * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+     *
+     * <pre>
+     * Packet statistics for packets sent by the server.
+     * </pre>
      */
     public MumbleProto.Mumble.UserStats.Stats getFromServer() {
       return fromServer_;
     }
     /**
      * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+     *
+     * <pre>
+     * Packet statistics for packets sent by the server.
+     * </pre>
      */
     public MumbleProto.Mumble.UserStats.StatsOrBuilder getFromServerOrBuilder() {
       return fromServer_;
     }
 
-    // optional uint32 udp_packets = 6;
     public static final int UDP_PACKETS_FIELD_NUMBER = 6;
     private int udpPackets_;
     /**
      * <code>optional uint32 udp_packets = 6;</code>
+     *
+     * <pre>
+     * Amount of UDP packets sent.
+     * </pre>
      */
     public boolean hasUdpPackets() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
      * <code>optional uint32 udp_packets = 6;</code>
+     *
+     * <pre>
+     * Amount of UDP packets sent.
+     * </pre>
      */
     public int getUdpPackets() {
       return udpPackets_;
     }
 
-    // optional uint32 tcp_packets = 7;
     public static final int TCP_PACKETS_FIELD_NUMBER = 7;
     private int tcpPackets_;
     /**
      * <code>optional uint32 tcp_packets = 7;</code>
+     *
+     * <pre>
+     * Amount of TCP packets sent.
+     * </pre>
      */
     public boolean hasTcpPackets() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
      * <code>optional uint32 tcp_packets = 7;</code>
+     *
+     * <pre>
+     * Amount of TCP packets sent.
+     * </pre>
      */
     public int getTcpPackets() {
       return tcpPackets_;
     }
 
-    // optional float udp_ping_avg = 8;
     public static final int UDP_PING_AVG_FIELD_NUMBER = 8;
     private float udpPingAvg_;
     /**
      * <code>optional float udp_ping_avg = 8;</code>
+     *
+     * <pre>
+     * UDP ping average.
+     * </pre>
      */
     public boolean hasUdpPingAvg() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     /**
      * <code>optional float udp_ping_avg = 8;</code>
+     *
+     * <pre>
+     * UDP ping average.
+     * </pre>
      */
     public float getUdpPingAvg() {
       return udpPingAvg_;
     }
 
-    // optional float udp_ping_var = 9;
     public static final int UDP_PING_VAR_FIELD_NUMBER = 9;
     private float udpPingVar_;
     /**
      * <code>optional float udp_ping_var = 9;</code>
+     *
+     * <pre>
+     * UDP ping variance.
+     * </pre>
      */
     public boolean hasUdpPingVar() {
       return ((bitField0_ & 0x00000080) == 0x00000080);
     }
     /**
      * <code>optional float udp_ping_var = 9;</code>
+     *
+     * <pre>
+     * UDP ping variance.
+     * </pre>
      */
     public float getUdpPingVar() {
       return udpPingVar_;
     }
 
-    // optional float tcp_ping_avg = 10;
     public static final int TCP_PING_AVG_FIELD_NUMBER = 10;
     private float tcpPingAvg_;
     /**
      * <code>optional float tcp_ping_avg = 10;</code>
+     *
+     * <pre>
+     * TCP ping average.
+     * </pre>
      */
     public boolean hasTcpPingAvg() {
       return ((bitField0_ & 0x00000100) == 0x00000100);
     }
     /**
      * <code>optional float tcp_ping_avg = 10;</code>
+     *
+     * <pre>
+     * TCP ping average.
+     * </pre>
      */
     public float getTcpPingAvg() {
       return tcpPingAvg_;
     }
 
-    // optional float tcp_ping_var = 11;
     public static final int TCP_PING_VAR_FIELD_NUMBER = 11;
     private float tcpPingVar_;
     /**
      * <code>optional float tcp_ping_var = 11;</code>
+     *
+     * <pre>
+     * TCP ping variance.
+     * </pre>
      */
     public boolean hasTcpPingVar() {
       return ((bitField0_ & 0x00000200) == 0x00000200);
     }
     /**
      * <code>optional float tcp_ping_var = 11;</code>
+     *
+     * <pre>
+     * TCP ping variance.
+     * </pre>
      */
     public float getTcpPingVar() {
       return tcpPingVar_;
     }
 
-    // optional .MumbleProto.Version version = 12;
     public static final int VERSION_FIELD_NUMBER = 12;
     private MumbleProto.Mumble.Version version_;
     /**
      * <code>optional .MumbleProto.Version version = 12;</code>
+     *
+     * <pre>
+     * Client version.
+     * </pre>
      */
     public boolean hasVersion() {
       return ((bitField0_ & 0x00000400) == 0x00000400);
     }
     /**
      * <code>optional .MumbleProto.Version version = 12;</code>
+     *
+     * <pre>
+     * Client version.
+     * </pre>
      */
     public MumbleProto.Mumble.Version getVersion() {
       return version_;
     }
     /**
      * <code>optional .MumbleProto.Version version = 12;</code>
+     *
+     * <pre>
+     * Client version.
+     * </pre>
      */
     public MumbleProto.Mumble.VersionOrBuilder getVersionOrBuilder() {
       return version_;
     }
 
-    // repeated int32 celt_versions = 13;
     public static final int CELT_VERSIONS_FIELD_NUMBER = 13;
     private java.util.List<java.lang.Integer> celtVersions_;
     /**
      * <code>repeated int32 celt_versions = 13;</code>
+     *
+     * <pre>
+     * A list of CELT bitstream version constants supported by the client of this
+     * user.
+     * </pre>
      */
     public java.util.List<java.lang.Integer>
         getCeltVersionsList() {
@@ -26615,98 +31696,142 @@ public final class Mumble {
     }
     /**
      * <code>repeated int32 celt_versions = 13;</code>
+     *
+     * <pre>
+     * A list of CELT bitstream version constants supported by the client of this
+     * user.
+     * </pre>
      */
     public int getCeltVersionsCount() {
       return celtVersions_.size();
     }
     /**
      * <code>repeated int32 celt_versions = 13;</code>
+     *
+     * <pre>
+     * A list of CELT bitstream version constants supported by the client of this
+     * user.
+     * </pre>
      */
     public int getCeltVersions(int index) {
       return celtVersions_.get(index);
     }
 
-    // optional bytes address = 14;
     public static final int ADDRESS_FIELD_NUMBER = 14;
     private com.google.protobuf.ByteString address_;
     /**
      * <code>optional bytes address = 14;</code>
+     *
+     * <pre>
+     * Client IP address.
+     * </pre>
      */
     public boolean hasAddress() {
       return ((bitField0_ & 0x00000800) == 0x00000800);
     }
     /**
      * <code>optional bytes address = 14;</code>
+     *
+     * <pre>
+     * Client IP address.
+     * </pre>
      */
     public com.google.protobuf.ByteString getAddress() {
       return address_;
     }
 
-    // optional uint32 bandwidth = 15;
     public static final int BANDWIDTH_FIELD_NUMBER = 15;
     private int bandwidth_;
     /**
      * <code>optional uint32 bandwidth = 15;</code>
+     *
+     * <pre>
+     * Bandwith used by this client.
+     * </pre>
      */
     public boolean hasBandwidth() {
       return ((bitField0_ & 0x00001000) == 0x00001000);
     }
     /**
      * <code>optional uint32 bandwidth = 15;</code>
+     *
+     * <pre>
+     * Bandwith used by this client.
+     * </pre>
      */
     public int getBandwidth() {
       return bandwidth_;
     }
 
-    // optional uint32 onlinesecs = 16;
     public static final int ONLINESECS_FIELD_NUMBER = 16;
     private int onlinesecs_;
     /**
      * <code>optional uint32 onlinesecs = 16;</code>
+     *
+     * <pre>
+     * Connection duration.
+     * </pre>
      */
     public boolean hasOnlinesecs() {
       return ((bitField0_ & 0x00002000) == 0x00002000);
     }
     /**
      * <code>optional uint32 onlinesecs = 16;</code>
+     *
+     * <pre>
+     * Connection duration.
+     * </pre>
      */
     public int getOnlinesecs() {
       return onlinesecs_;
     }
 
-    // optional uint32 idlesecs = 17;
     public static final int IDLESECS_FIELD_NUMBER = 17;
     private int idlesecs_;
     /**
      * <code>optional uint32 idlesecs = 17;</code>
+     *
+     * <pre>
+     * Duration since last activity.
+     * </pre>
      */
     public boolean hasIdlesecs() {
       return ((bitField0_ & 0x00004000) == 0x00004000);
     }
     /**
      * <code>optional uint32 idlesecs = 17;</code>
+     *
+     * <pre>
+     * Duration since last activity.
+     * </pre>
      */
     public int getIdlesecs() {
       return idlesecs_;
     }
 
-    // optional bool strong_certificate = 18 [default = false];
     public static final int STRONG_CERTIFICATE_FIELD_NUMBER = 18;
     private boolean strongCertificate_;
     /**
      * <code>optional bool strong_certificate = 18 [default = false];</code>
+     *
+     * <pre>
+     * True if the user has a strong certificate.
+     * </pre>
      */
     public boolean hasStrongCertificate() {
       return ((bitField0_ & 0x00008000) == 0x00008000);
     }
     /**
      * <code>optional bool strong_certificate = 18 [default = false];</code>
+     *
+     * <pre>
+     * True if the user has a strong certificate.
+     * </pre>
      */
     public boolean getStrongCertificate() {
       return strongCertificate_;
     }
 
-    // optional bool opus = 19 [default = false];
     public static final int OPUS_FIELD_NUMBER = 19;
     private boolean opus_;
     /**
@@ -26746,7 +31871,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -26987,10 +32113,15 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.UserStats}
+     *
+     * <pre>
+     * Used to communicate user stats between the server and clients.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.UserStatsOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.UserStats)
+        MumbleProto.Mumble.UserStatsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_UserStats_descriptor;
@@ -27308,22 +32439,33 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // optional uint32 session = 1;
       private int session_ ;
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * User whose stats these are.
+       * </pre>
        */
       public boolean hasSession() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * User whose stats these are.
+       * </pre>
        */
       public int getSession() {
         return session_;
       }
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * User whose stats these are.
+       * </pre>
        */
       public Builder setSession(int value) {
         bitField0_ |= 0x00000001;
@@ -27333,6 +32475,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 session = 1;</code>
+       *
+       * <pre>
+       * User whose stats these are.
+       * </pre>
        */
       public Builder clearSession() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -27341,22 +32487,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool stats_only = 2 [default = false];
       private boolean statsOnly_ ;
       /**
        * <code>optional bool stats_only = 2 [default = false];</code>
+       *
+       * <pre>
+       * True if the message contains only mutable stats (packets, ping).
+       * </pre>
        */
       public boolean hasStatsOnly() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>optional bool stats_only = 2 [default = false];</code>
+       *
+       * <pre>
+       * True if the message contains only mutable stats (packets, ping).
+       * </pre>
        */
       public boolean getStatsOnly() {
         return statsOnly_;
       }
       /**
        * <code>optional bool stats_only = 2 [default = false];</code>
+       *
+       * <pre>
+       * True if the message contains only mutable stats (packets, ping).
+       * </pre>
        */
       public Builder setStatsOnly(boolean value) {
         bitField0_ |= 0x00000002;
@@ -27366,6 +32523,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bool stats_only = 2 [default = false];</code>
+       *
+       * <pre>
+       * True if the message contains only mutable stats (packets, ping).
+       * </pre>
        */
       public Builder clearStatsOnly() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -27374,7 +32535,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated bytes certificates = 3;
       private java.util.List<com.google.protobuf.ByteString> certificates_ = java.util.Collections.emptyList();
       private void ensureCertificatesIsMutable() {
         if (!((bitField0_ & 0x00000004) == 0x00000004)) {
@@ -27384,6 +32544,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated bytes certificates = 3;</code>
+       *
+       * <pre>
+       * Full user certificate chain of the user certificate in DER format.
+       * </pre>
        */
       public java.util.List<com.google.protobuf.ByteString>
           getCertificatesList() {
@@ -27391,18 +32555,30 @@ public final class Mumble {
       }
       /**
        * <code>repeated bytes certificates = 3;</code>
+       *
+       * <pre>
+       * Full user certificate chain of the user certificate in DER format.
+       * </pre>
        */
       public int getCertificatesCount() {
         return certificates_.size();
       }
       /**
        * <code>repeated bytes certificates = 3;</code>
+       *
+       * <pre>
+       * Full user certificate chain of the user certificate in DER format.
+       * </pre>
        */
       public com.google.protobuf.ByteString getCertificates(int index) {
         return certificates_.get(index);
       }
       /**
        * <code>repeated bytes certificates = 3;</code>
+       *
+       * <pre>
+       * Full user certificate chain of the user certificate in DER format.
+       * </pre>
        */
       public Builder setCertificates(
           int index, com.google.protobuf.ByteString value) {
@@ -27416,6 +32592,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated bytes certificates = 3;</code>
+       *
+       * <pre>
+       * Full user certificate chain of the user certificate in DER format.
+       * </pre>
        */
       public Builder addCertificates(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -27428,16 +32608,25 @@ public final class Mumble {
       }
       /**
        * <code>repeated bytes certificates = 3;</code>
+       *
+       * <pre>
+       * Full user certificate chain of the user certificate in DER format.
+       * </pre>
        */
       public Builder addAllCertificates(
           java.lang.Iterable<? extends com.google.protobuf.ByteString> values) {
         ensureCertificatesIsMutable();
-        super.addAll(values, certificates_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, certificates_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated bytes certificates = 3;</code>
+       *
+       * <pre>
+       * Full user certificate chain of the user certificate in DER format.
+       * </pre>
        */
       public Builder clearCertificates() {
         certificates_ = java.util.Collections.emptyList();
@@ -27446,18 +32635,25 @@ public final class Mumble {
         return this;
       }
 
-      // optional .MumbleProto.UserStats.Stats from_client = 4;
       private MumbleProto.Mumble.UserStats.Stats fromClient_ = MumbleProto.Mumble.UserStats.Stats.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           MumbleProto.Mumble.UserStats.Stats, MumbleProto.Mumble.UserStats.Stats.Builder, MumbleProto.Mumble.UserStats.StatsOrBuilder> fromClientBuilder_;
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+       *
+       * <pre>
+       * Packet statistics for packets received from the client.
+       * </pre>
        */
       public boolean hasFromClient() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+       *
+       * <pre>
+       * Packet statistics for packets received from the client.
+       * </pre>
        */
       public MumbleProto.Mumble.UserStats.Stats getFromClient() {
         if (fromClientBuilder_ == null) {
@@ -27468,6 +32664,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+       *
+       * <pre>
+       * Packet statistics for packets received from the client.
+       * </pre>
        */
       public Builder setFromClient(MumbleProto.Mumble.UserStats.Stats value) {
         if (fromClientBuilder_ == null) {
@@ -27484,6 +32684,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+       *
+       * <pre>
+       * Packet statistics for packets received from the client.
+       * </pre>
        */
       public Builder setFromClient(
           MumbleProto.Mumble.UserStats.Stats.Builder builderForValue) {
@@ -27498,6 +32702,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+       *
+       * <pre>
+       * Packet statistics for packets received from the client.
+       * </pre>
        */
       public Builder mergeFromClient(MumbleProto.Mumble.UserStats.Stats value) {
         if (fromClientBuilder_ == null) {
@@ -27517,6 +32725,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+       *
+       * <pre>
+       * Packet statistics for packets received from the client.
+       * </pre>
        */
       public Builder clearFromClient() {
         if (fromClientBuilder_ == null) {
@@ -27530,6 +32742,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+       *
+       * <pre>
+       * Packet statistics for packets received from the client.
+       * </pre>
        */
       public MumbleProto.Mumble.UserStats.Stats.Builder getFromClientBuilder() {
         bitField0_ |= 0x00000008;
@@ -27538,6 +32754,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+       *
+       * <pre>
+       * Packet statistics for packets received from the client.
+       * </pre>
        */
       public MumbleProto.Mumble.UserStats.StatsOrBuilder getFromClientOrBuilder() {
         if (fromClientBuilder_ != null) {
@@ -27548,6 +32768,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_client = 4;</code>
+       *
+       * <pre>
+       * Packet statistics for packets received from the client.
+       * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
           MumbleProto.Mumble.UserStats.Stats, MumbleProto.Mumble.UserStats.Stats.Builder, MumbleProto.Mumble.UserStats.StatsOrBuilder> 
@@ -27555,7 +32779,7 @@ public final class Mumble {
         if (fromClientBuilder_ == null) {
           fromClientBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               MumbleProto.Mumble.UserStats.Stats, MumbleProto.Mumble.UserStats.Stats.Builder, MumbleProto.Mumble.UserStats.StatsOrBuilder>(
-                  fromClient_,
+                  getFromClient(),
                   getParentForChildren(),
                   isClean());
           fromClient_ = null;
@@ -27563,18 +32787,25 @@ public final class Mumble {
         return fromClientBuilder_;
       }
 
-      // optional .MumbleProto.UserStats.Stats from_server = 5;
       private MumbleProto.Mumble.UserStats.Stats fromServer_ = MumbleProto.Mumble.UserStats.Stats.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           MumbleProto.Mumble.UserStats.Stats, MumbleProto.Mumble.UserStats.Stats.Builder, MumbleProto.Mumble.UserStats.StatsOrBuilder> fromServerBuilder_;
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+       *
+       * <pre>
+       * Packet statistics for packets sent by the server.
+       * </pre>
        */
       public boolean hasFromServer() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+       *
+       * <pre>
+       * Packet statistics for packets sent by the server.
+       * </pre>
        */
       public MumbleProto.Mumble.UserStats.Stats getFromServer() {
         if (fromServerBuilder_ == null) {
@@ -27585,6 +32816,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+       *
+       * <pre>
+       * Packet statistics for packets sent by the server.
+       * </pre>
        */
       public Builder setFromServer(MumbleProto.Mumble.UserStats.Stats value) {
         if (fromServerBuilder_ == null) {
@@ -27601,6 +32836,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+       *
+       * <pre>
+       * Packet statistics for packets sent by the server.
+       * </pre>
        */
       public Builder setFromServer(
           MumbleProto.Mumble.UserStats.Stats.Builder builderForValue) {
@@ -27615,6 +32854,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+       *
+       * <pre>
+       * Packet statistics for packets sent by the server.
+       * </pre>
        */
       public Builder mergeFromServer(MumbleProto.Mumble.UserStats.Stats value) {
         if (fromServerBuilder_ == null) {
@@ -27634,6 +32877,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+       *
+       * <pre>
+       * Packet statistics for packets sent by the server.
+       * </pre>
        */
       public Builder clearFromServer() {
         if (fromServerBuilder_ == null) {
@@ -27647,6 +32894,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+       *
+       * <pre>
+       * Packet statistics for packets sent by the server.
+       * </pre>
        */
       public MumbleProto.Mumble.UserStats.Stats.Builder getFromServerBuilder() {
         bitField0_ |= 0x00000010;
@@ -27655,6 +32906,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+       *
+       * <pre>
+       * Packet statistics for packets sent by the server.
+       * </pre>
        */
       public MumbleProto.Mumble.UserStats.StatsOrBuilder getFromServerOrBuilder() {
         if (fromServerBuilder_ != null) {
@@ -27665,6 +32920,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.UserStats.Stats from_server = 5;</code>
+       *
+       * <pre>
+       * Packet statistics for packets sent by the server.
+       * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
           MumbleProto.Mumble.UserStats.Stats, MumbleProto.Mumble.UserStats.Stats.Builder, MumbleProto.Mumble.UserStats.StatsOrBuilder> 
@@ -27672,7 +32931,7 @@ public final class Mumble {
         if (fromServerBuilder_ == null) {
           fromServerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               MumbleProto.Mumble.UserStats.Stats, MumbleProto.Mumble.UserStats.Stats.Builder, MumbleProto.Mumble.UserStats.StatsOrBuilder>(
-                  fromServer_,
+                  getFromServer(),
                   getParentForChildren(),
                   isClean());
           fromServer_ = null;
@@ -27680,22 +32939,33 @@ public final class Mumble {
         return fromServerBuilder_;
       }
 
-      // optional uint32 udp_packets = 6;
       private int udpPackets_ ;
       /**
        * <code>optional uint32 udp_packets = 6;</code>
+       *
+       * <pre>
+       * Amount of UDP packets sent.
+       * </pre>
        */
       public boolean hasUdpPackets() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
        * <code>optional uint32 udp_packets = 6;</code>
+       *
+       * <pre>
+       * Amount of UDP packets sent.
+       * </pre>
        */
       public int getUdpPackets() {
         return udpPackets_;
       }
       /**
        * <code>optional uint32 udp_packets = 6;</code>
+       *
+       * <pre>
+       * Amount of UDP packets sent.
+       * </pre>
        */
       public Builder setUdpPackets(int value) {
         bitField0_ |= 0x00000020;
@@ -27705,6 +32975,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 udp_packets = 6;</code>
+       *
+       * <pre>
+       * Amount of UDP packets sent.
+       * </pre>
        */
       public Builder clearUdpPackets() {
         bitField0_ = (bitField0_ & ~0x00000020);
@@ -27713,22 +32987,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 tcp_packets = 7;
       private int tcpPackets_ ;
       /**
        * <code>optional uint32 tcp_packets = 7;</code>
+       *
+       * <pre>
+       * Amount of TCP packets sent.
+       * </pre>
        */
       public boolean hasTcpPackets() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       /**
        * <code>optional uint32 tcp_packets = 7;</code>
+       *
+       * <pre>
+       * Amount of TCP packets sent.
+       * </pre>
        */
       public int getTcpPackets() {
         return tcpPackets_;
       }
       /**
        * <code>optional uint32 tcp_packets = 7;</code>
+       *
+       * <pre>
+       * Amount of TCP packets sent.
+       * </pre>
        */
       public Builder setTcpPackets(int value) {
         bitField0_ |= 0x00000040;
@@ -27738,6 +33023,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 tcp_packets = 7;</code>
+       *
+       * <pre>
+       * Amount of TCP packets sent.
+       * </pre>
        */
       public Builder clearTcpPackets() {
         bitField0_ = (bitField0_ & ~0x00000040);
@@ -27746,22 +33035,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional float udp_ping_avg = 8;
       private float udpPingAvg_ ;
       /**
        * <code>optional float udp_ping_avg = 8;</code>
+       *
+       * <pre>
+       * UDP ping average.
+       * </pre>
        */
       public boolean hasUdpPingAvg() {
         return ((bitField0_ & 0x00000080) == 0x00000080);
       }
       /**
        * <code>optional float udp_ping_avg = 8;</code>
+       *
+       * <pre>
+       * UDP ping average.
+       * </pre>
        */
       public float getUdpPingAvg() {
         return udpPingAvg_;
       }
       /**
        * <code>optional float udp_ping_avg = 8;</code>
+       *
+       * <pre>
+       * UDP ping average.
+       * </pre>
        */
       public Builder setUdpPingAvg(float value) {
         bitField0_ |= 0x00000080;
@@ -27771,6 +33071,10 @@ public final class Mumble {
       }
       /**
        * <code>optional float udp_ping_avg = 8;</code>
+       *
+       * <pre>
+       * UDP ping average.
+       * </pre>
        */
       public Builder clearUdpPingAvg() {
         bitField0_ = (bitField0_ & ~0x00000080);
@@ -27779,22 +33083,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional float udp_ping_var = 9;
       private float udpPingVar_ ;
       /**
        * <code>optional float udp_ping_var = 9;</code>
+       *
+       * <pre>
+       * UDP ping variance.
+       * </pre>
        */
       public boolean hasUdpPingVar() {
         return ((bitField0_ & 0x00000100) == 0x00000100);
       }
       /**
        * <code>optional float udp_ping_var = 9;</code>
+       *
+       * <pre>
+       * UDP ping variance.
+       * </pre>
        */
       public float getUdpPingVar() {
         return udpPingVar_;
       }
       /**
        * <code>optional float udp_ping_var = 9;</code>
+       *
+       * <pre>
+       * UDP ping variance.
+       * </pre>
        */
       public Builder setUdpPingVar(float value) {
         bitField0_ |= 0x00000100;
@@ -27804,6 +33119,10 @@ public final class Mumble {
       }
       /**
        * <code>optional float udp_ping_var = 9;</code>
+       *
+       * <pre>
+       * UDP ping variance.
+       * </pre>
        */
       public Builder clearUdpPingVar() {
         bitField0_ = (bitField0_ & ~0x00000100);
@@ -27812,22 +33131,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional float tcp_ping_avg = 10;
       private float tcpPingAvg_ ;
       /**
        * <code>optional float tcp_ping_avg = 10;</code>
+       *
+       * <pre>
+       * TCP ping average.
+       * </pre>
        */
       public boolean hasTcpPingAvg() {
         return ((bitField0_ & 0x00000200) == 0x00000200);
       }
       /**
        * <code>optional float tcp_ping_avg = 10;</code>
+       *
+       * <pre>
+       * TCP ping average.
+       * </pre>
        */
       public float getTcpPingAvg() {
         return tcpPingAvg_;
       }
       /**
        * <code>optional float tcp_ping_avg = 10;</code>
+       *
+       * <pre>
+       * TCP ping average.
+       * </pre>
        */
       public Builder setTcpPingAvg(float value) {
         bitField0_ |= 0x00000200;
@@ -27837,6 +33167,10 @@ public final class Mumble {
       }
       /**
        * <code>optional float tcp_ping_avg = 10;</code>
+       *
+       * <pre>
+       * TCP ping average.
+       * </pre>
        */
       public Builder clearTcpPingAvg() {
         bitField0_ = (bitField0_ & ~0x00000200);
@@ -27845,22 +33179,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional float tcp_ping_var = 11;
       private float tcpPingVar_ ;
       /**
        * <code>optional float tcp_ping_var = 11;</code>
+       *
+       * <pre>
+       * TCP ping variance.
+       * </pre>
        */
       public boolean hasTcpPingVar() {
         return ((bitField0_ & 0x00000400) == 0x00000400);
       }
       /**
        * <code>optional float tcp_ping_var = 11;</code>
+       *
+       * <pre>
+       * TCP ping variance.
+       * </pre>
        */
       public float getTcpPingVar() {
         return tcpPingVar_;
       }
       /**
        * <code>optional float tcp_ping_var = 11;</code>
+       *
+       * <pre>
+       * TCP ping variance.
+       * </pre>
        */
       public Builder setTcpPingVar(float value) {
         bitField0_ |= 0x00000400;
@@ -27870,6 +33215,10 @@ public final class Mumble {
       }
       /**
        * <code>optional float tcp_ping_var = 11;</code>
+       *
+       * <pre>
+       * TCP ping variance.
+       * </pre>
        */
       public Builder clearTcpPingVar() {
         bitField0_ = (bitField0_ & ~0x00000400);
@@ -27878,18 +33227,25 @@ public final class Mumble {
         return this;
       }
 
-      // optional .MumbleProto.Version version = 12;
       private MumbleProto.Mumble.Version version_ = MumbleProto.Mumble.Version.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           MumbleProto.Mumble.Version, MumbleProto.Mumble.Version.Builder, MumbleProto.Mumble.VersionOrBuilder> versionBuilder_;
       /**
        * <code>optional .MumbleProto.Version version = 12;</code>
+       *
+       * <pre>
+       * Client version.
+       * </pre>
        */
       public boolean hasVersion() {
         return ((bitField0_ & 0x00000800) == 0x00000800);
       }
       /**
        * <code>optional .MumbleProto.Version version = 12;</code>
+       *
+       * <pre>
+       * Client version.
+       * </pre>
        */
       public MumbleProto.Mumble.Version getVersion() {
         if (versionBuilder_ == null) {
@@ -27900,6 +33256,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.Version version = 12;</code>
+       *
+       * <pre>
+       * Client version.
+       * </pre>
        */
       public Builder setVersion(MumbleProto.Mumble.Version value) {
         if (versionBuilder_ == null) {
@@ -27916,6 +33276,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.Version version = 12;</code>
+       *
+       * <pre>
+       * Client version.
+       * </pre>
        */
       public Builder setVersion(
           MumbleProto.Mumble.Version.Builder builderForValue) {
@@ -27930,6 +33294,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.Version version = 12;</code>
+       *
+       * <pre>
+       * Client version.
+       * </pre>
        */
       public Builder mergeVersion(MumbleProto.Mumble.Version value) {
         if (versionBuilder_ == null) {
@@ -27949,6 +33317,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.Version version = 12;</code>
+       *
+       * <pre>
+       * Client version.
+       * </pre>
        */
       public Builder clearVersion() {
         if (versionBuilder_ == null) {
@@ -27962,6 +33334,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.Version version = 12;</code>
+       *
+       * <pre>
+       * Client version.
+       * </pre>
        */
       public MumbleProto.Mumble.Version.Builder getVersionBuilder() {
         bitField0_ |= 0x00000800;
@@ -27970,6 +33346,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.Version version = 12;</code>
+       *
+       * <pre>
+       * Client version.
+       * </pre>
        */
       public MumbleProto.Mumble.VersionOrBuilder getVersionOrBuilder() {
         if (versionBuilder_ != null) {
@@ -27980,6 +33360,10 @@ public final class Mumble {
       }
       /**
        * <code>optional .MumbleProto.Version version = 12;</code>
+       *
+       * <pre>
+       * Client version.
+       * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
           MumbleProto.Mumble.Version, MumbleProto.Mumble.Version.Builder, MumbleProto.Mumble.VersionOrBuilder> 
@@ -27987,7 +33371,7 @@ public final class Mumble {
         if (versionBuilder_ == null) {
           versionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               MumbleProto.Mumble.Version, MumbleProto.Mumble.Version.Builder, MumbleProto.Mumble.VersionOrBuilder>(
-                  version_,
+                  getVersion(),
                   getParentForChildren(),
                   isClean());
           version_ = null;
@@ -27995,7 +33379,6 @@ public final class Mumble {
         return versionBuilder_;
       }
 
-      // repeated int32 celt_versions = 13;
       private java.util.List<java.lang.Integer> celtVersions_ = java.util.Collections.emptyList();
       private void ensureCeltVersionsIsMutable() {
         if (!((bitField0_ & 0x00001000) == 0x00001000)) {
@@ -28005,6 +33388,11 @@ public final class Mumble {
       }
       /**
        * <code>repeated int32 celt_versions = 13;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client of this
+       * user.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getCeltVersionsList() {
@@ -28012,18 +33400,33 @@ public final class Mumble {
       }
       /**
        * <code>repeated int32 celt_versions = 13;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client of this
+       * user.
+       * </pre>
        */
       public int getCeltVersionsCount() {
         return celtVersions_.size();
       }
       /**
        * <code>repeated int32 celt_versions = 13;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client of this
+       * user.
+       * </pre>
        */
       public int getCeltVersions(int index) {
         return celtVersions_.get(index);
       }
       /**
        * <code>repeated int32 celt_versions = 13;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client of this
+       * user.
+       * </pre>
        */
       public Builder setCeltVersions(
           int index, int value) {
@@ -28034,6 +33437,11 @@ public final class Mumble {
       }
       /**
        * <code>repeated int32 celt_versions = 13;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client of this
+       * user.
+       * </pre>
        */
       public Builder addCeltVersions(int value) {
         ensureCeltVersionsIsMutable();
@@ -28043,16 +33451,27 @@ public final class Mumble {
       }
       /**
        * <code>repeated int32 celt_versions = 13;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client of this
+       * user.
+       * </pre>
        */
       public Builder addAllCeltVersions(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureCeltVersionsIsMutable();
-        super.addAll(values, celtVersions_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, celtVersions_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated int32 celt_versions = 13;</code>
+       *
+       * <pre>
+       * A list of CELT bitstream version constants supported by the client of this
+       * user.
+       * </pre>
        */
       public Builder clearCeltVersions() {
         celtVersions_ = java.util.Collections.emptyList();
@@ -28061,22 +33480,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bytes address = 14;
       private com.google.protobuf.ByteString address_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>optional bytes address = 14;</code>
+       *
+       * <pre>
+       * Client IP address.
+       * </pre>
        */
       public boolean hasAddress() {
         return ((bitField0_ & 0x00002000) == 0x00002000);
       }
       /**
        * <code>optional bytes address = 14;</code>
+       *
+       * <pre>
+       * Client IP address.
+       * </pre>
        */
       public com.google.protobuf.ByteString getAddress() {
         return address_;
       }
       /**
        * <code>optional bytes address = 14;</code>
+       *
+       * <pre>
+       * Client IP address.
+       * </pre>
        */
       public Builder setAddress(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -28089,6 +33519,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bytes address = 14;</code>
+       *
+       * <pre>
+       * Client IP address.
+       * </pre>
        */
       public Builder clearAddress() {
         bitField0_ = (bitField0_ & ~0x00002000);
@@ -28097,22 +33531,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 bandwidth = 15;
       private int bandwidth_ ;
       /**
        * <code>optional uint32 bandwidth = 15;</code>
+       *
+       * <pre>
+       * Bandwith used by this client.
+       * </pre>
        */
       public boolean hasBandwidth() {
         return ((bitField0_ & 0x00004000) == 0x00004000);
       }
       /**
        * <code>optional uint32 bandwidth = 15;</code>
+       *
+       * <pre>
+       * Bandwith used by this client.
+       * </pre>
        */
       public int getBandwidth() {
         return bandwidth_;
       }
       /**
        * <code>optional uint32 bandwidth = 15;</code>
+       *
+       * <pre>
+       * Bandwith used by this client.
+       * </pre>
        */
       public Builder setBandwidth(int value) {
         bitField0_ |= 0x00004000;
@@ -28122,6 +33567,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 bandwidth = 15;</code>
+       *
+       * <pre>
+       * Bandwith used by this client.
+       * </pre>
        */
       public Builder clearBandwidth() {
         bitField0_ = (bitField0_ & ~0x00004000);
@@ -28130,22 +33579,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 onlinesecs = 16;
       private int onlinesecs_ ;
       /**
        * <code>optional uint32 onlinesecs = 16;</code>
+       *
+       * <pre>
+       * Connection duration.
+       * </pre>
        */
       public boolean hasOnlinesecs() {
         return ((bitField0_ & 0x00008000) == 0x00008000);
       }
       /**
        * <code>optional uint32 onlinesecs = 16;</code>
+       *
+       * <pre>
+       * Connection duration.
+       * </pre>
        */
       public int getOnlinesecs() {
         return onlinesecs_;
       }
       /**
        * <code>optional uint32 onlinesecs = 16;</code>
+       *
+       * <pre>
+       * Connection duration.
+       * </pre>
        */
       public Builder setOnlinesecs(int value) {
         bitField0_ |= 0x00008000;
@@ -28155,6 +33615,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 onlinesecs = 16;</code>
+       *
+       * <pre>
+       * Connection duration.
+       * </pre>
        */
       public Builder clearOnlinesecs() {
         bitField0_ = (bitField0_ & ~0x00008000);
@@ -28163,22 +33627,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional uint32 idlesecs = 17;
       private int idlesecs_ ;
       /**
        * <code>optional uint32 idlesecs = 17;</code>
+       *
+       * <pre>
+       * Duration since last activity.
+       * </pre>
        */
       public boolean hasIdlesecs() {
         return ((bitField0_ & 0x00010000) == 0x00010000);
       }
       /**
        * <code>optional uint32 idlesecs = 17;</code>
+       *
+       * <pre>
+       * Duration since last activity.
+       * </pre>
        */
       public int getIdlesecs() {
         return idlesecs_;
       }
       /**
        * <code>optional uint32 idlesecs = 17;</code>
+       *
+       * <pre>
+       * Duration since last activity.
+       * </pre>
        */
       public Builder setIdlesecs(int value) {
         bitField0_ |= 0x00010000;
@@ -28188,6 +33663,10 @@ public final class Mumble {
       }
       /**
        * <code>optional uint32 idlesecs = 17;</code>
+       *
+       * <pre>
+       * Duration since last activity.
+       * </pre>
        */
       public Builder clearIdlesecs() {
         bitField0_ = (bitField0_ & ~0x00010000);
@@ -28196,22 +33675,33 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool strong_certificate = 18 [default = false];
       private boolean strongCertificate_ ;
       /**
        * <code>optional bool strong_certificate = 18 [default = false];</code>
+       *
+       * <pre>
+       * True if the user has a strong certificate.
+       * </pre>
        */
       public boolean hasStrongCertificate() {
         return ((bitField0_ & 0x00020000) == 0x00020000);
       }
       /**
        * <code>optional bool strong_certificate = 18 [default = false];</code>
+       *
+       * <pre>
+       * True if the user has a strong certificate.
+       * </pre>
        */
       public boolean getStrongCertificate() {
         return strongCertificate_;
       }
       /**
        * <code>optional bool strong_certificate = 18 [default = false];</code>
+       *
+       * <pre>
+       * True if the user has a strong certificate.
+       * </pre>
        */
       public Builder setStrongCertificate(boolean value) {
         bitField0_ |= 0x00020000;
@@ -28221,6 +33711,10 @@ public final class Mumble {
       }
       /**
        * <code>optional bool strong_certificate = 18 [default = false];</code>
+       *
+       * <pre>
+       * True if the user has a strong certificate.
+       * </pre>
        */
       public Builder clearStrongCertificate() {
         bitField0_ = (bitField0_ & ~0x00020000);
@@ -28229,7 +33723,6 @@ public final class Mumble {
         return this;
       }
 
-      // optional bool opus = 19 [default = false];
       private boolean opus_ ;
       /**
        * <code>optional bool opus = 19 [default = false];</code>
@@ -28273,615 +33766,103 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.UserStats)
   }
 
-  public interface SuggestConfigOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RequestBlobOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.RequestBlob)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional uint32 version = 1;
-    /**
-     * <code>optional uint32 version = 1;</code>
-     */
-    boolean hasVersion();
-    /**
-     * <code>optional uint32 version = 1;</code>
-     */
-    int getVersion();
-
-    // optional bool positional = 2;
-    /**
-     * <code>optional bool positional = 2;</code>
-     */
-    boolean hasPositional();
-    /**
-     * <code>optional bool positional = 2;</code>
-     */
-    boolean getPositional();
-
-    // optional bool push_to_talk = 3;
-    /**
-     * <code>optional bool push_to_talk = 3;</code>
-     */
-    boolean hasPushToTalk();
-    /**
-     * <code>optional bool push_to_talk = 3;</code>
-     */
-    boolean getPushToTalk();
-  }
-  /**
-   * Protobuf type {@code MumbleProto.SuggestConfig}
-   */
-  public static final class SuggestConfig extends
-      com.google.protobuf.GeneratedMessage
-      implements SuggestConfigOrBuilder {
-    // Use SuggestConfig.newBuilder() to construct.
-    private SuggestConfig(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private SuggestConfig(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final SuggestConfig defaultInstance;
-    public static SuggestConfig getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public SuggestConfig getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private SuggestConfig(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              version_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              positional_ = input.readBool();
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              pushToTalk_ = input.readBool();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return MumbleProto.Mumble.internal_static_MumbleProto_SuggestConfig_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return MumbleProto.Mumble.internal_static_MumbleProto_SuggestConfig_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              MumbleProto.Mumble.SuggestConfig.class, MumbleProto.Mumble.SuggestConfig.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<SuggestConfig> PARSER =
-        new com.google.protobuf.AbstractParser<SuggestConfig>() {
-      public SuggestConfig parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SuggestConfig(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<SuggestConfig> getParserForType() {
-      return PARSER;
-    }
-
-    private int bitField0_;
-    // optional uint32 version = 1;
-    public static final int VERSION_FIELD_NUMBER = 1;
-    private int version_;
-    /**
-     * <code>optional uint32 version = 1;</code>
-     */
-    public boolean hasVersion() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>optional uint32 version = 1;</code>
-     */
-    public int getVersion() {
-      return version_;
-    }
-
-    // optional bool positional = 2;
-    public static final int POSITIONAL_FIELD_NUMBER = 2;
-    private boolean positional_;
-    /**
-     * <code>optional bool positional = 2;</code>
-     */
-    public boolean hasPositional() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>optional bool positional = 2;</code>
-     */
-    public boolean getPositional() {
-      return positional_;
-    }
-
-    // optional bool push_to_talk = 3;
-    public static final int PUSH_TO_TALK_FIELD_NUMBER = 3;
-    private boolean pushToTalk_;
-    /**
-     * <code>optional bool push_to_talk = 3;</code>
-     */
-    public boolean hasPushToTalk() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>optional bool push_to_talk = 3;</code>
-     */
-    public boolean getPushToTalk() {
-      return pushToTalk_;
-    }
-
-    private void initFields() {
-      version_ = 0;
-      positional_ = false;
-      pushToTalk_ = false;
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeUInt32(1, version_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBool(2, positional_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBool(3, pushToTalk_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, version_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, positional_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, pushToTalk_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static MumbleProto.Mumble.SuggestConfig parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static MumbleProto.Mumble.SuggestConfig parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static MumbleProto.Mumble.SuggestConfig parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static MumbleProto.Mumble.SuggestConfig parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static MumbleProto.Mumble.SuggestConfig parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static MumbleProto.Mumble.SuggestConfig parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static MumbleProto.Mumble.SuggestConfig parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static MumbleProto.Mumble.SuggestConfig parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static MumbleProto.Mumble.SuggestConfig parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static MumbleProto.Mumble.SuggestConfig parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(MumbleProto.Mumble.SuggestConfig prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code MumbleProto.SuggestConfig}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.SuggestConfigOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return MumbleProto.Mumble.internal_static_MumbleProto_SuggestConfig_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return MumbleProto.Mumble.internal_static_MumbleProto_SuggestConfig_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                MumbleProto.Mumble.SuggestConfig.class, MumbleProto.Mumble.SuggestConfig.Builder.class);
-      }
-
-      // Construct using MumbleProto.Mumble.SuggestConfig.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-
-      public Builder clear() {
-        super.clear();
-        version_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        positional_ = false;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        pushToTalk_ = false;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        return this;
-      }
-
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return MumbleProto.Mumble.internal_static_MumbleProto_SuggestConfig_descriptor;
-      }
-
-      public MumbleProto.Mumble.SuggestConfig getDefaultInstanceForType() {
-        return MumbleProto.Mumble.SuggestConfig.getDefaultInstance();
-      }
-
-      public MumbleProto.Mumble.SuggestConfig build() {
-        MumbleProto.Mumble.SuggestConfig result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public MumbleProto.Mumble.SuggestConfig buildPartial() {
-        MumbleProto.Mumble.SuggestConfig result = new MumbleProto.Mumble.SuggestConfig(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.version_ = version_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.positional_ = positional_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.pushToTalk_ = pushToTalk_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof MumbleProto.Mumble.SuggestConfig) {
-          return mergeFrom((MumbleProto.Mumble.SuggestConfig)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(MumbleProto.Mumble.SuggestConfig other) {
-        if (other == MumbleProto.Mumble.SuggestConfig.getDefaultInstance()) return this;
-        if (other.hasVersion()) {
-          setVersion(other.getVersion());
-        }
-        if (other.hasPositional()) {
-          setPositional(other.getPositional());
-        }
-        if (other.hasPushToTalk()) {
-          setPushToTalk(other.getPushToTalk());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        MumbleProto.Mumble.SuggestConfig parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (MumbleProto.Mumble.SuggestConfig) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // optional uint32 version = 1;
-      private int version_ ;
-      /**
-       * <code>optional uint32 version = 1;</code>
-       */
-      public boolean hasVersion() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional uint32 version = 1;</code>
-       */
-      public int getVersion() {
-        return version_;
-      }
-      /**
-       * <code>optional uint32 version = 1;</code>
-       */
-      public Builder setVersion(int value) {
-        bitField0_ |= 0x00000001;
-        version_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional uint32 version = 1;</code>
-       */
-      public Builder clearVersion() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        version_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional bool positional = 2;
-      private boolean positional_ ;
-      /**
-       * <code>optional bool positional = 2;</code>
-       */
-      public boolean hasPositional() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional bool positional = 2;</code>
-       */
-      public boolean getPositional() {
-        return positional_;
-      }
-      /**
-       * <code>optional bool positional = 2;</code>
-       */
-      public Builder setPositional(boolean value) {
-        bitField0_ |= 0x00000002;
-        positional_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional bool positional = 2;</code>
-       */
-      public Builder clearPositional() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        positional_ = false;
-        onChanged();
-        return this;
-      }
-
-      // optional bool push_to_talk = 3;
-      private boolean pushToTalk_ ;
-      /**
-       * <code>optional bool push_to_talk = 3;</code>
-       */
-      public boolean hasPushToTalk() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>optional bool push_to_talk = 3;</code>
-       */
-      public boolean getPushToTalk() {
-        return pushToTalk_;
-      }
-      /**
-       * <code>optional bool push_to_talk = 3;</code>
-       */
-      public Builder setPushToTalk(boolean value) {
-        bitField0_ |= 0x00000004;
-        pushToTalk_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional bool push_to_talk = 3;</code>
-       */
-      public Builder clearPushToTalk() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        pushToTalk_ = false;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:MumbleProto.SuggestConfig)
-    }
-
-    static {
-      defaultInstance = new SuggestConfig(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:MumbleProto.SuggestConfig)
-  }
-
-  public interface RequestBlobOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // repeated uint32 session_texture = 1;
     /**
      * <code>repeated uint32 session_texture = 1;</code>
+     *
+     * <pre>
+     * sessions of the requested UserState textures.
+     * </pre>
      */
     java.util.List<java.lang.Integer> getSessionTextureList();
     /**
      * <code>repeated uint32 session_texture = 1;</code>
+     *
+     * <pre>
+     * sessions of the requested UserState textures.
+     * </pre>
      */
     int getSessionTextureCount();
     /**
      * <code>repeated uint32 session_texture = 1;</code>
+     *
+     * <pre>
+     * sessions of the requested UserState textures.
+     * </pre>
      */
     int getSessionTexture(int index);
 
-    // repeated uint32 session_comment = 2;
     /**
      * <code>repeated uint32 session_comment = 2;</code>
+     *
+     * <pre>
+     * sessions of the requested UserState comments.
+     * </pre>
      */
     java.util.List<java.lang.Integer> getSessionCommentList();
     /**
      * <code>repeated uint32 session_comment = 2;</code>
+     *
+     * <pre>
+     * sessions of the requested UserState comments.
+     * </pre>
      */
     int getSessionCommentCount();
     /**
      * <code>repeated uint32 session_comment = 2;</code>
+     *
+     * <pre>
+     * sessions of the requested UserState comments.
+     * </pre>
      */
     int getSessionComment(int index);
 
-    // repeated uint32 channel_description = 3;
     /**
      * <code>repeated uint32 channel_description = 3;</code>
+     *
+     * <pre>
+     * channel_ids of the requested ChannelState descriptions.
+     * </pre>
      */
     java.util.List<java.lang.Integer> getChannelDescriptionList();
     /**
      * <code>repeated uint32 channel_description = 3;</code>
+     *
+     * <pre>
+     * channel_ids of the requested ChannelState descriptions.
+     * </pre>
      */
     int getChannelDescriptionCount();
     /**
      * <code>repeated uint32 channel_description = 3;</code>
+     *
+     * <pre>
+     * channel_ids of the requested ChannelState descriptions.
+     * </pre>
      */
     int getChannelDescription(int index);
   }
   /**
    * Protobuf type {@code MumbleProto.RequestBlob}
+   *
+   * <pre>
+   * Used by the client to request binary data from the server. By default large
+   * comments or textures are not sent within standard messages but instead the
+   * hash is. If the client does not recognize the hash it may request the
+   * resource when it needs it. The client does so by sending a RequestBlob
+   * message with the correct fields filled with the user sessions or channel_ids
+   * it wants to receive. The server replies to this by sending a new
+   * UserState/ChannelState message with the resources filled even if they would
+   * normally be transmitted as hashes.
+   * </pre>
    */
   public static final class RequestBlob extends
-      com.google.protobuf.GeneratedMessage
-      implements RequestBlobOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.RequestBlob)
+      RequestBlobOrBuilder {
     // Use RequestBlob.newBuilder() to construct.
     private RequestBlob(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -29038,11 +34019,14 @@ public final class Mumble {
       return PARSER;
     }
 
-    // repeated uint32 session_texture = 1;
     public static final int SESSION_TEXTURE_FIELD_NUMBER = 1;
     private java.util.List<java.lang.Integer> sessionTexture_;
     /**
      * <code>repeated uint32 session_texture = 1;</code>
+     *
+     * <pre>
+     * sessions of the requested UserState textures.
+     * </pre>
      */
     public java.util.List<java.lang.Integer>
         getSessionTextureList() {
@@ -29050,22 +34034,33 @@ public final class Mumble {
     }
     /**
      * <code>repeated uint32 session_texture = 1;</code>
+     *
+     * <pre>
+     * sessions of the requested UserState textures.
+     * </pre>
      */
     public int getSessionTextureCount() {
       return sessionTexture_.size();
     }
     /**
      * <code>repeated uint32 session_texture = 1;</code>
+     *
+     * <pre>
+     * sessions of the requested UserState textures.
+     * </pre>
      */
     public int getSessionTexture(int index) {
       return sessionTexture_.get(index);
     }
 
-    // repeated uint32 session_comment = 2;
     public static final int SESSION_COMMENT_FIELD_NUMBER = 2;
     private java.util.List<java.lang.Integer> sessionComment_;
     /**
      * <code>repeated uint32 session_comment = 2;</code>
+     *
+     * <pre>
+     * sessions of the requested UserState comments.
+     * </pre>
      */
     public java.util.List<java.lang.Integer>
         getSessionCommentList() {
@@ -29073,22 +34068,33 @@ public final class Mumble {
     }
     /**
      * <code>repeated uint32 session_comment = 2;</code>
+     *
+     * <pre>
+     * sessions of the requested UserState comments.
+     * </pre>
      */
     public int getSessionCommentCount() {
       return sessionComment_.size();
     }
     /**
      * <code>repeated uint32 session_comment = 2;</code>
+     *
+     * <pre>
+     * sessions of the requested UserState comments.
+     * </pre>
      */
     public int getSessionComment(int index) {
       return sessionComment_.get(index);
     }
 
-    // repeated uint32 channel_description = 3;
     public static final int CHANNEL_DESCRIPTION_FIELD_NUMBER = 3;
     private java.util.List<java.lang.Integer> channelDescription_;
     /**
      * <code>repeated uint32 channel_description = 3;</code>
+     *
+     * <pre>
+     * channel_ids of the requested ChannelState descriptions.
+     * </pre>
      */
     public java.util.List<java.lang.Integer>
         getChannelDescriptionList() {
@@ -29096,12 +34102,20 @@ public final class Mumble {
     }
     /**
      * <code>repeated uint32 channel_description = 3;</code>
+     *
+     * <pre>
+     * channel_ids of the requested ChannelState descriptions.
+     * </pre>
      */
     public int getChannelDescriptionCount() {
       return channelDescription_.size();
     }
     /**
      * <code>repeated uint32 channel_description = 3;</code>
+     *
+     * <pre>
+     * channel_ids of the requested ChannelState descriptions.
+     * </pre>
      */
     public int getChannelDescription(int index) {
       return channelDescription_.get(index);
@@ -29115,7 +34129,8 @@ public final class Mumble {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -29249,10 +34264,22 @@ public final class Mumble {
     }
     /**
      * Protobuf type {@code MumbleProto.RequestBlob}
+     *
+     * <pre>
+     * Used by the client to request binary data from the server. By default large
+     * comments or textures are not sent within standard messages but instead the
+     * hash is. If the client does not recognize the hash it may request the
+     * resource when it needs it. The client does so by sending a RequestBlob
+     * message with the correct fields filled with the user sessions or channel_ids
+     * it wants to receive. The server replies to this by sending a new
+     * UserState/ChannelState message with the resources filled even if they would
+     * normally be transmitted as hashes.
+     * </pre>
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements MumbleProto.Mumble.RequestBlobOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.RequestBlob)
+        MumbleProto.Mumble.RequestBlobOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return MumbleProto.Mumble.internal_static_MumbleProto_RequestBlob_descriptor;
@@ -29405,7 +34432,6 @@ public final class Mumble {
       }
       private int bitField0_;
 
-      // repeated uint32 session_texture = 1;
       private java.util.List<java.lang.Integer> sessionTexture_ = java.util.Collections.emptyList();
       private void ensureSessionTextureIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -29415,6 +34441,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 session_texture = 1;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState textures.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getSessionTextureList() {
@@ -29422,18 +34452,30 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 session_texture = 1;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState textures.
+       * </pre>
        */
       public int getSessionTextureCount() {
         return sessionTexture_.size();
       }
       /**
        * <code>repeated uint32 session_texture = 1;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState textures.
+       * </pre>
        */
       public int getSessionTexture(int index) {
         return sessionTexture_.get(index);
       }
       /**
        * <code>repeated uint32 session_texture = 1;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState textures.
+       * </pre>
        */
       public Builder setSessionTexture(
           int index, int value) {
@@ -29444,6 +34486,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 session_texture = 1;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState textures.
+       * </pre>
        */
       public Builder addSessionTexture(int value) {
         ensureSessionTextureIsMutable();
@@ -29453,16 +34499,25 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 session_texture = 1;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState textures.
+       * </pre>
        */
       public Builder addAllSessionTexture(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureSessionTextureIsMutable();
-        super.addAll(values, sessionTexture_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, sessionTexture_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated uint32 session_texture = 1;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState textures.
+       * </pre>
        */
       public Builder clearSessionTexture() {
         sessionTexture_ = java.util.Collections.emptyList();
@@ -29471,7 +34526,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated uint32 session_comment = 2;
       private java.util.List<java.lang.Integer> sessionComment_ = java.util.Collections.emptyList();
       private void ensureSessionCommentIsMutable() {
         if (!((bitField0_ & 0x00000002) == 0x00000002)) {
@@ -29481,6 +34535,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 session_comment = 2;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState comments.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getSessionCommentList() {
@@ -29488,18 +34546,30 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 session_comment = 2;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState comments.
+       * </pre>
        */
       public int getSessionCommentCount() {
         return sessionComment_.size();
       }
       /**
        * <code>repeated uint32 session_comment = 2;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState comments.
+       * </pre>
        */
       public int getSessionComment(int index) {
         return sessionComment_.get(index);
       }
       /**
        * <code>repeated uint32 session_comment = 2;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState comments.
+       * </pre>
        */
       public Builder setSessionComment(
           int index, int value) {
@@ -29510,6 +34580,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 session_comment = 2;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState comments.
+       * </pre>
        */
       public Builder addSessionComment(int value) {
         ensureSessionCommentIsMutable();
@@ -29519,16 +34593,25 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 session_comment = 2;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState comments.
+       * </pre>
        */
       public Builder addAllSessionComment(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureSessionCommentIsMutable();
-        super.addAll(values, sessionComment_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, sessionComment_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated uint32 session_comment = 2;</code>
+       *
+       * <pre>
+       * sessions of the requested UserState comments.
+       * </pre>
        */
       public Builder clearSessionComment() {
         sessionComment_ = java.util.Collections.emptyList();
@@ -29537,7 +34620,6 @@ public final class Mumble {
         return this;
       }
 
-      // repeated uint32 channel_description = 3;
       private java.util.List<java.lang.Integer> channelDescription_ = java.util.Collections.emptyList();
       private void ensureChannelDescriptionIsMutable() {
         if (!((bitField0_ & 0x00000004) == 0x00000004)) {
@@ -29547,6 +34629,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 channel_description = 3;</code>
+       *
+       * <pre>
+       * channel_ids of the requested ChannelState descriptions.
+       * </pre>
        */
       public java.util.List<java.lang.Integer>
           getChannelDescriptionList() {
@@ -29554,18 +34640,30 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 channel_description = 3;</code>
+       *
+       * <pre>
+       * channel_ids of the requested ChannelState descriptions.
+       * </pre>
        */
       public int getChannelDescriptionCount() {
         return channelDescription_.size();
       }
       /**
        * <code>repeated uint32 channel_description = 3;</code>
+       *
+       * <pre>
+       * channel_ids of the requested ChannelState descriptions.
+       * </pre>
        */
       public int getChannelDescription(int index) {
         return channelDescription_.get(index);
       }
       /**
        * <code>repeated uint32 channel_description = 3;</code>
+       *
+       * <pre>
+       * channel_ids of the requested ChannelState descriptions.
+       * </pre>
        */
       public Builder setChannelDescription(
           int index, int value) {
@@ -29576,6 +34674,10 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 channel_description = 3;</code>
+       *
+       * <pre>
+       * channel_ids of the requested ChannelState descriptions.
+       * </pre>
        */
       public Builder addChannelDescription(int value) {
         ensureChannelDescriptionIsMutable();
@@ -29585,16 +34687,25 @@ public final class Mumble {
       }
       /**
        * <code>repeated uint32 channel_description = 3;</code>
+       *
+       * <pre>
+       * channel_ids of the requested ChannelState descriptions.
+       * </pre>
        */
       public Builder addAllChannelDescription(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureChannelDescriptionIsMutable();
-        super.addAll(values, channelDescription_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, channelDescription_);
         onChanged();
         return this;
       }
       /**
        * <code>repeated uint32 channel_description = 3;</code>
+       *
+       * <pre>
+       * channel_ids of the requested ChannelState descriptions.
+       * </pre>
        */
       public Builder clearChannelDescription() {
         channelDescription_ = java.util.Collections.emptyList();
@@ -29614,166 +34725,1807 @@ public final class Mumble {
     // @@protoc_insertion_point(class_scope:MumbleProto.RequestBlob)
   }
 
-  private static com.google.protobuf.Descriptors.Descriptor
+  public interface ServerConfigOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.ServerConfig)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional uint32 max_bandwidth = 1;</code>
+     *
+     * <pre>
+     * The maximum bandwidth the clients should use.
+     * </pre>
+     */
+    boolean hasMaxBandwidth();
+    /**
+     * <code>optional uint32 max_bandwidth = 1;</code>
+     *
+     * <pre>
+     * The maximum bandwidth the clients should use.
+     * </pre>
+     */
+    int getMaxBandwidth();
+
+    /**
+     * <code>optional string welcome_text = 2;</code>
+     *
+     * <pre>
+     * Server welcome text.
+     * </pre>
+     */
+    boolean hasWelcomeText();
+    /**
+     * <code>optional string welcome_text = 2;</code>
+     *
+     * <pre>
+     * Server welcome text.
+     * </pre>
+     */
+    java.lang.String getWelcomeText();
+    /**
+     * <code>optional string welcome_text = 2;</code>
+     *
+     * <pre>
+     * Server welcome text.
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getWelcomeTextBytes();
+
+    /**
+     * <code>optional bool allow_html = 3;</code>
+     *
+     * <pre>
+     * True if the server allows HTML.
+     * </pre>
+     */
+    boolean hasAllowHtml();
+    /**
+     * <code>optional bool allow_html = 3;</code>
+     *
+     * <pre>
+     * True if the server allows HTML.
+     * </pre>
+     */
+    boolean getAllowHtml();
+
+    /**
+     * <code>optional uint32 message_length = 4;</code>
+     *
+     * <pre>
+     * Maximum text message length.
+     * </pre>
+     */
+    boolean hasMessageLength();
+    /**
+     * <code>optional uint32 message_length = 4;</code>
+     *
+     * <pre>
+     * Maximum text message length.
+     * </pre>
+     */
+    int getMessageLength();
+
+    /**
+     * <code>optional uint32 image_message_length = 5;</code>
+     *
+     * <pre>
+     * Maximum image message length.
+     * </pre>
+     */
+    boolean hasImageMessageLength();
+    /**
+     * <code>optional uint32 image_message_length = 5;</code>
+     *
+     * <pre>
+     * Maximum image message length.
+     * </pre>
+     */
+    int getImageMessageLength();
+  }
+  /**
+   * Protobuf type {@code MumbleProto.ServerConfig}
+   *
+   * <pre>
+   * Sent by the server when it informs the clients on server configuration
+   * details.
+   * </pre>
+   */
+  public static final class ServerConfig extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.ServerConfig)
+      ServerConfigOrBuilder {
+    // Use ServerConfig.newBuilder() to construct.
+    private ServerConfig(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private ServerConfig(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final ServerConfig defaultInstance;
+    public static ServerConfig getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public ServerConfig getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ServerConfig(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              maxBandwidth_ = input.readUInt32();
+              break;
+            }
+            case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000002;
+              welcomeText_ = bs;
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              allowHtml_ = input.readBool();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              messageLength_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              imageMessageLength_ = input.readUInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return MumbleProto.Mumble.internal_static_MumbleProto_ServerConfig_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return MumbleProto.Mumble.internal_static_MumbleProto_ServerConfig_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              MumbleProto.Mumble.ServerConfig.class, MumbleProto.Mumble.ServerConfig.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<ServerConfig> PARSER =
+        new com.google.protobuf.AbstractParser<ServerConfig>() {
+      public ServerConfig parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ServerConfig(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ServerConfig> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int MAX_BANDWIDTH_FIELD_NUMBER = 1;
+    private int maxBandwidth_;
+    /**
+     * <code>optional uint32 max_bandwidth = 1;</code>
+     *
+     * <pre>
+     * The maximum bandwidth the clients should use.
+     * </pre>
+     */
+    public boolean hasMaxBandwidth() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional uint32 max_bandwidth = 1;</code>
+     *
+     * <pre>
+     * The maximum bandwidth the clients should use.
+     * </pre>
+     */
+    public int getMaxBandwidth() {
+      return maxBandwidth_;
+    }
+
+    public static final int WELCOME_TEXT_FIELD_NUMBER = 2;
+    private java.lang.Object welcomeText_;
+    /**
+     * <code>optional string welcome_text = 2;</code>
+     *
+     * <pre>
+     * Server welcome text.
+     * </pre>
+     */
+    public boolean hasWelcomeText() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional string welcome_text = 2;</code>
+     *
+     * <pre>
+     * Server welcome text.
+     * </pre>
+     */
+    public java.lang.String getWelcomeText() {
+      java.lang.Object ref = welcomeText_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          welcomeText_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string welcome_text = 2;</code>
+     *
+     * <pre>
+     * Server welcome text.
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getWelcomeTextBytes() {
+      java.lang.Object ref = welcomeText_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        welcomeText_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int ALLOW_HTML_FIELD_NUMBER = 3;
+    private boolean allowHtml_;
+    /**
+     * <code>optional bool allow_html = 3;</code>
+     *
+     * <pre>
+     * True if the server allows HTML.
+     * </pre>
+     */
+    public boolean hasAllowHtml() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional bool allow_html = 3;</code>
+     *
+     * <pre>
+     * True if the server allows HTML.
+     * </pre>
+     */
+    public boolean getAllowHtml() {
+      return allowHtml_;
+    }
+
+    public static final int MESSAGE_LENGTH_FIELD_NUMBER = 4;
+    private int messageLength_;
+    /**
+     * <code>optional uint32 message_length = 4;</code>
+     *
+     * <pre>
+     * Maximum text message length.
+     * </pre>
+     */
+    public boolean hasMessageLength() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional uint32 message_length = 4;</code>
+     *
+     * <pre>
+     * Maximum text message length.
+     * </pre>
+     */
+    public int getMessageLength() {
+      return messageLength_;
+    }
+
+    public static final int IMAGE_MESSAGE_LENGTH_FIELD_NUMBER = 5;
+    private int imageMessageLength_;
+    /**
+     * <code>optional uint32 image_message_length = 5;</code>
+     *
+     * <pre>
+     * Maximum image message length.
+     * </pre>
+     */
+    public boolean hasImageMessageLength() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>optional uint32 image_message_length = 5;</code>
+     *
+     * <pre>
+     * Maximum image message length.
+     * </pre>
+     */
+    public int getImageMessageLength() {
+      return imageMessageLength_;
+    }
+
+    private void initFields() {
+      maxBandwidth_ = 0;
+      welcomeText_ = "";
+      allowHtml_ = false;
+      messageLength_ = 0;
+      imageMessageLength_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeUInt32(1, maxBandwidth_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getWelcomeTextBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBool(3, allowHtml_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeUInt32(4, messageLength_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeUInt32(5, imageMessageLength_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, maxBandwidth_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getWelcomeTextBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, allowHtml_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, messageLength_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, imageMessageLength_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static MumbleProto.Mumble.ServerConfig parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static MumbleProto.Mumble.ServerConfig parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static MumbleProto.Mumble.ServerConfig parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static MumbleProto.Mumble.ServerConfig parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static MumbleProto.Mumble.ServerConfig parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static MumbleProto.Mumble.ServerConfig parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static MumbleProto.Mumble.ServerConfig parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static MumbleProto.Mumble.ServerConfig parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static MumbleProto.Mumble.ServerConfig parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static MumbleProto.Mumble.ServerConfig parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(MumbleProto.Mumble.ServerConfig prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code MumbleProto.ServerConfig}
+     *
+     * <pre>
+     * Sent by the server when it informs the clients on server configuration
+     * details.
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.ServerConfig)
+        MumbleProto.Mumble.ServerConfigOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return MumbleProto.Mumble.internal_static_MumbleProto_ServerConfig_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return MumbleProto.Mumble.internal_static_MumbleProto_ServerConfig_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                MumbleProto.Mumble.ServerConfig.class, MumbleProto.Mumble.ServerConfig.Builder.class);
+      }
+
+      // Construct using MumbleProto.Mumble.ServerConfig.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        maxBandwidth_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        welcomeText_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        allowHtml_ = false;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        messageLength_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        imageMessageLength_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return MumbleProto.Mumble.internal_static_MumbleProto_ServerConfig_descriptor;
+      }
+
+      public MumbleProto.Mumble.ServerConfig getDefaultInstanceForType() {
+        return MumbleProto.Mumble.ServerConfig.getDefaultInstance();
+      }
+
+      public MumbleProto.Mumble.ServerConfig build() {
+        MumbleProto.Mumble.ServerConfig result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public MumbleProto.Mumble.ServerConfig buildPartial() {
+        MumbleProto.Mumble.ServerConfig result = new MumbleProto.Mumble.ServerConfig(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.maxBandwidth_ = maxBandwidth_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.welcomeText_ = welcomeText_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.allowHtml_ = allowHtml_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.messageLength_ = messageLength_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.imageMessageLength_ = imageMessageLength_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof MumbleProto.Mumble.ServerConfig) {
+          return mergeFrom((MumbleProto.Mumble.ServerConfig)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(MumbleProto.Mumble.ServerConfig other) {
+        if (other == MumbleProto.Mumble.ServerConfig.getDefaultInstance()) return this;
+        if (other.hasMaxBandwidth()) {
+          setMaxBandwidth(other.getMaxBandwidth());
+        }
+        if (other.hasWelcomeText()) {
+          bitField0_ |= 0x00000002;
+          welcomeText_ = other.welcomeText_;
+          onChanged();
+        }
+        if (other.hasAllowHtml()) {
+          setAllowHtml(other.getAllowHtml());
+        }
+        if (other.hasMessageLength()) {
+          setMessageLength(other.getMessageLength());
+        }
+        if (other.hasImageMessageLength()) {
+          setImageMessageLength(other.getImageMessageLength());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        MumbleProto.Mumble.ServerConfig parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (MumbleProto.Mumble.ServerConfig) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private int maxBandwidth_ ;
+      /**
+       * <code>optional uint32 max_bandwidth = 1;</code>
+       *
+       * <pre>
+       * The maximum bandwidth the clients should use.
+       * </pre>
+       */
+      public boolean hasMaxBandwidth() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional uint32 max_bandwidth = 1;</code>
+       *
+       * <pre>
+       * The maximum bandwidth the clients should use.
+       * </pre>
+       */
+      public int getMaxBandwidth() {
+        return maxBandwidth_;
+      }
+      /**
+       * <code>optional uint32 max_bandwidth = 1;</code>
+       *
+       * <pre>
+       * The maximum bandwidth the clients should use.
+       * </pre>
+       */
+      public Builder setMaxBandwidth(int value) {
+        bitField0_ |= 0x00000001;
+        maxBandwidth_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional uint32 max_bandwidth = 1;</code>
+       *
+       * <pre>
+       * The maximum bandwidth the clients should use.
+       * </pre>
+       */
+      public Builder clearMaxBandwidth() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        maxBandwidth_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object welcomeText_ = "";
+      /**
+       * <code>optional string welcome_text = 2;</code>
+       *
+       * <pre>
+       * Server welcome text.
+       * </pre>
+       */
+      public boolean hasWelcomeText() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string welcome_text = 2;</code>
+       *
+       * <pre>
+       * Server welcome text.
+       * </pre>
+       */
+      public java.lang.String getWelcomeText() {
+        java.lang.Object ref = welcomeText_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            welcomeText_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string welcome_text = 2;</code>
+       *
+       * <pre>
+       * Server welcome text.
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getWelcomeTextBytes() {
+        java.lang.Object ref = welcomeText_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          welcomeText_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string welcome_text = 2;</code>
+       *
+       * <pre>
+       * Server welcome text.
+       * </pre>
+       */
+      public Builder setWelcomeText(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        welcomeText_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string welcome_text = 2;</code>
+       *
+       * <pre>
+       * Server welcome text.
+       * </pre>
+       */
+      public Builder clearWelcomeText() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        welcomeText_ = getDefaultInstance().getWelcomeText();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string welcome_text = 2;</code>
+       *
+       * <pre>
+       * Server welcome text.
+       * </pre>
+       */
+      public Builder setWelcomeTextBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        welcomeText_ = value;
+        onChanged();
+        return this;
+      }
+
+      private boolean allowHtml_ ;
+      /**
+       * <code>optional bool allow_html = 3;</code>
+       *
+       * <pre>
+       * True if the server allows HTML.
+       * </pre>
+       */
+      public boolean hasAllowHtml() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional bool allow_html = 3;</code>
+       *
+       * <pre>
+       * True if the server allows HTML.
+       * </pre>
+       */
+      public boolean getAllowHtml() {
+        return allowHtml_;
+      }
+      /**
+       * <code>optional bool allow_html = 3;</code>
+       *
+       * <pre>
+       * True if the server allows HTML.
+       * </pre>
+       */
+      public Builder setAllowHtml(boolean value) {
+        bitField0_ |= 0x00000004;
+        allowHtml_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool allow_html = 3;</code>
+       *
+       * <pre>
+       * True if the server allows HTML.
+       * </pre>
+       */
+      public Builder clearAllowHtml() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        allowHtml_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int messageLength_ ;
+      /**
+       * <code>optional uint32 message_length = 4;</code>
+       *
+       * <pre>
+       * Maximum text message length.
+       * </pre>
+       */
+      public boolean hasMessageLength() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional uint32 message_length = 4;</code>
+       *
+       * <pre>
+       * Maximum text message length.
+       * </pre>
+       */
+      public int getMessageLength() {
+        return messageLength_;
+      }
+      /**
+       * <code>optional uint32 message_length = 4;</code>
+       *
+       * <pre>
+       * Maximum text message length.
+       * </pre>
+       */
+      public Builder setMessageLength(int value) {
+        bitField0_ |= 0x00000008;
+        messageLength_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional uint32 message_length = 4;</code>
+       *
+       * <pre>
+       * Maximum text message length.
+       * </pre>
+       */
+      public Builder clearMessageLength() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        messageLength_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int imageMessageLength_ ;
+      /**
+       * <code>optional uint32 image_message_length = 5;</code>
+       *
+       * <pre>
+       * Maximum image message length.
+       * </pre>
+       */
+      public boolean hasImageMessageLength() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>optional uint32 image_message_length = 5;</code>
+       *
+       * <pre>
+       * Maximum image message length.
+       * </pre>
+       */
+      public int getImageMessageLength() {
+        return imageMessageLength_;
+      }
+      /**
+       * <code>optional uint32 image_message_length = 5;</code>
+       *
+       * <pre>
+       * Maximum image message length.
+       * </pre>
+       */
+      public Builder setImageMessageLength(int value) {
+        bitField0_ |= 0x00000010;
+        imageMessageLength_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional uint32 image_message_length = 5;</code>
+       *
+       * <pre>
+       * Maximum image message length.
+       * </pre>
+       */
+      public Builder clearImageMessageLength() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        imageMessageLength_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:MumbleProto.ServerConfig)
+    }
+
+    static {
+      defaultInstance = new ServerConfig(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:MumbleProto.ServerConfig)
+  }
+
+  public interface SuggestConfigOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MumbleProto.SuggestConfig)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional uint32 version = 1;</code>
+     *
+     * <pre>
+     * Suggested client version.
+     * </pre>
+     */
+    boolean hasVersion();
+    /**
+     * <code>optional uint32 version = 1;</code>
+     *
+     * <pre>
+     * Suggested client version.
+     * </pre>
+     */
+    int getVersion();
+
+    /**
+     * <code>optional bool positional = 2;</code>
+     *
+     * <pre>
+     * True if the administrator suggests positional audio to be used on this
+     * server.
+     * </pre>
+     */
+    boolean hasPositional();
+    /**
+     * <code>optional bool positional = 2;</code>
+     *
+     * <pre>
+     * True if the administrator suggests positional audio to be used on this
+     * server.
+     * </pre>
+     */
+    boolean getPositional();
+
+    /**
+     * <code>optional bool push_to_talk = 3;</code>
+     *
+     * <pre>
+     * True if the administrator suggests push to talk to be used on this server.
+     * </pre>
+     */
+    boolean hasPushToTalk();
+    /**
+     * <code>optional bool push_to_talk = 3;</code>
+     *
+     * <pre>
+     * True if the administrator suggests push to talk to be used on this server.
+     * </pre>
+     */
+    boolean getPushToTalk();
+  }
+  /**
+   * Protobuf type {@code MumbleProto.SuggestConfig}
+   *
+   * <pre>
+   * Sent by the server to inform the clients of suggested client configuration
+   * specified by the server administrator.
+   * </pre>
+   */
+  public static final class SuggestConfig extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:MumbleProto.SuggestConfig)
+      SuggestConfigOrBuilder {
+    // Use SuggestConfig.newBuilder() to construct.
+    private SuggestConfig(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private SuggestConfig(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final SuggestConfig defaultInstance;
+    public static SuggestConfig getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public SuggestConfig getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SuggestConfig(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              version_ = input.readUInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              positional_ = input.readBool();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              pushToTalk_ = input.readBool();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return MumbleProto.Mumble.internal_static_MumbleProto_SuggestConfig_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return MumbleProto.Mumble.internal_static_MumbleProto_SuggestConfig_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              MumbleProto.Mumble.SuggestConfig.class, MumbleProto.Mumble.SuggestConfig.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<SuggestConfig> PARSER =
+        new com.google.protobuf.AbstractParser<SuggestConfig>() {
+      public SuggestConfig parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SuggestConfig(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<SuggestConfig> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int VERSION_FIELD_NUMBER = 1;
+    private int version_;
+    /**
+     * <code>optional uint32 version = 1;</code>
+     *
+     * <pre>
+     * Suggested client version.
+     * </pre>
+     */
+    public boolean hasVersion() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional uint32 version = 1;</code>
+     *
+     * <pre>
+     * Suggested client version.
+     * </pre>
+     */
+    public int getVersion() {
+      return version_;
+    }
+
+    public static final int POSITIONAL_FIELD_NUMBER = 2;
+    private boolean positional_;
+    /**
+     * <code>optional bool positional = 2;</code>
+     *
+     * <pre>
+     * True if the administrator suggests positional audio to be used on this
+     * server.
+     * </pre>
+     */
+    public boolean hasPositional() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional bool positional = 2;</code>
+     *
+     * <pre>
+     * True if the administrator suggests positional audio to be used on this
+     * server.
+     * </pre>
+     */
+    public boolean getPositional() {
+      return positional_;
+    }
+
+    public static final int PUSH_TO_TALK_FIELD_NUMBER = 3;
+    private boolean pushToTalk_;
+    /**
+     * <code>optional bool push_to_talk = 3;</code>
+     *
+     * <pre>
+     * True if the administrator suggests push to talk to be used on this server.
+     * </pre>
+     */
+    public boolean hasPushToTalk() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional bool push_to_talk = 3;</code>
+     *
+     * <pre>
+     * True if the administrator suggests push to talk to be used on this server.
+     * </pre>
+     */
+    public boolean getPushToTalk() {
+      return pushToTalk_;
+    }
+
+    private void initFields() {
+      version_ = 0;
+      positional_ = false;
+      pushToTalk_ = false;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeUInt32(1, version_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBool(2, positional_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBool(3, pushToTalk_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, version_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, positional_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, pushToTalk_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static MumbleProto.Mumble.SuggestConfig parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static MumbleProto.Mumble.SuggestConfig parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static MumbleProto.Mumble.SuggestConfig parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static MumbleProto.Mumble.SuggestConfig parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static MumbleProto.Mumble.SuggestConfig parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static MumbleProto.Mumble.SuggestConfig parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static MumbleProto.Mumble.SuggestConfig parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static MumbleProto.Mumble.SuggestConfig parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static MumbleProto.Mumble.SuggestConfig parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static MumbleProto.Mumble.SuggestConfig parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(MumbleProto.Mumble.SuggestConfig prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code MumbleProto.SuggestConfig}
+     *
+     * <pre>
+     * Sent by the server to inform the clients of suggested client configuration
+     * specified by the server administrator.
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:MumbleProto.SuggestConfig)
+        MumbleProto.Mumble.SuggestConfigOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return MumbleProto.Mumble.internal_static_MumbleProto_SuggestConfig_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return MumbleProto.Mumble.internal_static_MumbleProto_SuggestConfig_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                MumbleProto.Mumble.SuggestConfig.class, MumbleProto.Mumble.SuggestConfig.Builder.class);
+      }
+
+      // Construct using MumbleProto.Mumble.SuggestConfig.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        version_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        positional_ = false;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        pushToTalk_ = false;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return MumbleProto.Mumble.internal_static_MumbleProto_SuggestConfig_descriptor;
+      }
+
+      public MumbleProto.Mumble.SuggestConfig getDefaultInstanceForType() {
+        return MumbleProto.Mumble.SuggestConfig.getDefaultInstance();
+      }
+
+      public MumbleProto.Mumble.SuggestConfig build() {
+        MumbleProto.Mumble.SuggestConfig result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public MumbleProto.Mumble.SuggestConfig buildPartial() {
+        MumbleProto.Mumble.SuggestConfig result = new MumbleProto.Mumble.SuggestConfig(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.version_ = version_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.positional_ = positional_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.pushToTalk_ = pushToTalk_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof MumbleProto.Mumble.SuggestConfig) {
+          return mergeFrom((MumbleProto.Mumble.SuggestConfig)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(MumbleProto.Mumble.SuggestConfig other) {
+        if (other == MumbleProto.Mumble.SuggestConfig.getDefaultInstance()) return this;
+        if (other.hasVersion()) {
+          setVersion(other.getVersion());
+        }
+        if (other.hasPositional()) {
+          setPositional(other.getPositional());
+        }
+        if (other.hasPushToTalk()) {
+          setPushToTalk(other.getPushToTalk());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        MumbleProto.Mumble.SuggestConfig parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (MumbleProto.Mumble.SuggestConfig) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private int version_ ;
+      /**
+       * <code>optional uint32 version = 1;</code>
+       *
+       * <pre>
+       * Suggested client version.
+       * </pre>
+       */
+      public boolean hasVersion() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional uint32 version = 1;</code>
+       *
+       * <pre>
+       * Suggested client version.
+       * </pre>
+       */
+      public int getVersion() {
+        return version_;
+      }
+      /**
+       * <code>optional uint32 version = 1;</code>
+       *
+       * <pre>
+       * Suggested client version.
+       * </pre>
+       */
+      public Builder setVersion(int value) {
+        bitField0_ |= 0x00000001;
+        version_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional uint32 version = 1;</code>
+       *
+       * <pre>
+       * Suggested client version.
+       * </pre>
+       */
+      public Builder clearVersion() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        version_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean positional_ ;
+      /**
+       * <code>optional bool positional = 2;</code>
+       *
+       * <pre>
+       * True if the administrator suggests positional audio to be used on this
+       * server.
+       * </pre>
+       */
+      public boolean hasPositional() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional bool positional = 2;</code>
+       *
+       * <pre>
+       * True if the administrator suggests positional audio to be used on this
+       * server.
+       * </pre>
+       */
+      public boolean getPositional() {
+        return positional_;
+      }
+      /**
+       * <code>optional bool positional = 2;</code>
+       *
+       * <pre>
+       * True if the administrator suggests positional audio to be used on this
+       * server.
+       * </pre>
+       */
+      public Builder setPositional(boolean value) {
+        bitField0_ |= 0x00000002;
+        positional_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool positional = 2;</code>
+       *
+       * <pre>
+       * True if the administrator suggests positional audio to be used on this
+       * server.
+       * </pre>
+       */
+      public Builder clearPositional() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        positional_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean pushToTalk_ ;
+      /**
+       * <code>optional bool push_to_talk = 3;</code>
+       *
+       * <pre>
+       * True if the administrator suggests push to talk to be used on this server.
+       * </pre>
+       */
+      public boolean hasPushToTalk() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional bool push_to_talk = 3;</code>
+       *
+       * <pre>
+       * True if the administrator suggests push to talk to be used on this server.
+       * </pre>
+       */
+      public boolean getPushToTalk() {
+        return pushToTalk_;
+      }
+      /**
+       * <code>optional bool push_to_talk = 3;</code>
+       *
+       * <pre>
+       * True if the administrator suggests push to talk to be used on this server.
+       * </pre>
+       */
+      public Builder setPushToTalk(boolean value) {
+        bitField0_ |= 0x00000004;
+        pushToTalk_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool push_to_talk = 3;</code>
+       *
+       * <pre>
+       * True if the administrator suggests push to talk to be used on this server.
+       * </pre>
+       */
+      public Builder clearPushToTalk() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        pushToTalk_ = false;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:MumbleProto.SuggestConfig)
+    }
+
+    static {
+      defaultInstance = new SuggestConfig(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:MumbleProto.SuggestConfig)
+  }
+
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_Version_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_Version_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_UDPTunnel_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_UDPTunnel_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_Authenticate_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_Authenticate_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_Ping_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_Ping_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_Reject_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_Reject_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_MumbleProto_ServerConfig_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_MumbleProto_ServerConfig_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_ServerSync_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_ServerSync_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_ChannelRemove_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_ChannelRemove_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_ChannelState_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_ChannelState_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_UserRemove_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_UserRemove_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_UserState_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_UserState_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_BanList_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_BanList_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_BanList_BanEntry_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_BanList_BanEntry_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_TextMessage_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_TextMessage_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_PermissionDenied_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_PermissionDenied_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_ACL_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_ACL_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_ACL_ChanGroup_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_ACL_ChanGroup_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_ACL_ChanACL_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_ACL_ChanACL_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_QueryUsers_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_QueryUsers_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_CryptSetup_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_CryptSetup_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_ContextActionModify_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_ContextActionModify_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_ContextAction_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_ContextAction_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_UserList_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_UserList_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_UserList_User_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_UserList_User_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_VoiceTarget_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_VoiceTarget_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_VoiceTarget_Target_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_VoiceTarget_Target_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_PermissionQuery_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_PermissionQuery_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_CodecVersion_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_CodecVersion_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_UserStats_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_UserStats_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_UserStats_Stats_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_UserStats_Stats_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_MumbleProto_SuggestConfig_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_MumbleProto_SuggestConfig_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MumbleProto_RequestBlob_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MumbleProto_RequestBlob_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MumbleProto_ServerConfig_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MumbleProto_ServerConfig_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_MumbleProto_SuggestConfig_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MumbleProto_SuggestConfig_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -29800,305 +36552,305 @@ public final class Mumble {
       "\020\n\014WrongVersion\020\001\022\023\n\017InvalidUsername\020\002\022\017" +
       "\n\013WrongUserPW\020\003\022\021\n\rWrongServerPW\020\004\022\021\n\rUs" +
       "ernameInUse\020\005\022\016\n\nServerFull\020\006\022\021\n\rNoCerti" +
-      "ficate\020\007\022\025\n\021AuthenticatorFail\020\010\"\205\001\n\014Serv" +
-      "erConfig\022\025\n\rmax_bandwidth\030\001 \001(\r\022\024\n\014welco" +
-      "me_text\030\002 \001(\t\022\022\n\nallow_html\030\003 \001(\010\022\026\n\016mes",
-      "sage_length\030\004 \001(\r\022\034\n\024image_message_lengt" +
-      "h\030\005 \001(\r\"_\n\nServerSync\022\017\n\007session\030\001 \001(\r\022\025" +
-      "\n\rmax_bandwidth\030\002 \001(\r\022\024\n\014welcome_text\030\003 " +
-      "\001(\t\022\023\n\013permissions\030\004 \001(\004\"#\n\rChannelRemov" +
-      "e\022\022\n\nchannel_id\030\001 \002(\r\"\326\001\n\014ChannelState\022\022" +
-      "\n\nchannel_id\030\001 \001(\r\022\016\n\006parent\030\002 \001(\r\022\014\n\004na" +
-      "me\030\003 \001(\t\022\r\n\005links\030\004 \003(\r\022\023\n\013description\030\005" +
-      " \001(\t\022\021\n\tlinks_add\030\006 \003(\r\022\024\n\014links_remove\030" +
-      "\007 \003(\r\022\030\n\ttemporary\030\010 \001(\010:\005false\022\023\n\010posit" +
-      "ion\030\t \001(\005:\0010\022\030\n\020description_hash\030\n \001(\014\"I",
-      "\n\nUserRemove\022\017\n\007session\030\001 \002(\r\022\r\n\005actor\030\002" +
-      " \001(\r\022\016\n\006reason\030\003 \001(\t\022\013\n\003ban\030\004 \001(\010\"\354\002\n\tUs" +
-      "erState\022\017\n\007session\030\001 \001(\r\022\r\n\005actor\030\002 \001(\r\022" +
-      "\014\n\004name\030\003 \001(\t\022\017\n\007user_id\030\004 \001(\r\022\022\n\nchanne" +
-      "l_id\030\005 \001(\r\022\014\n\004mute\030\006 \001(\010\022\014\n\004deaf\030\007 \001(\010\022\020" +
-      "\n\010suppress\030\010 \001(\010\022\021\n\tself_mute\030\t \001(\010\022\021\n\ts" +
-      "elf_deaf\030\n \001(\010\022\017\n\007texture\030\013 \001(\014\022\026\n\016plugi" +
-      "n_context\030\014 \001(\014\022\027\n\017plugin_identity\030\r \001(\t" +
-      "\022\017\n\007comment\030\016 \001(\t\022\014\n\004hash\030\017 \001(\t\022\024\n\014comme" +
-      "nt_hash\030\020 \001(\014\022\024\n\014texture_hash\030\021 \001(\014\022\030\n\020p",
-      "riority_speaker\030\022 \001(\010\022\021\n\trecording\030\023 \001(\010" +
-      "\"\304\001\n\007BanList\022+\n\004bans\030\001 \003(\0132\035.MumbleProto" +
-      ".BanList.BanEntry\022\024\n\005query\030\002 \001(\010:\005false\032" +
-      "v\n\010BanEntry\022\017\n\007address\030\001 \002(\014\022\014\n\004mask\030\002 \002" +
-      "(\r\022\014\n\004name\030\003 \001(\t\022\014\n\004hash\030\004 \001(\t\022\016\n\006reason" +
-      "\030\005 \001(\t\022\r\n\005start\030\006 \001(\t\022\020\n\010duration\030\007 \001(\r\"" +
-      "c\n\013TextMessage\022\r\n\005actor\030\001 \001(\r\022\017\n\007session" +
-      "\030\002 \003(\r\022\022\n\nchannel_id\030\003 \003(\r\022\017\n\007tree_id\030\004 " +
-      "\003(\r\022\017\n\007message\030\005 \002(\t\"\337\002\n\020PermissionDenie" +
-      "d\022\022\n\npermission\030\001 \001(\r\022\022\n\nchannel_id\030\002 \001(",
-      "\r\022\017\n\007session\030\003 \001(\r\022\016\n\006reason\030\004 \001(\t\0224\n\004ty" +
-      "pe\030\005 \001(\0162&.MumbleProto.PermissionDenied." +
-      "DenyType\022\014\n\004name\030\006 \001(\t\"\275\001\n\010DenyType\022\010\n\004T" +
-      "ext\020\000\022\016\n\nPermission\020\001\022\r\n\tSuperUser\020\002\022\017\n\013" +
-      "ChannelName\020\003\022\017\n\013TextTooLong\020\004\022\007\n\003H9K\020\005\022" +
-      "\024\n\020TemporaryChannel\020\006\022\026\n\022MissingCertific" +
-      "ate\020\007\022\014\n\010UserName\020\010\022\017\n\013ChannelFull\020\t\022\020\n\014" +
-      "NestingLimit\020\n\"\324\003\n\003ACL\022\022\n\nchannel_id\030\001 \002" +
-      "(\r\022\032\n\014inherit_acls\030\002 \001(\010:\004true\022*\n\006groups" +
-      "\030\003 \003(\0132\032.MumbleProto.ACL.ChanGroup\022&\n\004ac",
-      "ls\030\004 \003(\0132\030.MumbleProto.ACL.ChanACL\022\024\n\005qu" +
-      "ery\030\005 \001(\010:\005false\032\234\001\n\tChanGroup\022\014\n\004name\030\001" +
-      " \002(\t\022\027\n\tinherited\030\002 \001(\010:\004true\022\025\n\007inherit" +
-      "\030\003 \001(\010:\004true\022\031\n\013inheritable\030\004 \001(\010:\004true\022" +
-      "\013\n\003add\030\005 \003(\r\022\016\n\006remove\030\006 \003(\r\022\031\n\021inherite" +
-      "d_members\030\007 \003(\r\032\223\001\n\007ChanACL\022\030\n\napply_her" +
-      "e\030\001 \001(\010:\004true\022\030\n\napply_subs\030\002 \001(\010:\004true\022" +
-      "\027\n\tinherited\030\003 \001(\010:\004true\022\017\n\007user_id\030\004 \001(" +
-      "\r\022\r\n\005group\030\005 \001(\t\022\r\n\005grant\030\006 \001(\r\022\014\n\004deny\030" +
-      "\007 \001(\r\"(\n\nQueryUsers\022\013\n\003ids\030\001 \003(\r\022\r\n\005name",
-      "s\030\002 \003(\t\"E\n\nCryptSetup\022\013\n\003key\030\001 \001(\014\022\024\n\014cl" +
-      "ient_nonce\030\002 \001(\014\022\024\n\014server_nonce\030\003 \001(\014\"\323" +
-      "\001\n\023ContextActionModify\022\016\n\006action\030\001 \002(\t\022\014" +
-      "\n\004text\030\002 \001(\t\022\017\n\007context\030\003 \001(\r\022=\n\toperati" +
-      "on\030\004 \001(\0162*.MumbleProto.ContextActionModi" +
-      "fy.Operation\",\n\007Context\022\n\n\006Server\020\001\022\013\n\007C" +
-      "hannel\020\002\022\010\n\004User\020\004\" \n\tOperation\022\007\n\003Add\020\000" +
-      "\022\n\n\006Remove\020\001\"D\n\rContextAction\022\017\n\007session" +
-      "\030\001 \001(\r\022\022\n\nchannel_id\030\002 \001(\r\022\016\n\006action\030\003 \002" +
-      "(\t\"\205\001\n\010UserList\022)\n\005users\030\001 \003(\0132\032.MumbleP",
-      "roto.UserList.User\032N\n\004User\022\017\n\007user_id\030\001 " +
-      "\002(\r\022\014\n\004name\030\002 \001(\t\022\021\n\tlast_seen\030\003 \001(\t\022\024\n\014" +
-      "last_channel\030\004 \001(\r\"\270\001\n\013VoiceTarget\022\n\n\002id" +
-      "\030\001 \001(\r\0220\n\007targets\030\002 \003(\0132\037.MumbleProto.Vo" +
-      "iceTarget.Target\032k\n\006Target\022\017\n\007session\030\001 " +
-      "\003(\r\022\022\n\nchannel_id\030\002 \001(\r\022\r\n\005group\030\003 \001(\t\022\024" +
-      "\n\005links\030\004 \001(\010:\005false\022\027\n\010children\030\005 \001(\010:\005" +
-      "false\"P\n\017PermissionQuery\022\022\n\nchannel_id\030\001" +
-      " \001(\r\022\023\n\013permissions\030\002 \001(\r\022\024\n\005flush\030\003 \001(\010" +
-      ":\005false\"\\\n\014CodecVersion\022\r\n\005alpha\030\001 \002(\005\022\014",
-      "\n\004beta\030\002 \002(\005\022\032\n\014prefer_alpha\030\003 \002(\010:\004true" +
-      "\022\023\n\004opus\030\004 \001(\010:\005false\"\270\004\n\tUserStats\022\017\n\007s" +
-      "ession\030\001 \001(\r\022\031\n\nstats_only\030\002 \001(\010:\005false\022" +
-      "\024\n\014certificates\030\003 \003(\014\0221\n\013from_client\030\004 \001" +
-      "(\0132\034.MumbleProto.UserStats.Stats\0221\n\013from" +
-      "_server\030\005 \001(\0132\034.MumbleProto.UserStats.St" +
-      "ats\022\023\n\013udp_packets\030\006 \001(\r\022\023\n\013tcp_packets\030" +
-      "\007 \001(\r\022\024\n\014udp_ping_avg\030\010 \001(\002\022\024\n\014udp_ping_" +
-      "var\030\t \001(\002\022\024\n\014tcp_ping_avg\030\n \001(\002\022\024\n\014tcp_p" +
-      "ing_var\030\013 \001(\002\022%\n\007version\030\014 \001(\0132\024.MumbleP",
-      "roto.Version\022\025\n\rcelt_versions\030\r \003(\005\022\017\n\007a" +
-      "ddress\030\016 \001(\014\022\021\n\tbandwidth\030\017 \001(\r\022\022\n\nonlin" +
-      "esecs\030\020 \001(\r\022\020\n\010idlesecs\030\021 \001(\r\022!\n\022strong_" +
-      "certificate\030\022 \001(\010:\005false\022\023\n\004opus\030\023 \001(\010:\005" +
-      "false\032A\n\005Stats\022\014\n\004good\030\001 \001(\r\022\014\n\004late\030\002 \001" +
-      "(\r\022\014\n\004lost\030\003 \001(\r\022\016\n\006resync\030\004 \001(\r\"J\n\rSugg" +
-      "estConfig\022\017\n\007version\030\001 \001(\r\022\022\n\npositional" +
-      "\030\002 \001(\010\022\024\n\014push_to_talk\030\003 \001(\010\"\\\n\013RequestB" +
-      "lob\022\027\n\017session_texture\030\001 \003(\r\022\027\n\017session_" +
-      "comment\030\002 \003(\r\022\033\n\023channel_description\030\003 \003",
-      "(\rB\002H\001"
+      "ficate\020\007\022\025\n\021AuthenticatorFail\020\010\"_\n\nServe" +
+      "rSync\022\017\n\007session\030\001 \001(\r\022\025\n\rmax_bandwidth\030" +
+      "\002 \001(\r\022\024\n\014welcome_text\030\003 \001(\t\022\023\n\013permissio",
+      "ns\030\004 \001(\004\"#\n\rChannelRemove\022\022\n\nchannel_id\030" +
+      "\001 \002(\r\"\326\001\n\014ChannelState\022\022\n\nchannel_id\030\001 \001" +
+      "(\r\022\016\n\006parent\030\002 \001(\r\022\014\n\004name\030\003 \001(\t\022\r\n\005link" +
+      "s\030\004 \003(\r\022\023\n\013description\030\005 \001(\t\022\021\n\tlinks_ad" +
+      "d\030\006 \003(\r\022\024\n\014links_remove\030\007 \003(\r\022\030\n\ttempora" +
+      "ry\030\010 \001(\010:\005false\022\023\n\010position\030\t \001(\005:\0010\022\030\n\020" +
+      "description_hash\030\n \001(\014\"I\n\nUserRemove\022\017\n\007" +
+      "session\030\001 \002(\r\022\r\n\005actor\030\002 \001(\r\022\016\n\006reason\030\003" +
+      " \001(\t\022\013\n\003ban\030\004 \001(\010\"\354\002\n\tUserState\022\017\n\007sessi" +
+      "on\030\001 \001(\r\022\r\n\005actor\030\002 \001(\r\022\014\n\004name\030\003 \001(\t\022\017\n",
+      "\007user_id\030\004 \001(\r\022\022\n\nchannel_id\030\005 \001(\r\022\014\n\004mu" +
+      "te\030\006 \001(\010\022\014\n\004deaf\030\007 \001(\010\022\020\n\010suppress\030\010 \001(\010" +
+      "\022\021\n\tself_mute\030\t \001(\010\022\021\n\tself_deaf\030\n \001(\010\022\017" +
+      "\n\007texture\030\013 \001(\014\022\026\n\016plugin_context\030\014 \001(\014\022" +
+      "\027\n\017plugin_identity\030\r \001(\t\022\017\n\007comment\030\016 \001(" +
+      "\t\022\014\n\004hash\030\017 \001(\t\022\024\n\014comment_hash\030\020 \001(\014\022\024\n" +
+      "\014texture_hash\030\021 \001(\014\022\030\n\020priority_speaker\030" +
+      "\022 \001(\010\022\021\n\trecording\030\023 \001(\010\"\304\001\n\007BanList\022+\n\004" +
+      "bans\030\001 \003(\0132\035.MumbleProto.BanList.BanEntr" +
+      "y\022\024\n\005query\030\002 \001(\010:\005false\032v\n\010BanEntry\022\017\n\007a",
+      "ddress\030\001 \002(\014\022\014\n\004mask\030\002 \002(\r\022\014\n\004name\030\003 \001(\t" +
+      "\022\014\n\004hash\030\004 \001(\t\022\016\n\006reason\030\005 \001(\t\022\r\n\005start\030" +
+      "\006 \001(\t\022\020\n\010duration\030\007 \001(\r\"c\n\013TextMessage\022\r" +
+      "\n\005actor\030\001 \001(\r\022\017\n\007session\030\002 \003(\r\022\022\n\nchanne" +
+      "l_id\030\003 \003(\r\022\017\n\007tree_id\030\004 \003(\r\022\017\n\007message\030\005" +
+      " \002(\t\"\337\002\n\020PermissionDenied\022\022\n\npermission\030" +
+      "\001 \001(\r\022\022\n\nchannel_id\030\002 \001(\r\022\017\n\007session\030\003 \001" +
+      "(\r\022\016\n\006reason\030\004 \001(\t\0224\n\004type\030\005 \001(\0162&.Mumbl" +
+      "eProto.PermissionDenied.DenyType\022\014\n\004name" +
+      "\030\006 \001(\t\"\275\001\n\010DenyType\022\010\n\004Text\020\000\022\016\n\nPermiss",
+      "ion\020\001\022\r\n\tSuperUser\020\002\022\017\n\013ChannelName\020\003\022\017\n" +
+      "\013TextTooLong\020\004\022\007\n\003H9K\020\005\022\024\n\020TemporaryChan" +
+      "nel\020\006\022\026\n\022MissingCertificate\020\007\022\014\n\010UserNam" +
+      "e\020\010\022\017\n\013ChannelFull\020\t\022\020\n\014NestingLimit\020\n\"\324" +
+      "\003\n\003ACL\022\022\n\nchannel_id\030\001 \002(\r\022\032\n\014inherit_ac" +
+      "ls\030\002 \001(\010:\004true\022*\n\006groups\030\003 \003(\0132\032.MumbleP" +
+      "roto.ACL.ChanGroup\022&\n\004acls\030\004 \003(\0132\030.Mumbl" +
+      "eProto.ACL.ChanACL\022\024\n\005query\030\005 \001(\010:\005false" +
+      "\032\234\001\n\tChanGroup\022\014\n\004name\030\001 \002(\t\022\027\n\tinherite" +
+      "d\030\002 \001(\010:\004true\022\025\n\007inherit\030\003 \001(\010:\004true\022\031\n\013",
+      "inheritable\030\004 \001(\010:\004true\022\013\n\003add\030\005 \003(\r\022\016\n\006" +
+      "remove\030\006 \003(\r\022\031\n\021inherited_members\030\007 \003(\r\032" +
+      "\223\001\n\007ChanACL\022\030\n\napply_here\030\001 \001(\010:\004true\022\030\n" +
+      "\napply_subs\030\002 \001(\010:\004true\022\027\n\tinherited\030\003 \001" +
+      "(\010:\004true\022\017\n\007user_id\030\004 \001(\r\022\r\n\005group\030\005 \001(\t" +
+      "\022\r\n\005grant\030\006 \001(\r\022\014\n\004deny\030\007 \001(\r\"(\n\nQueryUs" +
+      "ers\022\013\n\003ids\030\001 \003(\r\022\r\n\005names\030\002 \003(\t\"E\n\nCrypt" +
+      "Setup\022\013\n\003key\030\001 \001(\014\022\024\n\014client_nonce\030\002 \001(\014" +
+      "\022\024\n\014server_nonce\030\003 \001(\014\"\323\001\n\023ContextAction" +
+      "Modify\022\016\n\006action\030\001 \002(\t\022\014\n\004text\030\002 \001(\t\022\017\n\007",
+      "context\030\003 \001(\r\022=\n\toperation\030\004 \001(\0162*.Mumbl" +
+      "eProto.ContextActionModify.Operation\",\n\007" +
+      "Context\022\n\n\006Server\020\001\022\013\n\007Channel\020\002\022\010\n\004User" +
+      "\020\004\" \n\tOperation\022\007\n\003Add\020\000\022\n\n\006Remove\020\001\"D\n\r" +
+      "ContextAction\022\017\n\007session\030\001 \001(\r\022\022\n\nchanne" +
+      "l_id\030\002 \001(\r\022\016\n\006action\030\003 \002(\t\"\205\001\n\010UserList\022" +
+      ")\n\005users\030\001 \003(\0132\032.MumbleProto.UserList.Us" +
+      "er\032N\n\004User\022\017\n\007user_id\030\001 \002(\r\022\014\n\004name\030\002 \001(" +
+      "\t\022\021\n\tlast_seen\030\003 \001(\t\022\024\n\014last_channel\030\004 \001" +
+      "(\r\"\270\001\n\013VoiceTarget\022\n\n\002id\030\001 \001(\r\0220\n\007target",
+      "s\030\002 \003(\0132\037.MumbleProto.VoiceTarget.Target" +
+      "\032k\n\006Target\022\017\n\007session\030\001 \003(\r\022\022\n\nchannel_i" +
+      "d\030\002 \001(\r\022\r\n\005group\030\003 \001(\t\022\024\n\005links\030\004 \001(\010:\005f" +
+      "alse\022\027\n\010children\030\005 \001(\010:\005false\"P\n\017Permiss" +
+      "ionQuery\022\022\n\nchannel_id\030\001 \001(\r\022\023\n\013permissi" +
+      "ons\030\002 \001(\r\022\024\n\005flush\030\003 \001(\010:\005false\"\\\n\014Codec" +
+      "Version\022\r\n\005alpha\030\001 \002(\005\022\014\n\004beta\030\002 \002(\005\022\032\n\014" +
+      "prefer_alpha\030\003 \002(\010:\004true\022\023\n\004opus\030\004 \001(\010:\005" +
+      "false\"\270\004\n\tUserStats\022\017\n\007session\030\001 \001(\r\022\031\n\n" +
+      "stats_only\030\002 \001(\010:\005false\022\024\n\014certificates\030",
+      "\003 \003(\014\0221\n\013from_client\030\004 \001(\0132\034.MumbleProto" +
+      ".UserStats.Stats\0221\n\013from_server\030\005 \001(\0132\034." +
+      "MumbleProto.UserStats.Stats\022\023\n\013udp_packe" +
+      "ts\030\006 \001(\r\022\023\n\013tcp_packets\030\007 \001(\r\022\024\n\014udp_pin" +
+      "g_avg\030\010 \001(\002\022\024\n\014udp_ping_var\030\t \001(\002\022\024\n\014tcp" +
+      "_ping_avg\030\n \001(\002\022\024\n\014tcp_ping_var\030\013 \001(\002\022%\n" +
+      "\007version\030\014 \001(\0132\024.MumbleProto.Version\022\025\n\r" +
+      "celt_versions\030\r \003(\005\022\017\n\007address\030\016 \001(\014\022\021\n\t" +
+      "bandwidth\030\017 \001(\r\022\022\n\nonlinesecs\030\020 \001(\r\022\020\n\010i" +
+      "dlesecs\030\021 \001(\r\022!\n\022strong_certificate\030\022 \001(",
+      "\010:\005false\022\023\n\004opus\030\023 \001(\010:\005false\032A\n\005Stats\022\014" +
+      "\n\004good\030\001 \001(\r\022\014\n\004late\030\002 \001(\r\022\014\n\004lost\030\003 \001(\r" +
+      "\022\016\n\006resync\030\004 \001(\r\"\\\n\013RequestBlob\022\027\n\017sessi" +
+      "on_texture\030\001 \003(\r\022\027\n\017session_comment\030\002 \003(" +
+      "\r\022\033\n\023channel_description\030\003 \003(\r\"\205\001\n\014Serve" +
+      "rConfig\022\025\n\rmax_bandwidth\030\001 \001(\r\022\024\n\014welcom" +
+      "e_text\030\002 \001(\t\022\022\n\nallow_html\030\003 \001(\010\022\026\n\016mess" +
+      "age_length\030\004 \001(\r\022\034\n\024image_message_length" +
+      "\030\005 \001(\r\"J\n\rSuggestConfig\022\017\n\007version\030\001 \001(\r" +
+      "\022\022\n\npositional\030\002 \001(\010\022\024\n\014push_to_talk\030\003 \001",
+      "(\010B\002H\001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_MumbleProto_Version_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_MumbleProto_Version_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_Version_descriptor,
-              new java.lang.String[] { "Version", "Release", "Os", "OsVersion", });
-          internal_static_MumbleProto_UDPTunnel_descriptor =
-            getDescriptor().getMessageTypes().get(1);
-          internal_static_MumbleProto_UDPTunnel_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_UDPTunnel_descriptor,
-              new java.lang.String[] { "Packet", });
-          internal_static_MumbleProto_Authenticate_descriptor =
-            getDescriptor().getMessageTypes().get(2);
-          internal_static_MumbleProto_Authenticate_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_Authenticate_descriptor,
-              new java.lang.String[] { "Username", "Password", "Tokens", "CeltVersions", "Opus", });
-          internal_static_MumbleProto_Ping_descriptor =
-            getDescriptor().getMessageTypes().get(3);
-          internal_static_MumbleProto_Ping_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_Ping_descriptor,
-              new java.lang.String[] { "Timestamp", "Good", "Late", "Lost", "Resync", "UdpPackets", "TcpPackets", "UdpPingAvg", "UdpPingVar", "TcpPingAvg", "TcpPingVar", });
-          internal_static_MumbleProto_Reject_descriptor =
-            getDescriptor().getMessageTypes().get(4);
-          internal_static_MumbleProto_Reject_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_Reject_descriptor,
-              new java.lang.String[] { "Type", "Reason", });
-          internal_static_MumbleProto_ServerConfig_descriptor =
-            getDescriptor().getMessageTypes().get(5);
-          internal_static_MumbleProto_ServerConfig_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_ServerConfig_descriptor,
-              new java.lang.String[] { "MaxBandwidth", "WelcomeText", "AllowHtml", "MessageLength", "ImageMessageLength", });
-          internal_static_MumbleProto_ServerSync_descriptor =
-            getDescriptor().getMessageTypes().get(6);
-          internal_static_MumbleProto_ServerSync_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_ServerSync_descriptor,
-              new java.lang.String[] { "Session", "MaxBandwidth", "WelcomeText", "Permissions", });
-          internal_static_MumbleProto_ChannelRemove_descriptor =
-            getDescriptor().getMessageTypes().get(7);
-          internal_static_MumbleProto_ChannelRemove_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_ChannelRemove_descriptor,
-              new java.lang.String[] { "ChannelId", });
-          internal_static_MumbleProto_ChannelState_descriptor =
-            getDescriptor().getMessageTypes().get(8);
-          internal_static_MumbleProto_ChannelState_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_ChannelState_descriptor,
-              new java.lang.String[] { "ChannelId", "Parent", "Name", "Links", "Description", "LinksAdd", "LinksRemove", "Temporary", "Position", "DescriptionHash", });
-          internal_static_MumbleProto_UserRemove_descriptor =
-            getDescriptor().getMessageTypes().get(9);
-          internal_static_MumbleProto_UserRemove_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_UserRemove_descriptor,
-              new java.lang.String[] { "Session", "Actor", "Reason", "Ban", });
-          internal_static_MumbleProto_UserState_descriptor =
-            getDescriptor().getMessageTypes().get(10);
-          internal_static_MumbleProto_UserState_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_UserState_descriptor,
-              new java.lang.String[] { "Session", "Actor", "Name", "UserId", "ChannelId", "Mute", "Deaf", "Suppress", "SelfMute", "SelfDeaf", "Texture", "PluginContext", "PluginIdentity", "Comment", "Hash", "CommentHash", "TextureHash", "PrioritySpeaker", "Recording", });
-          internal_static_MumbleProto_BanList_descriptor =
-            getDescriptor().getMessageTypes().get(11);
-          internal_static_MumbleProto_BanList_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_BanList_descriptor,
-              new java.lang.String[] { "Bans", "Query", });
-          internal_static_MumbleProto_BanList_BanEntry_descriptor =
-            internal_static_MumbleProto_BanList_descriptor.getNestedTypes().get(0);
-          internal_static_MumbleProto_BanList_BanEntry_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_BanList_BanEntry_descriptor,
-              new java.lang.String[] { "Address", "Mask", "Name", "Hash", "Reason", "Start", "Duration", });
-          internal_static_MumbleProto_TextMessage_descriptor =
-            getDescriptor().getMessageTypes().get(12);
-          internal_static_MumbleProto_TextMessage_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_TextMessage_descriptor,
-              new java.lang.String[] { "Actor", "Session", "ChannelId", "TreeId", "Message", });
-          internal_static_MumbleProto_PermissionDenied_descriptor =
-            getDescriptor().getMessageTypes().get(13);
-          internal_static_MumbleProto_PermissionDenied_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_PermissionDenied_descriptor,
-              new java.lang.String[] { "Permission", "ChannelId", "Session", "Reason", "Type", "Name", });
-          internal_static_MumbleProto_ACL_descriptor =
-            getDescriptor().getMessageTypes().get(14);
-          internal_static_MumbleProto_ACL_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_ACL_descriptor,
-              new java.lang.String[] { "ChannelId", "InheritAcls", "Groups", "Acls", "Query", });
-          internal_static_MumbleProto_ACL_ChanGroup_descriptor =
-            internal_static_MumbleProto_ACL_descriptor.getNestedTypes().get(0);
-          internal_static_MumbleProto_ACL_ChanGroup_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_ACL_ChanGroup_descriptor,
-              new java.lang.String[] { "Name", "Inherited", "Inherit", "Inheritable", "Add", "Remove", "InheritedMembers", });
-          internal_static_MumbleProto_ACL_ChanACL_descriptor =
-            internal_static_MumbleProto_ACL_descriptor.getNestedTypes().get(1);
-          internal_static_MumbleProto_ACL_ChanACL_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_ACL_ChanACL_descriptor,
-              new java.lang.String[] { "ApplyHere", "ApplySubs", "Inherited", "UserId", "Group", "Grant", "Deny", });
-          internal_static_MumbleProto_QueryUsers_descriptor =
-            getDescriptor().getMessageTypes().get(15);
-          internal_static_MumbleProto_QueryUsers_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_QueryUsers_descriptor,
-              new java.lang.String[] { "Ids", "Names", });
-          internal_static_MumbleProto_CryptSetup_descriptor =
-            getDescriptor().getMessageTypes().get(16);
-          internal_static_MumbleProto_CryptSetup_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_CryptSetup_descriptor,
-              new java.lang.String[] { "Key", "ClientNonce", "ServerNonce", });
-          internal_static_MumbleProto_ContextActionModify_descriptor =
-            getDescriptor().getMessageTypes().get(17);
-          internal_static_MumbleProto_ContextActionModify_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_ContextActionModify_descriptor,
-              new java.lang.String[] { "Action", "Text", "Context", "Operation", });
-          internal_static_MumbleProto_ContextAction_descriptor =
-            getDescriptor().getMessageTypes().get(18);
-          internal_static_MumbleProto_ContextAction_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_ContextAction_descriptor,
-              new java.lang.String[] { "Session", "ChannelId", "Action", });
-          internal_static_MumbleProto_UserList_descriptor =
-            getDescriptor().getMessageTypes().get(19);
-          internal_static_MumbleProto_UserList_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_UserList_descriptor,
-              new java.lang.String[] { "Users", });
-          internal_static_MumbleProto_UserList_User_descriptor =
-            internal_static_MumbleProto_UserList_descriptor.getNestedTypes().get(0);
-          internal_static_MumbleProto_UserList_User_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_UserList_User_descriptor,
-              new java.lang.String[] { "UserId", "Name", "LastSeen", "LastChannel", });
-          internal_static_MumbleProto_VoiceTarget_descriptor =
-            getDescriptor().getMessageTypes().get(20);
-          internal_static_MumbleProto_VoiceTarget_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_VoiceTarget_descriptor,
-              new java.lang.String[] { "Id", "Targets", });
-          internal_static_MumbleProto_VoiceTarget_Target_descriptor =
-            internal_static_MumbleProto_VoiceTarget_descriptor.getNestedTypes().get(0);
-          internal_static_MumbleProto_VoiceTarget_Target_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_VoiceTarget_Target_descriptor,
-              new java.lang.String[] { "Session", "ChannelId", "Group", "Links", "Children", });
-          internal_static_MumbleProto_PermissionQuery_descriptor =
-            getDescriptor().getMessageTypes().get(21);
-          internal_static_MumbleProto_PermissionQuery_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_PermissionQuery_descriptor,
-              new java.lang.String[] { "ChannelId", "Permissions", "Flush", });
-          internal_static_MumbleProto_CodecVersion_descriptor =
-            getDescriptor().getMessageTypes().get(22);
-          internal_static_MumbleProto_CodecVersion_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_CodecVersion_descriptor,
-              new java.lang.String[] { "Alpha", "Beta", "PreferAlpha", "Opus", });
-          internal_static_MumbleProto_UserStats_descriptor =
-            getDescriptor().getMessageTypes().get(23);
-          internal_static_MumbleProto_UserStats_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_UserStats_descriptor,
-              new java.lang.String[] { "Session", "StatsOnly", "Certificates", "FromClient", "FromServer", "UdpPackets", "TcpPackets", "UdpPingAvg", "UdpPingVar", "TcpPingAvg", "TcpPingVar", "Version", "CeltVersions", "Address", "Bandwidth", "Onlinesecs", "Idlesecs", "StrongCertificate", "Opus", });
-          internal_static_MumbleProto_UserStats_Stats_descriptor =
-            internal_static_MumbleProto_UserStats_descriptor.getNestedTypes().get(0);
-          internal_static_MumbleProto_UserStats_Stats_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_UserStats_Stats_descriptor,
-              new java.lang.String[] { "Good", "Late", "Lost", "Resync", });
-          internal_static_MumbleProto_SuggestConfig_descriptor =
-            getDescriptor().getMessageTypes().get(24);
-          internal_static_MumbleProto_SuggestConfig_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_SuggestConfig_descriptor,
-              new java.lang.String[] { "Version", "Positional", "PushToTalk", });
-          internal_static_MumbleProto_RequestBlob_descriptor =
-            getDescriptor().getMessageTypes().get(25);
-          internal_static_MumbleProto_RequestBlob_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MumbleProto_RequestBlob_descriptor,
-              new java.lang.String[] { "SessionTexture", "SessionComment", "ChannelDescription", });
-          return null;
-        }
-      };
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
+    internal_static_MumbleProto_Version_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_MumbleProto_Version_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_Version_descriptor,
+        new java.lang.String[] { "Version", "Release", "Os", "OsVersion", });
+    internal_static_MumbleProto_UDPTunnel_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_MumbleProto_UDPTunnel_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_UDPTunnel_descriptor,
+        new java.lang.String[] { "Packet", });
+    internal_static_MumbleProto_Authenticate_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_MumbleProto_Authenticate_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_Authenticate_descriptor,
+        new java.lang.String[] { "Username", "Password", "Tokens", "CeltVersions", "Opus", });
+    internal_static_MumbleProto_Ping_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_MumbleProto_Ping_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_Ping_descriptor,
+        new java.lang.String[] { "Timestamp", "Good", "Late", "Lost", "Resync", "UdpPackets", "TcpPackets", "UdpPingAvg", "UdpPingVar", "TcpPingAvg", "TcpPingVar", });
+    internal_static_MumbleProto_Reject_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_MumbleProto_Reject_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_Reject_descriptor,
+        new java.lang.String[] { "Type", "Reason", });
+    internal_static_MumbleProto_ServerSync_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_MumbleProto_ServerSync_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_ServerSync_descriptor,
+        new java.lang.String[] { "Session", "MaxBandwidth", "WelcomeText", "Permissions", });
+    internal_static_MumbleProto_ChannelRemove_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_MumbleProto_ChannelRemove_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_ChannelRemove_descriptor,
+        new java.lang.String[] { "ChannelId", });
+    internal_static_MumbleProto_ChannelState_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_MumbleProto_ChannelState_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_ChannelState_descriptor,
+        new java.lang.String[] { "ChannelId", "Parent", "Name", "Links", "Description", "LinksAdd", "LinksRemove", "Temporary", "Position", "DescriptionHash", });
+    internal_static_MumbleProto_UserRemove_descriptor =
+      getDescriptor().getMessageTypes().get(8);
+    internal_static_MumbleProto_UserRemove_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_UserRemove_descriptor,
+        new java.lang.String[] { "Session", "Actor", "Reason", "Ban", });
+    internal_static_MumbleProto_UserState_descriptor =
+      getDescriptor().getMessageTypes().get(9);
+    internal_static_MumbleProto_UserState_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_UserState_descriptor,
+        new java.lang.String[] { "Session", "Actor", "Name", "UserId", "ChannelId", "Mute", "Deaf", "Suppress", "SelfMute", "SelfDeaf", "Texture", "PluginContext", "PluginIdentity", "Comment", "Hash", "CommentHash", "TextureHash", "PrioritySpeaker", "Recording", });
+    internal_static_MumbleProto_BanList_descriptor =
+      getDescriptor().getMessageTypes().get(10);
+    internal_static_MumbleProto_BanList_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_BanList_descriptor,
+        new java.lang.String[] { "Bans", "Query", });
+    internal_static_MumbleProto_BanList_BanEntry_descriptor =
+      internal_static_MumbleProto_BanList_descriptor.getNestedTypes().get(0);
+    internal_static_MumbleProto_BanList_BanEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_BanList_BanEntry_descriptor,
+        new java.lang.String[] { "Address", "Mask", "Name", "Hash", "Reason", "Start", "Duration", });
+    internal_static_MumbleProto_TextMessage_descriptor =
+      getDescriptor().getMessageTypes().get(11);
+    internal_static_MumbleProto_TextMessage_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_TextMessage_descriptor,
+        new java.lang.String[] { "Actor", "Session", "ChannelId", "TreeId", "Message", });
+    internal_static_MumbleProto_PermissionDenied_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_MumbleProto_PermissionDenied_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_PermissionDenied_descriptor,
+        new java.lang.String[] { "Permission", "ChannelId", "Session", "Reason", "Type", "Name", });
+    internal_static_MumbleProto_ACL_descriptor =
+      getDescriptor().getMessageTypes().get(13);
+    internal_static_MumbleProto_ACL_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_ACL_descriptor,
+        new java.lang.String[] { "ChannelId", "InheritAcls", "Groups", "Acls", "Query", });
+    internal_static_MumbleProto_ACL_ChanGroup_descriptor =
+      internal_static_MumbleProto_ACL_descriptor.getNestedTypes().get(0);
+    internal_static_MumbleProto_ACL_ChanGroup_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_ACL_ChanGroup_descriptor,
+        new java.lang.String[] { "Name", "Inherited", "Inherit", "Inheritable", "Add", "Remove", "InheritedMembers", });
+    internal_static_MumbleProto_ACL_ChanACL_descriptor =
+      internal_static_MumbleProto_ACL_descriptor.getNestedTypes().get(1);
+    internal_static_MumbleProto_ACL_ChanACL_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_ACL_ChanACL_descriptor,
+        new java.lang.String[] { "ApplyHere", "ApplySubs", "Inherited", "UserId", "Group", "Grant", "Deny", });
+    internal_static_MumbleProto_QueryUsers_descriptor =
+      getDescriptor().getMessageTypes().get(14);
+    internal_static_MumbleProto_QueryUsers_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_QueryUsers_descriptor,
+        new java.lang.String[] { "Ids", "Names", });
+    internal_static_MumbleProto_CryptSetup_descriptor =
+      getDescriptor().getMessageTypes().get(15);
+    internal_static_MumbleProto_CryptSetup_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_CryptSetup_descriptor,
+        new java.lang.String[] { "Key", "ClientNonce", "ServerNonce", });
+    internal_static_MumbleProto_ContextActionModify_descriptor =
+      getDescriptor().getMessageTypes().get(16);
+    internal_static_MumbleProto_ContextActionModify_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_ContextActionModify_descriptor,
+        new java.lang.String[] { "Action", "Text", "Context", "Operation", });
+    internal_static_MumbleProto_ContextAction_descriptor =
+      getDescriptor().getMessageTypes().get(17);
+    internal_static_MumbleProto_ContextAction_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_ContextAction_descriptor,
+        new java.lang.String[] { "Session", "ChannelId", "Action", });
+    internal_static_MumbleProto_UserList_descriptor =
+      getDescriptor().getMessageTypes().get(18);
+    internal_static_MumbleProto_UserList_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_UserList_descriptor,
+        new java.lang.String[] { "Users", });
+    internal_static_MumbleProto_UserList_User_descriptor =
+      internal_static_MumbleProto_UserList_descriptor.getNestedTypes().get(0);
+    internal_static_MumbleProto_UserList_User_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_UserList_User_descriptor,
+        new java.lang.String[] { "UserId", "Name", "LastSeen", "LastChannel", });
+    internal_static_MumbleProto_VoiceTarget_descriptor =
+      getDescriptor().getMessageTypes().get(19);
+    internal_static_MumbleProto_VoiceTarget_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_VoiceTarget_descriptor,
+        new java.lang.String[] { "Id", "Targets", });
+    internal_static_MumbleProto_VoiceTarget_Target_descriptor =
+      internal_static_MumbleProto_VoiceTarget_descriptor.getNestedTypes().get(0);
+    internal_static_MumbleProto_VoiceTarget_Target_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_VoiceTarget_Target_descriptor,
+        new java.lang.String[] { "Session", "ChannelId", "Group", "Links", "Children", });
+    internal_static_MumbleProto_PermissionQuery_descriptor =
+      getDescriptor().getMessageTypes().get(20);
+    internal_static_MumbleProto_PermissionQuery_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_PermissionQuery_descriptor,
+        new java.lang.String[] { "ChannelId", "Permissions", "Flush", });
+    internal_static_MumbleProto_CodecVersion_descriptor =
+      getDescriptor().getMessageTypes().get(21);
+    internal_static_MumbleProto_CodecVersion_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_CodecVersion_descriptor,
+        new java.lang.String[] { "Alpha", "Beta", "PreferAlpha", "Opus", });
+    internal_static_MumbleProto_UserStats_descriptor =
+      getDescriptor().getMessageTypes().get(22);
+    internal_static_MumbleProto_UserStats_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_UserStats_descriptor,
+        new java.lang.String[] { "Session", "StatsOnly", "Certificates", "FromClient", "FromServer", "UdpPackets", "TcpPackets", "UdpPingAvg", "UdpPingVar", "TcpPingAvg", "TcpPingVar", "Version", "CeltVersions", "Address", "Bandwidth", "Onlinesecs", "Idlesecs", "StrongCertificate", "Opus", });
+    internal_static_MumbleProto_UserStats_Stats_descriptor =
+      internal_static_MumbleProto_UserStats_descriptor.getNestedTypes().get(0);
+    internal_static_MumbleProto_UserStats_Stats_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_UserStats_Stats_descriptor,
+        new java.lang.String[] { "Good", "Late", "Lost", "Resync", });
+    internal_static_MumbleProto_RequestBlob_descriptor =
+      getDescriptor().getMessageTypes().get(23);
+    internal_static_MumbleProto_RequestBlob_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_RequestBlob_descriptor,
+        new java.lang.String[] { "SessionTexture", "SessionComment", "ChannelDescription", });
+    internal_static_MumbleProto_ServerConfig_descriptor =
+      getDescriptor().getMessageTypes().get(24);
+    internal_static_MumbleProto_ServerConfig_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_ServerConfig_descriptor,
+        new java.lang.String[] { "MaxBandwidth", "WelcomeText", "AllowHtml", "MessageLength", "ImageMessageLength", });
+    internal_static_MumbleProto_SuggestConfig_descriptor =
+      getDescriptor().getMessageTypes().get(25);
+    internal_static_MumbleProto_SuggestConfig_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_MumbleProto_SuggestConfig_descriptor,
+        new java.lang.String[] { "Version", "Positional", "PushToTalk", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

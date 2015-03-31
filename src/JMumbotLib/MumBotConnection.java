@@ -149,9 +149,6 @@ public class MumBotConnection
 	}
 	
 	
-	public static final short APKT_TYPE_CELT_ALPHA = 0;
-	public static final short APKT_TYPE_PING = 1;
-	
 	private int readVarInt(int inputpos, byte[] inputData, byte[] outputdata) { //returns number of bytes read, fills outputdata
 		Arrays.fill(outputdata, (byte)0); //zero fill output array
 
@@ -160,7 +157,7 @@ public class MumBotConnection
 			return 1;
 		}
 		
-		else if ((inputData[inputpos] & 0xFF) < 0b11000000) { //2 bytes decoded, 6 * 8 + 2 leading zeros
+		else if ((inputData[inputpos] & 0xFF) < 0b11000000) { //2 bytes decoded, 6 * 8 + 2 leading zeros 
 			outputdata[6] = (byte)(inputData[inputpos] & 0b00111111); //mask out first two bits
 			outputdata[7] = inputData[inputpos + 1];
 			return 2;
@@ -172,10 +169,23 @@ public class MumBotConnection
 			outputdata[7] = inputData[inputpos + 2];
 			return 3;
 		}		
+		else if ((inputData[inputpos] & 0xFF) < 0b11110000) { //4 bytes decoded, 32 bit positive number //this code is probably wrong
+			outputdata[4] = (byte)(inputData[inputpos] & 0b00001111); //mask out first 4 bits
+			outputdata[5] = inputData[inputpos + 1];
+			outputdata[6] = inputData[inputpos + 2];
+			outputdata[7] = inputData[inputpos + 3];
+			return 4;
+		}				
 		
 		
 		return 0; //no bytes read, some issue
 	}
+	
+	public static final short APKT_TYPE_CELT_ALPHA = 0;
+	public static final short APKT_TYPE_PING = 1;
+	public static final short APKT_TYPE_SPEEX = 2;
+	public static final short APKT_TYPE_CELT_BETA = 3;
+	public static final short APKT_TYPE_OPUS = 4;
 	private void handleAudioPacket(ByteBuffer data) {
 		
 		byte varintdata[] = new byte[8];
@@ -184,13 +194,35 @@ public class MumBotConnection
 		if (data.limit() == 0) return; //it's empty
 		byte[] buffer = data.array();
 		
+		
 		int vpktType = 0xff & ((buffer[0] & 0b11100000) >> 5); 
 		int vpktTarget = 0xff & (buffer[0] & 0b00011111);
 		bufferPos ++; //move to pos 1, which is varint session of user  TODO CHECK LENGTH
 		
-		int varintsize = readVarInt(bufferPos,buffer,varintdata);
-		System.out.println(varintdata[7] & 0xff);
-		System.out.println("varint size: " + varintsize + " data:" + new BigInteger(varintdata));	
+		int varintsize = readVarInt(bufferPos,buffer,varintdata); //session
+		BigInteger vpktSession = new BigInteger(varintdata);
+		bufferPos += varintsize;
+		
+		varintsize = readVarInt(bufferPos,buffer,varintdata); //sequence
+		BigInteger vpktSequence = new BigInteger(varintdata);
+		bufferPos += varintsize;
+		
+		if (vpktType == APKT_TYPE_OPUS) { //opus audio
+			varintsize = readVarInt(bufferPos,buffer,varintdata); //header for opus
+			BigInteger vpktOpusHeader = new BigInteger(varintdata); 
+			bufferPos += varintsize;
+			
+			boolean vpktOpusTerminator = (vpktOpusHeader.longValue() > 0b0001111111111111); //only comparing 16 bits here, dont have to worry about signed-ness
+			int vpktOpusLen = vpktOpusHeader.intValue();
+			if (vpktOpusTerminator) vpktOpusLen = vpktOpusLen - 0b0010000000000000; //subtract out terminator bit
+			
+			byte opusdata[] = new byte[vpktOpusLen];
+			System.arraycopy(buffer, bufferPos, opusdata, 0, vpktOpusLen);
+			if (myListener != null) myListener.gotOpusData(vpktSession.intValue(), vpktSequence.longValue(), vpktOpusTerminator, opusdata);
+			//System.out.println("Varintsize: " + varintsize + " Session: " + vpktSession + " Sequence: " + vpktSequence + " Terminator:" + vpktOpusTerminator);
+			//System.out.println("Opus LEN: " + vpktOpusLen + "Position: " + bufferPos + " Data Len:" + buffer.length);
+			
+		}
 	}
 	
 	private class SocketHandler implements Runnable {
@@ -419,6 +451,7 @@ public class MumBotConnection
 	private byte[] createAuthPktData(String username) {
 		return Mumble.Authenticate.newBuilder()
 				.setUsername(username)
+				.setOpus(true)
 				.build().toByteArray();
 	}
 	
@@ -426,6 +459,7 @@ public class MumBotConnection
 		return Mumble.Authenticate.newBuilder()
 				.setUsername(username)
 				.setPassword(password)
+				.setOpus(true)
 				.build().toByteArray();
 	}
 	

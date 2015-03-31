@@ -9,5 +9,5 @@ public interface MumBotListener {
 	public void gotUserState(Mumble.UserState state, boolean newlogin); //used for user state
 	public void gotUserRemove(Mumble.UserRemove remove); //used when clients disconnect
 	public void gotServerSync(Mumble.ServerSync sync); //used to obtain session id and welcome text etc
-
+	public void gotOpusData(int session, long sequence, boolean terminator, byte[] data);
 }
